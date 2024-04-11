@@ -2,14 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyRecieveDamage : MonoBehaviour
+public class PlayerRecieveDamage : MonoBehaviour
 {
     public float health;
     public float maxHealth;
-    protected Animator animator;
-    protected AudioSource audioSource;
+    private Animator animator;
+    private AudioSource audioSource;
     public AudioClip audioClip;
-    
 
     // Start is called before the first frame update
     void Awake()
@@ -31,10 +30,15 @@ public class EnemyRecieveDamage : MonoBehaviour
             CheckDeath();
         }
     }
-
-    protected void CheckOverheal()
+    public void HealPlayer(int heal)
     {
-        if(health > maxHealth)
+        health += heal;
+        CheckOverheal();
+    }
+
+    private void CheckOverheal()
+    {
+        if (health > maxHealth)
         {
             health = maxHealth;
         }
@@ -43,35 +47,25 @@ public class EnemyRecieveDamage : MonoBehaviour
 
     protected void CheckDeath()
     {
-        if (health <= 0){
+        if (health <= 0)
+        {
             Debug.Log("Dead");
             animator.SetBool("Dead", true);
             gameObject.GetComponent<BoxCollider2D>().enabled = false;
         }
     }
 
-    protected void DeadClear()
-    {
-        Destroy(gameObject);
-    }
-
-    protected void HurtDone()
+    private void HurtDone()
     {
         animator.SetBool("Hurt", false);
         animator.SetBool("Invincible", false);
-        CheckDeath() ;
-        
+        CheckDeath();
+
     }
 
-    protected void AttackDone()
-    {
-        animator.SetBool("Attacking", false);
-    }
-
-    protected void OnHitBecomeInvicible()
+    private void OnHitBecomeInvicible()
     {
         animator.SetBool("Invincible", true);
     }
-
-
 }
+

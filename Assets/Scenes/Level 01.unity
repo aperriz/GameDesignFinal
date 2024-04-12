@@ -239,6 +239,33 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!50 &215486728
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215486711}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 0.0001
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &258967824
 GameObject:
   m_ObjectHideFlags: 0
@@ -716,6 +743,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2734953408188527002, guid: 39bbafdb559099d4ea9c108c3cba3270, type: 3}
+      propertyPath: cooldown
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 675994072737527993, guid: 39bbafdb559099d4ea9c108c3cba3270, type: 3}
+      propertyPath: m_Radius
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 675994072737527993, guid: 39bbafdb559099d4ea9c108c3cba3270, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1001104122163998693, guid: 39bbafdb559099d4ea9c108c3cba3270, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10.02
@@ -791,7 +830,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5742058929749642516, guid: 41a9bd9e2fd49ed40a5b2cda1229d9e1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 5742058929749642516, guid: 41a9bd9e2fd49ed40a5b2cda1229d9e1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -821,7 +860,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6549130772947409607, guid: 41a9bd9e2fd49ed40a5b2cda1229d9e1, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8672170599833450000, guid: 41a9bd9e2fd49ed40a5b2cda1229d9e1, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: -4867029638678096628, guid: 41a9bd9e2fd49ed40a5b2cda1229d9e1, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -831,6 +879,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 757055874454528449, guid: 41a9bd9e2fd49ed40a5b2cda1229d9e1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 215486719}
+    - targetCorrespondingSourceObject: {fileID: 757055874454528449, guid: 41a9bd9e2fd49ed40a5b2cda1229d9e1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 215486728}
   m_SourcePrefab: {fileID: 100100000, guid: 41a9bd9e2fd49ed40a5b2cda1229d9e1, type: 3}
 --- !u!1001 &5096667962952021110
 PrefabInstance:

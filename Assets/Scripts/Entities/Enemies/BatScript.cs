@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class BatScript : EnemyRecieveDamage
 {
-    public float speed;
-    public int damage;
+    
+    
     private void Update()
     {
         if (!animator.GetBool("Dead"))

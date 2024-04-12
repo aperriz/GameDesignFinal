@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
 
 public class EnemyRecieveDamage : MonoBehaviour
@@ -9,7 +11,9 @@ public class EnemyRecieveDamage : MonoBehaviour
     protected Animator animator;
     protected AudioSource audioSource;
     public AudioClip audioClip;
-    
+    public float speed;
+    protected float tempSpeed;
+
 
     // Start is called before the first frame update
     void Awake()
@@ -18,6 +22,7 @@ public class EnemyRecieveDamage : MonoBehaviour
         health = maxHealth;
         audioSource = GetComponent<AudioSource>();
         audioSource.clip = audioClip;
+        tempSpeed = speed;
     }
 
     public void DealDamage(int damage)
@@ -52,7 +57,7 @@ public class EnemyRecieveDamage : MonoBehaviour
 
     protected void DeadClear()
     {
-        //gameObject.GetComponent<Collider2DBox>.enabled = false;
+        GetComponent<BoxCollider2D>().enabled = false;
         //Destroy(gameObject);
     }
 
@@ -67,6 +72,7 @@ public class EnemyRecieveDamage : MonoBehaviour
     protected void AttackDone()
     {
         animator.SetBool("Attacking", false);
+        StartCoroutine(FreezeAttack());
     }
 
     protected void OnHitBecomeInvicible()
@@ -74,5 +80,14 @@ public class EnemyRecieveDamage : MonoBehaviour
         animator.SetBool("Invincible", true);
     }
 
+    protected void ImmobileOnAttack()
+    {
+        speed = 0;
+    }
 
+    protected IEnumerator FreezeAttack()
+    {
+        yield return new WaitForSeconds(1);
+        speed = tempSpeed;
+    }
 }

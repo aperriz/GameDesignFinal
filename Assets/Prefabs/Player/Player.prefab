@@ -15,7 +15,8 @@ GameObject:
   - component: {fileID: 4076241709601034090}
   - component: {fileID: 6549130772947409607}
   - component: {fileID: 6415734696162501927}
-  - component: {fileID: -4867029638678096628}
+  - component: {fileID: 6134845929765911603}
+  - component: {fileID: 8167021550393851769}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -170,6 +171,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 4
   weaponObject: {fileID: 3292768765291177197, guid: 14fa218f9786d6e45bcc4ba04a681e23, type: 3}
+  moveKeyHeld: 0
 --- !u!61 &6549130772947409607
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -311,7 +313,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &-4867029638678096628
+--- !u!114 &6134845929765911603
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -325,4 +327,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   maxHealth: 0
-  audioClip: {fileID: 8300000, guid: 771af50233a908743b63ecc7fc5c2a59, type: 3}
+  audioClip: {fileID: 0}
+  hurtSounds:
+  - {fileID: 8300000, guid: 7471f96cd8b89a941a56fadcc8b98049, type: 3}
+  - {fileID: 8300000, guid: eeabb29a31069a543a8587fd7b26b437, type: 3}
+  - {fileID: 8300000, guid: 75e0f556a15869b4485870f6a93db94c, type: 3}
+--- !u!50 &8167021550393851769
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 757055874454528449}
+  m_BodyType: 0
+  m_Simulated: 0
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 0.0001
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

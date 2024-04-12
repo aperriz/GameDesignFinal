@@ -27,6 +27,11 @@ public class EnemyDealDamage : MonoBehaviour
             Attack();
         }
 
+        if (gameObject.GetComponent<Animator>().GetBool("Dead"))
+        {
+            Destroy(this);
+        }
+
     }
 
     protected void Attack()
@@ -34,6 +39,7 @@ public class EnemyDealDamage : MonoBehaviour
         if (!GetComponent<Animator>().GetBool("Attacking"))
         {
             GetComponent<Animator>().SetBool("Attacking", true);
+            GameObject.Find("Player").GetComponent<PlayerRecieveDamage>().DealDamage(damage);
             StartCoroutine(AttackCooldown());
         }
     }
@@ -46,7 +52,7 @@ public class EnemyDealDamage : MonoBehaviour
         }
     }
 
-    IEnumerator AttackCooldown()
+    protected IEnumerator AttackCooldown()
     {
         yield return new WaitForSeconds(cooldown + gameObject.GetComponent<Animator>().GetCurrentAnimatorClipInfo(0).Length);
         if (Vector2.Distance(transform.position, GameObject.Find("Player").transform.position) <= range)

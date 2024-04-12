@@ -1,18 +1,20 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.IO;
-using System.Threading;
+using Unity.VisualScripting;
 using UnityEngine;
-
-public class PlayerMovement : MonoBehaviour
+using UnityEngine.InputSystem;
+public class PlayerMovement : MonoBehaviour, Controls.IPlayerActions
 {
     public float speed;
     private Vector2 direction;
     private Animator animator;
     private SpriteRenderer renderer;
     public GameObject weaponObject;
+    private Controls controls;
+    [SerializeField] private bool moveKeyHeld;
 
+    private void Awake()
+    {
+        controls = new Controls();
+    }
     private void Start()
     {
         animator = GetComponent<Animator>();
@@ -22,49 +24,87 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         TakeInput();
-        Move();
+        if(moveKeyHeld)
+        {
+            //SetDirection();
+            Move();
+        }
+    }
+
+    private void SetDirection()
+    {
+        animator.SetFloat("xDir", controls.Player.Movement.ReadValue<Vector2>().x);
+        animator.SetFloat("yDir", controls.Player.Movement.ReadValue<Vector2>().y);
+
+        if (controls.Player.Movement.ReadValue<Vector2>().x > 0)
+        {
+            animator.SetBool("Flipped", false);
+        }
+        else
+        {
+            animator.SetBool("Flipped", true);
+        }
+    }
+
+    private void OnEnable()
+    {
+        controls.Player.SetCallbacks(this);
+        controls.Player.Enable();
+    }
+
+    private void OnDisable()
+    {
+        controls.Player.SetCallbacks(this);
+        controls.Player.Disable();
+    }
+
+    void Controls.IPlayerActions.OnMovement(InputAction.CallbackContext ctx)
+    {
+        if (ctx.started)
+        {
+            moveKeyHeld = true;
+        }
+        else if (ctx.canceled)
+        {
+            moveKeyHeld= false;
+            animator.SetFloat("xDir", 0);
+            animator.SetFloat("yDir", 0);
+        }
+    }
+
+    void Controls.IPlayerActions.OnExit(InputAction.CallbackContext ctx)
+    {
+        Debug.Log("Exit");
+        //Application.Quit();
     }
 
     private void Move()
     {
-        transform.Translate(direction * speed * Time.deltaTime);
-        SetAnimatorMovement(direction);
+        Vector2 dir = controls.Player.Movement.ReadValue<Vector2>();
+        Vector3 futurePos = transform.position + (Vector3)dir*speed;
+
+        if (IsValidPosition(futurePos))
+        {
+            transform.position += (Vector3)dir*speed;
+        }
+        else
+        {
+            Debug.Log("Invalid pos");
+        }
+
+        SetDirection();
+    }
+
+    private bool IsValidPosition(Vector3 position)
+    {
+        Vector3Int gridPos = MapManager.instance.FloorMap.WorldToCell(position);
+        if (!MapManager.instance.InBounds(gridPos.x, gridPos.y) || MapManager.instance.ObstacleMap.HasTile(gridPos) || position == transform.position) { return false; }
+
+        return true;
     }
 
     private async void TakeInput()
     {
-        direction = Vector2.zero;
-
-        if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
-        {
-            direction += Vector2.up;
-        }
-
-        if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
-        {
-            direction += Vector2.down;
-        }
-
-        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
-        {
-            direction += Vector2.left;
-            if (!animator.GetBool("Flipped"))
-            {
-                renderer.flipX = false;
-                animator.SetBool("Flipped", true);
-
-            }
-        }
-
-        if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
-        {
-            direction += Vector2.right;
-            if (animator.GetBool("Flipped"))
-            {
-                renderer.flipX = false;
-                animator.SetBool("Flipped", false);
-            }
-        }
 
         if (Input.GetKey(KeyCode.Space))
         {

@@ -9,6 +9,7 @@ public class PlayerRecieveDamage : MonoBehaviour
     private Animator animator;
     private AudioSource audioSource;
     public AudioClip audioClip;
+    public AudioClip[] hurtSounds;
 
     // Start is called before the first frame update
     void Awake()
@@ -27,6 +28,11 @@ public class PlayerRecieveDamage : MonoBehaviour
             health -= damage;
             animator.SetBool("Hurt", true);
             animator.SetBool("Invincible", true);
+
+            int audioClipChoice = Random.Range(0, hurtSounds.Length - 1);
+            gameObject.GetComponent<AudioSource>().clip = hurtSounds[audioClipChoice];
+            gameObject.GetComponent<AudioSource>().Play();
+
             CheckDeath();
         }
     }

@@ -1,0 +1,11 @@
+*Frame size* 
+
+Birch_1: 48x64px
+Birch_2: 48x40px
+Birch_3: 64x64px
+Birch_4: 64x64px
+
+
+*Frame Duration*
+
+- 200ms

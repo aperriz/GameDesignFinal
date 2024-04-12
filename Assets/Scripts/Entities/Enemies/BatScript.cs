@@ -8,7 +8,10 @@ public class BatScript : EnemyRecieveDamage
     public int damage;
     private void Update()
     {
-        transform.position = Vector3.MoveTowards(transform.position, GameObject.Find("Player").transform.position, Time.deltaTime*speed);
+        if (!animator.GetBool("Dead"))
+        {
+            transform.position = Vector3.MoveTowards(transform.position, GameObject.Find("Player").transform.position, Time.deltaTime * speed);
+        }
 
     }
 

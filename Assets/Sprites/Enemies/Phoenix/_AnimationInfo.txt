@@ -1,0 +1,18 @@
+*Frame size* 
+
+- 64x64px: For all the animations.
+
+
+*Frame Duration*
+
+- 100ms: For all the animations.
+
+
+
+Notes:
+
+- The Phoenix doesn't attack directly; instead, it ignites in fire and damages any creatures nearby.
+- It has two versions of most animations: 'Normal' and 'On Fire'.
+- 'Ignition' and 'Extinction' animations are also present to toggle its passive damage-dealing ability.
+
+

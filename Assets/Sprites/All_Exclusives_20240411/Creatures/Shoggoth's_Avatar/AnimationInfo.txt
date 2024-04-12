@@ -1,0 +1,16 @@
+*Frame size* 
+
+- 48x48px: For all the animations.
+
+
+*Frame Duration*
+
+- 100ms: Dmg, Die, From_Crawler, To_Crawler
+
+- 200ms: Crawl, Idle
+
+
+NOTES:
+
+- Attack animations are provided in the folder '_Shoggoth's_Tentacles (Attack)'.
+- Dmg and Die red effects are provided in separate layers.

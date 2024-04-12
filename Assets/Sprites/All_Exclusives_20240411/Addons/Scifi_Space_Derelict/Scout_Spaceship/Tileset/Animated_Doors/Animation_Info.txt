@@ -1,0 +1,9 @@
+*Frame size* 
+
+- 24x24px: For door_1
+- 32x24px: For door_2
+
+
+*Frame Duration*
+
+- 100ms

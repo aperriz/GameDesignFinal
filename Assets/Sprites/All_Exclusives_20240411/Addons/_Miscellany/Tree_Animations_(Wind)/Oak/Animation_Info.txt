@@ -1,0 +1,11 @@
+*Frame size* 
+
+Oak_1: 48x40px
+Oak_2: 32x32px
+Oak_3: 32x32px
+Oak_4: 48x32px
+
+
+*Frame Duration*
+
+- 200ms

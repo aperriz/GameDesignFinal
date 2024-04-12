@@ -52,7 +52,8 @@ public class EnemyRecieveDamage : MonoBehaviour
 
     protected void DeadClear()
     {
-        Destroy(gameObject);
+        //gameObject.GetComponent<Collider2DBox>.enabled = false;
+        //Destroy(gameObject);
     }
 
     protected void HurtDone()

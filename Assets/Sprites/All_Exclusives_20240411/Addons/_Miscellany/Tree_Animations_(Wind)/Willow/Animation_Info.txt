@@ -1,0 +1,11 @@
+*Frame size* 
+
+Willow_1: 56x56px
+Willow_2: 40x32px
+Willow_3: 40x56px
+Willow_4: 40x56px
+
+
+*Frame Duration*
+
+- 200ms

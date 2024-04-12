@@ -1,0 +1,3 @@
+Place the 'Floor_And_Wall_Intersection' layer below the 'Tileset' layer
+to see how the floor tiles connect to the different wall sections.
+(especially useful for the diagonal wall sections)

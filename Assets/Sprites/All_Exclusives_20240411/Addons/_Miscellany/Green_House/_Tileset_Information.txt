@@ -1,0 +1,8 @@
+This asset pack includes two color palette variants: Metalwork and Wood.
+
+Each of the variants above is also available in two sub-variants for the glass: solid color and transparent color.
+
+For the mockup I have also used:
+- Ground tiles from Minifantasy - Towns
+- Outdoor props from Minifantasy - Forgotten Plains
+- Indoor props from Minifantasy - Persian Palace

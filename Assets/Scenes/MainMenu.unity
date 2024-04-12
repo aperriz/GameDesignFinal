@@ -420,6 +420,7 @@ RectTransform:
   m_LocalScale: {x: 1.865285, y: 1.865285, z: 1.865285}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1222928057}
   - {fileID: 1088721817}
   - {fileID: 314398725}
   - {fileID: 1097747482}
@@ -427,7 +428,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 13}
+  m_AnchoredPosition: {x: 0, y: 445}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &371171114
@@ -1748,14 +1749,14 @@ RectTransform:
   m_GameObject: {fileID: 1222928056}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.865285, y: 1.865285, z: 1.865285}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2029468390}
+  m_Father: {fileID: 371171113}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1309, y: -194}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 632.9407, y: 158.2352}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1222928058
@@ -1778,7 +1779,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Placeholder Name
+  m_text: naked man adventures
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2314,7 +2315,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1222928057}
   - {fileID: 371171113}
   m_Father: {fileID: 867439166}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

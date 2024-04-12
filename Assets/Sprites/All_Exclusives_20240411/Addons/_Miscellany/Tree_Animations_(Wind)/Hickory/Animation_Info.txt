@@ -1,0 +1,11 @@
+*Frame size* 
+
+Hickory_1: 48x40px
+Hickory_2: 48x40px
+Hickory_3: 48x40px
+Hickory_4: 48x48px
+
+
+*Frame Duration*
+
+- 200ms

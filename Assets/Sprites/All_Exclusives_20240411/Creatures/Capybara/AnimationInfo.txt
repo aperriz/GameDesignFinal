@@ -1,0 +1,10 @@
+*Frame size* 
+
+- 32x32px: For all the animations.
+
+
+*Frame Duration*
+
+- 100ms: Dmg, Die
+
+- 200ms:  Sleep, Idle and Walk

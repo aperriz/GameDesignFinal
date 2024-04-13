@@ -7,8 +7,8 @@ public class MapManager : MonoBehaviour
     public static MapManager instance;
     [SerializeField] private int width = 200, height = 113;
     [SerializeField] private Color32 darkColor= new Color32(0,0,0,0), lightColor = new Color32(255,255,255,255);
-    [SerializeField] private TileBase floorTile;
-    [SerializeField] private TileBase[] wallTiles;
+    [SerializeField] public TileBase floorTile;
+    [SerializeField] public TileBase[] wallTiles;
     [SerializeField] private Tilemap floorMap, obstacleMap;
 
     public Tilemap FloorMap { get => floorMap; }
@@ -27,10 +27,9 @@ public class MapManager : MonoBehaviour
             for(int y=0;y < wallBounds.size.y; y++)
             {
                 Vector3Int wallPosition = new Vector3Int(wallBounds.min.x + x, wallBounds.min.y+y, 0);
-                for(int i = 0; i < wallTiles.Length; i++)
-                {
-                    obstacleMap.SetTile(wallPosition, wallTiles[i]);
-                }
+               
+                    obstacleMap.SetTile(wallPosition, wallTiles[0]);
+                
             }
         }
 

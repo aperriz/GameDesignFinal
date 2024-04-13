@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 6.4
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -314,11 +314,11 @@ TextureImporter:
         serializedVersion: 2
         x: 129
         y: 72
-        width: 28
+        width: 7
         height: 8
       alignment: 1
       pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 21, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -335,7 +335,7 @@ TextureImporter:
         serializedVersion: 2
         x: 162
         y: 72
-        width: 37
+        width: 3
         height: 7
       alignment: 1
       pivot: {x: 0, y: 1}
@@ -629,11 +629,11 @@ TextureImporter:
         serializedVersion: 2
         x: 177
         y: 49
-        width: 16
-        height: 11
+        width: 7
+        height: 8
       alignment: 1
       pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 10, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -1022,6 +1022,153 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Dungeon Props_0
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 72
+        width: 8
+        height: 8
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7249a5e9b254a2c4bb15edced2887404
+      internalID: -1867281150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon Props_1
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 72
+        width: 7
+        height: 8
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dc44d83218711c48863c4fe80ce2a87
+      internalID: 733164138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon Props_2
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 72
+        width: 5
+        height: 8
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9adfa8d5704c5647b0329be325cd856
+      internalID: 1210578918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon Props_3
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 49
+        width: 7
+        height: 11
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73ea8f3b51171fe43a4373fc72cffe72
+      internalID: -1567900794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon Props_4
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 72
+        width: 10
+        height: 7
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9051c69a532de964e81a5aafd32c1e91
+      internalID: -851243317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon Props_5
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 74
+        width: 3
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66ef4b1e00c08f84986982c2d59f5482
+      internalID: -1499412594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon Props_6
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 73
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29a2fa2217fa6544bbcd3ef766cfa14e
+      internalID: -630279310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -1033,6 +1180,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      Dungeon Props_0: -1867281150
+      Dungeon Props_1: 733164138
+      Dungeon Props_2: 1210578918
+      Dungeon Props_3: -1567900794
+      Dungeon Props_4: -851243317
+      Dungeon Props_5: 609458581
+      Dungeon Props_6: -1499412594
       Props_0: -1128825321
       Props_1: 2101053443
       Props_10: 1253211268

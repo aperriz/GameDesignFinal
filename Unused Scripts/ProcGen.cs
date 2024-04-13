@@ -26,20 +26,21 @@ sealed class ProcGen : MonoBehaviour
             {
                 for(int y = roomY; y < roomY + roomHeight; y++)
                 {
-                    /*if(x == roomX || x == roomX + roomWidth - 1 || y == roomY || y == roomY + roomHeight-1)
+                    if (x == roomX || x == roomX + roomWidth - 1 || y == roomY || y == roomY + roomHeight - 1)
                     {
-                        if(SetWallTileIfEmpty(new Vector3Int(x, y, 0)))
+                        /*if (SetWallTileIfEmpty(new Vector3Int(x, y, 0)))
                         {
                             continue;
-                        }
+                        }*/
                     }
                     else
                     {
-                        if (MapManager.)
+                        if (MapManager.instance.ObstacleMap.GetTile(new Vector3Int(x, y, 0)))
                         {
-
+                            MapManager.instance.ObstacleMap.SetTile(new Vector3Int(x, y, 0), null);
                         }
-                    }*/
+                        MapManager.instance.FloorMap.SetTile(new Vector3Int(x, y, 0), MapManager.instance.FloorTile);
+                    }
                 }
             }
         }

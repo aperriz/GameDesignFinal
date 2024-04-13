@@ -83,24 +83,16 @@ public class PlayerMovement : MonoBehaviour, Controls.IPlayerActions
         Vector2 dir = controls.Player.Movement.ReadValue<Vector2>();
         Vector3 futurePos = transform.position + (Vector3)dir*speed;
 
-        if (IsValidPosition(futurePos))
+        /*if (IsValidPosition(futurePos))
         {
             transform.position += (Vector3)dir*speed;
         }
         else
         {
             Debug.Log("Invalid pos");
-        }
+        }*/
 
         SetDirection();
-    }
-
-    private bool IsValidPosition(Vector3 position)
-    {
-        Vector3Int gridPos = MapManager.instance.FloorMap.WorldToCell(position);
-        if (!MapManager.instance.InBounds(gridPos.x, gridPos.y) || MapManager.instance.ObstacleMap.HasTile(gridPos) || position == transform.position) { return false; }
-
-        return true;
     }
 
     private async void TakeInput()

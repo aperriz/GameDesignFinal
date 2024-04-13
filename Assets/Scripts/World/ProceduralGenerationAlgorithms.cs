@@ -22,7 +22,21 @@ public class ProceduralGenerationAlgorithms : MonoBehaviour
 
         return path;
     }
+    public static List<Vector2Int> RandomWalkCorridor(Vector2Int startPos, int corLength)
+    {
+        List<Vector2Int> corridor = new List<Vector2Int>();
+        var dir = Direction2D.GetRandomCardinalDir();
+        var curPos = startPos;
+        corridor.Add(curPos);
 
+        for (int i = 0; i < corLength; i++)
+        {
+            curPos += dir;
+            corridor.Add(curPos);
+        }
+
+        return corridor;
+    }
 }
 public static class Direction2D
 {

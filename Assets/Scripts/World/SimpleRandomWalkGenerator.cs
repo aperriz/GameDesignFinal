@@ -1,18 +1,39 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
-public class SimpleRandomWalkGenerator : MonoBehaviour
+public class SimpleRandomWalkGenerator : AbstractDungeonGenerator
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField]
+    private SimpleRandomWalkSO randomWalkParameters;
+
+    protected override void RunProceduralGeneration()
     {
-        
+        tileMapVisualizer.Clear();
+        HashSet<Vector2Int> floorPositions = RunRandomWalk(randomWalkParameters);
+        tileMapVisualizer.PaintFloorTiles(floorPositions);
+        WallGenerator.CreateWalls(floorPositions, tileMapVisualizer);
     }
 
-    // Update is called once per frame
-    void Update()
+    protected HashSet<Vector2Int> RunRandomWalk(SimpleRandomWalkSO parameters)
     {
-        
+        var curentPos = startPos;
+        HashSet<Vector2Int> floorPositions = new HashSet<Vector2Int>();
+
+        for(int i = 0; i < parameters.iterations; i++)
+        {
+            var path = ProceduralGenerationAlgorithms.SimpleRandomWalk(curentPos, parameters.walkLength);
+            floorPositions.UnionWith(path);
+            if (parameters.startRandomlyEachIteration)
+            {
+                curentPos = floorPositions.ElementAt(Random.Range(0, floorPositions.Count));
+
+            }
+        }
+
+        return floorPositions;
     }
 }

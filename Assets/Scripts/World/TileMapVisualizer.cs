@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using UnityEngine.UIElements;
+using Random = UnityEngine.Random;
 
 public class TileMapVisualizer : MonoBehaviour
 {
@@ -11,13 +13,21 @@ public class TileMapVisualizer : MonoBehaviour
     [SerializeField]
     public Tilemap floorMap, wallMap;
     [SerializeField]
-    private TileBase floorTile, wallTop, wallSideRight, wallSiderLeft, wallBottom, wallFull,
+    private TileBase[] abnormalFloorTiles;
+    [SerializeField]
+    private TileBase wallBottomHalf, floorTrapTile, normalFloorTile, wallTop, wallSideRight, wallSiderLeft, wallBottom, wallFull,
         wallInnerCornerDownLeft, wallInnerCornerDownRight,
         wallDiagonalCornerDownRight, wallDiagonalCornerDownLeft, wallDiagonalCornerUpRight, wallDiagonalCornerUpLeft;
+    [SerializeField, Range(0, 1)]
+    private float percentAbnormal = 0.1f;
+    [SerializeField, Range(0, 1)]
+    private float percentTraps = 0.01f;
+
+    HashSet<Vector2Int> potentialWallBottoms = new HashSet<Vector2Int>();
 
     private void Awake()
     {
-        if(instance == null)
+        if (instance == null)
         {
             instance = this;
         }
@@ -25,15 +35,27 @@ public class TileMapVisualizer : MonoBehaviour
 
     public void PaintFloorTiles(IEnumerable<Vector2Int> floorPositions)
     {
-
-        PaintTiles(floorPositions, floorMap, floorTile);
+        PaintTiles(floorPositions, floorMap, normalFloorTile);
+        
     }
 
     private void PaintTiles(IEnumerable<Vector2Int> positions, Tilemap map, TileBase tile)
     {
-        foreach(var pos in positions)
+        foreach (var pos in positions)
         {
-            PaintSingleTile(map, tile, pos);
+            float roll = Random.Range(0f, 1f);
+            if(roll < percentAbnormal)
+            {
+                PaintSingleTile(map, abnormalFloorTiles[Random.Range(0,abnormalFloorTiles.Length-1)], pos);
+            }
+            else if(roll < percentAbnormal + percentTraps)
+            {
+                PaintSingleTile(map, floorTrapTile, pos);
+            }
+            else
+            {
+                PaintSingleTile(map, tile, pos);
+            }
         }
     }
 
@@ -47,7 +69,7 @@ public class TileMapVisualizer : MonoBehaviour
     {
         floorMap.ClearAllTiles();
         wallMap.ClearAllTiles();
-        
+
     }
 
     internal void PaintSingleBasicWall(Vector2Int position, string binaryType)
@@ -77,6 +99,8 @@ public class TileMapVisualizer : MonoBehaviour
 
         if (tile != null)
             PaintSingleTile(wallMap, tile, position);
+        if(tile == wallBottom)
+            potentialWallBottoms.Add(new Vector2Int(position.x, position.y-1));
     }
 
     internal void PaintSingleCornerWall(Vector2Int position, string binaryType)
@@ -119,5 +143,18 @@ public class TileMapVisualizer : MonoBehaviour
 
         if (tile != null)
             PaintSingleTile(wallMap, tile, position);
+        if (tile == wallDiagonalCornerDownLeft || wallDiagonalCornerDownRight)
+            potentialWallBottoms.Add(new Vector2Int(position.x, position.y - 1));
+    }
+
+    public void GenerateWallBottoms()
+    {
+        foreach(Vector2Int pos in potentialWallBottoms)
+        {
+            if (!wallMap.HasTile((Vector3Int)pos) && !floorMap.HasTile((Vector3Int)pos))
+            {
+                PaintSingleTile(wallMap, wallBottomHalf, pos);
+            }
+        }
     }
 }

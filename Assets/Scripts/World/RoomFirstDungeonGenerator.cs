@@ -74,8 +74,8 @@ I'll get back to work in this procedural generation soon, in a game I'm developi
             var roomBounds = roomsList[i];
             var roomCenter = new Vector2Int(Mathf.RoundToInt(roomBounds.center.x), Mathf.RoundToInt(roomBounds.center.y));
             var roomFloor = RunRandomWalk(randomWalkParameters, roomCenter);
-            Room room = new Room(roomCenter, roomFloor);
-            dungeonData.Rooms.Add(room);
+            /*Room room = new Room(roomCenter, roomFloor);
+            dungeonData.Rooms.Add(room);*/
             foreach (var position in roomFloor)
             {
                 if (position.x >= (roomBounds.xMin + offset) && position.x <= (roomBounds.xMax - offset) && 

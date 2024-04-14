@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour, Controls.IPlayerActions
     public float speed;
     private Vector2 direction;
     private Animator animator;
-    private SpriteRenderer renderer;
+    private new SpriteRenderer renderer;
     public GameObject weaponObject;
     private Controls controls;
     [SerializeField] private bool moveKeyHeld;
@@ -28,7 +28,7 @@ public class PlayerMovement : MonoBehaviour, Controls.IPlayerActions
         TakeInput();
         if(moveKeyHeld)
         {
-            //SetDirection();
+            SetDirection();
             Move();
         }
     }
@@ -105,7 +105,7 @@ public class PlayerMovement : MonoBehaviour, Controls.IPlayerActions
         return true;
     }
 
-    private async void TakeInput()
+    private void TakeInput()
     {
 
         if (Input.GetKey(KeyCode.Space))

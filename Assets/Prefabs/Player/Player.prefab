@@ -33,7 +33,7 @@ Transform:
   m_GameObject: {fileID: 757055874454528449}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b845388173941f14d8ebcc0618a61817, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
+  speed: 0.01
   weaponObject: {fileID: 3292768765291177197, guid: 14fa218f9786d6e45bcc4ba04a681e23, type: 3}
   moveKeyHeld: 0
 --- !u!61 &6549130772947409607
@@ -326,7 +326,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 0
-  maxHealth: 0
+  maxHealth: 100
   audioClip: {fileID: 0}
   hurtSounds:
   - {fileID: 8300000, guid: 7471f96cd8b89a941a56fadcc8b98049, type: 3}

@@ -99,8 +99,8 @@ public class PlayerMovement : MonoBehaviour, Controls.IPlayerActions
 
     private bool IsValidPosition(Vector3 position)
     {
-        Vector3Int gridPos = TileMapVisualizer.wallMap.WorldToCell(position);
-        if (TileMapVisualizer.wallMap.HasTile(gridPos) || position == transform.position) { return false; }
+        Vector3Int gridPos = TileMapVisualizer.instance.wallMap.WorldToCell(position);
+        if (TileMapVisualizer.instance.wallMap.HasTile(gridPos) || position == transform.position) { return false; }
 
         return true;
     }

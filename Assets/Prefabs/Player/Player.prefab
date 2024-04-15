@@ -169,7 +169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b845388173941f14d8ebcc0618a61817, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.01
+  speed: 0.1
   weaponObject: {fileID: 3292768765291177197, guid: 14fa218f9786d6e45bcc4ba04a681e23, type: 3}
   moveKeyHeld: 0
 --- !u!61 &6549130772947409607

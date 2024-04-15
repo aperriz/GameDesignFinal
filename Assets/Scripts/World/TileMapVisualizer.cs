@@ -69,7 +69,7 @@ public class TileMapVisualizer : MonoBehaviour
     {
         floorMap.ClearAllTiles();
         wallMap.ClearAllTiles();
-
+        potentialWallBottoms.Clear();
     }
 
     internal void PaintSingleBasicWall(Vector2Int position, string binaryType)

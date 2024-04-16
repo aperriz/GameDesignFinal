@@ -39,9 +39,9 @@ public class WeaponControlScript : MonoBehaviour
        Debug.Log(collision.name);
        if(collision.name != "Player")
         {
-            if (collision.GetComponent<EnemyRecieveDamage>() != null)
+            if (collision.GetComponent<Enemy>() != null)
             {
-                collision.GetComponent<EnemyRecieveDamage>().DealDamage(damage);
+                collision.GetComponent<Enemy>().DealDamage(damage);
             }
         }
     }

@@ -64,6 +64,13 @@ public class EnemyRecieveDamage : MonoBehaviour
     {
         GetComponent<BoxCollider2D>().enabled = false;
         //Destroy(gameObject);
+        foreach(var comp in GetComponents<Component>())
+        {
+            if(comp != GetComponent<Animator>())
+            {
+                Destroy(comp);
+            }
+        }
     }
 
     protected void HurtDone()

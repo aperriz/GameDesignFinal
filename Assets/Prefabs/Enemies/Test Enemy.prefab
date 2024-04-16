@@ -170,12 +170,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b74122d01fb9b84cbf24092087010c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isSentient: 1
+  damage: 0
+  cooldown: 2
   health: 0
   maxHealth: 10
   audioClip: {fileID: 8300000, guid: 74f7361a520c94e41913ca2ccf0189da, type: 3}
-  speed: 6
+  speed: 4
   xForce: 2
   yForce: 2
+  aggressionRange: 20
 --- !u!82 &8793821322057552339
 AudioSource:
   m_ObjectHideFlags: 0
@@ -315,7 +319,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}

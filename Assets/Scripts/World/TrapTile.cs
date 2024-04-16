@@ -37,7 +37,7 @@ public class TrapTile : MonoBehaviour
             animator.SetBool("Activated", true);
             player.DealDamage(damage);
         }
-        else if (!activated && collision.TryGetComponent<EnemyRecieveDamage>(out EnemyRecieveDamage enemy))
+        else if (!activated && collision.TryGetComponent<Enemy>(out Enemy enemy))
         {
             activated = true;
             animator.SetBool("Activated", true);

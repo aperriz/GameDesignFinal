@@ -1,6 +1,8 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Data;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 using UnityEngine.UIElements;
@@ -22,6 +24,9 @@ public class TileMapVisualizer : MonoBehaviour
     private float percentAbnormal = 0.1f;
     [SerializeField, Range(0, 1)]
     private float percentTraps = 0.01f;
+    HashSet<Vector2Int> trapPositions = new HashSet<Vector2Int>();
+    [SerializeField]
+    GameObject trapTile;
 
     HashSet<Vector2Int> potentialWallBottoms = new HashSet<Vector2Int>();
 
@@ -36,7 +41,7 @@ public class TileMapVisualizer : MonoBehaviour
     public void PaintFloorTiles(IEnumerable<Vector2Int> floorPositions)
     {
         PaintTiles(floorPositions, floorMap, normalFloorTile);
-        
+        PlaceTraps();
     }
 
     private void PaintTiles(IEnumerable<Vector2Int> positions, Tilemap map, TileBase tile)
@@ -51,11 +56,21 @@ public class TileMapVisualizer : MonoBehaviour
             else if(roll < percentAbnormal + percentTraps)
             {
                 PaintSingleTile(map, floorTrapTile, pos);
+                trapPositions.Add(pos);
             }
             else
             {
                 PaintSingleTile(map, tile, pos);
             }
+        }
+    }
+
+    void PlaceTraps()
+    {
+        Vector2 centerOfTile = new Vector2(0.5f, 0.5f);
+        foreach(var pos in trapPositions)
+        {
+            Instantiate(trapTile, (Vector3)((Vector2)pos+centerOfTile), Quaternion.identity, GameObject.Find("Traps").transform);
         }
     }
 
@@ -70,6 +85,13 @@ public class TileMapVisualizer : MonoBehaviour
         floorMap.ClearAllTiles();
         wallMap.ClearAllTiles();
         potentialWallBottoms.Clear();
+        trapPositions.Clear();
+
+        GameObject traps = GameObject.Find("Traps");
+        for(int i = traps.transform.childCount -1; i > -1 ; i--)
+        {
+            DestroyImmediate(traps.transform.GetChild(i).gameObject);
+        }
     }
 
     internal void PaintSingleBasicWall(Vector2Int position, string binaryType)

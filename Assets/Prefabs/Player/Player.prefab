@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 6415734696162501927}
   - component: {fileID: 6134845929765911603}
   - component: {fileID: 8167021550393851769}
+  - component: {fileID: 768572271040673927}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -34,7 +35,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
-  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_LocalScale: {x: 4, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -144,7 +145,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.035}
+  m_Offset: {x: -0.0032730289, y: -0.034999996}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -155,7 +156,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.1875, y: 0.15}
+  m_Size: {x: 0.15477332, y: 0.15}
   m_EdgeRadius: 0
 --- !u!114 &4076241709601034090
 MonoBehaviour:
@@ -169,9 +170,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b845388173941f14d8ebcc0618a61817, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.1
   weaponObject: {fileID: 3292768765291177197, guid: 14fa218f9786d6e45bcc4ba04a681e23, type: 3}
-  moveKeyHeld: 0
+  movement: {fileID: -1827858095696062930, guid: 9138d07d90b775e4a97e6882f66da286, type: 3}
+  attack: {fileID: -4383019319160373859, guid: 9138d07d90b775e4a97e6882f66da286, type: 3}
+  escape: {fileID: 1588971694068661869, guid: 9138d07d90b775e4a97e6882f66da286, type: 3}
+  speed: 0.1
 --- !u!61 &6549130772947409607
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -204,7 +207,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.0032730289, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -215,7 +218,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.1875, y: 0.21875}
+  m_Size: {x: 0.15477332, y: 0.21875}
   m_EdgeRadius: 0
 --- !u!82 &6415734696162501927
 AudioSource:
@@ -341,7 +344,7 @@ Rigidbody2D:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 757055874454528449}
   m_BodyType: 0
-  m_Simulated: 0
+  m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 0.0001
@@ -358,4 +361,20 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
+--- !u!114 &768572271040673927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 757055874454528449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7387d0955a90dd439da85af8dba6f8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxSpeed: 8
+  acceleration: 10
+  decelleration: 20
+  currentSpeed: 0

@@ -45,7 +45,7 @@ public class CorridorFirstDungeonGenerator : SimpleRandomWalkGenerator
         WallGenerator.CreateWalls(floorPos, tileMapVisualizer);
     }
 
-    private List<Vector2Int> IncreaseCorridorBurhs3by3(List<Vector2Int> corridor)
+    private List<Vector2Int> IncreaseCorridorBursh3by3(List<Vector2Int> corridor)
     {
         List<Vector2Int> newCorridor = new List<Vector2Int>();
         for(int i = 1;i < corridor.Count; i++)

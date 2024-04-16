@@ -32,13 +32,6 @@ public class EnemyRecieveDamage : MonoBehaviour
     {
         if (!animator.GetBool("Invincible"))
         {
-            xForce = -xForce;
-            yForce = -yForce;
-
-            if(gameObject.GetComponent<Rigidbody2D>().totalForce.x >= 0 && gameObject.GetComponent<Rigidbody2D>().totalForce.y >= 0)
-            {
-                gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(xForce, yForce), ForceMode2D.Impulse);
-            }
             
             audioSource.Play();
             health -= damage;

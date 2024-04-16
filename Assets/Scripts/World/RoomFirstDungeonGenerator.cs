@@ -1,7 +1,9 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UIElements;
 using Random = UnityEngine.Random;
 
@@ -9,9 +11,7 @@ public class RoomFirstDungeonGenerator : SimpleRandomWalkGenerator
 {
 
     /*
-     * About the InputActionReference, it's just for generate the dungeon on pressing a button/key/input. If you won't use it, 
-     * you can call the dungeon generation function inside of the Start() method, works fine.
-
+     
 About the merge with the procedural dungeon algorithm, you can make it by using the same thinking of the basic dungeon of this tutorial. 
     On this tutorial, he makes every room and place a reference to it in a list, and you can pick references in the same way on the Corridor First Algorithm for example. 
     As you generate the rooms, you place them on a list. After the generation, you shot the events for populating them. I tried it with simple square rooms, but random walk 
@@ -30,11 +30,15 @@ I'll get back to work in this procedural generation soon, in a game I'm developi
     [SerializeField]
     private bool randomWalkRooms = false;
 
-    DungeonData dungeonData = new DungeonData();
+    DungeonData dungeonData;
 
+    [SerializeField]
+    UnityEvent OnDoneGenerating;
 
     protected override void RunProceduralGeneration()
     {
+        dungeonData = gameObject.GetComponent<DungeonData>();
+        dungeonData.roomCount = 0;
         CreateRooms();
     }
 
@@ -63,6 +67,8 @@ I'll get back to work in this procedural generation soon, in a game I'm developi
 
         tileMapVisualizer.PaintFloorTiles(floor);
         WallGenerator.CreateWalls(floor, tileMapVisualizer);
+
+        OnDoneGenerating?.Invoke();
     }
 
     private HashSet<Vector2Int> CreateRoomsRandomly(List<BoundsInt> roomsList)
@@ -71,11 +77,13 @@ I'll get back to work in this procedural generation soon, in a game I'm developi
         HashSet<Vector2Int> floor = new HashSet<Vector2Int>();
         for (int i = 0; i < roomsList.Count; i++)
         {
-            var roomBounds = roomsList[i];
-            var roomCenter = new Vector2Int(Mathf.RoundToInt(roomBounds.center.x), Mathf.RoundToInt(roomBounds.center.y));
-            var roomFloor = RunRandomWalk(randomWalkParameters, roomCenter);
-            /*Room room = new Room(roomCenter, roomFloor);
-            dungeonData.Rooms.Add(room);*/
+            BoundsInt roomBounds = roomsList[i];
+            Vector2Int roomCenter = new Vector2Int(Mathf.RoundToInt(roomBounds.center.x), Mathf.RoundToInt(roomBounds.center.y));
+            HashSet<Vector2Int> roomFloor = RunRandomWalk(randomWalkParameters, roomCenter);
+
+            dungeonData.Rooms.Add(new Room(roomCenter, roomFloor));
+            dungeonData.roomCount++;
+
             foreach (var position in roomFloor)
             {
                 if (position.x >= (roomBounds.xMin + offset) && position.x <= (roomBounds.xMax - offset) && 
@@ -134,7 +142,24 @@ I'll get back to work in this procedural generation soon, in a game I'm developi
             }
             corridor.Add(position);
         }
-        return corridor;
+        dungeonData.Path.UnionWith(IncreaseCorridorBrush3by3(corridor));
+        return IncreaseCorridorBrush3by3(corridor);
+    }
+
+    private HashSet<Vector2Int> IncreaseCorridorBrush3by3(HashSet<Vector2Int> corridor)
+    {
+        HashSet<Vector2Int> newCorridor = new HashSet<Vector2Int>();
+        for (int i = 1; i < corridor.Count; i++)
+        {
+            for (int x = -1; x < 2; x++)
+            {
+                for (int y = -1; y < 2; y++)
+                {
+                    newCorridor.Add(corridor.ElementAt(i-1) + new Vector2Int(x, y));
+                }
+            }
+        }
+        return newCorridor;
     }
 
     private Vector2Int FindClosestPointTo(Vector2Int currentRoomCenter, List<Vector2Int> roomCenters)

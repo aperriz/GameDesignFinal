@@ -67,3 +67,4 @@ MonoBehaviour:
   wallDiagonalCornerUpLeft: {fileID: 11400000, guid: 98951836636590b459b17fae0490c2c3, type: 2}
   percentAbnormal: 0.05
   percentTraps: 0.01
+  trapTile: {fileID: 4738967945740707458, guid: 6a22b5ff977140e47959de687bf20774, type: 3}

@@ -1,13 +1,15 @@
+using Pathfinding;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyRecieveDamage : MonoBehaviour
 {
-    public float health;
-    public float maxHealth;
+    public int health;
+    public int maxHealth;
     protected Animator animator;
     protected AudioSource audioSource;
     public AudioClip audioClip;
@@ -15,10 +17,16 @@ public class EnemyRecieveDamage : MonoBehaviour
     protected float tempSpeed;
     GameObject player;
     [SerializeField]
+    public   int weight = 1;
+    [SerializeField]
     int xForce = 2, yForce = 2;
+    public GameObject healthBar;
+    public Slider healthBarSlider;
+    [SerializeField]
+    public int aggressionRange = 20;
 
     // Start is called before the first frame update
-    void Awake()
+    void Start()
     {
         animator = GetComponent<Animator>();
         health = maxHealth;
@@ -28,11 +36,23 @@ public class EnemyRecieveDamage : MonoBehaviour
         player = GameObject.Find("Player");
     }
 
+    private void Awake()
+    {
+        health = maxHealth;
+
+    }
+
     public void DealDamage(int damage)
     {
+        audioSource = GetComponent<AudioSource>();
+        audioSource.clip = audioClip;
+        healthBarSlider.enabled = true;
+        healthBar.SetActive(true);
+
+        healthBarSlider.value = CalculateHealthPercent();
+
         if (!animator.GetBool("Invincible"))
         {
-            
             audioSource.Play();
             health -= damage;
             animator.SetBool("Hurt", true);
@@ -52,6 +72,7 @@ public class EnemyRecieveDamage : MonoBehaviour
 
     protected void CheckDeath()
     {
+        healthBarSlider.value = CalculateHealthPercent();
         if (health <= 0)
         {
             Debug.Log("Dead");
@@ -66,11 +87,14 @@ public class EnemyRecieveDamage : MonoBehaviour
         //Destroy(gameObject);
         foreach(var comp in GetComponents<Component>())
         {
-            if(comp != GetComponent<Animator>())
+            if(comp != GetComponent<Animator>() && comp != GetComponent<Transform>() && comp != GetComponent<SpriteRenderer>())
             {
                 Destroy(comp);
             }
         }
+        Destroy(healthBar);
+        Destroy(transform.parent.gameObject);
+        Destroy(gameObject);
     }
 
     protected void HurtDone()
@@ -101,5 +125,16 @@ public class EnemyRecieveDamage : MonoBehaviour
     {
         yield return new WaitForSeconds(1);
         speed = tempSpeed;
+    }
+
+    private float CalculateHealthPercent()
+    {
+        return health / maxHealth;
+    }
+
+    private IEnumerator DestroyEnemy()
+    {
+        yield return new WaitForSeconds(5);
+        
     }
 }

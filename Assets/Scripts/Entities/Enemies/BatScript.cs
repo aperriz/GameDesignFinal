@@ -1,26 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Net.Sockets;
+using Unity.VisualScripting;
 using UnityEngine;
 
-public class BatScript : Enemy
+public class BatScript : EnemyRecieveDamage
 {
-    
-    
+    GameObject player;
+
+    private void Awake()
+    {
+        weight = 2;
+        animator = GetComponent<Animator>();
+    }
+
+    private void Start()
+    {
+        player = GameObject.Find("Player");
+
+    }
+
     private void Update()
     {
-        if(Vector2.Distance(transform.position, player.transform.position) <= aggressionRange)
-        {
-            aggroed = true;
-        }
-        else
-        {
-            aggroed = false;
-        }
-
-        if (!animator.GetBool("Dead") && aggroed)
-        {
-            transform.position = Vector3.MoveTowards(transform.position, GameObject.Find("Player").transform.position, Time.deltaTime * speed);
-        }
+        
 
     }
 

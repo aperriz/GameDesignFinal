@@ -5,14 +5,15 @@ TagManager:
   serializedVersion: 2
   tags:
   - TrapTile
+  - Props
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Walls
   - Water
   - UI
-  - 
+  - Player
   - 
   - 
   - 

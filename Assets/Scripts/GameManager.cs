@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
+    public static int level = 0;
 
     [SerializeField] private int entityNum = 0;
     [SerializeField] private List<Entity> entities = new List<Entity>();

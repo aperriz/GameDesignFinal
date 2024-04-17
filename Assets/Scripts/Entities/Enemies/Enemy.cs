@@ -4,11 +4,7 @@ using UnityEngine;
 
 public class Enemy : Entity
 {
-    public int damage;
-    protected float range;
-    protected CircleCollider2D attackCol;
-    protected bool attacking = false;
-    public int cooldown;
+    public int weight = 1;
     public float health;
     public float maxHealth;
     protected Animator animator;
@@ -22,6 +18,13 @@ public class Enemy : Entity
     [SerializeField]
     protected int aggressionRange = 20;
     protected bool aggroed = false;
+    public int damage;
+    protected float range;
+    protected CircleCollider2D attackCol;
+    protected bool attacking = false;
+    public int cooldown;
+
+
 
     void Awake()
     {
@@ -55,7 +58,6 @@ public class Enemy : Entity
     {
         if (!animator.GetBool("Invincible"))
         {
-
             audioSource.Play();
             health -= damage;
             animator.SetBool("Hurt", true);

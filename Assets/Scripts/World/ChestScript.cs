@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class ChestScript : MonoBehaviour
 {
+    [SerializeField]
     BoxCollider2D collider;
     Animator animator;
     AudioSource audio;
@@ -25,6 +26,7 @@ public class ChestScript : MonoBehaviour
             animator.enabled = true;
             audio.clip = audioClip;
             audio.Play();
+            Destroy(collider);
         }
     }
 }

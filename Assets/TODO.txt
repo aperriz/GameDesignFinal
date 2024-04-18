@@ -1,0 +1,7 @@
+TODO List:
+Staff Animation
+Other Weapons
+Items/From chests
+Miniboss rooms
+Merchant system
+Scrolls

@@ -8,8 +8,8 @@ using UnityEngine.UI;
 
 public class EnemyRecieveDamage : MonoBehaviour
 {
-    public int health;
-    public int maxHealth;
+    public float health;
+    public float maxHealth;
     protected Animator animator;
     protected AudioSource audioSource;
     public AudioClip audioClip;
@@ -78,6 +78,9 @@ public class EnemyRecieveDamage : MonoBehaviour
             Debug.Log("Dead");
             animator.SetBool("Dead", true);
             gameObject.GetComponent<BoxCollider2D>().enabled = false;
+            Destroy(transform.parent.GetComponent<AIDestinationSetter>());
+            Destroy(transform.parent.GetComponent<AIPath>());
+
         }
     }
 

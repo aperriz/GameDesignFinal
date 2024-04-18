@@ -78,7 +78,7 @@ public class PlayerMovement : MonoBehaviour
             Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             Vector2 myPos = transform.position;
             Vector2 direction = (mousePos - myPos).normalized;
-            GameObject attackObject = Instantiate(weaponObject, transform.position, Quaternion.identity);
+            GameObject attackObject = Instantiate(weaponObject, transform.position, Quaternion.identity, GameObject.Find("Player").transform);
             attackObject.SetActive(true);
             float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
             Debug.Log(angle);

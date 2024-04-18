@@ -169,6 +169,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   detectionRange: 20
+  destinationSetter: {fileID: 4955421509209471569}
+  healthCheck: {fileID: 1175744126449818033}
 --- !u!1 &6469048552514521590
 GameObject:
   m_ObjectHideFlags: 0

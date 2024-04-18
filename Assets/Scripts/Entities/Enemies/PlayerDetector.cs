@@ -7,6 +7,10 @@ public class PlayerDetector : MonoBehaviour
 {
     [SerializeField]
     int detectionRange = 10;
+    [SerializeField]
+    AIDestinationSetter destinationSetter;
+    [SerializeField]
+    EnemyRecieveDamage healthCheck;
     GameObject player;
 
     private void Awake()
@@ -16,32 +20,38 @@ public class PlayerDetector : MonoBehaviour
 
     private void FixedUpdate()
     {
-        RaycastHit2D ray = Physics2D.Raycast(transform.position, player.transform.position - transform.position, detectionRange, LayerMask.GetMask("Player", "Walls"));
-        if(ray.collider != null)
+        if(healthCheck != null)
         {
-            Debug.Log(ray.collider.name);
-            if (ray.collider.CompareTag(player.tag))
+            if (!(healthCheck.health <= 0))
             {
-                if (!GetComponent<AIDestinationSetter>().enabled)
+                RaycastHit2D ray = Physics2D.Raycast(transform.position, player.transform.position - transform.position, detectionRange, LayerMask.GetMask("Player", "Walls"));
+                if (ray.collider != null)
                 {
-                    GetComponent<AIDestinationSetter>().enabled = true;
-                    GetComponent<AIDestinationSetter>().target = player.transform;
+                    Debug.Log(ray.collider.name);
+                    if (ray.collider.CompareTag(player.tag))
+                    {
+                        if (!destinationSetter.enabled)
+                        {
+                            destinationSetter.enabled = true;
+                            destinationSetter.target = player.transform;
+                        }
+
+                        Debug.Log("Detected player");
+                        Debug.DrawRay(transform.position, player.transform.position - transform.position, Color.green);
+                    }
+                    else
+                    {
+                        Debug.DrawRay(transform.position, player.transform.position - transform.position, Color.red);
+                    }
+
+                }
+                else
+                {
+                    Debug.DrawRay(transform.position, player.transform.position - transform.position, Color.red);
                 }
 
-                Debug.Log("Detected player");
-                Debug.DrawRay(transform.position, player.transform.position - transform.position, Color.green);
+
             }
-            else
-            {
-                Debug.DrawRay(transform.position, player.transform.position - transform.position, Color.red);
-            }
-
         }
-        else
-        {
-            Debug.DrawRay(transform.position, player.transform.position - transform.position, Color.red);
-        }
-
-
     }
 }

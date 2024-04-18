@@ -46,8 +46,8 @@ public class EnemyDealDamage : MonoBehaviour
 
     protected void Attack()
     {
-        Debug.Log("Attacking");
-        if (!animator.GetBool("Attacking") && canAttack)
+        //Debug.Log("Attacking");
+        if (!animator.GetBool("Attacking") && canAttack && Vector2.Distance(transform.position, player.transform.position) <= range)
         {
             if ((transform.position - player.transform.position).x < 0)
             {
@@ -55,7 +55,7 @@ public class EnemyDealDamage : MonoBehaviour
             }
             else
             {
-                renderer.flipX= true;
+                renderer.flipX = true;
             }
 
             canAttack = false;
@@ -82,7 +82,7 @@ public class EnemyDealDamage : MonoBehaviour
     {
         yield return new WaitForSeconds(cooldown + animator.GetCurrentAnimatorClipInfo(0).Length);
         canAttack = true;
-        if (Vector2.Distance(transform.position, player.transform.position) <= (float)range || range == 0)
+        if (Vector2.Distance(transform.position, player.transform.position) <= range || range == 0)
         {
             Debug.Log("I want to attack!");
             Attack();

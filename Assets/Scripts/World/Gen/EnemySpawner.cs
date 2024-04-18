@@ -115,7 +115,7 @@ public class AgentPlacer : MonoBehaviour
             if (spawnableEnemies.Count > 0)
             {
                 Debug.Log("Spawning enemy");
-                GameObject enemy = Instantiate(enemyPrefabs[UnityEngine.Random.Range(0, enemyPrefabs.Count - 1)]);
+                GameObject enemy = Instantiate(enemyPrefabs[UnityEngine.Random.Range(0, enemyPrefabs.Count)]);
                 int enemyWeight = enemy.GetComponentInChildren<EnemyRecieveDamage>().weight;
                 roomWeight = roomWeight + enemyWeight;
                 enemy.transform.localPosition = (Vector2)room.PositionsAccessibleFromPath[k] + Vector2.one * 0.5f;

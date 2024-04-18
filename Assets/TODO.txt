@@ -2,6 +2,7 @@ TODO List:
 //Other Weapons
 More Enemies
 Miniboss rooms
-Items/From chests
+Items/From chests - Pickup system
 Scrolls
 Merchant system
+Boss

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Chest
   m_EditorClassIdentifier: 
   PropSprite: {fileID: -849956860, guid: e5a39f0e07fb5c14a933d0e20f808198, type: 3}
-  PropSize: {x: 1, y: 2}
+  PropSize: {x: 1, y: 1}
   Corner: 1
   NearWallUP: 0
   NearWallDown: 0

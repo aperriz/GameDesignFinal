@@ -3,6 +3,7 @@ TODO List:
 More Enemies
 Miniboss rooms
 Items/From chests - Pickup system
+Increased power weapons from chests
 Scrolls
-Merchant system
+(?)Merchant system
 Boss

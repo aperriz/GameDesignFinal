@@ -7,20 +7,23 @@ public class PlayerRecieveDamage : MonoBehaviour
 {
     public float health;
     public float maxHealth;
+    [SerializeField]
     private Animator animator;
+    [SerializeField]
     private AudioSource audioSource;
     public AudioClip audioClip;
     public AudioClip[] hurtSounds;
+    [SerializeField]
     public GameObject healthBar;
     public Slider healthBarSlider;
     public Text healthText;
+    [SerializeField]
+    private PlayerExtraStats playerExtraStats;
 
     // Start is called before the first frame update
     void Awake()
     {
-        animator = GetComponent<Animator>();
         health = maxHealth;
-        audioSource = GetComponent<AudioSource>();
         audioSource.clip = audioClip;
     }
 

@@ -16,6 +16,7 @@ public class PlayerDetector : MonoBehaviour
     private void Awake()
     {
         player = GameObject.Find("Player");
+        destinationSetter.target = player.transform;
     }
 
     private void FixedUpdate()
@@ -27,7 +28,7 @@ public class PlayerDetector : MonoBehaviour
                 RaycastHit2D ray = Physics2D.Raycast(transform.position, player.transform.position - transform.position, detectionRange, LayerMask.GetMask("Player", "Walls"));
                 if (ray.collider != null)
                 {
-                    Debug.Log(ray.collider.name);
+                    //Debug.Log(ray.collider.name);
                     if (ray.collider.CompareTag(player.tag))
                     {
                         if (!destinationSetter.enabled)
@@ -36,7 +37,7 @@ public class PlayerDetector : MonoBehaviour
                             destinationSetter.target = player.transform;
                         }
 
-                        Debug.Log("Detected player");
+                        //Debug.Log("Detected player");
                         Debug.DrawRay(transform.position, player.transform.position - transform.position, Color.green);
                     }
                     else

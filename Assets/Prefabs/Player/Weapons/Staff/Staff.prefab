@@ -96,7 +96,7 @@ Animator:
   m_GameObject: {fileID: 3134276167655196965}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6cab9d3040397cb4e81094f750051623, type: 2}
+  m_Controller: {fileID: 9100000, guid: 87c9014f16c2d0545ad1d2f5fae8d8da, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -121,4 +121,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectile: {fileID: 3599498815812646551, guid: 5fb3097f289d5684c83e11e2ebe0dea0, type: 3}
   speed: 10
-  attackCooldown: 1
+  attackCooldown: 2

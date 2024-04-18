@@ -1,7 +1,7 @@
 TODO List:
-Staff Animation
-Other Weapons
-Items/From chests
+//Other Weapons
+More Enemies
 Miniboss rooms
-Merchant system
+Items/From chests
 Scrolls
+Merchant system

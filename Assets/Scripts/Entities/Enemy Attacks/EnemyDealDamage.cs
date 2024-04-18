@@ -1,33 +1,43 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class EnemyDealDamage : MonoBehaviour
 {
     public int damage;
-    protected float range;
+    [SerializeField]
+    protected float range = 0.98f;
     protected CircleCollider2D attackCol;
     protected bool attacking = false;
     public int cooldown;
+    [SerializeField]
+    private Animator animator;
+    GameObject player;
+    bool canAttack = true;
+    [SerializeField]
+    SpriteRenderer renderer;
 
     private void Start()
     {
         attackCol = GetComponent<CircleCollider2D>();
         attackCol.radius = range;
+        player = GameObject.Find("Player");
     }
 
-    protected void Update()
+    protected void FixedUpdate()
     {
+        //Debug.Log(Vector2.Distance(transform.position, player.transform.position));
         Vector3 myPos = transform.position;
-        Vector3 playerPos = GameObject.Find("Player").transform.position;
+        Vector3 playerPos = player.transform.position;
 
         if (Vector2.Distance(myPos, playerPos) <= range)
         {
             Attack();
         }
 
-        if (gameObject.GetComponent<Animator>().GetBool("Dead"))
+        if (animator.GetBool("Dead"))
         {
             Destroy(this);
         }
@@ -36,32 +46,53 @@ public class EnemyDealDamage : MonoBehaviour
 
     protected void Attack()
     {
-        if (!GetComponent<Animator>().GetBool("Attacking"))
+        Debug.Log("Attacking");
+        if (!animator.GetBool("Attacking") && canAttack)
         {
-            GetComponent<Animator>().SetBool("Attacking", true);
-            GameObject.Find("Player").GetComponent<PlayerRecieveDamage>().DealDamage(damage);
+            if ((transform.position - player.transform.position).x < 0)
+            {
+                renderer.flipX = false;
+            }
+            else
+            {
+                renderer.flipX= true;
+            }
+
+            canAttack = false;
+            animator.SetBool("Attacking", true);
+            player.GetComponent<PlayerRecieveDamage>().DealDamage(damage);
             StartCoroutine(AttackCooldown());
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.TryGetComponent<PlayerRecieveDamage>(out PlayerRecieveDamage player))
+        if (collision.TryGetComponent<PlayerRecieveDamage>(out PlayerRecieveDamage player) && canAttack)
         {
             Attack();
         }
     }
 
+    protected void AttackDone()
+    {
+        animator.SetBool("Attacking", false);
+    }
+
     protected IEnumerator AttackCooldown()
     {
-        yield return new WaitForSeconds(cooldown + gameObject.GetComponent<Animator>().GetCurrentAnimatorClipInfo(0).Length);
-        if (Vector2.Distance(transform.position, GameObject.Find("Player").transform.position) <= range)
+        yield return new WaitForSeconds(cooldown + animator.GetCurrentAnimatorClipInfo(0).Length);
+        canAttack = true;
+        if (Vector2.Distance(transform.position, player.transform.position) <= (float)range || range == 0)
         {
+            Debug.Log("I want to attack!");
             Attack();
         }
         else
         {
-            GetComponent<Animator>().SetBool("Attacking", false);
+            Debug.Log(range);
+            Debug.Log(Vector2.Distance(transform.position, player.transform.position));
+            Debug.Log("Out of range");
+            animator.SetBool("Attacking", false);
         }
     }
 }

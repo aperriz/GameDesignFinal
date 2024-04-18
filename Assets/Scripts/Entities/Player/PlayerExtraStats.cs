@@ -6,6 +6,9 @@ using UnityEngine;
 public class PlayerExtraStats : MonoBehaviour
 {
     int gold = 0;
+    public int defense = 0;
+
+    [SerializeField]
     public TextMeshProUGUI goldText;
 
     public void UpdateGold(int change)

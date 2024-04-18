@@ -10,6 +10,7 @@ public class EnemyRecieveDamage : MonoBehaviour
 {
     public float health;
     public float maxHealth;
+    [SerializeField]
     protected Animator animator;
     protected AudioSource audioSource;
     public AudioClip audioClip;
@@ -28,7 +29,6 @@ public class EnemyRecieveDamage : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        animator = GetComponent<Animator>();
         health = maxHealth;
         audioSource = GetComponent<AudioSource>();
         audioSource.clip = audioClip;
@@ -90,7 +90,7 @@ public class EnemyRecieveDamage : MonoBehaviour
         //Destroy(gameObject);
         foreach(var comp in GetComponents<Component>())
         {
-            if(comp != GetComponent<Animator>() && comp != GetComponent<Transform>() && comp != GetComponent<SpriteRenderer>())
+            if(comp != animator && comp != GetComponent<Transform>() && comp != GetComponent<SpriteRenderer>())
             {
                 Destroy(comp);
             }
@@ -107,27 +107,9 @@ public class EnemyRecieveDamage : MonoBehaviour
         CheckDeath();
 
     }
-
-    protected void AttackDone()
-    {
-        animator.SetBool("Attacking", false);
-        StartCoroutine(FreezeAttack());
-    }
-
     protected void OnHitBecomeInvicible()
     {
         animator.SetBool("Invincible", true);
-    }
-
-    protected void ImmobileOnAttack()
-    {
-        speed = 0;
-    }
-
-    protected IEnumerator FreezeAttack()
-    {
-        yield return new WaitForSeconds(1);
-        speed = tempSpeed;
     }
 
     private float CalculateHealthPercent()

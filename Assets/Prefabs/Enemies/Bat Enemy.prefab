@@ -184,7 +184,6 @@ GameObject:
   - component: {fileID: 2530605527632509977}
   - component: {fileID: 8952744936274213657}
   - component: {fileID: 3687838085273905003}
-  - component: {fileID: 1382401160978807006}
   - component: {fileID: 4631290115553840641}
   - component: {fileID: 2675326400375057632}
   - component: {fileID: 2987647706376852193}
@@ -427,20 +426,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1382401160978807006
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6469048552514521590}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c66bd681ded222f42996a0cde6d74d55, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 0
-  cooldown: 0
 --- !u!58 &4631290115553840641
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -475,7 +460,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.6
+  m_Radius: 0.26
 --- !u!50 &2675326400375057632
 Rigidbody2D:
   serializedVersion: 4
@@ -515,8 +500,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8b01abef45d10043a160fbb1b2bcffe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 0
-  cooldown: 5
+  damage: 4
+  range: 0
+  cooldown: 1
+  animator: {fileID: 7902957196163857167}
+  renderer: {fileID: 2530605527632509977}
 --- !u!114 &3185280781845206687
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -552,6 +540,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 10
   maxHealth: 10
+  animator: {fileID: 7902957196163857167}
   audioClip: {fileID: 8300000, guid: 74f7361a520c94e41913ca2ccf0189da, type: 3}
   speed: 0
   weight: 1

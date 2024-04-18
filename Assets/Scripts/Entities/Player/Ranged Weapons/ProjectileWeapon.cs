@@ -2,18 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bow : MonoBehaviour
+public class ProjectileWeapon : MonoBehaviour
 {
     [SerializeField]
     GameObject projectile;
     [SerializeField]
     int speed = 10;
-    private Vector2 direction;
-    private Animator animator;
-    private SpriteRenderer renderer;
+    protected Vector2 direction;
+    protected Animator animator;
+    protected SpriteRenderer renderer;
     [SerializeField]
     float attackCooldown = 0.5f;
-    private void Update()
+    protected void Update()
     {
         if (enabled)
         {
@@ -27,7 +27,7 @@ public class Bow : MonoBehaviour
         StartCoroutine(AttackCooldown());
     }
 
-    private void Start()
+    protected void Start()
     {
         animator = GetComponent<Animator>();
         renderer = GetComponent<SpriteRenderer>();
@@ -43,7 +43,7 @@ public class Bow : MonoBehaviour
         Instantiate(projectile, transform.position, transform.rotation);
     }
 
-    private IEnumerator AttackCooldown()
+    protected IEnumerator AttackCooldown()
     {
         yield return new WaitForSeconds(attackCooldown);
         GameObject.Find("Player").GetComponent<Animator>().SetBool("Attacking", false);

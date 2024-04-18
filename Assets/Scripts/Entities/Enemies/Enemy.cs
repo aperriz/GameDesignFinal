@@ -7,6 +7,7 @@ public class Enemy : Entity
     public int weight = 1;
     public float health;
     public float maxHealth;
+    [SerializeField]
     protected Animator animator;
     protected AudioSource audioSource;
     public AudioClip audioClip;
@@ -43,7 +44,7 @@ public class Enemy : Entity
         Vector3 myPos = transform.position;
         Vector3 playerPos = GameObject.Find("Player").transform.position;
 
-        if (Vector2.Distance(myPos, playerPos) <= range)
+        if (Vector2.Distance(myPos, playerPos) <= range && !animator.GetBool("Attacking"))
         {
             Attack();
         }
@@ -79,7 +80,7 @@ public class Enemy : Entity
     {
         if (health <= 0)
         {
-            Debug.Log("Dead");
+            //Debug.Log("Dead");
             animator.SetBool("Dead", true);
             gameObject.GetComponent<BoxCollider2D>().enabled = false;
         }
@@ -106,10 +107,10 @@ public class Enemy : Entity
 
     }
 
-    protected void AttackDone()
+    protected void EnemyAttackDone()
     {
-        animator.SetBool("Attacking", false);
-        StartCoroutine(FreezeAttack());
+        GetComponent<Animator>().SetBool("Attacking", false);
+        /*StartCoroutine(AttackCooldown());*/
     }
 
     protected void OnHitBecomeInvicible()
@@ -122,19 +123,14 @@ public class Enemy : Entity
         speed = 0;
     }
 
-    protected IEnumerator FreezeAttack()
-    {
-        yield return new WaitForSeconds(1);
-        speed = tempSpeed;
-    }
-
     protected void Attack()
     {
         if (!GetComponent<Animator>().GetBool("Attacking"))
         {
-            GetComponent<Animator>().SetBool("Attacking", true);
+            Debug.Log("Attacking");
+            animator.SetBool("Attacking", true);
             GameObject.Find("Player").GetComponent<PlayerRecieveDamage>().DealDamage(damage);
-            StartCoroutine(AttackCooldown());
+            //StartCoroutine(AttackCooldown());
         }
     }
 
@@ -148,14 +144,15 @@ public class Enemy : Entity
 
     protected IEnumerator AttackCooldown()
     {
-        yield return new WaitForSeconds(cooldown + gameObject.GetComponent<Animator>().GetCurrentAnimatorClipInfo(0).Length);
-        if (Vector2.Distance(transform.position, GameObject.Find("Player").transform.position) <= range)
+        yield return new WaitForSeconds(cooldown + animator.GetCurrentAnimatorClipInfo(0).Length);
+        if (Vector2.Distance(transform.position, GameObject.Find("Player").transform.position) <= range || Vector2.Distance(transform.position, GameObject.Find("Player").transform.position) == 0)
         {
             Attack();
         }
         else
         {
             GetComponent<Animator>().SetBool("Attacking", false);
+            Debug.Log(Vector2.Distance(transform.position, GameObject.Find("Player").transform.position));
         }
     }
 }

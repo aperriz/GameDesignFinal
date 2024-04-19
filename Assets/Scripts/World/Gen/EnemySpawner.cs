@@ -8,22 +8,26 @@ using static UnityEngine.EventSystems.EventTrigger;
 
 public class AgentPlacer : MonoBehaviour
 {
+    [SerializeField, Range(1, 10)]
+    int level = 1;
+
     [SerializeField]
     private List<GameObject> enemyPrefabs;
 
-    [SerializeField]
-    private int maxWeight = 7;
+    private float maxWeight, minWeight;
 
-    [SerializeField]
-    private int playerRoomIndex, bossRoomIndex, merchantIndex;
-
-    [SerializeField]
-    private List<int> roomEnemiesCount;
+    private int playerRoomIndex = 0, bossRoomIndex;
 
     DungeonData dungeonData;
 
     [SerializeField]
     private bool showGizmo = false;
+
+    [SerializeField]
+    private GameObject[] minibosses;
+
+    [SerializeField]
+    private GameObject playerPrefab;
 
     private void Awake()
     {
@@ -32,6 +36,11 @@ public class AgentPlacer : MonoBehaviour
 
     public void PlaceAgents()
     {
+        maxWeight = 4 + (level * 2);
+        minWeight = 2 + (level * 2);
+
+        Debug.Log("Placing agents");
+        bossRoomIndex = dungeonData.roomCount - 1;
         if (dungeonData == null)
             return;
 
@@ -56,25 +65,24 @@ public class AgentPlacer : MonoBehaviour
             //did we add this room to the roomEnemiesCount list?
 
             //Place the player
-            if (i == playerRoomIndex)
+            if (i == 0)
             {
-                Vector2 newPos = dungeonData.Rooms[i].FloorTiles.ElementAt(UnityEngine.Random.Range(0, dungeonData.Rooms[i].FloorTiles.Count));
-                GameObject player = GameObject.Find("Player");
-                player.transform.localPosition = new Vector3(newPos.x, newPos.y, -10);
+                GameObject player = Instantiate(playerPrefab);
+                player.transform.localPosition = dungeonData.Rooms[i].RoomCenterPos + Vector2.one * 0.5f;
+                player.name = "Player";
                 //Make the camera follow the player
                 dungeonData.PlayerReference = player;
             }
-            else if(i == merchantIndex)
+            else if (i == bossRoomIndex)
             {
-
-            }
-            else if(i == bossRoomIndex)
-            {
-
+                PlaceEnemies(room, "boss");
+                i++;
+                continue;
+                
             }
             else
             {
-                PlaceEnemies(room);
+                //PlaceEnemies(room, "");
             }
         }
     }
@@ -84,17 +92,70 @@ public class AgentPlacer : MonoBehaviour
     /// </summary>
     /// <param name="room"></param>
     /// <param name="enemysCount"></param>
-    private void PlaceEnemies(Room room)
+    private void PlaceEnemies(Room room, string type)
     {
+        int roomMaxWeight = 0;
+
         int k = 0;
         int roomWeight = 0;
-        Debug.Log(enemyPrefabs.Count);
-        while (roomWeight <= maxWeight)
+
+        if (type != "boss" && level % 3 != 0)
         {
-            Debug.Log("Looking to spawn enemy");
+            roomMaxWeight = (int)Math.Round(UnityEngine.Random.Range(minWeight, maxWeight));
+        }
+        else if (level % 3 != 0)
+        {
+            roomMaxWeight = (int)Math.Round(UnityEngine.Random.Range(minWeight * 1.25f, maxWeight * 1.25f));
+        }
+        else if (type == "test")
+        {
+            roomMaxWeight = 1;
+        }
+        else if ((level % 3 == 0) && type == "boss")
+        {
+            roomMaxWeight = 0;
+            switch (level)
+            {
+                case 3:
+                    {
+                        
+                        GameObject enemy = Instantiate(minibosses[0]);
+                        int enemyWeight = enemy.GetComponentInChildren<EnemyRecieveDamage>().weight;
+                        enemy.transform.localPosition = (Vector2)room.PositionsAccessibleFromPath[k] + Vector2.one * 0.5f;
+                        room.EnemiesInTheRoom.Add(enemy);
+                        k++;
+                        break;
+                    }
+                case 6:
+                    {
+                        GameObject enemy = Instantiate(minibosses[1]);
+                        enemy.transform.localPosition = (Vector2)room.PositionsAccessibleFromPath[k] + Vector2.one * 0.5f;
+                        room.EnemiesInTheRoom.Add(enemy);
+                        k++;
+                        break;
+                    }
+                case 9:
+                    {
+                        GameObject enemy = Instantiate(minibosses[2]);
+                        enemy.transform.localPosition = (Vector2)room.PositionsAccessibleFromPath[k] + Vector2.one * 0.5f;
+                        room.EnemiesInTheRoom.Add(enemy);
+                        k++;
+                        break;
+                    }
+                default:
+                    {
+                        break;
+                    }
+            }
+        }
+
+        //Debug.Log(enemyPrefabs.Count);
+        while (roomWeight <= roomMaxWeight)
+        {
+            //Debug.Log("Looking to spawn enemy");
             if (room.PositionsAccessibleFromPath.Count <= k)
             {
-                Debug.Log("Exiting");
+                //Debug.Log("Exiting");
                 return;
             }
 
@@ -102,11 +163,11 @@ public class AgentPlacer : MonoBehaviour
 
             foreach (GameObject enemy in enemyPrefabs)
             {
-                Debug.Log("Looking through enemies");
+                //Debug.Log("Looking through enemies");
                 int enemyWeight = enemy.GetComponentInChildren<EnemyRecieveDamage>().weight;
-                if (enemyWeight < maxWeight - roomWeight)
+                if (enemyWeight < roomMaxWeight - roomWeight)
                 {
-                    Debug.Log("Found enemy");
+                    //Debug.Log("Found enemy");
                     spawnableEnemies.Add(enemy);
                 }
             }
@@ -114,7 +175,7 @@ public class AgentPlacer : MonoBehaviour
 
             if (spawnableEnemies.Count > 0)
             {
-                Debug.Log("Spawning enemy");
+                //Debug.Log("Spawning enemy");
                 GameObject enemy = Instantiate(enemyPrefabs[UnityEngine.Random.Range(0, enemyPrefabs.Count)]);
                 int enemyWeight = enemy.GetComponentInChildren<EnemyRecieveDamage>().weight;
                 roomWeight = roomWeight + enemyWeight;

@@ -317,7 +317,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.014127418, y: 0.06362515}
+  m_Offset: {x: -0.014126778, y: 0.059292704}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -328,7 +328,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.39234826, y: 0.34725022}
+  m_Size: {x: 0.40390205, y: 0.35591513}
   m_EdgeRadius: 0
 --- !u!82 &3687838085273905003
 AudioSource:
@@ -501,7 +501,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 4
-  range: 0
+  range: 0.26
   cooldown: 1
   animator: {fileID: 7902957196163857167}
   renderer: {fileID: 2530605527632509977}
@@ -549,6 +549,7 @@ MonoBehaviour:
   healthBar: {fileID: 6768167362932608543}
   healthBarSlider: {fileID: 1518206894675585964}
   aggressionRange: 20
+  ai: {fileID: 514473872855227238}
 --- !u!1 &6768167362932608543
 GameObject:
   m_ObjectHideFlags: 0
@@ -674,7 +675,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0.273}
+  m_AnchoredPosition: {x: 0, y: 0.299}
   m_SizeDelta: {x: 967, y: 686}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &4559059911907410025

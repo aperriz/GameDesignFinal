@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6182306215027778245}
   - component: {fileID: 5877758254591555140}
   - component: {fileID: 7292079919332208124}
+  - component: {fileID: 6687162398593804924}
   m_Layer: 0
   m_Name: RoomFirstDungeonGenerator
   m_TagString: Untagged
@@ -49,6 +50,7 @@ MonoBehaviour:
   tileMapVisualizer: {fileID: 0}
   startPos: {x: 0, y: 0}
   randomWalkParameters: {fileID: 11400000, guid: 93db2bb8bb4681043bd759deedc715df, type: 2}
+  floorMap: {fileID: 0}
   minRoomWidth: 10
   minRoomHeight: 10
   dungeonWidth: 100
@@ -58,7 +60,7 @@ MonoBehaviour:
   OnDoneGenerating:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 7292079919332208124}
         m_TargetAssemblyTypeName: RoomDataExtractor, Assembly-CSharp
         m_MethodName: ProcessRooms
         m_Mode: 1
@@ -69,7 +71,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 1
 --- !u!114 &5877758254591555140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -82,7 +84,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f3f0ae5b9408b740a0b36d922160f3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roomCount: 32
+  roomCount: 25
 --- !u!114 &7292079919332208124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -95,19 +97,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 411c46e3e12a3d84a9594c5411030774, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  showGizmo: 1
+  showGizmo: 0
   OnFinishedRoomProcessing:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 0
+        m_TargetAssemblyTypeName: PropPlacementManager, Assembly-CSharp
+        m_MethodName: ProcessRooms
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 6182306215027778245}
+        m_TargetAssemblyTypeName: RoomFirstDungeonGenerator, Assembly-CSharp
+        m_MethodName: RescanRooms
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &6687162398593804924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3033126377543687207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2ea9181217fe1c4e8918af69c8fe1d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -11,7 +11,7 @@ public class EnemyDealDamage : MonoBehaviour
     protected float range = 0.98f;
     protected CircleCollider2D attackCol;
     protected bool attacking = false;
-    public int cooldown;
+    public float cooldown;
     [SerializeField]
     private Animator animator;
     GameObject player;

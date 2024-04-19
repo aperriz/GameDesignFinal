@@ -20,12 +20,6 @@ public class BatScript : EnemyRecieveDamage
 
     }
 
-    private void Update()
-    {
-        
-
-    }
-
     private void MetalOnFleshHit()
     {
         audioSource.Play();

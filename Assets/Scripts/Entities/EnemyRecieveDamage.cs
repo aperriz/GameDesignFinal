@@ -18,13 +18,14 @@ public class EnemyRecieveDamage : MonoBehaviour
     protected float tempSpeed;
     GameObject player;
     [SerializeField]
-    public   int weight = 1;
+    public int weight = 1;
     [SerializeField]
     int xForce = 2, yForce = 2;
     public GameObject healthBar;
     public Slider healthBarSlider;
     [SerializeField]
     public int aggressionRange = 20;
+    public AIPath ai;
 
     // Start is called before the first frame update
     void Start()
@@ -44,15 +45,22 @@ public class EnemyRecieveDamage : MonoBehaviour
 
     public void DealDamage(int damage)
     {
+        if(ai.enabled == false)
+        {
+            ai.enabled = true;
+        }
+
         audioSource = GetComponent<AudioSource>();
         audioSource.clip = audioClip;
         healthBarSlider.enabled = true;
         healthBar.SetActive(true);
+        Debug.Log("Ow");
 
         healthBarSlider.value = CalculateHealthPercent();
 
         if (!animator.GetBool("Invincible"))
         {
+            Debug.Log("Dealing damage");
             audioSource.Play();
             health -= damage;
             animator.SetBool("Hurt", true);
@@ -80,11 +88,11 @@ public class EnemyRecieveDamage : MonoBehaviour
             gameObject.GetComponent<BoxCollider2D>().enabled = false;
             Destroy(transform.parent.GetComponent<AIDestinationSetter>());
             Destroy(transform.parent.GetComponent<AIPath>());
-
+            
         }
     }
 
-    protected void DeadClear()
+    public void DeadClear()
     {
         GetComponent<BoxCollider2D>().enabled = false;
         //Destroy(gameObject);
@@ -114,12 +122,7 @@ public class EnemyRecieveDamage : MonoBehaviour
 
     private float CalculateHealthPercent()
     {
-        return health / maxHealth;
+        return (float)health / (float)maxHealth;
     }
 
-    private IEnumerator DestroyEnemy()
-    {
-        yield return new WaitForSeconds(5);
-        
-    }
 }

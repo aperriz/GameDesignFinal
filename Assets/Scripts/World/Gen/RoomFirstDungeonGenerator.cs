@@ -21,17 +21,26 @@ public class RoomFirstDungeonGenerator : SimpleRandomWalkGenerator
     private int offset = 1;
     [SerializeField]
     private bool randomWalkRooms = false;
+    
+    private AstarPath astar;
 
     DungeonData dungeonData;
 
     [SerializeField]
     UnityEvent OnDoneGenerating;
 
+    public void RescanRooms()
+    {
+        astar = GameObject.Find("A*").GetComponent<AstarPath>();
+        astar.Scan();
+    }
+
     protected override void RunProceduralGeneration()
     {
         dungeonData = gameObject.GetComponent<DungeonData>();
         dungeonData.roomCount = 0;
         CreateRooms();
+        Debug.Log("Running proc gen");
     }
 
     private void CreateRooms()

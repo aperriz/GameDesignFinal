@@ -1,9 +1,13 @@
 TODO List:
 //Other Weapons
-More Enemies
-Miniboss rooms
+//More Enemies
+//Miniboss rooms
+//	Balrog
+//	Dog
+//	Angel of Death
 Items/From chests - Pickup system
 Increased power weapons from chests
 Scrolls
-(?)Merchant system
 Boss
+Transfer between levels
+Defense

@@ -37,7 +37,7 @@ public class WeaponControlScript : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
        Debug.Log(collision.name);
-       if(collision.name != "Player")
+       if(collision.name != "Player" && collision.GetType() != typeof(CircleCollider2D))
         {
             if (collision.GetComponent<EnemyRecieveDamage>() != null)
             {

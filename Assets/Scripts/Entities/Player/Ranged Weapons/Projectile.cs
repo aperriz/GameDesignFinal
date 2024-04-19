@@ -1,6 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class Projectile : MonoBehaviour
@@ -17,7 +15,7 @@ public class Projectile : MonoBehaviour
 
         SetStraightVelocity();
 
-        StartCoroutine(DestroyArrow());
+        StartCoroutine(DestroyProjectile());
     }
 
     private void SetStraightVelocity()
@@ -27,19 +25,19 @@ public class Projectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision != null && collision.name != "Player")
+        if (collision != null && collision.name != "Player" && collision.GetType() != typeof(CircleCollider2D))
         {
             EnemyRecieveDamage enemy = collision.GetComponent<EnemyRecieveDamage>();
             if (enemy != null)
             {
                 enemy.DealDamage(damage);
             }
-
             Destroy(gameObject);
         }
+        
     }
 
-    private IEnumerator DestroyArrow()
+    private IEnumerator DestroyProjectile()
     {
         yield return new WaitForSeconds(10);
         Destroy(gameObject);

@@ -36,6 +36,8 @@ public class PropPlacementManager : MonoBehaviour
 
     public void ProcessRooms()
     {
+        //Debug.Log("Placing Props");
+
         if (dungeonData == null)
             return;
 
@@ -113,13 +115,7 @@ public class PropPlacementManager : MonoBehaviour
         }
 
         OnFinished?.Invoke();
-        Invoke("RunEvent", 1);
 
-    }
-
-    public void RunEvent()
-    {
-        OnFinished?.Invoke();
     }
 
     private IEnumerator TutorialCoroutine(Action code)

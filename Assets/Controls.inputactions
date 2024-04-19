@@ -8,7 +8,7 @@
                 {
                     "name": "Movement",
                     "type": "Value",
-                    "id": "880717fb-db7c-4a7f-878d-59442bc43e00",
+                    "id": "a2062ffb-4a9c-433e-9124-7c336c94bca6",
                     "expectedControlType": "Vector2",
                     "processors": "NormalizeVector2",
                     "interactions": "",
@@ -17,7 +17,7 @@
                 {
                     "name": "Exit",
                     "type": "Button",
-                    "id": "b7fca612-ef6f-4fd0-9d19-a8dad4dd6a9f",
+                    "id": "945f5b81-11e7-4a85-bd03-c0f62f67a549",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "Press",
@@ -26,7 +26,16 @@
                 {
                     "name": "Attack",
                     "type": "Button",
-                    "id": "ab3d4e7e-3ed9-4207-b51b-3366bd99dcdd",
+                    "id": "a878cf95-5848-4d14-8baa-69c6aa25ee91",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Pickup",
+                    "type": "Button",
+                    "id": "3acc193c-8d2b-4dfd-8197-d4f332aafa57",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -36,7 +45,7 @@
             "bindings": [
                 {
                     "name": "2D Vector",
-                    "id": "601696fb-8b0e-4ade-817b-2ee70bfdea4c",
+                    "id": "5c46f569-3046-4c47-a8f7-12e590041439",
                     "path": "2DVector",
                     "interactions": "",
                     "processors": "",
@@ -47,7 +56,7 @@
                 },
                 {
                     "name": "up",
-                    "id": "fa1e32c6-d111-4f32-a6fe-056c78c76027",
+                    "id": "616a86ab-3294-4c4a-823f-c53ec4f28513",
                     "path": "<Keyboard>/upArrow",
                     "interactions": "",
                     "processors": "",
@@ -58,7 +67,7 @@
                 },
                 {
                     "name": "down",
-                    "id": "2d1dfa09-a66b-4b7a-958e-43493fdf80ce",
+                    "id": "b29a4840-1feb-41d2-977e-5ec54736feca",
                     "path": "<Keyboard>/downArrow",
                     "interactions": "",
                     "processors": "",
@@ -69,7 +78,7 @@
                 },
                 {
                     "name": "left",
-                    "id": "14411f41-94be-4590-9804-706e89a17058",
+                    "id": "7d4bb616-2d15-4f3a-b3f5-c37712b69253",
                     "path": "<Keyboard>/leftArrow",
                     "interactions": "",
                     "processors": "",
@@ -80,7 +89,7 @@
                 },
                 {
                     "name": "right",
-                    "id": "1ddbdfe0-1b98-4e36-b8f2-96ef357a7bde",
+                    "id": "45df612b-2a1b-424d-8109-31a85f077e81",
                     "path": "<Keyboard>/rightArrow",
                     "interactions": "",
                     "processors": "",
@@ -91,7 +100,7 @@
                 },
                 {
                     "name": "WASD",
-                    "id": "afbe01d4-daea-487a-8e8c-c310dc019bed",
+                    "id": "d7527449-acb3-423c-92e1-2da73ab8dae0",
                     "path": "2DVector",
                     "interactions": "",
                     "processors": "",
@@ -102,7 +111,7 @@
                 },
                 {
                     "name": "up",
-                    "id": "47a1a014-ff2f-4ce2-9271-505f1639288d",
+                    "id": "01d8fd2d-0bfc-440c-a9ee-cbab1b9a2422",
                     "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
@@ -113,7 +122,7 @@
                 },
                 {
                     "name": "down",
-                    "id": "baf0379a-7f6d-4fa8-82d0-444acca6862f",
+                    "id": "7df40627-94e5-42dc-a622-5bb51777386a",
                     "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
@@ -124,7 +133,7 @@
                 },
                 {
                     "name": "left",
-                    "id": "fdc4ef2b-d70f-411f-b468-ee20303f108c",
+                    "id": "e24a1691-2d07-4992-b2f7-48bde59f9774",
                     "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
@@ -135,7 +144,7 @@
                 },
                 {
                     "name": "right",
-                    "id": "d83eb396-ce37-4cd2-926a-f03980734534",
+                    "id": "b77faa0a-094c-4a4e-902f-bc8b829e9e50",
                     "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
@@ -146,7 +155,7 @@
                 },
                 {
                     "name": "",
-                    "id": "efb16676-9d80-42f1-a956-b28b964def82",
+                    "id": "8fa9c2f5-7cab-427f-8dbc-d9be108a3b43",
                     "path": "<Keyboard>/escape",
                     "interactions": "",
                     "processors": "",
@@ -157,12 +166,23 @@
                 },
                 {
                     "name": "",
-                    "id": "b57822ae-568c-4cef-bc8d-5d7f8d325c65",
+                    "id": "2afb0463-552d-4cd4-a807-b296e13850dd",
                     "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Attack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4a0a4ca8-d631-4457-99c0-8dd86505ae9a",
+                    "path": "<Keyboard>/f",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pickup",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

@@ -11,3 +11,4 @@ Scrolls
 Boss
 Transfer between levels
 Defense
+Pause Menu

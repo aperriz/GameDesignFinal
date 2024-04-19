@@ -6,6 +6,8 @@ TODO List:
 //	Dog
 //	Angel of Death
 Items/From chests - Pickup system
+	health potion
+	defense potion
 Increased power weapons from chests
 Scrolls
 Boss

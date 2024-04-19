@@ -52,8 +52,11 @@ public class PlayerItem : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        allowPickup = false;
-        Destroy(popup);
+        if(collision.name == "Player")
+        {
+            allowPickup = false;
+            Destroy(popup);
+        }
     }
 
     protected void PickupItem()
@@ -68,34 +71,9 @@ public class PlayerItem : MonoBehaviour
 
     private void FixedUpdate()
     {
-        SpinItemOnGround();
-
         if (pickup.action.IsPressed())
         {
             PickupItem();
         }
-    }
-
-    protected void SpinItemOnGround()
-    {
-        if(transform.position.y <= maxHeight && movingUp)
-        {
-            //Debug.Log("Moving up");
-            transform.position += new Vector3(0, speedOfHeightChange, 0);
-        }
-        else if(transform.position.y >= maxHeight && movingUp)
-        {
-            movingUp = false;
-        }
-        else if (!movingUp)
-        {
-            //Debug.Log("Moving down");
-            transform.position -= new Vector3(0, speedOfHeightChange, 0);
-            if (transform.position.y <= startHeight)
-            {
-                movingUp = true;
-            }
-        }
-
     }
 }

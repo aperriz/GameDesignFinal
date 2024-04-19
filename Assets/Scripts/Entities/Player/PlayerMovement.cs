@@ -9,20 +9,22 @@ public class PlayerMovement : MonoBehaviour
     AgentMover agentMover;
     private Vector2 movementInput;
     private Button attackInput, escapeInput;
-
-    bool moveKeyHeld;
-
-    Animator animator;
-    new SpriteRenderer renderer;
-
     [SerializeField]
-    GameObject weaponObject;
+    private PlayerExtraStats playerExtraStats;
+    
+    Animator animator;
+    SpriteRenderer renderer;
+/*
+    [SerializeField]
+    GameObject weaponObject;*/
 
     [SerializeField]
     private InputActionReference movement, attack, escape;
 
     [SerializeField]
-    float speed = 0.1f;
+    public float speed = 0.1f;
+    [SerializeField]
+    private GameObject[] possibleWeapons;
 
     private void Awake()
     {
@@ -72,15 +74,34 @@ public class PlayerMovement : MonoBehaviour
 
     public void OnAttack()
     {
+        GameObject weaponObject = null;
+        switch (playerExtraStats.weaponType.ToLower())
+        {
+            case "sword":
+                weaponObject = possibleWeapons[0];
+                break;
+            case "bow":
+                weaponObject = possibleWeapons[1];
+                break;
+            case "staff":
+                weaponObject = possibleWeapons[2];
+                break;
+            default:
+                Debug.LogWarning("Invalid weapon type");
+                break;
+        }
+
         if (!animator.GetBool("Attacking"))
         {
             animator.SetBool("Attacking", true);
             Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             Vector2 myPos = transform.position;
             Vector2 direction = (mousePos - myPos).normalized;
-            GameObject attackObject = Instantiate(weaponObject, transform.position, Quaternion.identity, GameObject.Find("Player").transform);
+            GameObject attackObject = Instantiate(weaponObject, GameObject.Find("Player").transform);
+            attackObject.transform.position = myPos;
             attackObject.SetActive(true);
             float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+            attackObject.SetActive(true);
             Debug.Log(angle);
 
             if (angle > 90 || angle < -90)

@@ -2,7 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-
+using UnityEngine.UI;
+    
 public class PlayerExtraStats : MonoBehaviour
 {
     int gold = 0;
@@ -10,6 +11,13 @@ public class PlayerExtraStats : MonoBehaviour
 
     [SerializeField]
     public TextMeshProUGUI goldText;
+
+    Potion leftPotion, rightPotion;
+    Scroll leftScroll, rightScroll;
+    public string weaponType = "sword";
+
+    [SerializeField]
+    Image leftPotionImage, righPotionImage, leftScrollImage, rightScrollImage;
 
     public void UpdateGold(int change)
     {

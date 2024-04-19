@@ -13,6 +13,7 @@ public class PlayerRecieveDamage : MonoBehaviour
     private AudioSource audioSource;
     public AudioClip audioClip;
     public AudioClip[] hurtSounds;
+    public AudioClip defenseSound;
     [SerializeField]
     public GameObject healthBar;
     public Slider healthBarSlider;
@@ -33,19 +34,44 @@ public class PlayerRecieveDamage : MonoBehaviour
         if (!animator.GetBool("Invincible"))
         {
             audioSource.Play();
-            health -= damage;
-            animator.SetBool("Hurt", true);
-            animator.SetBool("Invincible", true);
+            
+            if(playerExtraStats.defense > 0)
+            {
+                playerExtraStats.defense -= 1;
 
-            int audioClipChoice = Random.Range(0, hurtSounds.Length - 1);
-            gameObject.GetComponent<AudioSource>().clip = hurtSounds[audioClipChoice];
-            gameObject.GetComponent<AudioSource>().Play();
+                animator.SetBool("Invincible", true);
 
-            CheckDeath();
-            healthBarSlider.value = health / maxHealth;
-            healthText.text = health.ToString() + "/" + maxHealth.ToString();
+                audioSource.clip = defenseSound;
+                audioSource.Play();
+
+                StartCoroutine(DefenseCooldown());
+            }
+            else
+            {
+                animator.SetBool("Hurt", true);
+                animator.SetBool("Invincible", true);
+
+                int audioClipChoice = Random.Range(0, hurtSounds.Length - 1);
+                audioSource.clip = hurtSounds[audioClipChoice];
+                audioSource.Play();
+
+                CheckDeath();
+                healthBarSlider.value = health / maxHealth;
+                healthText.text = health.ToString() + "/" + maxHealth.ToString();
+
+                health -= damage;
+            }
+
         }
     }
+
+    IEnumerator DefenseCooldown()
+    {
+        yield return new WaitForSeconds(1);
+
+        animator.SetBool("Invincible", false);
+    }
+
     public void HealPlayer(int heal)
     {
         health += heal;

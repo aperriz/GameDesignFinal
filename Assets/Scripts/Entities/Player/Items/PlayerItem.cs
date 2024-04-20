@@ -16,7 +16,7 @@ public class PlayerItem : MonoBehaviour
     [SerializeField]
     protected InputActionReference pickup;
     [SerializeField]
-    private float speedOfHeightChange = 0.0025f;
+    private float speedOfHeightChange = 0.01f;
 
     [SerializeField]
     public SpriteRenderer renderer;
@@ -59,7 +59,7 @@ public class PlayerItem : MonoBehaviour
         }
     }
 
-    protected void PickupItem()
+    protected virtual void PickupItem()
     {
         if (allowPickup)
         {

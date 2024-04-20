@@ -10,7 +10,7 @@ public class Scroll : PlayerItem
     [SerializeField]
     Sprite[] scrollSprites;
 
-    Scroll(Vector2 pos, int type)
+    public Scroll(Vector2 pos, int type)
     {
         GameObject scrollObject = Instantiate(scrollPrefab, pos, Quaternion.Euler(0, 0, 0));
         switch (type)
@@ -44,6 +44,6 @@ public class Scroll : PlayerItem
 
     private void Start()
     {
-        renderer = GetComponent<SpriteRenderer>();
+
     }
 }

@@ -25,9 +25,9 @@ public class AgentPlacer : MonoBehaviour
 
     [SerializeField]
     private GameObject[] minibosses;
-
+/*
     [SerializeField]
-    private GameObject playerPrefab;
+    private GameObject playerPrefab;*/
 
     private void Awake()
     {
@@ -67,7 +67,8 @@ public class AgentPlacer : MonoBehaviour
             //Place the player
             if (i == 0)
             {
-                GameObject player = Instantiate(playerPrefab);
+                /*GameObject player = Instantiate(playerPrefab);*/
+                GameObject player = GameObject.Find("Player");
                 player.transform.localPosition = dungeonData.Rooms[i].RoomCenterPos + Vector2.one * 0.5f;
                 player.name = "Player";
                 //Make the camera follow the player

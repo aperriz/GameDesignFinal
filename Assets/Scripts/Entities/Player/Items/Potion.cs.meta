@@ -3,7 +3,12 @@ guid: 12644fdf8d26bc64e9eaec24e1ba1bd5
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - collider: {instanceID: 0}
+  - popupPrefab: {instanceID: 0}
+  - pickup: {instanceID: 0}
+  - renderer: {instanceID: 0}
+  - potionPrefab: {fileID: 912414374817479385, guid: 90f2448a9d394b2429738481be925833, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

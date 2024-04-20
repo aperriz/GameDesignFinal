@@ -146,6 +146,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collider: {fileID: 608484856295946408}
+  animator: {fileID: 4186760694430113656}
+  audio: {fileID: 7536637917393793668}
   audioClip: {fileID: 8300000, guid: 65ad52f025fe6d343942414bf56a53a9, type: 3}
 --- !u!95 &4186760694430113656
 Animator:

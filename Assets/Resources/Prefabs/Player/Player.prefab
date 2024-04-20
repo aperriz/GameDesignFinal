@@ -539,10 +539,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defense: 0
+  emptySprite: {fileID: -425707327, guid: ca8520e0390db994cb3389c970ace9e8, type: 3}
   goldText: {fileID: 6322479191769975935}
+  leftPotion: {fileID: 0}
+  rightPotion: {fileID: 0}
+  leftScroll: {fileID: 0}
+  rightScroll: {fileID: 0}
   weaponType: sword
   leftPotionImage: {fileID: 7472870375432740007}
-  righPotionImage: {fileID: 5259361475375040982}
+  rightPotionImage: {fileID: 5259361475375040982}
   leftScrollImage: {fileID: 2703117534616496349}
   rightScrollImage: {fileID: 655885021340507924}
 --- !u!1 &2328223902855995050

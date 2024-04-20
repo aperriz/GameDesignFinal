@@ -74,13 +74,13 @@ public class PotionItem : PlayerItem
     {
         if (allowPickup)
         {
-            if (extraStats.hasLeftPotion)
+            if (!extraStats.hasLeftPotion)
             {
                 Debug.Log("Filled Left");
                 extraStats.leftPotion = this;
                 extraStats.hasLeftPotion = true;
             }
-            else if (extraStats.hasRightPotion)
+            else if (!extraStats.hasRightPotion)
             {
                 Debug.Log("Filled Right");
                 extraStats.rightPotion = this;
@@ -89,7 +89,7 @@ public class PotionItem : PlayerItem
             else
             {
                 Debug.Log("Replaced Left");
-                GameObject newPotion = Instantiate(potionPrefab, transform.position, Quaternion.identity);
+                GameObject newPotion = Instantiate(Resources.Load("Prefabs/World/Potion Prefab") as GameObject, transform.position, Quaternion.identity);
                 newPotion.GetComponent<Potion>().type = extraStats.leftPotion.type;
                 extraStats.leftPotion = this;
                 Debug.Log(extraStats.leftPotion);

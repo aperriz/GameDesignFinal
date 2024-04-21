@@ -1,8 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
+using TMPro;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PotionItem : PlayerItem
 {
@@ -12,7 +15,7 @@ public class PotionItem : PlayerItem
     
     PlayerExtraStats extraStats;
    
-    PlayerMovement playerMovement;
+    AgentMover playerMovement;
 
     GameObject potionPrefab;
 
@@ -30,6 +33,49 @@ public class PotionItem : PlayerItem
 
     }
 
+    new private void OnTriggerEnter2D(Collider2D collision)
+    {
+
+        if (collision.name == "Player")
+        {
+            allowPickup = true;
+            if (popup != null)
+            {
+                Destroy(popup);
+            }
+            popup = Instantiate(popupPrefab, new Vector3(transform.position.x, transform.position.y + 2.5f, -2), Quaternion.identity);
+            popup.SetActive(true);
+            TextMeshProUGUI nameText = popup.transform.GetChild(0).GetChild(0).GetComponent<TextMeshProUGUI>();
+            TextMeshProUGUI descText = popup.transform.GetChild(0).GetChild(1).GetComponent<TextMeshProUGUI>();
+            Debug.Log(nameText);
+            nameText.text = Char.ToUpper(type[0]).ToString();
+            
+            for(int i = 1; i < type.Length; i++)
+            {
+                nameText.text = nameText.text + type[i].ToString();
+            }
+
+            nameText.text = nameText.text + " Potion";
+
+            switch (type)
+            {
+                case "health":
+                    descText.text = "Restores 20 health";
+                    break;
+                case "defense":
+                    descText.text = "Increases defense by 2 (Max 10)";
+                    break;
+                case "speed":
+                    descText.text = "Increases speed by 50% for 30 seconds";
+                    break;
+                default:
+                    descText.text = "Invalid potion type!";
+                    break;
+            }
+        }
+        
+    }
+
     private void Start()
     {
         if(playerDamage == null)
@@ -37,7 +83,7 @@ public class PotionItem : PlayerItem
             GameObject player = GameObject.Find("Player");
             playerDamage = player.GetComponent<PlayerRecieveDamage>();
             extraStats = player.GetComponent<PlayerExtraStats>();
-            playerMovement = player.GetComponent<PlayerMovement>();
+            playerMovement = player.GetComponent<AgentMover>();
         }
 
         switch (type)
@@ -56,34 +102,6 @@ public class PotionItem : PlayerItem
                 break;
         }
     }
-    /*public void Drink()
-    {
-        switch (type)
-        {
-            case "health":
-                playerDamage.HealPlayer(20);
-                break;
-            case "defense":
-                extraStats.defense += 2;
-                if (extraStats.defense > 10)
-                {
-                    extraStats.defense = 10;
-                }
-                break;
-            case "speed":
-                if (!extraStats.speedPotionCooldown)
-                {
-                    playerMovement.speed *= 2;
-                    extraStats.speedPotionCooldown = true;
-                }
-                break;
-            default:
-                Debug.LogError("Invalid Potion Type");
-                break;
-        }
-        extraStats.UpdatePotions();
-
-    }*/
 
     override protected void PickupItem()
     {
@@ -91,13 +109,15 @@ public class PotionItem : PlayerItem
         if (allowPickup)
         {
             //Debug.Log(this);
-            Debug.Log(extraStats.hasLeftPotion);
-            Debug.Log(extraStats.hasRightPotion);
+            //Debug.Log(extraStats.hasLeftPotion);
+            //Debug.Log(extraStats.hasRightPotion);
 
             if (!extraStats.hasLeftPotion)
             {
                 Debug.Log("Filled Left");
-                //extraStats.leftPotion = this;
+                extraStats.leftPotion = ScriptableObject.CreateInstance<Potion>() as Potion;
+                extraStats.leftPotion.type = type;
+                extraStats.leftPotion.sprite = renderer.sprite;
                 extraStats.hasLeftPotion = true;
 
 
@@ -105,28 +125,31 @@ public class PotionItem : PlayerItem
             else if (!extraStats.hasRightPotion)
             {
                 Debug.Log("Filled Right");
-                //extraStats.rightPotion = this;
+                extraStats.rightPotion = ScriptableObject.CreateInstance<Potion>() as Potion;
+                extraStats.rightPotion.type = type;
+                extraStats.rightPotion.sprite = renderer.sprite;
                 extraStats.hasRightPotion = true;
                 
             }
             else
             {
-                /*Debug.Log("Replaced Left");
+                Debug.Log("Replaced Left");
                 GameObject newPotion = Instantiate(Resources.Load("Prefabs/World/Potion Prefab") as GameObject, transform.position, Quaternion.identity);
                 newPotion.GetComponent<PotionItem>().type = extraStats.leftPotion.type;
-                extraStats.leftPotion = this;
-                */
+                extraStats.leftPotion = ScriptableObject.CreateInstance<Potion>() as Potion;
+                extraStats.leftPotion.type = type;
+                extraStats.leftPotion.sprite = renderer.sprite;
+                
             }
-            //extraStats.UpdatePotions();
-            Destroy(renderer);
-            Destroy(collider);
+            extraStats.UpdatePotions();
+            Destroy(gameObject);
         }
     }
 
     private IEnumerator SpeedPotionDuration()
     {
         yield return new WaitForSeconds(15);
-        playerMovement.speed /= 2;
+        playerMovement.maxSpeed /= 1.5f;
         extraStats.speedPotionCooldown = false;
 
         Destroy(gameObject);

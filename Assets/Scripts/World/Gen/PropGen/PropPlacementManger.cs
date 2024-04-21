@@ -25,12 +25,14 @@ public class PropPlacementManager : MonoBehaviour
     private GameObject propPrefab;
 
     public UnityEvent OnFinished;
+    GameObject propParent;
 
     [SerializeField]
     int playerRoomIndex, merchantIndex;
 
     private void Awake()
     {
+        propParent = GameObject.Find("Props");
         dungeonData = FindObjectOfType<DungeonData>();
     }
 
@@ -363,7 +365,7 @@ public class PropPlacementManager : MonoBehaviour
     private GameObject PlacePropGameObjectAt(Room room, Vector2Int placementPostion, Prop propToPlace)
     {
         //Instantiat the prop at this positon
-        GameObject prop = Instantiate(propPrefab);
+        GameObject prop = Instantiate(propPrefab, propParent.transform);
         SpriteRenderer propSpriteRenderer = prop.GetComponentInChildren<SpriteRenderer>();
 
         //set the sprite

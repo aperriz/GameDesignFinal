@@ -1,13 +1,6 @@
 TODO List:
-//Other Weapons
-//More Enemies
-//Miniboss rooms
-//	Balrog
-//	Dog
-//	Angel of Death
 Items/From chests - Pickup system
-	health potion
-	defense potion
+	Just need scroll effects
 Increased power weapons from chests
 Scrolls
 Boss

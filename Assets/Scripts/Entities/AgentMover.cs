@@ -9,7 +9,7 @@ public class AgentMover : MonoBehaviour
     private Rigidbody2D rb2d;
 
     [SerializeField]
-    private float maxSpeed = 2, acceleration = 50, decelleration = 100;
+    public float maxSpeed = 2, acceleration = 50, decelleration = 100;
     [SerializeField]
     private float currentSpeed = 0;
     private Vector2 oldMovementInput;
@@ -34,5 +34,16 @@ public class AgentMover : MonoBehaviour
 
         currentSpeed = Mathf.Clamp(currentSpeed, 0, maxSpeed);
         rb2d.velocity = oldMovementInput * currentSpeed;
+    }
+
+    public void SpeedPotionCoroutine()
+    {
+        StartCoroutine(SpeedPotion());
+    }
+
+    private IEnumerator SpeedPotion()
+    {
+        yield return new WaitForSeconds(30);
+        maxSpeed /= 2;
     }
 }

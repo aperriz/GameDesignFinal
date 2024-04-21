@@ -11,7 +11,7 @@ public class PlayerItem : MonoBehaviour
     [SerializeField]
     protected BoxCollider2D collider;
     [SerializeField]
-    GameObject popupPrefab;
+    protected GameObject popupPrefab;
     protected GameObject popup;
     [SerializeField]
     protected InputActionReference pickup;
@@ -69,9 +69,9 @@ public class PlayerItem : MonoBehaviour
         }
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
-        if (pickup.action.IsPressed())
+        if (pickup.action.triggered)
         {
             PickupItem();
         }

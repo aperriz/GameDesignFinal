@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
-    
+
 public class PlayerExtraStats : MonoBehaviour
 {
     int gold = 0;
@@ -15,23 +16,24 @@ public class PlayerExtraStats : MonoBehaviour
     [SerializeField]
     public TextMeshProUGUI goldText;
 
-    //[SerializeField]
+    [SerializeField]
     public bool hasLeftPotion = false, hasRightPotion = false, hasLeftScroll = false, hasRightScroll = false;
     public Potion leftPotion, rightPotion;
     public Scroll leftScroll, rightScroll;
     public string weaponType = "sword";
 
     [SerializeField]
-    private InputActionReference useLeftPotion, useRightPotion, swapPotions;
+    private InputActionReference useLeftPotion, useRightPotion, swapPotions, useLeftScroll, useRightScroll, swapScrolls;
 
     [SerializeField]
     Image leftPotionImage, rightPotionImage, leftScrollImage, rightScrollImage;
 
     public bool speedPotionCooldown = false;
+    public bool immune = false;
 
 
 
-    /*private void Start()
+    private void Start()
     {
         hasLeftPotion = false;
         hasRightPotion = false;
@@ -41,9 +43,9 @@ public class PlayerExtraStats : MonoBehaviour
     }
 
     private void FixedUpdate()
-    {    
-        *//*Debug.Log(hasLeftPotion);
-        Debug.Log(hasRightPotion);*//*
+    {
+        //Debug.Log(hasLeftPotion);
+        //Debug.Log(hasRightPotion);
     }
 
     public void UpdateGold(int change)
@@ -55,12 +57,19 @@ public class PlayerExtraStats : MonoBehaviour
 
     private void Update()
     {
-        if (useLeftPotion.action.IsPressed() && hasLeftPotion)
+        if (useLeftPotion.action.triggered && hasLeftPotion && !(leftPotion.type == "speed" && speedPotionCooldown))
         {
             leftPotion.Drink();
-            leftPotion = new PotionItem(rightPotion);
+            if (hasRightPotion)
+            {
+                leftPotion = rightPotion.Clone();
+            }
+            else
+            {
+                leftPotion = null;
+            }
             rightPotion = null;
-            if(leftPotion == null)
+            if (leftPotion == null)
             {
                 hasLeftPotion = false;
             }
@@ -68,7 +77,7 @@ public class PlayerExtraStats : MonoBehaviour
             UpdatePotions();
         }
 
-        if (useRightPotion.action.IsPressed() && hasRightPotion)
+        if (useRightPotion.action.triggered && hasRightPotion && !(rightPotion.type == "speed" && speedPotionCooldown))
         {
             rightPotion.Drink();
             rightPotion = null;
@@ -77,11 +86,11 @@ public class PlayerExtraStats : MonoBehaviour
             UpdatePotions();
         }
 
-        if(swapPotions.action.IsPressed() && hasLeftPotion && hasRightPotion)
+        if (swapPotions.action.triggered && hasLeftPotion && hasRightPotion)
         {
-            PotionItem temp = leftPotion;
-            leftPotion = rightPotion;
-            rightPotion = temp;
+            Potion temp = leftPotion.Clone();
+            leftPotion = rightPotion.Clone();
+            rightPotion = temp.Clone();
             Destroy(temp);
             UpdatePotions();
         }
@@ -89,49 +98,19 @@ public class PlayerExtraStats : MonoBehaviour
 
     public void UpdatePotions()
     {
-        
-        if(hasLeftPotion)
+
+        if (hasLeftPotion)
         {
-            switch (leftPotion.type)
-            {
-                case "health":
-                    leftPotionImage.sprite = leftPotion.potionSprites[0];
-                    break;
-                case "defense":
-                    leftPotionImage.sprite = leftPotion.potionSprites[1];
-                    break;
-                case "speed":
-                    leftPotionImage.sprite = leftPotion.potionSprites[2];
-                    break;
-                default:
-                    Debug.LogError("Invalid Potion Type");
-                    hasLeftPotion = false;
-                    break;
-            }
+            leftPotionImage.sprite = leftPotion.sprite;
         }
         else
         {
             leftPotionImage.sprite = emptySprite;
         }
 
-        if(hasRightPotion)
+        if (hasRightPotion)
         {
-            switch (rightPotion.type)
-            {
-                case "health":
-                    rightPotionImage.sprite = rightPotion.potionSprites[0];
-                    break;
-                case "defense":
-                    rightPotionImage.sprite = rightPotion.potionSprites[1];
-                    break;
-                case "speed":
-                    rightPotionImage.sprite = rightPotion.potionSprites[2];
-                    break;
-                default:
-                    Debug.LogError("Invalid Potion Type");
-                    hasRightPotion = false;
-                    break;
-            }
+            rightPotionImage.sprite = rightPotion.sprite;
         }
         else
         {
@@ -140,5 +119,30 @@ public class PlayerExtraStats : MonoBehaviour
 
         //Debug.Log("Left Potion: " + leftPotion);
         //Debug.Log("Right Potion: " + rightPotion);
-    }*/
+    }
+
+    public void UpdateScrolls()
+    {
+
+        if (hasLeftScroll)
+        {
+            leftScrollImage.sprite = leftScroll.sprite;
+        }
+        else
+        {
+            leftScrollImage.sprite = emptySprite;
+        }
+
+        if (hasRightPotion)
+        {
+            rightScrollImage.sprite = rightScroll.sprite;
+        }
+        else
+        {
+            rightScrollImage.sprite = emptySprite;
+        }
+
+        //Debug.Log("Left Potion: " + leftPotion);
+        //Debug.Log("Right Potion: " + rightPotion);
+    }
 }

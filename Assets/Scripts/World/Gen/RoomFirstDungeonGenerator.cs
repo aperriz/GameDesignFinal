@@ -21,6 +21,8 @@ public class RoomFirstDungeonGenerator : SimpleRandomWalkGenerator
     private int offset = 1;
     [SerializeField]
     private bool randomWalkRooms = false;
+
+    public int level = 1;
     
     private AstarPath astar;
 

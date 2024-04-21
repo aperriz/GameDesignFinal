@@ -22,8 +22,6 @@ public class PlayerMovement : MonoBehaviour
     private InputActionReference movement, attack, escape;
 
     [SerializeField]
-    public float speed = 0.1f;
-    [SerializeField]
     private GameObject[] possibleWeapons;
 
     private void Awake()
@@ -31,6 +29,7 @@ public class PlayerMovement : MonoBehaviour
         agentMover = GetComponent<AgentMover>();
         animator = GetComponent<Animator>();
         renderer = GetComponent<SpriteRenderer>();
+        DontDestroyOnLoad(gameObject);
     }
 
     private void Update()
@@ -40,7 +39,7 @@ public class PlayerMovement : MonoBehaviour
             OnAttack();
         }
 
-        if (escape.action.IsPressed())
+        if (escape.action.triggered)
         {
             OnEscape();
         }

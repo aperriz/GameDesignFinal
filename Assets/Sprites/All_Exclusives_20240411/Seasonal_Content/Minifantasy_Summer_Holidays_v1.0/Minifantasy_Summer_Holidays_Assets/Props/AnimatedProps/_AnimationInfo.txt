@@ -1,9 +1,0 @@
-*Frame size* 
-
-- Ball: 8x16px
-- Bbq: 24x24px
-
-
-*Frame Duration*
-
-- 200ms

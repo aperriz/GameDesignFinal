@@ -62,6 +62,33 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Left Potion"",
+                    ""type"": ""Button"",
+                    ""id"": ""dabc1709-9637-4948-8a0e-95f0347ca92d"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Right Potion"",
+                    ""type"": ""Button"",
+                    ""id"": ""f9262c10-9039-44aa-a8ef-77b65bbde0de"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Swap Potions"",
+                    ""type"": ""Button"",
+                    ""id"": ""41e85cf8-96fa-4f5b-839e-fedd32cbd3ae"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -207,6 +234,39 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""action"": ""Pickup"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a78d2e92-c4f3-4401-8674-0d5fa373c203"",
+                    ""path"": ""<Keyboard>/q"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Left Potion"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""75449da5-de50-4cef-bf97-d2cd5e0c7dc7"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Right Potion"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""3032cfbb-5815-43ff-866d-d10d54548a2b"",
+                    ""path"": ""<Keyboard>/r"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Swap Potions"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -219,6 +279,9 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         m_Player_Exit = m_Player.FindAction("Exit", throwIfNotFound: true);
         m_Player_Attack = m_Player.FindAction("Attack", throwIfNotFound: true);
         m_Player_Pickup = m_Player.FindAction("Pickup", throwIfNotFound: true);
+        m_Player_LeftPotion = m_Player.FindAction("Left Potion", throwIfNotFound: true);
+        m_Player_RightPotion = m_Player.FindAction("Right Potion", throwIfNotFound: true);
+        m_Player_SwapPotions = m_Player.FindAction("Swap Potions", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -284,6 +347,9 @@ public partial class @Controls: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Exit;
     private readonly InputAction m_Player_Attack;
     private readonly InputAction m_Player_Pickup;
+    private readonly InputAction m_Player_LeftPotion;
+    private readonly InputAction m_Player_RightPotion;
+    private readonly InputAction m_Player_SwapPotions;
     public struct PlayerActions
     {
         private @Controls m_Wrapper;
@@ -292,6 +358,9 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         public InputAction @Exit => m_Wrapper.m_Player_Exit;
         public InputAction @Attack => m_Wrapper.m_Player_Attack;
         public InputAction @Pickup => m_Wrapper.m_Player_Pickup;
+        public InputAction @LeftPotion => m_Wrapper.m_Player_LeftPotion;
+        public InputAction @RightPotion => m_Wrapper.m_Player_RightPotion;
+        public InputAction @SwapPotions => m_Wrapper.m_Player_SwapPotions;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -313,6 +382,15 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             @Pickup.started += instance.OnPickup;
             @Pickup.performed += instance.OnPickup;
             @Pickup.canceled += instance.OnPickup;
+            @LeftPotion.started += instance.OnLeftPotion;
+            @LeftPotion.performed += instance.OnLeftPotion;
+            @LeftPotion.canceled += instance.OnLeftPotion;
+            @RightPotion.started += instance.OnRightPotion;
+            @RightPotion.performed += instance.OnRightPotion;
+            @RightPotion.canceled += instance.OnRightPotion;
+            @SwapPotions.started += instance.OnSwapPotions;
+            @SwapPotions.performed += instance.OnSwapPotions;
+            @SwapPotions.canceled += instance.OnSwapPotions;
         }
 
         private void UnregisterCallbacks(IPlayerActions instance)
@@ -329,6 +407,15 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             @Pickup.started -= instance.OnPickup;
             @Pickup.performed -= instance.OnPickup;
             @Pickup.canceled -= instance.OnPickup;
+            @LeftPotion.started -= instance.OnLeftPotion;
+            @LeftPotion.performed -= instance.OnLeftPotion;
+            @LeftPotion.canceled -= instance.OnLeftPotion;
+            @RightPotion.started -= instance.OnRightPotion;
+            @RightPotion.performed -= instance.OnRightPotion;
+            @RightPotion.canceled -= instance.OnRightPotion;
+            @SwapPotions.started -= instance.OnSwapPotions;
+            @SwapPotions.performed -= instance.OnSwapPotions;
+            @SwapPotions.canceled -= instance.OnSwapPotions;
         }
 
         public void RemoveCallbacks(IPlayerActions instance)
@@ -352,5 +439,8 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         void OnExit(InputAction.CallbackContext context);
         void OnAttack(InputAction.CallbackContext context);
         void OnPickup(InputAction.CallbackContext context);
+        void OnLeftPotion(InputAction.CallbackContext context);
+        void OnRightPotion(InputAction.CallbackContext context);
+        void OnSwapPotions(InputAction.CallbackContext context);
     }
 }

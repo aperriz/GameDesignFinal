@@ -47,24 +47,19 @@ public class AgentPlacer : MonoBehaviour
         //Loop for each room
         for (int i = 0; i < dungeonData.Rooms.Count; i++)
         {
-            //TO place eneies we need to analyze the room tiles to find those accesible from the path
+
             Room room = dungeonData.Rooms[i];
             RoomGraph roomGraph = new RoomGraph(room.FloorTiles);
 
-            //Find the Path inside this specific room
+
             HashSet<Vector2Int> roomFloor = new HashSet<Vector2Int>(room.FloorTiles);
-            //Find the tiles belonging to both the path and the room
+
             roomFloor.IntersectWith(dungeonData.Path);
 
-            //Run the BFS to find all the tiles in the room accessible from the path
             Dictionary<Vector2Int, Vector2Int> roomMap = roomGraph.RunBFS(roomFloor.First(), room.PropPositions);
 
-            //Positions that we can reach + path == positions where we can place enemies
             room.PositionsAccessibleFromPath = roomMap.Keys.OrderBy(x => Guid.NewGuid()).ToList();
 
-            //did we add this room to the roomEnemiesCount list?
-
-            //Place the player
             if (i == 0)
             {
                 /*GameObject player = Instantiate(playerPrefab);*/

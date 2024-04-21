@@ -3,14 +3,10 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using UnityEngine;
 
-public class Potion : PlayerItem
+[CreateAssetMenu]
+public class Potion : ScriptableObject
 {
     public string type;
-
-    public Potion(Vector2 pos, string type)
-    {
-        this.type = type;
-        Instantiate(Resources.Load("Prefabs/World/Potion Prefab") as GameObject, pos, Quaternion.Euler(0, 0, 0));
-    }
+    public Sprite sprite;
 
 }

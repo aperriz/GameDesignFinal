@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7845820002070053698}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49,7 +49,7 @@ GameObject:
   - component: {fileID: 514473872855227238}
   - component: {fileID: 4955421509209471569}
   - component: {fileID: 703237588884326121}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bat Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -189,7 +189,7 @@ GameObject:
   - component: {fileID: 2987647706376852193}
   - component: {fileID: 3185280781845206687}
   - component: {fileID: 1175744126449818033}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bat Graphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -560,7 +560,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6070697485625484983}
   - component: {fileID: 1518206894675585964}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Health Bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -651,7 +651,7 @@ GameObject:
   - component: {fileID: 4559059911907410025}
   - component: {fileID: 7080296802581404228}
   - component: {fileID: 8835865162646109368}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -752,7 +752,7 @@ GameObject:
   - component: {fileID: 4047282782449396570}
   - component: {fileID: 7382843207875387764}
   - component: {fileID: 6385535435284590608}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -827,7 +827,7 @@ GameObject:
   - component: {fileID: 578833621808447307}
   - component: {fileID: 6338566599119640689}
   - component: {fileID: 8476972056711471155}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}

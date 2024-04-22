@@ -540,6 +540,7 @@ MonoBehaviour:
   defense: 0
   emptySprite: {fileID: -425707327, guid: ca8520e0390db994cb3389c970ace9e8, type: 3}
   goldText: {fileID: 6322479191769975935}
+  animator: {fileID: 3970905763440053784}
   hasLeftPotion: 1
   hasRightPotion: 1
   hasLeftScroll: 0
@@ -552,11 +553,16 @@ MonoBehaviour:
   useLeftPotion: {fileID: 9153030349829969585, guid: 9138d07d90b775e4a97e6882f66da286, type: 3}
   useRightPotion: {fileID: -4372976165681386503, guid: 9138d07d90b775e4a97e6882f66da286, type: 3}
   swapPotions: {fileID: -5020327990792267895, guid: 9138d07d90b775e4a97e6882f66da286, type: 3}
+  useLeftScroll: {fileID: 3288911696927464509, guid: 9138d07d90b775e4a97e6882f66da286, type: 3}
+  useRightScroll: {fileID: 8612643359657821862, guid: 9138d07d90b775e4a97e6882f66da286, type: 3}
+  swapScrolls: {fileID: -7661466483718357696, guid: 9138d07d90b775e4a97e6882f66da286, type: 3}
   leftPotionImage: {fileID: 7472870375432740007}
   rightPotionImage: {fileID: 5259361475375040982}
   leftScrollImage: {fileID: 2703117534616496349}
   rightScrollImage: {fileID: 655885021340507924}
   speedPotionCooldown: 0
+  shieldScrollCooldown: 0
+  immune: 0
 --- !u!1 &2328223902855995050
 GameObject:
   m_ObjectHideFlags: 0
@@ -1163,6 +1169,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -1677965420, guid: 0e54b077ee9b21040b5a7944aa271e29, type: 3}
+    - target: {fileID: 5776238820525879045, guid: 3a012fab0df262645b359279c8553d00, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1677965420, guid: 0e54b077ee9b21040b5a7944aa271e29, type: 3}
     - target: {fileID: 5833970743563482200, guid: 3a012fab0df262645b359279c8553d00, type: 3}
       propertyPath: m_AnchorMax.x
       value: 1
@@ -1343,6 +1353,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI
       objectReference: {fileID: 0}
+    - target: {fileID: 8984714768643659980, guid: 3a012fab0df262645b359279c8553d00, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1677965420, guid: 0e54b077ee9b21040b5a7944aa271e29, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:

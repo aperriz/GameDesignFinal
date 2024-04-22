@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3584886257468399068}
   - component: {fileID: 4402218275518416502}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Health Bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,7 +107,7 @@ GameObject:
   - component: {fileID: 317757404267631032}
   - component: {fileID: 5257826024192947480}
   - component: {fileID: 3300544688063505784}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Graphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -479,7 +479,7 @@ GameObject:
   - component: {fileID: 4683498731822562967}
   - component: {fileID: 4084160623152830709}
   - component: {fileID: 1541666252671074164}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -556,7 +556,7 @@ GameObject:
   - component: {fileID: 8388461681831567152}
   - component: {fileID: 1882637594894903360}
   - component: {fileID: 5060314017309982049}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Jeoph
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -687,7 +687,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7142192880087627933}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -726,7 +726,7 @@ GameObject:
   - component: {fileID: 3934263297247869561}
   - component: {fileID: 8638183289327198310}
   - component: {fileID: 4434209914398755990}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -827,7 +827,7 @@ GameObject:
   - component: {fileID: 6845079702840092267}
   - component: {fileID: 2824772306717041204}
   - component: {fileID: 8301147834128785290}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}

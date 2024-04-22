@@ -25,7 +25,7 @@ public class EnemyRecieveDamage : MonoBehaviour
     public Slider healthBarSlider;
     [SerializeField]
     public int aggressionRange = 20;
-    public AIPath ai;
+    public AIPath ai = null;
 
     // Start is called before the first frame update
     void Start()
@@ -45,9 +45,12 @@ public class EnemyRecieveDamage : MonoBehaviour
 
     public void DealDamage(int damage)
     {
-        if(ai.enabled == false)
+        if(ai != null)
         {
-            ai.enabled = true;
+            if (ai.enabled == false)
+            {
+                ai.enabled = true;
+            }
         }
 
         audioSource = GetComponent<AudioSource>();
@@ -65,6 +68,34 @@ public class EnemyRecieveDamage : MonoBehaviour
             health -= damage;
             animator.SetBool("Hurt", true);
             animator.SetBool("Invincible", true);
+            CheckDeath();
+        }
+    }
+
+    public void DealSpellDamage(int damage)
+    {
+        if (ai != null)
+        {
+            if (ai.enabled == false)
+            {
+                ai.enabled = true;
+            }
+        }
+
+        audioSource = GetComponent<AudioSource>();
+        audioSource.clip = audioClip;
+        healthBarSlider.enabled = true;
+        healthBar.SetActive(true);
+        Debug.Log("Ow");
+
+        healthBarSlider.value = CalculateHealthPercent();
+
+        if (!animator.GetBool("Invincible"))
+        {
+            Debug.Log("Dealing damage");
+            audioSource.Play();
+            health -= damage;
+            animator.SetBool("Hurt", true);
             CheckDeath();
         }
     }

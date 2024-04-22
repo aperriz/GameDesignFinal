@@ -10,7 +10,6 @@ public class PlayerItem : MonoBehaviour
 {
     [SerializeField]
     protected BoxCollider2D collider;
-    [SerializeField]
     protected GameObject popupPrefab;
     protected GameObject popup;
     [SerializeField]
@@ -34,6 +33,7 @@ public class PlayerItem : MonoBehaviour
         collider.size = new Vector2(transform.localScale.x, transform.localScale.y);
         startHeight = transform.position.y;
         maxHeight = transform.position.y + .5f;
+        popupPrefab = Resources.Load("Prefabs/World/Popup Prefab") as GameObject;
     }
 
     protected void OnTriggerEnter2D(Collider2D collision)

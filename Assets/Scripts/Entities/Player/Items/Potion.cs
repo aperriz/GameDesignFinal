@@ -29,11 +29,7 @@ public class Potion : ScriptableObject
                 playerDamage.HealPlayer(20);
                 break;
             case "defense":
-                extraStats.defense += 2;
-                if (extraStats.defense > 10)
-                {
-                    extraStats.defense = 10;
-                }
+                extraStats.UpdateDefense(2);
                 break;
             case "speed":
                 if (!extraStats.speedPotionCooldown)

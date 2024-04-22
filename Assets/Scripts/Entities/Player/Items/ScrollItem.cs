@@ -86,13 +86,13 @@ public class ScrollItem : PlayerItem
 
         switch (type)
         {
-            case "health":
+            case "Fire Storm":
                 renderer.sprite = scrollSprites[0];
                 break;
-            case "defense":
+            case "Shield":
                 renderer.sprite = scrollSprites[1];
                 break;
-            case "speed":
+            case "Holy Radiance":
                 renderer.sprite = scrollSprites[2];
                 break;
             default:

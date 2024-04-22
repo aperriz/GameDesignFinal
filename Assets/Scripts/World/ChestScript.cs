@@ -39,6 +39,8 @@ public class ChestScript : MonoBehaviour
             audio.Play();
             Destroy(collider);
             SpawnItems();
+            gameObject.transform.parent.gameObject.GetComponent<PlayerExtraStats>().UpdateGold(Random.Range(1*level, (10*level) + 1));
+            //Debug.Log("Opened Chest");
         }
     }
 
@@ -47,16 +49,27 @@ public class ChestScript : MonoBehaviour
     {
         Vector2 spawnPos = new Vector2(transform.position.x + Random.Range(-2, 3), transform.position.y + Random.Range(-2, 3));
         int loopsWithoutPlacing = 0;
-        while (true && open)
+        
+        Debug.Log("Max spawns: " + (spawnQuantity + (int)Mathf.Floor(level / 3)));
+        int chestSpawns = Random.Range(1, spawnQuantity + (int)Mathf.Floor(level / 3));
+        Debug.Log("Chest spawns " + chestSpawns);
+        int spawns = 0;
+
+        bool placed = false;
+        while (spawns < chestSpawns)
         {
-            for (int i = 0; i < Random.Range(1, spawnQuantity + (int)Mathf.Floor(level/3)); i++)
+            for (int i = 0; i < chestSpawns; i++)
             {
-                if (!spawnedItemPositions.Contains(spawnPos) && (Vector3)spawnPos != transform.position && 
-                    tileMapVisualizer.floorMap.HasTile(new Vector3Int((int)spawnPos.x, (int)spawnPos.y, 0)))
+                placed = false;
+                if (!spawnedItemPositions.Contains(spawnPos) && (Vector3)spawnPos != transform.position && /*
+                    tileMapVisualizer.floorMap.HasTile(new Vector3Int((int)spawnPos.x, (int)spawnPos.y, 0))*/!placed )
                 {
+                    placed = true;
+                    Debug.Log("Spawning item");
                     SpawnRandomItem(spawnPos);
                     spawnedItemPositions.Add(spawnPos);
                     loopsWithoutPlacing = 0;
+                    spawns++;
                     break;
                 }
                 else
@@ -71,7 +84,7 @@ public class ChestScript : MonoBehaviour
             }
             if (loopsWithoutPlacing >= 8)
             {
-                break;
+                spawns++;
             }
         }
 
@@ -79,19 +92,51 @@ public class ChestScript : MonoBehaviour
 
     private void SpawnRandomItem(Vector2 spawnPos)
     {
-        string[] potionTypes = { "health", "speed", "defense" };
         if (Random.Range(1, 4) < 3)
         {
-            Instantiate(Resources.Load("Prefabs/World/Potion Prefab") as GameObject, spawnPos, Quaternion.Euler(0, 0, 0), transform).
-            GetComponent<PotionItem>().type = potionTypes[Random.Range(0, potionTypes.Length)];
+            SpawnPotion(spawnPos);
         }
         else
         {
-            Instantiate(Resources.Load("Prefabs/World/Scroll Prefab") as GameObject, spawnPos, Quaternion.Euler(0, 0, 0), transform).
-            GetComponent<PotionItem>().type = potionTypes[Random.Range(0, potionTypes.Length)];
+            SpawnScroll(spawnPos);
         }
+    }
 
+    private void SpawnScroll(Vector2 spawnPos)
+    {
+        GameObject ScrollObject = Instantiate(Resources.Load("Prefabs/World/Scroll Prefab") as GameObject, spawnPos, Quaternion.Euler(0, 0, 0), transform);
 
+        int scrollType = Random.Range(0, 101);
+        if(scrollType <= 60)
+        {
+            ScrollObject.GetComponent<ScrollItem>().type = "Fire Storm";
+        }
+        else if(scrollType <= 90)
+        {
+            ScrollObject.GetComponent<ScrollItem>().type = "Holy Radiance";
+        }
+        else
+        {
+            ScrollObject.GetComponent<ScrollItem>().type = "Shield";
+        }
+    }
+    private void SpawnPotion(Vector2 spawnPos)
+    {
+        GameObject PotionObject = Instantiate(Resources.Load("Prefabs/World/Potion Prefab") as GameObject, spawnPos, Quaternion.Euler(0, 0, 0), transform);
+
+        int potionType = Random.Range(0, 101);
+        if(potionType <= 70)
+        {
+            PotionObject.GetComponent<PotionItem>().type = "health";
+        }
+        else if(potionType <= 90)
+        {
+            PotionObject.GetComponent<PotionItem>().type = "speed";
+        }
+        else
+        {
+            PotionObject.GetComponent<PotionItem>().type = "defense";
+        }
     }
 
 }

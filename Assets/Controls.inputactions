@@ -67,6 +67,33 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Left Scroll",
+                    "type": "Button",
+                    "id": "e74326a8-1aa0-4a32-b673-abf1ea2322b4",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Right Scroll",
+                    "type": "Button",
+                    "id": "4487cfd9-3c1b-436d-871a-ab7a1c978d03",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Swap Scrolls",
+                    "type": "Button",
+                    "id": "06d59a9b-b394-4bf2-a79f-03701180125c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -243,6 +270,39 @@
                     "processors": "",
                     "groups": "",
                     "action": "Swap Potions",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "57834ed8-ff8a-4f27-acef-8694281c2f89",
+                    "path": "<Keyboard>/z",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Left Scroll",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "eff81e58-e1ba-4efa-b658-8288a0f7fe66",
+                    "path": "<Keyboard>/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Right Scroll",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "499eb5b6-0093-4451-adac-abdc7e21c8c4",
+                    "path": "<Keyboard>/c",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Swap Scrolls",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

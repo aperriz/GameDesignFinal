@@ -89,6 +89,33 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Left Scroll"",
+                    ""type"": ""Button"",
+                    ""id"": ""e74326a8-1aa0-4a32-b673-abf1ea2322b4"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Right Scroll"",
+                    ""type"": ""Button"",
+                    ""id"": ""4487cfd9-3c1b-436d-871a-ab7a1c978d03"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Swap Scrolls"",
+                    ""type"": ""Button"",
+                    ""id"": ""06d59a9b-b394-4bf2-a79f-03701180125c"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -267,6 +294,39 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""action"": ""Swap Potions"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""57834ed8-ff8a-4f27-acef-8694281c2f89"",
+                    ""path"": ""<Keyboard>/z"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Left Scroll"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""eff81e58-e1ba-4efa-b658-8288a0f7fe66"",
+                    ""path"": ""<Keyboard>/x"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Right Scroll"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""499eb5b6-0093-4451-adac-abdc7e21c8c4"",
+                    ""path"": ""<Keyboard>/c"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Swap Scrolls"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -282,6 +342,9 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         m_Player_LeftPotion = m_Player.FindAction("Left Potion", throwIfNotFound: true);
         m_Player_RightPotion = m_Player.FindAction("Right Potion", throwIfNotFound: true);
         m_Player_SwapPotions = m_Player.FindAction("Swap Potions", throwIfNotFound: true);
+        m_Player_LeftScroll = m_Player.FindAction("Left Scroll", throwIfNotFound: true);
+        m_Player_RightScroll = m_Player.FindAction("Right Scroll", throwIfNotFound: true);
+        m_Player_SwapScrolls = m_Player.FindAction("Swap Scrolls", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -350,6 +413,9 @@ public partial class @Controls: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_LeftPotion;
     private readonly InputAction m_Player_RightPotion;
     private readonly InputAction m_Player_SwapPotions;
+    private readonly InputAction m_Player_LeftScroll;
+    private readonly InputAction m_Player_RightScroll;
+    private readonly InputAction m_Player_SwapScrolls;
     public struct PlayerActions
     {
         private @Controls m_Wrapper;
@@ -361,6 +427,9 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         public InputAction @LeftPotion => m_Wrapper.m_Player_LeftPotion;
         public InputAction @RightPotion => m_Wrapper.m_Player_RightPotion;
         public InputAction @SwapPotions => m_Wrapper.m_Player_SwapPotions;
+        public InputAction @LeftScroll => m_Wrapper.m_Player_LeftScroll;
+        public InputAction @RightScroll => m_Wrapper.m_Player_RightScroll;
+        public InputAction @SwapScrolls => m_Wrapper.m_Player_SwapScrolls;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -391,6 +460,15 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             @SwapPotions.started += instance.OnSwapPotions;
             @SwapPotions.performed += instance.OnSwapPotions;
             @SwapPotions.canceled += instance.OnSwapPotions;
+            @LeftScroll.started += instance.OnLeftScroll;
+            @LeftScroll.performed += instance.OnLeftScroll;
+            @LeftScroll.canceled += instance.OnLeftScroll;
+            @RightScroll.started += instance.OnRightScroll;
+            @RightScroll.performed += instance.OnRightScroll;
+            @RightScroll.canceled += instance.OnRightScroll;
+            @SwapScrolls.started += instance.OnSwapScrolls;
+            @SwapScrolls.performed += instance.OnSwapScrolls;
+            @SwapScrolls.canceled += instance.OnSwapScrolls;
         }
 
         private void UnregisterCallbacks(IPlayerActions instance)
@@ -416,6 +494,15 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             @SwapPotions.started -= instance.OnSwapPotions;
             @SwapPotions.performed -= instance.OnSwapPotions;
             @SwapPotions.canceled -= instance.OnSwapPotions;
+            @LeftScroll.started -= instance.OnLeftScroll;
+            @LeftScroll.performed -= instance.OnLeftScroll;
+            @LeftScroll.canceled -= instance.OnLeftScroll;
+            @RightScroll.started -= instance.OnRightScroll;
+            @RightScroll.performed -= instance.OnRightScroll;
+            @RightScroll.canceled -= instance.OnRightScroll;
+            @SwapScrolls.started -= instance.OnSwapScrolls;
+            @SwapScrolls.performed -= instance.OnSwapScrolls;
+            @SwapScrolls.canceled -= instance.OnSwapScrolls;
         }
 
         public void RemoveCallbacks(IPlayerActions instance)
@@ -442,5 +529,8 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         void OnLeftPotion(InputAction.CallbackContext context);
         void OnRightPotion(InputAction.CallbackContext context);
         void OnSwapPotions(InputAction.CallbackContext context);
+        void OnLeftScroll(InputAction.CallbackContext context);
+        void OnRightScroll(InputAction.CallbackContext context);
+        void OnSwapScrolls(InputAction.CallbackContext context);
     }
 }

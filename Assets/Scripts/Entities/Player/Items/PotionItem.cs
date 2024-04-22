@@ -47,7 +47,7 @@ public class PotionItem : PlayerItem
             popup.SetActive(true);
             TextMeshProUGUI nameText = popup.transform.GetChild(0).GetChild(0).GetComponent<TextMeshProUGUI>();
             TextMeshProUGUI descText = popup.transform.GetChild(0).GetChild(1).GetComponent<TextMeshProUGUI>();
-            Debug.Log(nameText);
+            //Debug.Log(nameText);
             nameText.text = Char.ToUpper(type[0]).ToString();
             
             for(int i = 1; i < type.Length; i++)

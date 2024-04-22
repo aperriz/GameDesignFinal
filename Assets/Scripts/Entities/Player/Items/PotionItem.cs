@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
@@ -78,11 +79,17 @@ public class PotionItem : PlayerItem
 
     private void Start()
     {
-        if(playerDamage == null)
+        GameObject player = GameObject.Find("Player");
+        if (playerDamage == null)
         {
-            GameObject player = GameObject.Find("Player");
             playerDamage = player.GetComponent<PlayerRecieveDamage>();
+        }
+        if (extraStats == null)
+        {
             extraStats = player.GetComponent<PlayerExtraStats>();
+        }
+        if (playerMovement == null)
+        {
             playerMovement = player.GetComponent<AgentMover>();
         }
 
@@ -135,7 +142,9 @@ public class PotionItem : PlayerItem
             {
                 Debug.Log("Replaced Left");
                 GameObject newPotion = Instantiate(Resources.Load("Prefabs/World/Potion Prefab") as GameObject, transform.position, Quaternion.identity);
-                newPotion.GetComponent<PotionItem>().type = extraStats.leftPotion.type;
+                string type = newPotion.GetComponent<PotionItem>().type;
+                string oType = extraStats.ToString();
+                
                 extraStats.leftPotion = ScriptableObject.CreateInstance<Potion>() as Potion;
                 extraStats.leftPotion.type = type;
                 extraStats.leftPotion.sprite = renderer.sprite;

@@ -37,8 +37,11 @@ public class PlayerExtraStats : MonoBehaviour
 
     private void Start()
     {
-        UpdatePotions();
         UpdateScrolls();
+        hasLeftPotion = false;
+        hasRightPotion = false;
+        hasLeftScroll = false;
+        hasRightScroll = false;
         //Debug.Log(hasLeftPotion);
         //Debug.Log(hasRightPotion);
         //UpdatePotions();

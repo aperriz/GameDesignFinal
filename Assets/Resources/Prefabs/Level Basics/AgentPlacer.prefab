@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5483766621876714409
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2742493177752203695}
+  - component: {fileID: 6114753066399144197}
+  m_Layer: 0
+  m_Name: AgentPlacer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2742493177752203695
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5483766621876714409}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 21.177322, y: 1.305645, z: -0.2249048}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6114753066399144197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5483766621876714409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3438b019f60bb4b438f066fedf0cda48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 3
+  enemyPrefabs:
+  - {fileID: 6466264818767617061, guid: 3764b4510b0a07444bf02f81d7fe222b, type: 3}
+  - {fileID: 5413864225342381831, guid: 5782aeaacd212a34c8ff25c9bcf4c1f9, type: 3}
+  - {fileID: 4254221036142889622, guid: b0a3b58ecb134b34ebb6932d5145b243, type: 3}
+  - {fileID: 1281187227115052187, guid: 6f0a7fe3716fe6943b873feb0d81a20b, type: 3}
+  showGizmo: 0
+  minibosses:
+  - {fileID: 6599082731761307813, guid: 72969dcc5895c9248b59de5b1aa9498f, type: 3}
+  - {fileID: 4204189775232011630, guid: fe60d33773746a141b4885c3afc3f554, type: 3}
+  - {fileID: 2991554673465107745, guid: 40bd0bbca6bc3fc4f88595ef357da167, type: 3}

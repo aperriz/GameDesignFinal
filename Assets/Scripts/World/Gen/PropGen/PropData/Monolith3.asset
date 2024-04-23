@@ -15,10 +15,10 @@ MonoBehaviour:
   PropSprite: {fileID: -1728137047, guid: 24b61bf2f347e7a4f8ec4af51fa23037, type: 3}
   PropSize: {x: 1, y: 2}
   Corner: 0
-  NearWallUP: 1
+  NearWallUP: 0
   NearWallDown: 0
-  NearWallRight: 1
-  NearWallLeft: 1
+  NearWallRight: 0
+  NearWallLeft: 0
   Inner: 1
   PlacementQuantityMin: 1
   PlacementQuantityMax: 1

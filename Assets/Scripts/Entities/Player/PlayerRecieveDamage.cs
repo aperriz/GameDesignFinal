@@ -37,7 +37,7 @@ public class PlayerRecieveDamage : MonoBehaviour
             
             if(playerExtraStats.defense > 0)
             {
-                playerExtraStats.defense -= 1;
+                playerExtraStats.UpdateDefense(-1);
 
                 animator.SetBool("Invincible", true);
 

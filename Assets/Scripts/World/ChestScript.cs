@@ -39,7 +39,7 @@ public class ChestScript : MonoBehaviour
             audio.Play();
             Destroy(collider);
             SpawnItems();
-            gameObject.transform.parent.gameObject.GetComponent<PlayerExtraStats>().UpdateGold(Random.Range(1*level, (10*level) + 1));
+            GameObject.Find("Player").GetComponent<PlayerExtraStats>().UpdateGold(Random.Range(1*level, (10*level) + 1));
             //Debug.Log("Opened Chest");
         }
     }
@@ -61,8 +61,8 @@ public class ChestScript : MonoBehaviour
             for (int i = 0; i < chestSpawns; i++)
             {
                 placed = false;
-                if (!spawnedItemPositions.Contains(spawnPos) && (Vector3)spawnPos != transform.position && /*
-                    tileMapVisualizer.floorMap.HasTile(new Vector3Int((int)spawnPos.x, (int)spawnPos.y, 0))*/!placed )
+                if (!spawnedItemPositions.Contains(spawnPos) && (Vector3)spawnPos != transform.position && 
+                    tileMapVisualizer.floorMap.HasTile(new Vector3Int((int)spawnPos.x, (int)spawnPos.y, 0)) && !placed )
                 {
                     placed = true;
                     Debug.Log("Spawning item");

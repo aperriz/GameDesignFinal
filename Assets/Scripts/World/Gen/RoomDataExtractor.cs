@@ -97,20 +97,34 @@ public class RoomDataExtractor : MonoBehaviour
     {
         OnFinishedRoomProcessing?.Invoke();
     }
-    //https://youtu.be/NZtrXRdWjsk?si=bMh5ZVIelwhWDrz7&t=274
+
     private void OnDrawGizmosSelected()
     {
         if (dungeonData == null || showGizmo == false)
             return;
         foreach (Room room in dungeonData.Rooms)
         {
-            /*
-              Gizmos.color = Color.red;
-            foreach(var pos in room.FloorTiles)
+
+            Gizmos.color = Color.red;
+            foreach (var pos in room.FloorTiles)
             {
-                Gizmos.DrawCube(pos + Vector2.one * 0.5f, Vector2.one);
+                bool found = false;
+
+                foreach (Room r in dungeonData.Rooms)
+                {
+                    if (r.RoomCenterPos == pos && r != dungeonData.Rooms[0])
+                    {
+                        found = true;
+                        break;
+                    }
+                }
+
+                if (found)
+
+                    Gizmos.DrawCube(pos + Vector2.one * 0.5f, Vector2.one);
             }
-             */
+
+
 
             //Draw inner tiles
             Gizmos.color = Color.yellow;

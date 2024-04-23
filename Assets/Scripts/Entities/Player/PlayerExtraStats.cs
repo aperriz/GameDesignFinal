@@ -72,6 +72,8 @@ public class PlayerExtraStats : MonoBehaviour
         {
             defense = 0;
         }
+        TextMeshProUGUI defenseText = GameObject.Find("Player").transform.GetChild(1).GetChild(2).GetChild(1).GetComponent<TextMeshProUGUI>() as TextMeshProUGUI;
+        defenseText.text = defense.ToString();
     }
 
     private void Update()

@@ -13,6 +13,9 @@ public class PropPlacementManager : MonoBehaviour
     int maxPropsPerRoom;
 
     [SerializeField]
+    GameObject chestPrefab;
+
+    [SerializeField]
     private List<Prop> propsToPlace;
 
     [SerializeField]
@@ -45,21 +48,9 @@ public class PropPlacementManager : MonoBehaviour
 
         int j = 0;
 
-        int i = 0;
-        if(i == 0)
-        {
-            propsToPlace.Remove(chest);
-            i++;
-        }
-        else if(i == 1)
-        {
-            propsToPlace.Add(chest);
-            i++;
-        }
-
         foreach (Room room in dungeonData.Rooms)
         {
-            if(j != merchantIndex && j != playerRoomIndex)
+            if (j != merchantIndex && j != playerRoomIndex)
             {
                 maxPropsPerRoom = UnityEngine.Random.Range(4, 7);
                 propsInRoom = 0;
@@ -108,8 +99,8 @@ public class PropPlacementManager : MonoBehaviour
                 PlaceProps(room, innerProps, room.InnerTiles, PlacementOriginCorner.BottomLeft);
 
                 propLocations.UnionWith(room.PropPositions);
-            } 
-            else if(j == merchantIndex)
+            }
+            else if (j == merchantIndex)
             {
 
             }
@@ -141,9 +132,10 @@ public class PropPlacementManager : MonoBehaviour
         tempPositons.ExceptWith(dungeonData.Path);
 
         //We will try to place all the props
-        foreach (Prop propToPlace in wallProps)
+        while (propsInRoom <= maxPropsPerRoom)
         {
-            if(propsInRoom <= maxPropsPerRoom)
+            Prop propToPlace = propsToPlace[UnityEngine.Random.Range(0, propsToPlace.Count)];
+            if (propsInRoom <= maxPropsPerRoom)
             {
                 //We want to place only certain quantity of each prop
                 int quantity
@@ -364,29 +356,41 @@ public class PropPlacementManager : MonoBehaviour
     /// <returns></returns>
     private GameObject PlacePropGameObjectAt(Room room, Vector2Int placementPostion, Prop propToPlace)
     {
-        //Instantiat the prop at this positon
-        GameObject prop = Instantiate(propPrefab, propParent.transform);
-        SpriteRenderer propSpriteRenderer = prop.GetComponentInChildren<SpriteRenderer>();
-
-        //set the sprite
-        propSpriteRenderer.sprite = propToPlace.PropSprite;
-
-        //Add a collider
-        CapsuleCollider2D collider
-            = propSpriteRenderer.gameObject.AddComponent<CapsuleCollider2D>();
-        collider.offset = Vector2.zero;
-        if (propToPlace.PropSize.x > propToPlace.PropSize.y)
+        GameObject prop;
+        if (propToPlace != chest)
         {
-            collider.direction = CapsuleDirection2D.Horizontal;
-        }
-        Vector2 size
-            = new Vector2(propToPlace.PropSize.x * 0.8f, propToPlace.PropSize.y * 0.8f);
-        collider.size = size;
+            //Instantiat the prop at this positon
+            prop = Instantiate(propPrefab, propParent.transform);
+            SpriteRenderer propSpriteRenderer = prop.GetComponentInChildren<SpriteRenderer>();
 
-        prop.transform.localPosition = new Vector3(placementPostion.x, placementPostion.y, -1);
-        //adjust the position to the sprite
-        propSpriteRenderer.transform.localPosition
-            = (Vector2)propToPlace.PropSize * 0.5f;
+            //set the sprite
+            propSpriteRenderer.sprite = propToPlace.PropSprite;
+
+            //Add a collider
+            CapsuleCollider2D collider
+                = propSpriteRenderer.gameObject.AddComponent<CapsuleCollider2D>();
+            collider.offset = Vector2.zero;
+
+            if (propToPlace.PropSize.x > propToPlace.PropSize.y)
+            {
+                collider.direction = CapsuleDirection2D.Horizontal;
+            }
+            Vector2 size
+                = new Vector2(propToPlace.PropSize.x * 0.8f, propToPlace.PropSize.y * 0.8f);
+            collider.size = size;
+
+            prop.transform.localPosition = new Vector3(placementPostion.x, placementPostion.y, -1);
+            //adjust the position to the sprite
+            propSpriteRenderer.transform.localPosition
+                = (Vector2)propToPlace.PropSize * 0.5f;
+
+        }
+        else
+        {
+            prop = Instantiate(chestPrefab, propParent.transform);
+            prop.transform.localPosition = new Vector3(placementPostion.x + .5f, placementPostion.y + .5f, -1);
+
+        }
 
         //Save the prop in the room data (so in the dunbgeon data)
         room.PropPositions.Add(placementPostion);

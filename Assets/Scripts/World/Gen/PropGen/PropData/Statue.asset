@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Statue
   m_EditorClassIdentifier: 
   PropSprite: {fileID: -1809719544, guid: d394e2bc7948c224c9f1560b0beb9cf8, type: 3}
-  PropSize: {x: 3, y: 3}
+  PropSize: {x: 1, y: 1}
   Corner: 0
   NearWallUP: 0
   NearWallDown: 0

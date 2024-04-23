@@ -23,7 +23,7 @@ public class TrapTile : Trap
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log(collision);
+        //Debug.Log(collision);
         if (!activated && collision.TryGetComponent<PlayerRecieveDamage>(out PlayerRecieveDamage player))
         {
             activated = true;

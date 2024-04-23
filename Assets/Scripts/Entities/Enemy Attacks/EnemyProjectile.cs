@@ -29,7 +29,7 @@ public class EnemyProjectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision != null && collision.GetComponent<EnemyRecieveDamage>() == null)
+        if (collision != null && collision.GetComponent<EnemyRecieveDamage>() == null && collision.gameObject.layer == 6)
         {
             PlayerRecieveDamage player = collision.GetComponent<PlayerRecieveDamage>();
             if (player != null)

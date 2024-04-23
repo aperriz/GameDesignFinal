@@ -98,11 +98,18 @@ public class TileMapVisualizer : MonoBehaviour
             DestroyImmediate(traps.transform.GetChild(i).gameObject);
         }
 
-        GameObject[] propList = GameObject.FindGameObjectsWithTag("Props");
-        foreach(GameObject p in propList)
+        GameObject props = GameObject.Find("Props");
+        for (int i = 0; i < props.transform.childCount; i++)
         {
-            Destroy(p);
+            Destroy(props.transform.GetChild(i).gameObject);
         }
+
+        GameObject enemies = GameObject.Find("Enemies");
+        for (int i = 0; i < enemies.transform.childCount; i++)
+        {
+            Destroy(enemies.transform.GetChild(i).gameObject);
+        }
+
     }
 
     internal void PaintSingleBasicWall(Vector2Int position, string binaryType)

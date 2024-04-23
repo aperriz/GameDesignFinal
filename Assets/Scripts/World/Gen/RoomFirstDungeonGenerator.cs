@@ -33,8 +33,7 @@ public class RoomFirstDungeonGenerator : SimpleRandomWalkGenerator
 
     public void RescanRooms()
     {
-        astar = GameObject.Find("A*").GetComponent<AstarPath>();
-        astar.Scan();
+        AstarPath.active.Scan();
     }
 
     protected override void RunProceduralGeneration()
@@ -70,6 +69,8 @@ public class RoomFirstDungeonGenerator : SimpleRandomWalkGenerator
 
         tileMapVisualizer.PaintFloorTiles(floor);
         WallGenerator.CreateWalls(floor, tileMapVisualizer);
+
+        RescanRooms();
 
         OnDoneGenerating?.Invoke();
     }

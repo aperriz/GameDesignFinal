@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8707751616453170014
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3461364062250200410}
+  - component: {fileID: 3564465192823336934}
+  m_Layer: 0
+  m_Name: PropPlacer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3461364062250200410
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8707751616453170014}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 8.888403, y: 22.916927, z: -0.6179235}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3564465192823336934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8707751616453170014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d399f329a7a9abd4aa438cd2cfa13b57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chestPrefab: {fileID: 8600970174937695635, guid: 72efd04bc27aa504ab9354b99bb62099, type: 3}
+  propsToPlace:
+  - {fileID: 11400000, guid: 51afc441084d93e459cee0915b2c8216, type: 2}
+  - {fileID: 11400000, guid: 276660f3c68213c4780dcc42e24ea86c, type: 2}
+  - {fileID: 11400000, guid: fec360a4a454ef349a6c568354bea464, type: 2}
+  - {fileID: 11400000, guid: c01f5c738a4708c4e80db5e4c6be00df, type: 2}
+  - {fileID: 11400000, guid: 41b8069e6982815419274c1f6fea34ac, type: 2}
+  - {fileID: 11400000, guid: 95f50cd3fd280274abca03bba75b9f17, type: 2}
+  - {fileID: 11400000, guid: 27c620b108442454d959c780bbc5b0bd, type: 2}
+  - {fileID: 11400000, guid: aba6ee7fe9badcb45b4b90c668761f39, type: 2}
+  - {fileID: 11400000, guid: 3ea7de6807faece41a947e5883a2b8e1, type: 2}
+  - {fileID: 11400000, guid: 199d7687aa2481b49aa6e5aff7a49274, type: 2}
+  - {fileID: 11400000, guid: cd9a311bd3994b444bf086b8765c687f, type: 2}
+  chest: {fileID: 11400000, guid: 276660f3c68213c4780dcc42e24ea86c, type: 2}
+  cornerPropPlacementChance: 0.7
+  propPrefab: {fileID: 8851719620976442143, guid: 4a88a9a33b01a694fab20cc2eff69e8d, type: 3}
+  OnFinished:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: AgentPlacer, Assembly-CSharp
+        m_MethodName: PlaceAgents
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  playerRoomIndex: 0
+  merchantIndex: 0

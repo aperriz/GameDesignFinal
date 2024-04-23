@@ -142,8 +142,7 @@ public class PotionItem : PlayerItem
             {
                 Debug.Log("Replaced Left");
                 GameObject newPotion = Instantiate(Resources.Load("Prefabs/World/Potion Prefab") as GameObject, transform.position, Quaternion.identity);
-                string type = newPotion.GetComponent<PotionItem>().type;
-                string oType = extraStats.ToString();
+                newPotion.GetComponent<PotionItem>().type = extraStats.leftPotion.type;
                 
                 extraStats.leftPotion = ScriptableObject.CreateInstance<Potion>() as Potion;
                 extraStats.leftPotion.type = type;

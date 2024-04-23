@@ -1,9 +1,6 @@
 TODO List:
-Items/From chests - Pickup system
-	Just need scroll effects
 Increased power weapons from chests
-Scrolls
+	prefab and chance to spawn
 Boss
 Transfer between levels
-Defense
 Pause Menu

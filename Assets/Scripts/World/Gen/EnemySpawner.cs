@@ -39,11 +39,29 @@ public class AgentPlacer : MonoBehaviour
 
     public void PlaceAgents()
     {
+        Room farthestRoom = dungeonData.Rooms[0];
+        Room playerRoom = dungeonData.Rooms[0];
+        float currentFarthest = Math.Abs(Vector3.Distance(farthestRoom.RoomCenterPos, playerRoom.RoomCenterPos));
+
+        foreach(Room room in dungeonData.Rooms)
+        {
+            float roomDist = Math.Abs(Vector3.Distance(room.RoomCenterPos, playerRoom.RoomCenterPos));
+
+            Debug.Log(roomDist);
+            if (roomDist >= currentFarthest)
+            {
+                Debug.Log("New Farthest: " + roomDist);
+                currentFarthest = roomDist;
+                farthestRoom = room;
+            }
+        }
+
+        bossRoomIndex = dungeonData.Rooms.IndexOf(farthestRoom);
+
         maxWeight = 4 + (level * 2);
         minWeight = 2 + (level * 2);
 
         Debug.Log("Placing agents");
-        bossRoomIndex = dungeonData.roomCount - 1;
         if (dungeonData == null)
             return;
 
@@ -65,6 +83,7 @@ public class AgentPlacer : MonoBehaviour
 
             if (i == 0)
             {
+                Debug.Log("Moving Player");
                 /*GameObject player = Instantiate(playerPrefab);*/
                 GameObject player = GameObject.Find("Player");
                 player.transform.localPosition = dungeonData.Rooms[i].RoomCenterPos + Vector2.one * 0.5f;
@@ -93,37 +112,30 @@ public class AgentPlacer : MonoBehaviour
     /// <param name="enemysCount"></param>
     private void PlaceEnemies(Room room, string type)
     {
+        Debug.Log("Placing Enemies");
         int roomMaxWeight = 0;
 
         int k = 0;
         int roomWeight = 0;
 
-        if (type != "boss" && level % 3 != 0)
+        if (type != "boss")
         {
-            roomMaxWeight = (int)Math.Round(UnityEngine.Random.Range(minWeight, maxWeight));
+            roomMaxWeight = (int)Math.Round(UnityEngine.Random.Range(minWeight * 1, maxWeight * 1));
         }
-        else if (level % 3 != 0)
-        {
-            roomMaxWeight = (int)Math.Round(UnityEngine.Random.Range(minWeight * 1.25f, maxWeight * 1.25f));
-        }
-        else if (type == "test")
-        {
-            roomMaxWeight = 1;
-        }
-        else if ((level % 3 == 0) && type == "boss")
+        else if (type == "boss")
         {
             roomMaxWeight = 0;
             switch (level)
             {
                 case 3:
                     {
-                        
+
                         GameObject enemy = Instantiate(minibosses[0], enemyParent);
                         int enemyWeight = enemy.GetComponentInChildren<EnemyRecieveDamage>().weight;
                         enemy.transform.localPosition = (Vector2)room.PositionsAccessibleFromPath[k] + Vector2.one * 0.5f;
                         room.EnemiesInTheRoom.Add(enemy);
                         k++;
-                        break;
+                        return;
                     }
                 case 6:
                     {
@@ -131,7 +143,7 @@ public class AgentPlacer : MonoBehaviour
                         enemy.transform.localPosition = (Vector2)room.PositionsAccessibleFromPath[k] + Vector2.one * 0.5f;
                         room.EnemiesInTheRoom.Add(enemy);
                         k++;
-                        break;
+                        return;
                     }
                 case 9:
                     {
@@ -139,10 +151,11 @@ public class AgentPlacer : MonoBehaviour
                         enemy.transform.localPosition = (Vector2)room.PositionsAccessibleFromPath[k] + Vector2.one * 0.5f;
                         room.EnemiesInTheRoom.Add(enemy);
                         k++;
-                        break;
+                        return;
                     }
                 default:
                     {
+                        roomMaxWeight = roomMaxWeight = (int)Math.Round(UnityEngine.Random.Range(minWeight * 1.5f, maxWeight * 1.5f));
                         break;
                     }
             }

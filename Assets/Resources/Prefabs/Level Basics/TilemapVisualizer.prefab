@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4935727496059323240
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5580241897662007389}
+  - component: {fileID: 8896805756534830199}
+  m_Layer: 0
+  m_Name: TilemapVisualizer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5580241897662007389
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4935727496059323240}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 116.72275, y: 21.925598, z: -2.5859277}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8896805756534830199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4935727496059323240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 488e905834c4c6d49aa63b570add2c5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floorMap: {fileID: 0}
+  wallMap: {fileID: 0}
+  abnormalFloorTiles:
+  - {fileID: 11400000, guid: 41a136b2fcd99034193fc7cb2f7e1151, type: 2}
+  - {fileID: 11400000, guid: 5a43ece2e6120a64da4c3f4043078e49, type: 2}
+  - {fileID: 11400000, guid: fa1ae6af9aca76141a807d7e0a71dddb, type: 2}
+  - {fileID: 11400000, guid: c7dd9125db79ea54dab09066b53b03a0, type: 2}
+  - {fileID: 11400000, guid: 62bd03cc6d4c65c498eb213f49ef5ce3, type: 2}
+  wallBottomHalf: {fileID: 0}
+  floorTrapTile: {fileID: 11400000, guid: 148b270eb119f6d4f992ba8d17c21cc6, type: 2}
+  normalFloorTile: {fileID: 11400000, guid: 148b270eb119f6d4f992ba8d17c21cc6, type: 2}
+  wallTop: {fileID: 11400000, guid: c9fd5e59dbb86434d8775929eef1190b, type: 2}
+  wallSideRight: {fileID: 11400000, guid: 76511c31e026a95439e292fdc56a0e3c, type: 2}
+  wallSiderLeft: {fileID: 11400000, guid: a26b43e80fdc3414982802066c01ea51, type: 2}
+  wallBottom: {fileID: 11400000, guid: 9cab7af4ace915143942f81343eea0be, type: 2}
+  wallFull: {fileID: 11400000, guid: 637dd5078aac6dd42a4866942ffb478c, type: 2}
+  wallInnerCornerDownLeft: {fileID: 11400000, guid: ad3b87c855d66c04593df8bc655bca77, type: 2}
+  wallInnerCornerDownRight: {fileID: 11400000, guid: 68c8b658c4a8d70468dee28add69751f, type: 2}
+  wallDiagonalCornerDownRight: {fileID: 11400000, guid: a30f1e0daaa3fea4eacf5874c3a385eb, type: 2}
+  wallDiagonalCornerDownLeft: {fileID: 11400000, guid: b4476b7896cd718408265f8d3f96ceed, type: 2}
+  wallDiagonalCornerUpRight: {fileID: 11400000, guid: 611ff96ce0f4ae543941f74e318e8634, type: 2}
+  wallDiagonalCornerUpLeft: {fileID: 11400000, guid: d885a472dba9c2a408dc2c104a35734f, type: 2}
+  percentAbnormal: 0.05
+  percentTraps: 0.01
+  trapTile: {fileID: 7925968315068067380, guid: 271821a8706a30f4780f89d35c9020f0, type: 3}
+  dungeonData: {fileID: 0}

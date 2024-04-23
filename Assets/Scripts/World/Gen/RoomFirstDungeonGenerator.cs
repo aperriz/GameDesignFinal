@@ -1,3 +1,4 @@
+using Pathfinding;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -33,7 +34,23 @@ public class RoomFirstDungeonGenerator : SimpleRandomWalkGenerator
 
     public void RescanRooms()
     {
-        AstarPath.active.Scan();
+        StartCoroutine(RescanRoomTimer());
+    }
+
+    IEnumerator RescanRoomTimer()
+    {
+        yield return new WaitForSeconds(1);
+        if (AstarPath.active.graphs.Length == 0)
+        {
+            GridGraph gg = AstarPath.active.data.AddGraph(typeof(GridGraph)) as GridGraph;
+
+            gg.is2D = true;
+            gg.center = new Vector3(0, 0, -1);
+            gg.SetDimensions(400, 400, 1);
+            gg.collision.mask = LayerMask.GetMask("Walls", "Props");
+            gg.collision.use2D = true;
+            gg.Scan();
+        }
     }
 
     protected override void RunProceduralGeneration()
@@ -83,7 +100,18 @@ public class RoomFirstDungeonGenerator : SimpleRandomWalkGenerator
         {
             BoundsInt roomBounds = roomsList[i];
             Vector2Int roomCenter = new Vector2Int(Mathf.RoundToInt(roomBounds.center.x), Mathf.RoundToInt(roomBounds.center.y));
-            HashSet<Vector2Int> roomFloor = RunRandomWalk(randomWalkParameters, roomCenter);
+            HashSet<Vector2Int> roomFloor = null;
+            if (i != 0)
+            {
+                roomFloor = RunRandomWalk(randomWalkParameters, roomCenter);
+            }
+            else
+            {
+                SimpleRandomWalkSO playerRoom = new SimpleRandomWalkSO();
+                playerRoom.iterations = (int)Math.Round(randomWalkParameters.iterations * 1.5);
+                playerRoom.walkLength = (int)Math.Round(randomWalkParameters.walkLength * 1.5);
+                roomFloor = RunRandomWalk(playerRoom, roomCenter);
+            }
 
             HashSet<Vector2Int> actualFloorPositions = new HashSet<Vector2Int>();
             

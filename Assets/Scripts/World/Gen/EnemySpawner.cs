@@ -86,7 +86,8 @@ public class AgentPlacer : MonoBehaviour
                 Debug.Log("Moving Player");
                 /*GameObject player = Instantiate(playerPrefab);*/
                 GameObject player = GameObject.Find("Player");
-                player.transform.localPosition = dungeonData.Rooms[i].RoomCenterPos + Vector2.one * 0.5f;
+                Vector3 playerPos = dungeonData.Rooms[i].RoomCenterPos + Vector2.one * 0.5f;
+                player.transform.localPosition = new Vector3(playerPos.x, playerPos.y, -10);
                 player.name = "Player";
                 //Make the camera follow the player
                 dungeonData.PlayerReference = player;
@@ -100,7 +101,7 @@ public class AgentPlacer : MonoBehaviour
             }
             else
             {
-                //PlaceEnemies(room, "");
+                PlaceEnemies(room, "");
             }
         }
     }

@@ -28,7 +28,7 @@ public class RangedPlayerDetector : MonoBehaviour
        
         if (!(healthCheck.health <= 0))
         {
-            Debug.Log("Alive");
+            //Debug.Log("Alive");
             RaycastHit2D losRay = Physics2D.Raycast(transform.position, player.transform.position - transform.position, detectionRange, LayerMask.GetMask("Player", "Walls"));
             RaycastHit2D rangedRay = Physics2D.Raycast(transform.position, player.transform.position - transform.position, 10, LayerMask.GetMask("Player", "Walls"));
             Debug.DrawRay(transform.position, player.transform.position - transform.position);
@@ -58,7 +58,7 @@ public class RangedPlayerDetector : MonoBehaviour
                         aiPath.enabled = true;
                     }
 
-                    Debug.Log("Detected player");
+                    //Debug.Log("Detected player");
                     Debug.DrawRay(transform.position, player.transform.position - transform.position, Color.green);
                 }
                 else

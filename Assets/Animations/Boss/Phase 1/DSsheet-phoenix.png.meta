@@ -1,0 +1,3530 @@
+fileFormatVersion: 2
+guid: b44faf2e34e19964cb9198b1fd590237
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DSsheet-phoenix_1
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 3059
+        width: 179
+        height: 188
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 87.5, y: -86}
+        - {x: 85.5, y: -84}
+        - {x: 85.5, y: -81}
+        - {x: 84.5, y: -80}
+        - {x: 84.5, y: -74}
+        - {x: 83.5, y: -73}
+        - {x: 83.5, y: -69}
+        - {x: 82.5, y: -68}
+        - {x: 81.5, y: -61}
+        - {x: 79.5, y: -57}
+        - {x: 79.5, y: -54}
+        - {x: 78.5, y: -51}
+        - {x: 73.5, y: -46}
+        - {x: 70.5, y: -45}
+        - {x: 61.5, y: -37}
+        - {x: 60.5, y: -37}
+        - {x: 59.5, y: -35}
+        - {x: 48.5, y: -30}
+        - {x: 40.5, y: -23}
+        - {x: 39.5, y: -23}
+        - {x: 37.5, y: -20}
+        - {x: 35.5, y: -19}
+        - {x: 40.5, y: -14}
+        - {x: 40.5, y: -12}
+        - {x: 42.5, y: -10}
+        - {x: 43.5, y: -6}
+        - {x: 44.5, y: -5}
+        - {x: 47.5, y: -5}
+        - {x: 52.5, y: -1}
+        - {x: 53.5, y: 2}
+        - {x: 53.5, y: 6}
+        - {x: 52.5, y: 7}
+        - {x: 52.5, y: 9}
+        - {x: 53.5, y: 10}
+        - {x: 53.5, y: 14}
+        - {x: 54.5, y: 15}
+        - {x: 54.5, y: 21}
+        - {x: 56.5, y: 24}
+        - {x: 60.5, y: 28}
+        - {x: 61.5, y: 31}
+        - {x: 61.5, y: 37}
+        - {x: 62.5, y: 38}
+        - {x: 62.5, y: 42}
+        - {x: 65.5, y: 45}
+        - {x: 65.5, y: 46}
+        - {x: 68.5, y: 49}
+        - {x: 68.5, y: 50}
+        - {x: 72.5, y: 55}
+        - {x: 73.5, y: 59}
+        - {x: 71.5, y: 61}
+        - {x: 68.5, y: 61}
+        - {x: 69.5, y: 62}
+        - {x: 69.5, y: 64}
+        - {x: 71.5, y: 68}
+        - {x: 71.5, y: 75}
+        - {x: 69.5, y: 77}
+        - {x: 60.5, y: 76}
+        - {x: 58.5, y: 78}
+        - {x: 54.5, y: 79}
+        - {x: 49.5, y: 84}
+        - {x: 48.5, y: 84}
+        - {x: 42.5, y: 89}
+        - {x: 40.5, y: 89}
+        - {x: 36.5, y: 91}
+        - {x: 31.5, y: 91}
+        - {x: 30.5, y: 92}
+        - {x: 22.5, y: 92}
+        - {x: 21.5, y: 93}
+        - {x: -4.5, y: 93}
+        - {x: -5.5, y: 92}
+        - {x: -12.5, y: 92}
+        - {x: -13.5, y: 93}
+        - {x: -19.5, y: 93}
+        - {x: -20.5, y: 94}
+        - {x: -61.5, y: 94}
+        - {x: -60.5, y: 91}
+        - {x: -55.5, y: 89}
+        - {x: -53.5, y: 89}
+        - {x: -50.5, y: 87}
+        - {x: -45.5, y: 86}
+        - {x: -43.5, y: 85}
+        - {x: -52.5, y: 85}
+        - {x: -53.5, y: 86}
+        - {x: -60.5, y: 86}
+        - {x: -62.5, y: 84}
+        - {x: -61.5, y: 81}
+        - {x: -52.5, y: 77}
+        - {x: -48.5, y: 76}
+        - {x: -47.5, y: 74}
+        - {x: -42.5, y: 72}
+        - {x: -39.5, y: 70}
+        - {x: -44.5, y: 70}
+        - {x: -45.5, y: 71}
+        - {x: -55.5, y: 71}
+        - {x: -56.5, y: 72}
+        - {x: -60.5, y: 72}
+        - {x: -61.5, y: 69}
+        - {x: -59.5, y: 66}
+        - {x: -51.5, y: 63}
+        - {x: -49.5, y: 61}
+        - {x: -44.5, y: 59}
+        - {x: -42.5, y: 58}
+        - {x: -45.5, y: 58}
+        - {x: -46.5, y: 59}
+        - {x: -54.5, y: 59}
+        - {x: -55.5, y: 56}
+        - {x: -52.5, y: 53}
+        - {x: -50.5, y: 53}
+        - {x: -49.5, y: 51}
+        - {x: -45.5, y: 50}
+        - {x: -38.5, y: 45}
+        - {x: -38.5, y: 44}
+        - {x: -41.5, y: 42}
+        - {x: -43.5, y: 41}
+        - {x: -43.5, y: 39}
+        - {x: -37.5, y: 33}
+        - {x: -36.5, y: 29}
+        - {x: -38.5, y: 27}
+        - {x: -39.5, y: 27}
+        - {x: -45.5, y: 21}
+        - {x: -46.5, y: 21}
+        - {x: -50.5, y: 18}
+        - {x: -54.5, y: 16}
+        - {x: -57.5, y: 12}
+        - {x: -57.5, y: 11}
+        - {x: -58.5, y: 10}
+        - {x: -61.5, y: 10}
+        - {x: -62.5, y: 9}
+        - {x: -66.5, y: 9}
+        - {x: -67.5, y: 8}
+        - {x: -69.5, y: 8}
+        - {x: -71.5, y: 6}
+        - {x: -72.5, y: 6}
+        - {x: -76.5, y: 3}
+        - {x: -80.5, y: 3}
+        - {x: -81.5, y: 2}
+        - {x: -89.5, y: 1}
+        - {x: -89.5, y: -94}
+        - {x: 89.5, y: -94}
+        - {x: 89.5, y: -89}
+        - {x: 87.5, y: -87}
+      tessellationDetail: 1
+      bones: []
+      spriteID: b886492f9ba86bf4cb655e151394281d
+      internalID: 242598955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_2
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 3061
+        width: 179
+        height: 188
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da43b276527538c499c6ee2e48f2a2dc
+      internalID: -212945243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_3
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 3059
+        width: 179
+        height: 188
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47b71a0367e7a4142bf292471bfe18a6
+      internalID: 772211785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_4
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 3057
+        width: 179
+        height: 188
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2ef2eab8c2b58c40b6c0b2415471e52
+      internalID: -1307866046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_5
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 3051
+        width: 179
+        height: 188
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49dc2e736c9754e47be54f384b39eb54
+      internalID: -1962671811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_6
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 2906
+        width: 125
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -31.5, y: -59}
+        - {x: -33.5, y: -55}
+        - {x: -39.5, y: -50}
+        - {x: -38.5, y: -48}
+        - {x: -35.5, y: -44}
+        - {x: -35.5, y: -43}
+        - {x: -31.5, y: -39}
+        - {x: -28.5, y: -43}
+        - {x: -26.5, y: -46}
+        - {x: -25.5, y: -52}
+        - {x: -24.5, y: -53}
+        - {x: -24.5, y: -55}
+        - {x: -23.5, y: -56}
+        - {x: -23.5, y: -58}
+        - {x: -21.5, y: -62}
+        - {x: -20.5, y: -70}
+        - {x: -19.5, y: -71}
+        - {x: 62.5, y: -71}
+        - {x: 62.5, y: -48}
+        - {x: 61.5, y: -47}
+        - {x: 61.5, y: -40}
+        - {x: 60.5, y: -39}
+        - {x: 60.5, y: -20}
+        - {x: 59.5, y: -19}
+        - {x: 59.5, y: -13}
+        - {x: 58.5, y: -12}
+        - {x: 57.5, y: -6}
+        - {x: 55.5, y: -1}
+        - {x: 52.5, y: 2}
+        - {x: 43.5, y: 6}
+        - {x: 40.5, y: 8}
+        - {x: 39.5, y: 8}
+        - {x: 32.5, y: 13}
+        - {x: 32.5, y: 14}
+        - {x: 28.5, y: 20}
+        - {x: 31.5, y: 20}
+        - {x: 34.5, y: 23}
+        - {x: 35.5, y: 28}
+        - {x: 37.5, y: 31}
+        - {x: 38.5, y: 37}
+        - {x: 40.5, y: 39}
+        - {x: 40.5, y: 43}
+        - {x: 38.5, y: 47}
+        - {x: 40.5, y: 49}
+        - {x: 40.5, y: 54}
+        - {x: 42.5, y: 56}
+        - {x: 43.5, y: 60}
+        - {x: 42.5, y: 61}
+        - {x: 43.5, y: 65}
+        - {x: 41.5, y: 67}
+        - {x: 37.5, y: 67}
+        - {x: 30.5, y: 71}
+        - {x: 6.5, y: 71}
+        - {x: 5.5, y: 70}
+        - {x: 0.5, y: 69}
+        - {x: -2.5, y: 67}
+        - {x: -8.5, y: 66}
+        - {x: -9.5, y: 65}
+        - {x: -11.5, y: 65}
+        - {x: -16.5, y: 63}
+        - {x: -16.5, y: 61}
+        - {x: -12.5, y: 58}
+        - {x: -15.5, y: 56}
+        - {x: -14.5, y: 53}
+        - {x: -10.5, y: 53}
+        - {x: -13.5, y: 51}
+        - {x: -13.5, y: 50}
+        - {x: -10.5, y: 48}
+        - {x: -11.5, y: 47}
+        - {x: -10.5, y: 44}
+        - {x: -7.5, y: 43}
+        - {x: -4.5, y: 43}
+        - {x: -3.5, y: 42}
+        - {x: -2.5, y: 38}
+        - {x: -1.5, y: 37}
+        - {x: -1.5, y: 35}
+        - {x: -0.5, y: 34}
+        - {x: -0.5, y: 28}
+        - {x: -6.5, y: 22}
+        - {x: -7.5, y: 22}
+        - {x: -10.5, y: 20}
+        - {x: -15.5, y: 17}
+        - {x: -20.5, y: 17}
+        - {x: -21.5, y: 16}
+        - {x: -26.5, y: 16}
+        - {x: -27.5, y: 15}
+        - {x: -33.5, y: 15}
+        - {x: -34.5, y: 14}
+        - {x: -37.5, y: 14}
+        - {x: -40.5, y: 13}
+        - {x: -43.5, y: 9}
+        - {x: -44.5, y: 5}
+        - {x: -45.5, y: 4}
+        - {x: -45.5, y: 0}
+        - {x: -48.5, y: -2}
+        - {x: -49.5, y: -5}
+        - {x: -49.5, y: -10}
+        - {x: -51.5, y: -13}
+        - {x: -56.5, y: -18}
+        - {x: -57.5, y: -21}
+        - {x: -62.5, y: -26}
+        - {x: -62.5, y: -64}
+        - {x: -56.5, y: -71}
+        - {x: -23.5, y: -71}
+        - {x: -23.5, y: -69}
+        - {x: -27.5, y: -65}
+        - {x: -27.5, y: -64}
+      tessellationDetail: 1
+      bones: []
+      spriteID: 3b48919b4eb08074184e108b9a4daf3c
+      internalID: -1687009417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_7
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 2906
+        width: 125
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -31.5, y: -59}
+        - {x: -33.5, y: -55}
+        - {x: -39.5, y: -50}
+        - {x: -38.5, y: -48}
+        - {x: -35.5, y: -44}
+        - {x: -35.5, y: -43}
+        - {x: -31.5, y: -39}
+        - {x: -28.5, y: -43}
+        - {x: -26.5, y: -46}
+        - {x: -25.5, y: -52}
+        - {x: -24.5, y: -53}
+        - {x: -24.5, y: -55}
+        - {x: -23.5, y: -56}
+        - {x: -23.5, y: -58}
+        - {x: -21.5, y: -62}
+        - {x: -20.5, y: -70}
+        - {x: -19.5, y: -71}
+        - {x: 62.5, y: -71}
+        - {x: 62.5, y: -48}
+        - {x: 61.5, y: -47}
+        - {x: 61.5, y: -40}
+        - {x: 60.5, y: -39}
+        - {x: 60.5, y: -20}
+        - {x: 59.5, y: -19}
+        - {x: 59.5, y: -13}
+        - {x: 58.5, y: -12}
+        - {x: 57.5, y: -6}
+        - {x: 55.5, y: -1}
+        - {x: 52.5, y: 2}
+        - {x: 43.5, y: 6}
+        - {x: 40.5, y: 8}
+        - {x: 39.5, y: 8}
+        - {x: 32.5, y: 13}
+        - {x: 32.5, y: 14}
+        - {x: 28.5, y: 20}
+        - {x: 30.5, y: 20}
+        - {x: 34.5, y: 24}
+        - {x: 34.5, y: 26}
+        - {x: 37.5, y: 32}
+        - {x: 38.5, y: 37}
+        - {x: 40.5, y: 39}
+        - {x: 40.5, y: 43}
+        - {x: 38.5, y: 47}
+        - {x: 40.5, y: 49}
+        - {x: 40.5, y: 54}
+        - {x: 42.5, y: 56}
+        - {x: 43.5, y: 60}
+        - {x: 42.5, y: 61}
+        - {x: 43.5, y: 65}
+        - {x: 41.5, y: 67}
+        - {x: 37.5, y: 67}
+        - {x: 30.5, y: 71}
+        - {x: 6.5, y: 71}
+        - {x: 5.5, y: 70}
+        - {x: 0.5, y: 69}
+        - {x: -2.5, y: 67}
+        - {x: -8.5, y: 66}
+        - {x: -9.5, y: 65}
+        - {x: -11.5, y: 65}
+        - {x: -16.5, y: 63}
+        - {x: -16.5, y: 61}
+        - {x: -12.5, y: 58}
+        - {x: -15.5, y: 56}
+        - {x: -14.5, y: 53}
+        - {x: -10.5, y: 53}
+        - {x: -13.5, y: 51}
+        - {x: -13.5, y: 50}
+        - {x: -10.5, y: 48}
+        - {x: -11.5, y: 47}
+        - {x: -10.5, y: 44}
+        - {x: -7.5, y: 43}
+        - {x: -4.5, y: 43}
+        - {x: -3.5, y: 42}
+        - {x: -2.5, y: 38}
+        - {x: -1.5, y: 37}
+        - {x: -1.5, y: 35}
+        - {x: -0.5, y: 34}
+        - {x: -0.5, y: 28}
+        - {x: -6.5, y: 22}
+        - {x: -7.5, y: 22}
+        - {x: -10.5, y: 20}
+        - {x: -15.5, y: 17}
+        - {x: -20.5, y: 17}
+        - {x: -21.5, y: 16}
+        - {x: -26.5, y: 16}
+        - {x: -27.5, y: 15}
+        - {x: -33.5, y: 15}
+        - {x: -34.5, y: 14}
+        - {x: -37.5, y: 14}
+        - {x: -40.5, y: 13}
+        - {x: -43.5, y: 9}
+        - {x: -44.5, y: 5}
+        - {x: -45.5, y: 4}
+        - {x: -45.5, y: 0}
+        - {x: -48.5, y: -2}
+        - {x: -49.5, y: -5}
+        - {x: -49.5, y: -10}
+        - {x: -51.5, y: -13}
+        - {x: -56.5, y: -18}
+        - {x: -57.5, y: -21}
+        - {x: -62.5, y: -26}
+        - {x: -62.5, y: -64}
+        - {x: -56.5, y: -71}
+        - {x: -23.5, y: -71}
+        - {x: -23.5, y: -69}
+        - {x: -27.5, y: -65}
+        - {x: -27.5, y: -64}
+      tessellationDetail: 1
+      bones: []
+      spriteID: e4c3d6e2059d8084f8193fa04a0e692a
+      internalID: 928541513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_8
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 2906
+        width: 125
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -31.5, y: -59}
+        - {x: -33.5, y: -55}
+        - {x: -39.5, y: -50}
+        - {x: -38.5, y: -48}
+        - {x: -35.5, y: -44}
+        - {x: -35.5, y: -43}
+        - {x: -31.5, y: -39}
+        - {x: -28.5, y: -43}
+        - {x: -26.5, y: -46}
+        - {x: -25.5, y: -52}
+        - {x: -24.5, y: -53}
+        - {x: -24.5, y: -55}
+        - {x: -23.5, y: -56}
+        - {x: -23.5, y: -58}
+        - {x: -21.5, y: -62}
+        - {x: -20.5, y: -70}
+        - {x: -19.5, y: -71}
+        - {x: 62.5, y: -71}
+        - {x: 62.5, y: -48}
+        - {x: 61.5, y: -47}
+        - {x: 61.5, y: -40}
+        - {x: 60.5, y: -39}
+        - {x: 60.5, y: -20}
+        - {x: 59.5, y: -19}
+        - {x: 59.5, y: -13}
+        - {x: 58.5, y: -12}
+        - {x: 57.5, y: -6}
+        - {x: 55.5, y: -1}
+        - {x: 52.5, y: 2}
+        - {x: 43.5, y: 6}
+        - {x: 40.5, y: 8}
+        - {x: 39.5, y: 8}
+        - {x: 32.5, y: 13}
+        - {x: 32.5, y: 14}
+        - {x: 28.5, y: 19}
+        - {x: 31.5, y: 19}
+        - {x: 33.5, y: 21}
+        - {x: 34.5, y: 25}
+        - {x: 35.5, y: 26}
+        - {x: 35.5, y: 28}
+        - {x: 37.5, y: 31}
+        - {x: 38.5, y: 37}
+        - {x: 40.5, y: 39}
+        - {x: 40.5, y: 43}
+        - {x: 38.5, y: 47}
+        - {x: 40.5, y: 49}
+        - {x: 40.5, y: 54}
+        - {x: 42.5, y: 56}
+        - {x: 43.5, y: 60}
+        - {x: 42.5, y: 61}
+        - {x: 43.5, y: 65}
+        - {x: 41.5, y: 67}
+        - {x: 37.5, y: 67}
+        - {x: 30.5, y: 71}
+        - {x: 6.5, y: 71}
+        - {x: 5.5, y: 70}
+        - {x: 0.5, y: 69}
+        - {x: -2.5, y: 67}
+        - {x: -8.5, y: 66}
+        - {x: -9.5, y: 65}
+        - {x: -11.5, y: 65}
+        - {x: -16.5, y: 63}
+        - {x: -16.5, y: 61}
+        - {x: -12.5, y: 58}
+        - {x: -15.5, y: 56}
+        - {x: -14.5, y: 53}
+        - {x: -10.5, y: 53}
+        - {x: -13.5, y: 51}
+        - {x: -13.5, y: 50}
+        - {x: -10.5, y: 48}
+        - {x: -11.5, y: 47}
+        - {x: -10.5, y: 44}
+        - {x: -7.5, y: 43}
+        - {x: -4.5, y: 43}
+        - {x: -3.5, y: 42}
+        - {x: -2.5, y: 38}
+        - {x: -1.5, y: 37}
+        - {x: -1.5, y: 35}
+        - {x: -0.5, y: 34}
+        - {x: -0.5, y: 28}
+        - {x: -6.5, y: 22}
+        - {x: -7.5, y: 22}
+        - {x: -10.5, y: 20}
+        - {x: -15.5, y: 17}
+        - {x: -20.5, y: 17}
+        - {x: -21.5, y: 16}
+        - {x: -26.5, y: 16}
+        - {x: -27.5, y: 15}
+        - {x: -33.5, y: 15}
+        - {x: -34.5, y: 14}
+        - {x: -37.5, y: 14}
+        - {x: -40.5, y: 13}
+        - {x: -43.5, y: 9}
+        - {x: -44.5, y: 5}
+        - {x: -45.5, y: 4}
+        - {x: -45.5, y: 0}
+        - {x: -48.5, y: -2}
+        - {x: -49.5, y: -5}
+        - {x: -49.5, y: -10}
+        - {x: -51.5, y: -13}
+        - {x: -56.5, y: -18}
+        - {x: -57.5, y: -21}
+        - {x: -62.5, y: -26}
+        - {x: -62.5, y: -64}
+        - {x: -56.5, y: -71}
+        - {x: -23.5, y: -71}
+        - {x: -23.5, y: -69}
+        - {x: -27.5, y: -65}
+        - {x: -27.5, y: -64}
+      tessellationDetail: 1
+      bones: []
+      spriteID: 3f5f14401e3c1e94aace655d9aba5bd0
+      internalID: 347295661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_9
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 2906
+        width: 125
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -31.5, y: -59}
+        - {x: -33.5, y: -55}
+        - {x: -39.5, y: -50}
+        - {x: -38.5, y: -48}
+        - {x: -35.5, y: -44}
+        - {x: -35.5, y: -43}
+        - {x: -31.5, y: -39}
+        - {x: -28.5, y: -43}
+        - {x: -26.5, y: -46}
+        - {x: -25.5, y: -52}
+        - {x: -24.5, y: -53}
+        - {x: -24.5, y: -55}
+        - {x: -23.5, y: -56}
+        - {x: -23.5, y: -58}
+        - {x: -21.5, y: -62}
+        - {x: -20.5, y: -70}
+        - {x: -19.5, y: -71}
+        - {x: 62.5, y: -71}
+        - {x: 62.5, y: -48}
+        - {x: 61.5, y: -47}
+        - {x: 61.5, y: -40}
+        - {x: 60.5, y: -39}
+        - {x: 60.5, y: -20}
+        - {x: 59.5, y: -19}
+        - {x: 59.5, y: -13}
+        - {x: 58.5, y: -12}
+        - {x: 57.5, y: -6}
+        - {x: 55.5, y: -1}
+        - {x: 52.5, y: 2}
+        - {x: 43.5, y: 6}
+        - {x: 40.5, y: 8}
+        - {x: 39.5, y: 8}
+        - {x: 32.5, y: 13}
+        - {x: 32.5, y: 14}
+        - {x: 28.5, y: 20}
+        - {x: 31.5, y: 20}
+        - {x: 34.5, y: 23}
+        - {x: 35.5, y: 28}
+        - {x: 37.5, y: 31}
+        - {x: 38.5, y: 37}
+        - {x: 40.5, y: 39}
+        - {x: 40.5, y: 43}
+        - {x: 38.5, y: 47}
+        - {x: 40.5, y: 49}
+        - {x: 40.5, y: 54}
+        - {x: 42.5, y: 56}
+        - {x: 43.5, y: 60}
+        - {x: 42.5, y: 61}
+        - {x: 43.5, y: 65}
+        - {x: 41.5, y: 67}
+        - {x: 37.5, y: 67}
+        - {x: 30.5, y: 71}
+        - {x: 6.5, y: 71}
+        - {x: 5.5, y: 70}
+        - {x: 0.5, y: 69}
+        - {x: -2.5, y: 67}
+        - {x: -8.5, y: 66}
+        - {x: -9.5, y: 65}
+        - {x: -11.5, y: 65}
+        - {x: -16.5, y: 63}
+        - {x: -16.5, y: 61}
+        - {x: -12.5, y: 58}
+        - {x: -15.5, y: 56}
+        - {x: -14.5, y: 53}
+        - {x: -10.5, y: 53}
+        - {x: -13.5, y: 51}
+        - {x: -13.5, y: 50}
+        - {x: -10.5, y: 48}
+        - {x: -11.5, y: 47}
+        - {x: -10.5, y: 44}
+        - {x: -7.5, y: 43}
+        - {x: -4.5, y: 43}
+        - {x: -3.5, y: 42}
+        - {x: -2.5, y: 38}
+        - {x: -1.5, y: 37}
+        - {x: -1.5, y: 35}
+        - {x: -0.5, y: 34}
+        - {x: -0.5, y: 28}
+        - {x: -6.5, y: 22}
+        - {x: -7.5, y: 22}
+        - {x: -10.5, y: 20}
+        - {x: -15.5, y: 17}
+        - {x: -20.5, y: 17}
+        - {x: -21.5, y: 16}
+        - {x: -26.5, y: 16}
+        - {x: -27.5, y: 15}
+        - {x: -33.5, y: 15}
+        - {x: -34.5, y: 14}
+        - {x: -37.5, y: 14}
+        - {x: -40.5, y: 13}
+        - {x: -43.5, y: 9}
+        - {x: -44.5, y: 5}
+        - {x: -45.5, y: 4}
+        - {x: -45.5, y: 0}
+        - {x: -48.5, y: -2}
+        - {x: -49.5, y: -5}
+        - {x: -49.5, y: -10}
+        - {x: -51.5, y: -13}
+        - {x: -56.5, y: -18}
+        - {x: -57.5, y: -21}
+        - {x: -62.5, y: -26}
+        - {x: -62.5, y: -64}
+        - {x: -56.5, y: -71}
+        - {x: -23.5, y: -71}
+        - {x: -23.5, y: -69}
+        - {x: -27.5, y: -65}
+        - {x: -27.5, y: -64}
+      tessellationDetail: 1
+      bones: []
+      spriteID: 9e108f4e335908244933cf74dc82e43b
+      internalID: -692250945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_10
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 2906
+        width: 125
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -31.5, y: -59}
+        - {x: -33.5, y: -55}
+        - {x: -39.5, y: -50}
+        - {x: -38.5, y: -48}
+        - {x: -35.5, y: -44}
+        - {x: -35.5, y: -43}
+        - {x: -31.5, y: -39}
+        - {x: -28.5, y: -43}
+        - {x: -26.5, y: -46}
+        - {x: -25.5, y: -52}
+        - {x: -24.5, y: -53}
+        - {x: -24.5, y: -55}
+        - {x: -23.5, y: -56}
+        - {x: -23.5, y: -58}
+        - {x: -21.5, y: -62}
+        - {x: -20.5, y: -70}
+        - {x: -19.5, y: -71}
+        - {x: 62.5, y: -71}
+        - {x: 62.5, y: -48}
+        - {x: 61.5, y: -47}
+        - {x: 61.5, y: -40}
+        - {x: 60.5, y: -39}
+        - {x: 60.5, y: -20}
+        - {x: 59.5, y: -19}
+        - {x: 59.5, y: -13}
+        - {x: 58.5, y: -12}
+        - {x: 57.5, y: -6}
+        - {x: 55.5, y: -1}
+        - {x: 52.5, y: 2}
+        - {x: 43.5, y: 6}
+        - {x: 40.5, y: 8}
+        - {x: 39.5, y: 8}
+        - {x: 32.5, y: 13}
+        - {x: 32.5, y: 14}
+        - {x: 28.5, y: 20}
+        - {x: 31.5, y: 20}
+        - {x: 34.5, y: 23}
+        - {x: 35.5, y: 28}
+        - {x: 37.5, y: 31}
+        - {x: 38.5, y: 37}
+        - {x: 40.5, y: 39}
+        - {x: 40.5, y: 43}
+        - {x: 38.5, y: 47}
+        - {x: 40.5, y: 49}
+        - {x: 40.5, y: 54}
+        - {x: 42.5, y: 56}
+        - {x: 43.5, y: 60}
+        - {x: 42.5, y: 61}
+        - {x: 43.5, y: 65}
+        - {x: 41.5, y: 67}
+        - {x: 37.5, y: 67}
+        - {x: 30.5, y: 71}
+        - {x: 6.5, y: 71}
+        - {x: 5.5, y: 70}
+        - {x: 0.5, y: 69}
+        - {x: -2.5, y: 67}
+        - {x: -8.5, y: 66}
+        - {x: -9.5, y: 65}
+        - {x: -11.5, y: 65}
+        - {x: -16.5, y: 63}
+        - {x: -16.5, y: 61}
+        - {x: -12.5, y: 58}
+        - {x: -15.5, y: 56}
+        - {x: -14.5, y: 53}
+        - {x: -10.5, y: 53}
+        - {x: -13.5, y: 51}
+        - {x: -13.5, y: 50}
+        - {x: -10.5, y: 48}
+        - {x: -11.5, y: 47}
+        - {x: -10.5, y: 44}
+        - {x: -7.5, y: 43}
+        - {x: -4.5, y: 43}
+        - {x: -3.5, y: 42}
+        - {x: -2.5, y: 38}
+        - {x: -1.5, y: 37}
+        - {x: -1.5, y: 35}
+        - {x: -0.5, y: 34}
+        - {x: -0.5, y: 28}
+        - {x: -6.5, y: 22}
+        - {x: -7.5, y: 22}
+        - {x: -10.5, y: 20}
+        - {x: -15.5, y: 17}
+        - {x: -20.5, y: 17}
+        - {x: -21.5, y: 16}
+        - {x: -26.5, y: 16}
+        - {x: -27.5, y: 15}
+        - {x: -33.5, y: 15}
+        - {x: -34.5, y: 14}
+        - {x: -37.5, y: 14}
+        - {x: -40.5, y: 13}
+        - {x: -43.5, y: 9}
+        - {x: -44.5, y: 5}
+        - {x: -45.5, y: 4}
+        - {x: -45.5, y: 0}
+        - {x: -48.5, y: -2}
+        - {x: -49.5, y: -5}
+        - {x: -49.5, y: -10}
+        - {x: -51.5, y: -13}
+        - {x: -56.5, y: -18}
+        - {x: -57.5, y: -21}
+        - {x: -62.5, y: -26}
+        - {x: -62.5, y: -64}
+        - {x: -56.5, y: -71}
+        - {x: -23.5, y: -71}
+        - {x: -23.5, y: -69}
+        - {x: -27.5, y: -65}
+        - {x: -27.5, y: -64}
+      tessellationDetail: 1
+      bones: []
+      spriteID: 13579a5df1de369428ab56355cae171f
+      internalID: -1584027811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_11
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 2731
+        width: 168
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88507a38cb0141d46ad9bd155a7ce526
+      internalID: 549832159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_12
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 2731
+        width: 168
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37f1de023b1a99a4bbda622c94df8a99
+      internalID: 2131344810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_13
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 2731
+        width: 167
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eb5c9284b0ec254dba07ad9966f32d9
+      internalID: 1167446577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_14
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 2731
+        width: 167
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58e42bae7033d37429453349e5995fc4
+      internalID: 1403120434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_15
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 2731
+        width: 167
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e83faa081e277e46bd2f89b2e74e1f4
+      internalID: 436906046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_16
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 2724
+        width: 167
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af1d1b77ae3f18443a67295b09259852
+      internalID: -1565664753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_17
+      rect:
+        serializedVersion: 2
+        x: 1187
+        y: 2724
+        width: 168
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa80417f4d23f9f46bec57e286e610c6
+      internalID: -1597246784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_18
+      rect:
+        serializedVersion: 2
+        x: 1383
+        y: 2724
+        width: 168
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e00fc17309fd5340bfc852d4fd9b249
+      internalID: 1860196453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_19
+      rect:
+        serializedVersion: 2
+        x: 1576
+        y: 2724
+        width: 168
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfef2414827f63c448d347f7cca8b1fc
+      internalID: 1815083804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_20
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 2536
+        width: 132
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c42d3f7c310f88447a425601a4c2d98b
+      internalID: -678784482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_21
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 2537
+        width: 132
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02cc663c8fd28514fbf7feb13a15d2ce
+      internalID: -1736782280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_22
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 2537
+        width: 132
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b272ac0cd8c0fb8409b86ebce7bf0da5
+      internalID: 1139787868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_23
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 2537
+        width: 132
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb0983f6eeadaa24d88a5b79a241da36
+      internalID: -1757332550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_24
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 2537
+        width: 132
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ed3302840b93e64d8227b90fee5dc12
+      internalID: -2073842420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_25
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 2537
+        width: 132
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 090e14427c0ab404cbad45cafc592fc3
+      internalID: 303460580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_26
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 2537
+        width: 132
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d815f5401546f6c48b535ae8af410d2f
+      internalID: -464904358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_27
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 2346
+        width: 162
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b88834f2b9df41d44960c494bd32a10a
+      internalID: -1620053621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_28
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 2346
+        width: 162
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 305adff2c9dd5ea44b63ad3f2742a1dc
+      internalID: -1431248963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_29
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 2346
+        width: 162
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cf260a5024d79b498647e9da6fa8139
+      internalID: -1261126727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_30
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 2346
+        width: 162
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21af33d3dcd63c642b8f7dae42a519b6
+      internalID: 1991299473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_31
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 2346
+        width: 162
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe61968fabb65e6448fe4ddf75449464
+      internalID: 623977114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_45
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 2162
+        width: 125
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58a7b18eeeba3f94c8c3933a1be685b2
+      internalID: -921574894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_46
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 2162
+        width: 125
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e97d3814aca38c43b752098a35e35cc
+      internalID: -894235280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_53
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 2162
+        width: 125
+        height: 141
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6516a26fc8e721045b055382fb9dd07e
+      internalID: -812845908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_54
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 2162
+        width: 125
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94a7c5d5800f6bd4f92936cc5cb5449e
+      internalID: -1470611573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_55
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 2162
+        width: 125
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0750c7ca62c2be24ea92754149127af1
+      internalID: -819455772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_56
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 2001
+        width: 188
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56276e7b77b382d4c9734b1513f1b44c
+      internalID: -1462312341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_57
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 1983
+        width: 184
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5db3d6674c7c50f46a180bd68867e691
+      internalID: 1893003587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_58
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 1988
+        width: 184
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daf94898b039b024c8b071cdea98ac5a
+      internalID: -1372993168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_59
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 1984
+        width: 184
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06fe61e6408d8544495de7999745837c
+      internalID: 1343703417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_60
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 1983
+        width: 184
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14edabcf471463c4c959c36673720dda
+      internalID: 322360466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_61
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 1984
+        width: 184
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aad1c5e6e46d6244bd94adca86f80bd
+      internalID: -427327696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_62
+      rect:
+        serializedVersion: 2
+        x: 1301
+        y: 1984
+        width: 184
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eceb20dea608a774db4f13a5595f3691
+      internalID: 739895688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_63
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 1819
+        width: 168
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76bae73d9dc18204ba238c00540f9f58
+      internalID: 423503064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_64
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 1816
+        width: 248
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5dc2b8409bc6d147ade2376f9052d1d
+      internalID: -602762106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_65
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 1816
+        width: 248
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ef1858cc1a4a414fb0c4a56615fb2ea
+      internalID: 865304566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_66
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 1816
+        width: 248
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76ff271e4affef54c81f001ae7062772
+      internalID: -1710620947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_67
+      rect:
+        serializedVersion: 2
+        x: 1106
+        y: 1816
+        width: 245
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac169ba8b8440fd41af55105ac9c5a12
+      internalID: -610075442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_68
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 1816
+        width: 246
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 024848a230cb97f4fb82b028efc418ae
+      internalID: 683541478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_69
+      rect:
+        serializedVersion: 2
+        x: 1654
+        y: 1816
+        width: 248
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47ac4c40b74f3ef448ec1da4f2275038
+      internalID: 915013252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_70
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 1626
+        width: 152
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb7240c6687602e449ec60272b377a82
+      internalID: 368027564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_71
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 1626
+        width: 152
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f7340baef36f344580754d0455d8e2f
+      internalID: 2141990532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_72
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 1626
+        width: 152
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b663862bfd432184daae1144d07a372f
+      internalID: -177959244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_73
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 1626
+        width: 152
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c83239b4615578241bef265767ad0130
+      internalID: -1067749535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_74
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 1626
+        width: 152
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8788129d36f8e774ea760c919147effa
+      internalID: 925437508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_75
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 1626
+        width: 152
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bb64859e49732344a62167089a930b6
+      internalID: -860207972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_76
+      rect:
+        serializedVersion: 2
+        x: 1357
+        y: 1636
+        width: 248
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 706bfdd9574b7a84d827761eaf87c243
+      internalID: -428620571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_77
+      rect:
+        serializedVersion: 2
+        x: 1630
+        y: 1636
+        width: 248
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f73984cb01a32f47a88d1e93719d6ba
+      internalID: 1283716195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_78
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 1457
+        width: 107
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c35366b0b4302c846a1db7a37cf24007
+      internalID: -198304546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_79
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 1456
+        width: 107
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3754afe2197015349810f29b296bc3b2
+      internalID: 1159305673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_80
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 1455
+        width: 107
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 888da893afe93624b846a3d54af153f2
+      internalID: -2043737399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_81
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 1453
+        width: 107
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44a8c9a7a5e6cbe4981c085dc409d818
+      internalID: 599957151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_82
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 1455
+        width: 107
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26f98ad21d7b2ca478faa5aa42599cfd
+      internalID: -357247188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_83
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 1455
+        width: 107
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5825da7934d48ed418a62ee9faa759d9
+      internalID: -1552003856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_84
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 1455
+        width: 107
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cd830f8d82342347851200d4517d5f5
+      internalID: 1156668811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_85
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 1456
+        width: 107
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b46181338dba57498aa8c30c78b5a37
+      internalID: -145054420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_86
+      rect:
+        serializedVersion: 2
+        x: 1226
+        y: 1455
+        width: 107
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa83f5a02ab7fee4c88043cd1f203c66
+      internalID: -6453267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_87
+      rect:
+        serializedVersion: 2
+        x: 1379
+        y: 1455
+        width: 107
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c533dad37cea75409f24de1d56bd7c7
+      internalID: 1521593179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_88
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1282
+        width: 133
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d66bcdf4298961499f473ac80dfec04
+      internalID: -1936919641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_89
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 1282
+        width: 133
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4e4917720320d941938786b9ecd0aaf
+      internalID: -1507096808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_90
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1282
+        width: 133
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c6341a52532b8c4991945a417147913
+      internalID: -1854286169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_91
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1282
+        width: 133
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fd9f36145b5fc3468453bc3a21af3e1
+      internalID: -1552160172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_92
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 1280
+        width: 133
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ced869ff685475e4e94ffaf587d473cd
+      internalID: 1524615108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_93
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 1283
+        width: 146
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee0f4de3879be774289294501bfaa5be
+      internalID: 1886732725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_94
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 1282
+        width: 133
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b7cb41c33ec30f40abb20b815173dd8
+      internalID: -860591670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_95
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 1104
+        width: 125
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6cf93ac315985f4eb7c94f0d385c89c
+      internalID: -1472711612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_96
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 1104
+        width: 125
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97aa8c747b7592548909b0b17373e5be
+      internalID: 1891233533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_97
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 1105
+        width: 125
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f67808f0e04e2945bc8937e497165ed
+      internalID: -1877368952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_98
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 1108
+        width: 125
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53ec6404ad43f834dadb2162b2fa6c5f
+      internalID: 1715061489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_99
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 1109
+        width: 125
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0af368a1eeefe684baac3c9870f4002d
+      internalID: 2134583230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_100
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 1105
+        width: 125
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e930e1dd79ba9b24f99ebac78e6aa7e7
+      internalID: -519641422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_101
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 1105
+        width: 125
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 154dd57908071d14997b5753f464eb0b
+      internalID: -363995985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_102
+      rect:
+        serializedVersion: 2
+        x: 1114
+        y: 1105
+        width: 125
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f5a9768ba9704a4d886b19d72bbe422
+      internalID: -1215884072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_103
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 1109
+        width: 125
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a32eef01474e6cf4e9b2a8962a702651
+      internalID: 68976306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_104
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 926
+        width: 140
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd756bacdeaaafc4e889fe16c63ff0b8
+      internalID: -451097589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_105
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 926
+        width: 109
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c709836d1fdab64a9c54a9644481078
+      internalID: 557457082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_107
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 926
+        width: 107
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d463ef8345813ff4db689eecbc59c21a
+      internalID: 869232927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_109
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 926
+        width: 107
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba073ced489696d40938f840a92dac46
+      internalID: 501459113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_111
+      rect:
+        serializedVersion: 2
+        x: 869
+        y: 926
+        width: 107
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 519e017f42a708b46acd32b247b660f4
+      internalID: -1559161377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_113
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 926
+        width: 107
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05e46751ac145ee489ccde0caba0d42f
+      internalID: 1168555448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_115
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 926
+        width: 107
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c491744209003f42af8ef1532b3d56d
+      internalID: -1820225531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_117
+      rect:
+        serializedVersion: 2
+        x: 1583
+        y: 926
+        width: 138
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72a6a1e44167868408e27e8d15a1e635
+      internalID: -1569745770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_124
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 746
+        width: 115
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d949e9ad2abb47e4d89908ca54ed2ec2
+      internalID: 1915094959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_125
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 746
+        width: 115
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eeb601f8a456bd408478f5da078a61d
+      internalID: -424928127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_126
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 746
+        width: 115
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72157016c45ddce46b2d93fab6328f73
+      internalID: -1653478350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_127
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 746
+        width: 115
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c69bd5791f17eca4e8e33112eb4f533c
+      internalID: 1183683013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_128
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 747
+        width: 115
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da71e4284a954fa47851032dba1279d7
+      internalID: -2103426019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_129
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 747
+        width: 115
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca9a176e294714f4090acf15f8d8a28f
+      internalID: 1835162753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_130
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 576
+        width: 125
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9cd2883e1c04634199fe9aca692649e
+      internalID: 2015702403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_131
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 576
+        width: 125
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d93ac72e1ae87614c9882d2bd28dad6c
+      internalID: 1140069689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_132
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 576
+        width: 125
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 266820f9d6991994f833c7a5fca892fd
+      internalID: -790055525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_133
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 576
+        width: 125
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b40d4c57f2247c84db70efe6367dc0de
+      internalID: -1664342438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_134
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 576
+        width: 125
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2d71d588c2d7ae4c9f2806f2d9ac9e8
+      internalID: 903640500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_135
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 576
+        width: 125
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97267352df0b1f24f8eb115862f03f77
+      internalID: 1685357869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_138
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 205
+        width: 148
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c597e2ab2ac1c774fabecf6fd67b3a51
+      internalID: 812919464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_139
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 207
+        width: 209
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e9b1d4f5950b53479cb9485a9562516
+      internalID: 557005748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_140
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 208
+        width: 193
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f6d448d28460cc4ca5c0530df3fa8dc
+      internalID: -1691656301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_141
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 209
+        width: 199
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62bd2d2b27d64eb45880ef7a4b1218dd
+      internalID: 1056291425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_142
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 209
+        width: 307
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c104c666e3a250840a44cf53ac94a7ae
+      internalID: 1474721736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_143
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 207
+        width: 307
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eb0124663e6340489b3e3ca0ac78c95
+      internalID: -461107273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_144
+      rect:
+        serializedVersion: 2
+        x: 1579
+        y: 208
+        width: 307
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5b87b964c7321a4584b99e8e4454f39
+      internalID: 1136696487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_145
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 32
+        width: 186
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13b22d604b54da047ba2d15d50264b35
+      internalID: -837771873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_146
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 32
+        width: 180
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8c10d39719040f45acd999b226e1027
+      internalID: -545877115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_147
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 33
+        width: 180
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 757d8870d3d61d94685e43cae6ab5084
+      internalID: -354908138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_148
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 33
+        width: 180
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54987eacc7abc4a498e8845ab9e73d26
+      internalID: -66761845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_149
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 33
+        width: 186
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6facb64b48483874c95e1083be203eff
+      internalID: -1783660355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_150
+      rect:
+        serializedVersion: 2
+        x: 1126
+        y: 28
+        width: 186
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e6dbb91c0eae734ca2e220e6603f571
+      internalID: -749804514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_151
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 28
+        width: 186
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bef0adf049be8de479d8fe844389277d
+      internalID: -2069794628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_152
+      rect:
+        serializedVersion: 2
+        x: 1586
+        y: 28
+        width: 186
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23ffce79721228f46be8b8ddeb5ce575
+      internalID: 362140621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DSsheet-phoenix_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 3056
+        width: 179
+        height: 188
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7122c5948a942d24781de8a348e9800b
+      internalID: -2124380000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      DSsheet-phoenix_0: -2124380000
+      DSsheet-phoenix_1: 242598955
+      DSsheet-phoenix_10: -1584027811
+      DSsheet-phoenix_100: -519641422
+      DSsheet-phoenix_101: -363995985
+      DSsheet-phoenix_102: -1215884072
+      DSsheet-phoenix_103: 68976306
+      DSsheet-phoenix_104: -451097589
+      DSsheet-phoenix_105: 557457082
+      DSsheet-phoenix_106: 794579100
+      DSsheet-phoenix_107: 869232927
+      DSsheet-phoenix_108: 31163704
+      DSsheet-phoenix_109: 501459113
+      DSsheet-phoenix_11: 549832159
+      DSsheet-phoenix_110: -89350419
+      DSsheet-phoenix_111: -1559161377
+      DSsheet-phoenix_112: 607636452
+      DSsheet-phoenix_113: 1168555448
+      DSsheet-phoenix_114: -837141270
+      DSsheet-phoenix_115: -1820225531
+      DSsheet-phoenix_116: 1749494598
+      DSsheet-phoenix_117: -1569745770
+      DSsheet-phoenix_118: 1856014779
+      DSsheet-phoenix_119: 1386506424
+      DSsheet-phoenix_12: 2131344810
+      DSsheet-phoenix_120: 2045288783
+      DSsheet-phoenix_121: -1116931185
+      DSsheet-phoenix_122: -1985619223
+      DSsheet-phoenix_123: 1735398437
+      DSsheet-phoenix_124: 1915094959
+      DSsheet-phoenix_125: -424928127
+      DSsheet-phoenix_126: -1653478350
+      DSsheet-phoenix_127: 1183683013
+      DSsheet-phoenix_128: -2103426019
+      DSsheet-phoenix_129: 1835162753
+      DSsheet-phoenix_13: 1167446577
+      DSsheet-phoenix_130: 2015702403
+      DSsheet-phoenix_131: 1140069689
+      DSsheet-phoenix_132: -790055525
+      DSsheet-phoenix_133: -1664342438
+      DSsheet-phoenix_134: 903640500
+      DSsheet-phoenix_135: 1685357869
+      DSsheet-phoenix_136: 1601166976
+      DSsheet-phoenix_137: -1495146885
+      DSsheet-phoenix_138: 812919464
+      DSsheet-phoenix_139: 557005748
+      DSsheet-phoenix_14: 1403120434
+      DSsheet-phoenix_140: -1691656301
+      DSsheet-phoenix_141: 1056291425
+      DSsheet-phoenix_142: 1474721736
+      DSsheet-phoenix_143: -461107273
+      DSsheet-phoenix_144: 1136696487
+      DSsheet-phoenix_145: -837771873
+      DSsheet-phoenix_146: -545877115
+      DSsheet-phoenix_147: -354908138
+      DSsheet-phoenix_148: -66761845
+      DSsheet-phoenix_149: -1783660355
+      DSsheet-phoenix_15: 436906046
+      DSsheet-phoenix_150: -749804514
+      DSsheet-phoenix_151: -2069794628
+      DSsheet-phoenix_152: 362140621
+      DSsheet-phoenix_16: -1565664753
+      DSsheet-phoenix_17: -1597246784
+      DSsheet-phoenix_18: 1860196453
+      DSsheet-phoenix_19: 1815083804
+      DSsheet-phoenix_2: -212945243
+      DSsheet-phoenix_20: -678784482
+      DSsheet-phoenix_21: -1736782280
+      DSsheet-phoenix_22: 1139787868
+      DSsheet-phoenix_23: -1757332550
+      DSsheet-phoenix_24: -2073842420
+      DSsheet-phoenix_25: 303460580
+      DSsheet-phoenix_26: -464904358
+      DSsheet-phoenix_27: -1620053621
+      DSsheet-phoenix_28: -1431248963
+      DSsheet-phoenix_29: -1261126727
+      DSsheet-phoenix_3: 772211785
+      DSsheet-phoenix_30: 1991299473
+      DSsheet-phoenix_31: 623977114
+      DSsheet-phoenix_32: -1580555115
+      DSsheet-phoenix_33: 566118029
+      DSsheet-phoenix_34: -969695954
+      DSsheet-phoenix_35: -1242937605
+      DSsheet-phoenix_36: -342349305
+      DSsheet-phoenix_37: -1187171167
+      DSsheet-phoenix_38: 1238139941
+      DSsheet-phoenix_39: -1972027765
+      DSsheet-phoenix_4: -1307866046
+      DSsheet-phoenix_40: 1645359043
+      DSsheet-phoenix_41: 1291460618
+      DSsheet-phoenix_42: 1751549094
+      DSsheet-phoenix_43: 2021540397
+      DSsheet-phoenix_44: 1453778400
+      DSsheet-phoenix_45: -921574894
+      DSsheet-phoenix_46: -894235280
+      DSsheet-phoenix_47: -1867561988
+      DSsheet-phoenix_48: -242023222
+      DSsheet-phoenix_49: -816363956
+      DSsheet-phoenix_5: -1962671811
+      DSsheet-phoenix_50: -506111469
+      DSsheet-phoenix_51: 1684556708
+      DSsheet-phoenix_52: -2146208458
+      DSsheet-phoenix_53: -812845908
+      DSsheet-phoenix_54: -1470611573
+      DSsheet-phoenix_55: -819455772
+      DSsheet-phoenix_56: -1462312341
+      DSsheet-phoenix_57: 1893003587
+      DSsheet-phoenix_58: -1372993168
+      DSsheet-phoenix_59: 1343703417
+      DSsheet-phoenix_6: -1687009417
+      DSsheet-phoenix_60: 322360466
+      DSsheet-phoenix_61: -427327696
+      DSsheet-phoenix_62: 739895688
+      DSsheet-phoenix_63: 423503064
+      DSsheet-phoenix_64: -602762106
+      DSsheet-phoenix_65: 865304566
+      DSsheet-phoenix_66: -1710620947
+      DSsheet-phoenix_67: -610075442
+      DSsheet-phoenix_68: 683541478
+      DSsheet-phoenix_69: 915013252
+      DSsheet-phoenix_7: 928541513
+      DSsheet-phoenix_70: 368027564
+      DSsheet-phoenix_71: 2141990532
+      DSsheet-phoenix_72: -177959244
+      DSsheet-phoenix_73: -1067749535
+      DSsheet-phoenix_74: 925437508
+      DSsheet-phoenix_75: -860207972
+      DSsheet-phoenix_76: -428620571
+      DSsheet-phoenix_77: 1283716195
+      DSsheet-phoenix_78: -198304546
+      DSsheet-phoenix_79: 1159305673
+      DSsheet-phoenix_8: 347295661
+      DSsheet-phoenix_80: -2043737399
+      DSsheet-phoenix_81: 599957151
+      DSsheet-phoenix_82: -357247188
+      DSsheet-phoenix_83: -1552003856
+      DSsheet-phoenix_84: 1156668811
+      DSsheet-phoenix_85: -145054420
+      DSsheet-phoenix_86: -6453267
+      DSsheet-phoenix_87: 1521593179
+      DSsheet-phoenix_88: -1936919641
+      DSsheet-phoenix_89: -1507096808
+      DSsheet-phoenix_9: -692250945
+      DSsheet-phoenix_90: -1854286169
+      DSsheet-phoenix_91: -1552160172
+      DSsheet-phoenix_92: 1524615108
+      DSsheet-phoenix_93: 1886732725
+      DSsheet-phoenix_94: -860591670
+      DSsheet-phoenix_95: -1472711612
+      DSsheet-phoenix_96: 1891233533
+      DSsheet-phoenix_97: -1877368952
+      DSsheet-phoenix_98: 1715061489
+      DSsheet-phoenix_99: 2134583230
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

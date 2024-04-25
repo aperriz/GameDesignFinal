@@ -45,10 +45,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: 3
-  enemyPrefabs:
+  lowWeightEnemies:
   - {fileID: 6466264818767617061, guid: 3764b4510b0a07444bf02f81d7fe222b, type: 3}
-  - {fileID: 5413864225342381831, guid: 5782aeaacd212a34c8ff25c9bcf4c1f9, type: 3}
   - {fileID: 4254221036142889622, guid: b0a3b58ecb134b34ebb6932d5145b243, type: 3}
+  highWeightEnemies:
+  - {fileID: 5413864225342381831, guid: 5782aeaacd212a34c8ff25c9bcf4c1f9, type: 3}
   - {fileID: 1281187227115052187, guid: 6f0a7fe3716fe6943b873feb0d81a20b, type: 3}
   showGizmo: 0
   minibosses:

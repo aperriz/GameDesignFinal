@@ -91,6 +91,9 @@ public class PlayerRecieveDamage : MonoBehaviour
 
     protected void CheckDeath()
     {
+        healthBarSlider.value = health / maxHealth;
+        healthText.text = health.ToString() + "/" + maxHealth.ToString();
+
         if (health <= 0)
         {
             Debug.Log("Dead");

@@ -1,6 +1,7 @@
 using Pathfinding;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
@@ -26,6 +27,11 @@ public class EnemyRecieveDamage : MonoBehaviour
     [SerializeField]
     public int aggressionRange = 20;
     public AIPath ai = null;
+    [SerializeField]
+    private string mode = "none";
+    [SerializeField]
+    string nameText;
+    bool miniboss = false;
 
     // Start is called before the first frame update
     void Start()
@@ -45,7 +51,23 @@ public class EnemyRecieveDamage : MonoBehaviour
 
     public void DealDamage(int damage)
     {
-        if(ai != null)
+        if (player == null)
+        {
+            player = GameObject.Find("Player");
+        }
+
+        if (mode == "miniboss" && !miniboss)
+        {
+            miniboss = true;
+            Destroy(healthBar);
+            Debug.Log(player.transform.GetChild(1));
+            healthBar = player.transform.GetChild(1).GetChild(1).gameObject;
+            healthBarSlider = healthBar.GetComponent<Slider>();
+            healthBar.transform.GetChild(2).gameObject.GetComponent<Image>().sprite = gameObject.GetComponent<SpriteRenderer>().sprite;
+            healthBar.GetComponentInChildren<TextMeshProUGUI>().text = nameText;
+        }
+
+        if (ai != null)
         {
             if (ai.enabled == false)
             {
@@ -134,7 +156,10 @@ public class EnemyRecieveDamage : MonoBehaviour
                 Destroy(comp);
             }
         }
-        Destroy(healthBar);
+        if(mode != "miniboss")
+        {
+            Destroy(healthBar);
+        }
         Destroy(transform.parent.gameObject);
         Destroy(gameObject);
     }

@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public class KnockbackEnemy : MonoBehaviour
 {
-    [SerializeField]
+    /*[SerializeField]
     private Rigidbody2D rb2d;
 
     [SerializeField]
@@ -27,5 +27,5 @@ public class KnockbackEnemy : MonoBehaviour
         yield return new WaitForSeconds(delay);
         rb2d.velocity = Vector3.zero;
         OnDone?.Invoke();
-    }
+    }*/
 }

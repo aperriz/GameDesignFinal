@@ -1,6 +1,8 @@
 TODO List:
-Increased power weapons from chests
-	prefab and chance to spawn
 Boss
+	Dialog done
+	still need phoenix
 Transfer between levels
 Pause Menu
+Death Screen
+Loading Screen

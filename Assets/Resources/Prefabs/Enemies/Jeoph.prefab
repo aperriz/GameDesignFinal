@@ -456,8 +456,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b74122d01fb9b84cbf24092087010c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
-  maxHealth: 100
+  health: 150
+  maxHealth: 150
   animator: {fileID: 3664098046263766551}
   audioClip: {fileID: 8300000, guid: 74f7361a520c94e41913ca2ccf0189da, type: 3}
   speed: 0
@@ -468,6 +468,8 @@ MonoBehaviour:
   healthBarSlider: {fileID: 4402218275518416502}
   aggressionRange: 20
   ai: {fileID: 8388461681831567152}
+  mode: miniboss
+  nameText: Jeoph, Accountant of the Phoenix
 --- !u!1 &3020558669721562439
 GameObject:
   m_ObjectHideFlags: 0
@@ -572,7 +574,7 @@ Transform:
   m_GameObject: {fileID: 4204189775232011630}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19.68, y: -9.401599, z: 0}
+  m_LocalPosition: {x: 19.68, y: -9.401599, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

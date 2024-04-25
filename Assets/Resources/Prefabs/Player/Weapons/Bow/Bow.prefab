@@ -119,6 +119,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2edffb25961ff24cb3119926642ca6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  renderer: {fileID: 0}
+  attackCooldown: 0.25
   projectile: {fileID: 7276429316085085334, guid: 707a0d253f1c916499f51cbb32b2ad93, type: 3}
   speed: 10
-  attackCooldown: 0.5
+  projectileDamage: 3

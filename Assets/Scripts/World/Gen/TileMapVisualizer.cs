@@ -3,7 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using Unity.VisualScripting;
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.Tilemaps;
 using UnityEngine.UIElements;
 using Random = UnityEngine.Random;
@@ -70,10 +72,13 @@ public class TileMapVisualizer : MonoBehaviour
 
     void PlaceTraps()
     {
-        Vector2 centerOfTile = new Vector2(0.5f, 0.5f);
-        foreach(var pos in trapPositions)
+        if(trapTile != null)
         {
-            Instantiate(trapTile, (Vector3)((Vector2)pos+centerOfTile), Quaternion.identity, GameObject.Find("Traps").transform);
+            Vector2 centerOfTile = new Vector2(0.5f, 0.5f);
+            foreach (var pos in trapPositions)
+            {
+                Instantiate(trapTile, (Vector3)((Vector2)pos + centerOfTile), Quaternion.identity, GameObject.Find("Traps").transform);
+            }
         }
     }
 
@@ -88,28 +93,31 @@ public class TileMapVisualizer : MonoBehaviour
 
         floorMap.ClearAllTiles();
         wallMap.ClearAllTiles();
-        potentialWallBottoms.Clear();
-        trapPositions.Clear();
-        dungeonData.Reset();
+        if (dungeonData != null)
+        {
+            potentialWallBottoms.Clear();
+            trapPositions.Clear();
+            dungeonData.Reset();
+
+            GameObject traps = GameObject.Find("Traps");
+            for (int i = traps.transform.childCount - 1; i > -1; i--)
+            {
+                DestroyImmediate(traps.transform.GetChild(i).gameObject);
+            }
+
+            GameObject props = GameObject.Find("Props");
+            for (int i = 0; i < props.transform.childCount; i++)
+            {
+                Destroy(props.transform.GetChild(i).gameObject);
+            }
+
+            GameObject enemies = GameObject.Find("Enemies");
+            for (int i = 0; i < enemies.transform.childCount; i++)
+            {
+                Destroy(enemies.transform.GetChild(i).gameObject);
+            }
+        }
         
-        GameObject traps = GameObject.Find("Traps");
-        for(int i = traps.transform.childCount -1; i > -1 ; i--)
-        {
-            DestroyImmediate(traps.transform.GetChild(i).gameObject);
-        }
-
-        GameObject props = GameObject.Find("Props");
-        for (int i = 0; i < props.transform.childCount; i++)
-        {
-            Destroy(props.transform.GetChild(i).gameObject);
-        }
-
-        GameObject enemies = GameObject.Find("Enemies");
-        for (int i = 0; i < enemies.transform.childCount; i++)
-        {
-            Destroy(enemies.transform.GetChild(i).gameObject);
-        }
-
     }
 
     internal void PaintSingleBasicWall(Vector2Int position, string binaryType)

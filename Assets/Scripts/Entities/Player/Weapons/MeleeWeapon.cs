@@ -13,12 +13,18 @@ public class MeleeWeapon : Weapon
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-       Debug.Log(collision.name);
+       //Debug.Log(collision.name);
        if(collision.name != "Player" && collision.GetType() != typeof(CircleCollider2D))
         {
-            if (collision.GetComponent<EnemyRecieveDamage>() != null)
+            if (collision.GetComponentInChildren<EnemyRecieveDamage>() != null)
             {
-                collision.GetComponent<EnemyRecieveDamage>().DealDamage(damage);
+                //Debug.Log("Hit " + damage);
+                collision.GetComponentInChildren<EnemyRecieveDamage>().DealDamage(damage);
+            }
+            else if(collision.GetComponentInChildren<Boss1RecieveDamage>() != null)
+            {
+                //Debug.Log("Hit " + damage);
+                collision.GetComponentInChildren<Boss1RecieveDamage>().DealDamage(damage);
             }
         }
     }

@@ -12,7 +12,7 @@ public class AgentPlacer : MonoBehaviour
     int level = 1;
 
     [SerializeField]
-    private List<GameObject> enemyPrefabs;
+    private List<GameObject> lowWeightEnemies, highWeightEnemies;
 
     private float maxWeight, minWeight;
 
@@ -22,6 +22,8 @@ public class AgentPlacer : MonoBehaviour
 
     Transform enemyParent;
 
+    Room bossRoom = null;
+    bool generated = false;
     [SerializeField]
     private bool showGizmo = false;
 
@@ -37,8 +39,20 @@ public class AgentPlacer : MonoBehaviour
         dungeonData = FindObjectOfType<DungeonData>();
     }
 
+    private void FixedUpdate()
+    {
+        if(bossRoom != null)
+        {
+            if(bossRoom.EnemiesInTheRoom.Count == 0 && generated)
+        {
+
+        }
+        }
+    }
+
     public void PlaceAgents()
     {
+        generated = false;
         Room farthestRoom = dungeonData.Rooms[0];
         Room playerRoom = dungeonData.Rooms[0];
         float currentFarthest = Math.Abs(Vector3.Distance(farthestRoom.RoomCenterPos, playerRoom.RoomCenterPos));
@@ -57,6 +71,7 @@ public class AgentPlacer : MonoBehaviour
         }
 
         bossRoomIndex = dungeonData.Rooms.IndexOf(farthestRoom);
+        bossRoom = farthestRoom;
 
         maxWeight = 4 + (level * 2);
         minWeight = 2 + (level * 2);
@@ -104,6 +119,7 @@ public class AgentPlacer : MonoBehaviour
                 PlaceEnemies(room, "");
             }
         }
+        generated = true;
     }
 
     /// <summary>
@@ -173,8 +189,9 @@ public class AgentPlacer : MonoBehaviour
             }
 
             HashSet<GameObject> spawnableEnemies = new HashSet<GameObject>();
-
-            foreach (GameObject enemy in enemyPrefabs)
+            HashSet<GameObject> highWeightSpawnables = new HashSet<GameObject>();
+            HashSet<GameObject> lowWeightSpawnables = new HashSet<GameObject> ();
+            foreach (GameObject enemy in lowWeightEnemies)
             {
                 //Debug.Log("Looking through enemies");
                 int enemyWeight = enemy.GetComponentInChildren<EnemyRecieveDamage>().weight;
@@ -182,17 +199,43 @@ public class AgentPlacer : MonoBehaviour
                 {
                     //Debug.Log("Found enemy");
                     spawnableEnemies.Add(enemy);
+                    if(enemyWeight >= 3)
+                    {
+                        highWeightSpawnables.Add(enemy);
+                    }
+                    else
+                    {
+                        lowWeightSpawnables.Add(enemy);
+                    }
                 }
             }
 
 
-            if (spawnableEnemies.Count > 0)
+            if (spawnableEnemies.Count > 0 && room.EnemiesInTheRoom.Count <= 6 + (level*2))
             {
                 //Debug.Log("Spawning enemy");
-                GameObject enemy = Instantiate(enemyPrefabs[UnityEngine.Random.Range(0, enemyPrefabs.Count)], enemyParent);
+                GameObject enemy = null;
+                
+                if(highWeightEnemies.Count > 0)
+                {
+                    if (UnityEngine.Random.Range(0f, 10f) <= (float)(9 * (Math.Pow(Math.Pow(2 / 9, 1 / 8), level-1))))
+                    {
+                        enemy = lowWeightEnemies.ElementAt(UnityEngine.Random.Range(0, lowWeightSpawnables.Count));
+                    }
+                    else
+                    {
+                        enemy = highWeightEnemies.ElementAt(UnityEngine.Random.Range(0, highWeightEnemies.Count));
+                    }
+                }
+                else
+                {
+                    enemy = lowWeightEnemies.ElementAt(UnityEngine.Random.Range(0, lowWeightSpawnables.Count));
+                }
+
                 int enemyWeight = enemy.GetComponentInChildren<EnemyRecieveDamage>().weight;
                 roomWeight = roomWeight + enemyWeight;
                 enemy.transform.localPosition = (Vector2)room.PositionsAccessibleFromPath[k] + Vector2.one * 0.5f;
+                enemy.GetComponent<EnemyRecieveDamage>().health *= (float)(1 + (Mathf.Floor(level / 3) * .1)); 
                 room.EnemiesInTheRoom.Add(enemy);
                 k++;
 

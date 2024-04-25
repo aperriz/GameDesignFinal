@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -160,7 +160,2695 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 832
+        width: 12
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9b248f8b5e035348ab3de2a0db2de17
+      internalID: 1245495610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_1
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 832
+        width: 12
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 163b4aafac331e440a7fc489354ca89d
+      internalID: 1367688268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_2
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 832
+        width: 12
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76653dc20eb6b6c4281ecab299d071b8
+      internalID: 952449248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_3
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 832
+        width: 12
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 457d9edb380992e43afc1071e3a15bd3
+      internalID: 1649486566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_4
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 832
+        width: 12
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cbe2b22fd23bc349b3f78e6c378a9ea
+      internalID: 1838497384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_5
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 832
+        width: 12
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 756bd616b1d74e449a6c0a930ffb4ece
+      internalID: -1758314571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_6
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 832
+        width: 12
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ed3d024992296f43af2fbd38a12dcc0
+      internalID: 130894515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_7
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 832
+        width: 12
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db2492223a323ba40bdd978e5039aa16
+      internalID: 966793951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_8
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 832
+        width: 12
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acceb3b3a167cd9498f3f0df08ac5e0e
+      internalID: -1439477955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_9
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 832
+        width: 12
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47b0926fd61c66d4d80e27c6fdebd6d7
+      internalID: 819028295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_10
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 832
+        width: 12
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e585aec3ca96bf648856355e0f358993
+      internalID: -1190919150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_11
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 832
+        width: 12
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ba74721b8e30e74197c1809e276fa15
+      internalID: 1611027575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_12
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 832
+        width: 12
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3d6d6076aabce84e9f2f4a65b43a092
+      internalID: 1998395303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_13
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 832
+        width: 12
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6f06f4c0210bc54798bc4dcecc7d6ab
+      internalID: -923187382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_14
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 832
+        width: 12
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 620de2f0dc2b3f14a8438fb99be426fa
+      internalID: 2050564432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_15
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 832
+        width: 12
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ba60874371dd4c45b9cea4df1a367ac
+      internalID: -494191755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_16
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 802
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 643fc36b01a0e95438c6d91b95ea8f1b
+      internalID: 1932653080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_17
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 802
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c7dc829bbeeaa14eb0006c58f8bc8da
+      internalID: 1331788926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_18
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 786
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c02217273e6150b4ab5050813ed545e6
+      internalID: -1526008362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_19
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 786
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 177cd1fc38db5eb41a417202a916ec94
+      internalID: -565245375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_20
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 770
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95ebde7046f37634cabdef0f0220c13b
+      internalID: 1917601645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_21
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 770
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5d7af1fdee030449ad6a42a8b31f4e9
+      internalID: 144059569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_22
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 754
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52cc5a1cb31ee1c4b91ab020b512c430
+      internalID: 1963172526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_23
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 754
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e268ae31c8f8d744812f52df6f24ac6
+      internalID: 503769594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_24
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 738
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d202e58987d1f8408cf952de79fa683
+      internalID: -1246602881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_25
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 738
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7914f1a70978a9544a55f5e5dbf4da11
+      internalID: 1521471138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_26
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 722
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0a8949aa05da14488511dcdeca51a50
+      internalID: 1472689101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_27
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 722
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06786a162de22db4881e12220da86807
+      internalID: 1699301578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_28
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 706
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ed901f1a2afe5a42b23412042a19187
+      internalID: -1621114647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_29
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 706
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 039c65205f62d9741acda46f7f85e7a5
+      internalID: 1170753175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_30
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 690
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9df354cd72aacd54d911a67ad87cf9b9
+      internalID: -290699146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_31
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 690
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c61ea1ec09373b8409fda5387f155c52
+      internalID: -51682421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_32
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 608
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a19bd853efd0dc341a3e0ac37e072862
+      internalID: -236850914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_33
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 608
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a46485ade3096774c81ad714785baf55
+      internalID: 1637899207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_34
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 608
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b2eb25006d9ab743ad95b3dce3da4b1
+      internalID: -1365918876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_35
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 608
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1c641ac1b3b52448a1acd16b9e4bd8d
+      internalID: 136703387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_36
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 608
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa8b52a8208cf3a43929da53def6ac47
+      internalID: 1055594251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_37
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 608
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e412bf4b54a845b4f97c47c2ea028252
+      internalID: -2006933562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_38
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 608
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4094ff3b3f2c1554095ee313514f8c7c
+      internalID: 1668114714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_39
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 608
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 172f2348f5f9e734a86257dff4e58ffd
+      internalID: 621603583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_40
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 608
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 613fc337fe9618c47ac344bc40b17b0f
+      internalID: -501983658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_41
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 608
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66a588eb0c5e8094b995c25bc1a666b6
+      internalID: -1114221643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_42
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 608
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0be16532580cb414e9d81f7ef7f2afbb
+      internalID: -1486006308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_43
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 608
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b48090bdf7144784b97e820c95a24835
+      internalID: 1922132534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_44
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 608
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6161f4c97c2e88340ab22fe33020a054
+      internalID: -565255070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_45
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 608
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02f5c22ce08c8be4d96edb7b23860a1b
+      internalID: 939777917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_46
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 608
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdcf2e322d8505147b81855fbd800b80
+      internalID: 674706246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_47
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 608
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64603c7702f317b409bfa0f97e9ecfec
+      internalID: 1938551913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_48
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 577
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0a822a5088454341af5719c00a2ca03
+      internalID: -152755164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_49
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 577
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0366cc1a7bb5aec4487936d4ef86be04
+      internalID: 661210349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_50
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 561
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 208911c5e81589d4a857226b4086092b
+      internalID: -1710655566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_51
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 561
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23cfb7f16b9e7c044af07480488fedff
+      internalID: -1543084532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_52
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 545
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09bff07e5c410ee449321b568e09bd48
+      internalID: -592707415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_53
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 545
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d04397a9456a8b6439202bd9f4dfaa0d
+      internalID: 807898765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_54
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 529
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ba80ecb504725440883040f56bb04e9
+      internalID: -1106607488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_55
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 529
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 353581632e87f704489042c61870694b
+      internalID: 519487824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_56
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 513
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 739d0d916cfd1d8429d9a0855446816a
+      internalID: 2102709562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_57
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 513
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e5bae60bf322be4297b2116c5e00909
+      internalID: 947815066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_58
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 497
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43761547fdbf89f42ac5158fdc3ec0b3
+      internalID: -1438329548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_59
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 497
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f31aeb9e1d8052d489b60cdfd9aaef48
+      internalID: 270559079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_60
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 481
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09eea0b18d2323947a668aa8027da41a
+      internalID: -1334223197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_61
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 481
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79c776226fed2f14183738319fb3f387
+      internalID: -148216799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_62
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 465
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a06823fe3a2d854da6f4cab57fdf6ec
+      internalID: 1548149100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_63
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 465
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a783fc425dd4ed4893a3a36142c4aa8
+      internalID: 180949606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_64
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 384
+        width: 12
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d62f247a06ca6ba45bfdbda33cb76a3a
+      internalID: -218837725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_65
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 384
+        width: 12
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cd2e27a7ea381348971f01716322cc7
+      internalID: 1759971237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_66
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 384
+        width: 12
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f471e907c478c014aa83091990959e6d
+      internalID: 1433646108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_67
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 384
+        width: 12
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4c22a8e20811b84eb5d1f40841e669a
+      internalID: 1842424878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_68
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 384
+        width: 12
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2f321aa6dc1e5747aa2fe2f950c708b
+      internalID: -212811230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_69
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 384
+        width: 12
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a8d31f629cc37f449140fd7822937a4
+      internalID: -595988434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_70
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 384
+        width: 12
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ae62bae66caf7b43b9c9ef4c49c4b98
+      internalID: 564829481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_71
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 384
+        width: 12
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dd3f89e8ce294343a1552bbb389321f
+      internalID: 215332985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_72
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 384
+        width: 12
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55c50a39c0816994a87044965175f0c5
+      internalID: -1283724798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_73
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 384
+        width: 12
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5e9349e8abd5e04585f1ee8db4670e4
+      internalID: 1134760138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_74
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 384
+        width: 12
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebfb6d4857fd27549943a18067d307fa
+      internalID: -304347232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_75
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 384
+        width: 12
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8da40b8a49a8514dbf9f5085db5507d
+      internalID: 1741222212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_76
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 384
+        width: 12
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f9d4e7b961d96d4992917fd731f38a1
+      internalID: -2045250534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_77
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 384
+        width: 12
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53df391c3dfb1c84b9ad960b1ba1b92b
+      internalID: 1780133468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_78
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 384
+        width: 12
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07c730eee6b96f148a342af22576fcb4
+      internalID: -1089427132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_79
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 384
+        width: 12
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 544ef5be0ac895e4b9bab51bb4509715
+      internalID: -1204185099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_80
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 354
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecafc47325cb8964993fab66270898ce
+      internalID: 1018932763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_81
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 354
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddd4743dc9f70434da6e4d5cfbe93569
+      internalID: -1207512605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_82
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 338
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfe47885a3bfb0d4d9a51fcc56bdd062
+      internalID: 1891474633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_83
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 338
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74c16c345eb580f4f88c9306d20522c4
+      internalID: 690436344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_84
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 322
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 672a2a76521da4040b49d9d31a518ce6
+      internalID: -950445758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_85
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 322
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba095324f7ca87c4bbe81429e0af2e31
+      internalID: -757863903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_86
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 306
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2ae821fae027954787f20de60023190
+      internalID: 718141382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_87
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 306
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7be751b498b020248b2172a6d1decefc
+      internalID: -343900825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_88
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 290
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ee97ff5dc412f1428fedda6a3a75fd8
+      internalID: 1883586319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_89
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 290
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f26aa20d6e0a67489fd139929358549
+      internalID: 1206849343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_90
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 274
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a7f9e0c2b9ce744485b4b53d9bca9d2
+      internalID: 1395157472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_91
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 274
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d84edd3e30ac14643b4af11beb611e85
+      internalID: 1696635875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_92
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 258
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9d24e61e83f18947adc1441ac592687
+      internalID: -276985613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_93
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 258
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e85ad9181238ba649914951ec3e474cb
+      internalID: -1132135498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_94
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 242
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51fc8d42d35179f4cb724178c52000bc
+      internalID: 1486397788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_95
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 242
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5293c497d5a22d48b71d99761573035
+      internalID: 64364493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_96
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 160
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d56402233fd789a41961d58718c9dd10
+      internalID: 1981200822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_97
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 160
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5db2413d45c279945ad3e50ec61716aa
+      internalID: -1590669960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_98
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 160
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caee3ca085bb2ae46bb6201e2c7e2e88
+      internalID: -990804872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_99
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 160
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 855c956cca699b342b5b7327073a3795
+      internalID: -124850290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_100
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 160
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c323e3f12d55a94089091b2f5aae3db
+      internalID: -1136046250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_101
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 160
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7dd8e97c5830fc43919af2b19a9deb5
+      internalID: 878123937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_102
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 160
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c1d0aafa3fbb4149abfc53874218a21
+      internalID: -380209037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_103
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 160
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9454893a98614474980b862562211898
+      internalID: 1225093351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_104
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 160
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 401b1282c03356747861cba13e17e274
+      internalID: -1969106256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_105
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 160
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbba6bd55b0df474e95a1c59efaff85d
+      internalID: -2032810514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_106
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 160
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 586dae260632cb64e809b3365d263b80
+      internalID: 676874258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_107
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 160
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3645ff40154c8cb408db30775c167e72
+      internalID: -117327101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_108
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 160
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42f58900e59c29846a86660dc5db2222
+      internalID: -1627852280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_109
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 160
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41334f65c272ef042be415d8eb329066
+      internalID: -419671348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_110
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 160
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 355c4353cbb5cc04783b4626b8ee8c23
+      internalID: -868856733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_111
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 160
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01375eec49664584b8c02a0dbdbeb382
+      internalID: -1988862296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_112
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 129
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90a6116ec5dd4b54cb1d4982fcf1d73e
+      internalID: -1708438310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_113
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 129
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8277d4707d8830c4d911c2f58cad6852
+      internalID: -1737025218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_114
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 113
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09b372175e868d640b6b2f82e1b99317
+      internalID: 1712093843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_115
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 113
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07d7714bcd67ef84fa35c16ebb823401
+      internalID: 1880871820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_116
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 97
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6a702bd1adc4854bb1662379ccc4d72
+      internalID: -291459868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_117
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 97
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 479ef998d666a8d43b480983fb009746
+      internalID: 748243377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_118
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 81
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 015964018338a904a811208959d8e32f
+      internalID: 600118223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_119
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 81
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59d35542e2860fb499d47ba5decf1283
+      internalID: -1223710257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_120
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 65
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b10a41df78c8ae14380be0f3f5380d94
+      internalID: 339143008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_121
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 65
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93bd77dd393fe144c9165565e075eb97
+      internalID: 420723060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_122
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 49
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1250d55ebcd1a044a1059c21682e6f5
+      internalID: -958887980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_123
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 49
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61006615af10c7e44b79dfd8f4e14e99
+      internalID: 1386871535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_124
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 33
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 030ab409c721e1b4fae5fd81af9e222d
+      internalID: 1605819117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_125
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 33
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c54d46e543bb0a647b9b936c940f2b49
+      internalID: 1887882250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_126
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 17
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6562084b3131a3c4d970dbc81860b88d
+      internalID: 2048625893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_GuiLabels_127
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 17
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e866f88cd284e8a49bf95246240ef660
+      internalID: -1037505940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -171,7 +2859,135 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Minifantasy_GuiLabels_0: 1245495610
+      Minifantasy_GuiLabels_1: 1367688268
+      Minifantasy_GuiLabels_10: -1190919150
+      Minifantasy_GuiLabels_100: -1136046250
+      Minifantasy_GuiLabels_101: 878123937
+      Minifantasy_GuiLabels_102: -380209037
+      Minifantasy_GuiLabels_103: 1225093351
+      Minifantasy_GuiLabels_104: -1969106256
+      Minifantasy_GuiLabels_105: -2032810514
+      Minifantasy_GuiLabels_106: 676874258
+      Minifantasy_GuiLabels_107: -117327101
+      Minifantasy_GuiLabels_108: -1627852280
+      Minifantasy_GuiLabels_109: -419671348
+      Minifantasy_GuiLabels_11: 1611027575
+      Minifantasy_GuiLabels_110: -868856733
+      Minifantasy_GuiLabels_111: -1988862296
+      Minifantasy_GuiLabels_112: -1708438310
+      Minifantasy_GuiLabels_113: -1737025218
+      Minifantasy_GuiLabels_114: 1712093843
+      Minifantasy_GuiLabels_115: 1880871820
+      Minifantasy_GuiLabels_116: -291459868
+      Minifantasy_GuiLabels_117: 748243377
+      Minifantasy_GuiLabels_118: 600118223
+      Minifantasy_GuiLabels_119: -1223710257
+      Minifantasy_GuiLabels_12: 1998395303
+      Minifantasy_GuiLabels_120: 339143008
+      Minifantasy_GuiLabels_121: 420723060
+      Minifantasy_GuiLabels_122: -958887980
+      Minifantasy_GuiLabels_123: 1386871535
+      Minifantasy_GuiLabels_124: 1605819117
+      Minifantasy_GuiLabels_125: 1887882250
+      Minifantasy_GuiLabels_126: 2048625893
+      Minifantasy_GuiLabels_127: -1037505940
+      Minifantasy_GuiLabels_13: -923187382
+      Minifantasy_GuiLabels_14: 2050564432
+      Minifantasy_GuiLabels_15: -494191755
+      Minifantasy_GuiLabels_16: 1932653080
+      Minifantasy_GuiLabels_17: 1331788926
+      Minifantasy_GuiLabels_18: -1526008362
+      Minifantasy_GuiLabels_19: -565245375
+      Minifantasy_GuiLabels_2: 952449248
+      Minifantasy_GuiLabels_20: 1917601645
+      Minifantasy_GuiLabels_21: 144059569
+      Minifantasy_GuiLabels_22: 1963172526
+      Minifantasy_GuiLabels_23: 503769594
+      Minifantasy_GuiLabels_24: -1246602881
+      Minifantasy_GuiLabels_25: 1521471138
+      Minifantasy_GuiLabels_26: 1472689101
+      Minifantasy_GuiLabels_27: 1699301578
+      Minifantasy_GuiLabels_28: -1621114647
+      Minifantasy_GuiLabels_29: 1170753175
+      Minifantasy_GuiLabels_3: 1649486566
+      Minifantasy_GuiLabels_30: -290699146
+      Minifantasy_GuiLabels_31: -51682421
+      Minifantasy_GuiLabels_32: -236850914
+      Minifantasy_GuiLabels_33: 1637899207
+      Minifantasy_GuiLabels_34: -1365918876
+      Minifantasy_GuiLabels_35: 136703387
+      Minifantasy_GuiLabels_36: 1055594251
+      Minifantasy_GuiLabels_37: -2006933562
+      Minifantasy_GuiLabels_38: 1668114714
+      Minifantasy_GuiLabels_39: 621603583
+      Minifantasy_GuiLabels_4: 1838497384
+      Minifantasy_GuiLabels_40: -501983658
+      Minifantasy_GuiLabels_41: -1114221643
+      Minifantasy_GuiLabels_42: -1486006308
+      Minifantasy_GuiLabels_43: 1922132534
+      Minifantasy_GuiLabels_44: -565255070
+      Minifantasy_GuiLabels_45: 939777917
+      Minifantasy_GuiLabels_46: 674706246
+      Minifantasy_GuiLabels_47: 1938551913
+      Minifantasy_GuiLabels_48: -152755164
+      Minifantasy_GuiLabels_49: 661210349
+      Minifantasy_GuiLabels_5: -1758314571
+      Minifantasy_GuiLabels_50: -1710655566
+      Minifantasy_GuiLabels_51: -1543084532
+      Minifantasy_GuiLabels_52: -592707415
+      Minifantasy_GuiLabels_53: 807898765
+      Minifantasy_GuiLabels_54: -1106607488
+      Minifantasy_GuiLabels_55: 519487824
+      Minifantasy_GuiLabels_56: 2102709562
+      Minifantasy_GuiLabels_57: 947815066
+      Minifantasy_GuiLabels_58: -1438329548
+      Minifantasy_GuiLabels_59: 270559079
+      Minifantasy_GuiLabels_6: 130894515
+      Minifantasy_GuiLabels_60: -1334223197
+      Minifantasy_GuiLabels_61: -148216799
+      Minifantasy_GuiLabels_62: 1548149100
+      Minifantasy_GuiLabels_63: 180949606
+      Minifantasy_GuiLabels_64: -218837725
+      Minifantasy_GuiLabels_65: 1759971237
+      Minifantasy_GuiLabels_66: 1433646108
+      Minifantasy_GuiLabels_67: 1842424878
+      Minifantasy_GuiLabels_68: -212811230
+      Minifantasy_GuiLabels_69: -595988434
+      Minifantasy_GuiLabels_7: 966793951
+      Minifantasy_GuiLabels_70: 564829481
+      Minifantasy_GuiLabels_71: 215332985
+      Minifantasy_GuiLabels_72: -1283724798
+      Minifantasy_GuiLabels_73: 1134760138
+      Minifantasy_GuiLabels_74: -304347232
+      Minifantasy_GuiLabels_75: 1741222212
+      Minifantasy_GuiLabels_76: -2045250534
+      Minifantasy_GuiLabels_77: 1780133468
+      Minifantasy_GuiLabels_78: -1089427132
+      Minifantasy_GuiLabels_79: -1204185099
+      Minifantasy_GuiLabels_8: -1439477955
+      Minifantasy_GuiLabels_80: 1018932763
+      Minifantasy_GuiLabels_81: -1207512605
+      Minifantasy_GuiLabels_82: 1891474633
+      Minifantasy_GuiLabels_83: 690436344
+      Minifantasy_GuiLabels_84: -950445758
+      Minifantasy_GuiLabels_85: -757863903
+      Minifantasy_GuiLabels_86: 718141382
+      Minifantasy_GuiLabels_87: -343900825
+      Minifantasy_GuiLabels_88: 1883586319
+      Minifantasy_GuiLabels_89: 1206849343
+      Minifantasy_GuiLabels_9: 819028295
+      Minifantasy_GuiLabels_90: 1395157472
+      Minifantasy_GuiLabels_91: 1696635875
+      Minifantasy_GuiLabels_92: -276985613
+      Minifantasy_GuiLabels_93: -1132135498
+      Minifantasy_GuiLabels_94: 1486397788
+      Minifantasy_GuiLabels_95: 64364493
+      Minifantasy_GuiLabels_96: 1981200822
+      Minifantasy_GuiLabels_97: -1590669960
+      Minifantasy_GuiLabels_98: -990804872
+      Minifantasy_GuiLabels_99: -124850290
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -11,7 +11,13 @@ public class PlayerMovement : MonoBehaviour
     private Button attackInput, escapeInput;
     [SerializeField]
     private PlayerExtraStats playerExtraStats;
-    
+
+    public int extraDamage = 0;
+    [HideInInspector]
+    public int baseDamage = 5;
+    [SerializeField]
+    AudioClip swordSound, bowSound, staffSound;
+
     Animator animator;
     SpriteRenderer renderer;
 /*
@@ -73,21 +79,40 @@ public class PlayerMovement : MonoBehaviour
 
     public void OnAttack()
     {
-        GameObject weaponObject = null;
-        switch (playerExtraStats.weaponType.ToLower())
+        GameObject weaponObject;
+        switch (playerExtraStats.weaponType)
         {
-            case "sword":
+            case "Sword":
                 weaponObject = possibleWeapons[0];
+                baseDamage = 5;
                 break;
-            case "bow":
+            case "Bow":
                 weaponObject = possibleWeapons[1];
+                baseDamage = 3;
                 break;
-            case "staff":
+            case "Staff":
                 weaponObject = possibleWeapons[2];
+                baseDamage = 8;
                 break;
             default:
                 Debug.LogWarning("Invalid weapon type");
-                break;
+                return;
+        }
+
+        ProjectileWeapon pTest;
+        MeleeWeapon wTest;
+
+        if(weaponObject != null)
+        {
+            if (weaponObject.TryGetComponent<ProjectileWeapon>(out pTest))
+            {
+                weaponObject.GetComponent<ProjectileWeapon>().projectileDamage = baseDamage + extraDamage;
+            }
+            else if (weaponObject.TryGetComponent<MeleeWeapon>(out wTest))
+            {
+                weaponObject.GetComponent<MeleeWeapon>().damage = baseDamage + extraDamage;
+                //Debug.Log(weaponObject.GetComponent<MeleeWeapon>().damage);
+            }
         }
 
         if (!animator.GetBool("Attacking"))
@@ -101,7 +126,7 @@ public class PlayerMovement : MonoBehaviour
             attackObject.SetActive(true);
             float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
             attackObject.SetActive(true);
-            Debug.Log(angle);
+            //Debug.Log(angle);
 
             if (angle > 90 || angle < -90)
             {
@@ -117,7 +142,20 @@ public class PlayerMovement : MonoBehaviour
                 attackObject.transform.rotation = Quaternion.Euler(0, 0, angle);
             }
 
-
+            AudioSource audioSource = GetComponent<AudioSource>();
+            switch (playerExtraStats.weaponType)
+            {
+                case "Sword":
+                    audioSource.clip = swordSound;
+                    break;
+                case "Bow":
+                    audioSource.clip = bowSound;
+                    break;
+                case "Staff":
+                    audioSource.clip = staffSound;
+                    break;
+            }
+            audioSource.Play();
         }
     }
 }

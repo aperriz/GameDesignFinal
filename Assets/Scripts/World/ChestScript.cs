@@ -92,13 +92,19 @@ public class ChestScript : MonoBehaviour
 
     private void SpawnRandomItem(Vector2 spawnPos)
     {
-        if (Random.Range(1, 4) < 3)
+        int roll = Random.Range(1, 11);
+        if (roll < 6)
         {
             SpawnPotion(spawnPos);
         }
-        else
+        else if (roll < 9)
         {
             SpawnScroll(spawnPos);
+        }
+        else
+        {
+            
+            SpawnWeapon(spawnPos);
         }
     }
 
@@ -139,4 +145,38 @@ public class ChestScript : MonoBehaviour
         }
     }
 
+    private void SpawnWeapon(Vector2 spawnPos)
+    {
+        GameObject weaponObject = Instantiate(Resources.Load("Prefabs/World/WeaponItem Prefab") as GameObject, new Vector3(spawnPos.x, spawnPos.y, -1), Quaternion.Euler(0, 0, 0), transform);
+
+        int roll = Random.Range(1, 4);
+        int minPlus = (int)Mathf.Floor(level / 2) - 1;
+        int maxPlus = (int)Mathf.Ceil(level / 2) + 1;
+        if (minPlus < 0)
+        {
+            minPlus = 0;
+        }
+
+        if (maxPlus < 2)
+        {
+            maxPlus = 2;
+        }
+        int damageRoll = (int)Random.Range(minPlus, maxPlus);
+        WeaponItem weaponItem = weaponObject.GetComponent<WeaponItem>();
+
+        switch (roll)
+        {
+            case 1:
+                weaponItem.type = "Sword";
+                break;
+            case 2:
+                weaponItem.type = "Bow";
+                break;
+            case 3:
+                weaponItem.type = "Staff";
+                break;
+        }
+
+        weaponItem.bonusDamage = damageRoll;
+    }
 }

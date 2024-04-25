@@ -56,7 +56,10 @@ public class RoomFirstDungeonGenerator : SimpleRandomWalkGenerator
     protected override void RunProceduralGeneration()
     {
         dungeonData = gameObject.GetComponent<DungeonData>();
-        dungeonData.roomCount = 0;
+        if(dungeonData != null)
+        {
+            dungeonData.roomCount = 0;
+        }
         CreateRooms();
         Debug.Log("Running proc gen");
     }

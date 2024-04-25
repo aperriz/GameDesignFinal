@@ -118,7 +118,7 @@ Transform:
   m_GameObject: {fileID: 2991554673465107745}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.235707, y: -9.401599, z: 0}
+  m_LocalPosition: {x: 12.235707, y: -9.401599, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -627,8 +627,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b74122d01fb9b84cbf24092087010c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 150
-  maxHealth: 150
+  health: 200
+  maxHealth: 200
   animator: {fileID: 1944918665772769732}
   audioClip: {fileID: 8300000, guid: 74f7361a520c94e41913ca2ccf0189da, type: 3}
   speed: 0
@@ -639,6 +639,8 @@ MonoBehaviour:
   healthBarSlider: {fileID: 6198842397956431145}
   aggressionRange: 20
   ai: {fileID: 2445558420993106625}
+  mode: miniboss
+  nameText: Daryl, Butler of the Phoenix
 --- !u!1 &5787011700169021098
 GameObject:
   m_ObjectHideFlags: 0

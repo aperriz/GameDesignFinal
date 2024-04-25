@@ -35,6 +35,8 @@ public class PlayerExtraStats : MonoBehaviour
 
     GameObject shield;
 
+    PlayerMovement playerMovement;
+
     private void Start()
     {
         UpdateScrolls();
@@ -42,6 +44,7 @@ public class PlayerExtraStats : MonoBehaviour
         hasRightPotion = false;
         hasLeftScroll = false;
         hasRightScroll = false;
+        playerMovement = GameObject.Find("Player").GetComponent<PlayerMovement>();
         //Debug.Log(hasLeftPotion);
         //Debug.Log(hasRightPotion);
         //UpdatePotions();
@@ -60,6 +63,27 @@ public class PlayerExtraStats : MonoBehaviour
 
     }
 
+    public void setDamage(int dmg)
+    {
+        playerMovement.baseDamage = dmg;
+        GameObject.Find("AtkText").GetComponent<TextMeshProUGUI>().text = (playerMovement.baseDamage + dmg).ToString();
+    }
+    public void setBonusDamage(int dmg)
+    {
+        playerMovement.extraDamage = dmg;
+        GameObject.Find("AtkText").GetComponent<TextMeshProUGUI>().text = (playerMovement.baseDamage + dmg).ToString();
+    }
+
+
+    public int getBonusDamage()
+    {
+        return playerMovement.extraDamage;
+    }
+    public int getBaseDamage()
+    {
+        return playerMovement.baseDamage;
+    }
+
     public void UpdateDefense(int change)
     {
         defense += change;
@@ -72,7 +96,7 @@ public class PlayerExtraStats : MonoBehaviour
         {
             defense = 0;
         }
-        TextMeshProUGUI defenseText = GameObject.Find("Player").transform.GetChild(1).GetChild(2).GetChild(1).GetComponent<TextMeshProUGUI>() as TextMeshProUGUI;
+        TextMeshProUGUI defenseText = GameObject.Find("Defense Text").GetComponent<TextMeshProUGUI>() as TextMeshProUGUI;
         defenseText.text = defense.ToString();
     }
 

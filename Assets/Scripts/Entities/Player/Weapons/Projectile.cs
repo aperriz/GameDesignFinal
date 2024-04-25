@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -7,13 +8,19 @@ public class Projectile : MonoBehaviour
     Rigidbody2D rb;
     [SerializeField]
     public int speed = 10;
+    Collider2D col;
 
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        col = GetComponent<Collider2D>();
+
+        col.enabled = false;
 
         SetStraightVelocity();
+
+        StartCoroutine(ProjectileBuffer());
 
         StartCoroutine(DestroyProjectile());
     }
@@ -32,6 +39,10 @@ public class Projectile : MonoBehaviour
             {
                 enemy.DealDamage(damage);
             }
+            else if(collision.GetComponent<Boss1RecieveDamage>() != null)
+            {
+                collision.GetComponent<Boss1RecieveDamage>().DealDamage(damage);
+            }
             Destroy(gameObject);
         }
         
@@ -41,5 +52,11 @@ public class Projectile : MonoBehaviour
     {
         yield return new WaitForSeconds(10);
         Destroy(gameObject);
+    }
+
+    private IEnumerator ProjectileBuffer()
+    {
+        yield return new WaitForSeconds(0.07f);
+        col.enabled = true;
     }
 }

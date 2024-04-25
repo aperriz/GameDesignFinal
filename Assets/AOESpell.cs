@@ -17,6 +17,10 @@ public class AOESpell : MonoBehaviour
         {
             enemy.DealSpellDamage(damage);
         }
+        else if(collision.GetComponentInChildren<Boss1RecieveDamage>() != null)
+        {
+            collision.GetComponentInChildren<Boss1RecieveDamage>().DealSpellDamage(damage);
+        }
 
     }
     

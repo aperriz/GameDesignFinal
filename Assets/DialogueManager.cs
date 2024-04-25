@@ -13,12 +13,14 @@ public class DialogueManager : MonoBehaviour
     [SerializeField]
     TextMeshProUGUI dialogueText;
     [SerializeField]
-    string[] sentences;
+    string[] startSentences, deathSentences;
     Queue<string> dialogueQueue = new Queue<string>();
     [SerializeField]
-    UnityEvent dialogueEnd;
-    bool invoked = false;
+    UnityEvent dialogueEnd, fightEnd;
+    bool invoked = false, dead = false;
     Button contButton;
+    [SerializeField]
+    Sprite deathSprite;
 
     private void Start()
     {
@@ -28,7 +30,7 @@ public class DialogueManager : MonoBehaviour
     public void StartDialogue()
     {
         contButton = GetComponentInChildren<Button>();
-        foreach (string st in sentences)
+        foreach (string st in startSentences)
         {
             dialogueQueue.Enqueue(st);
         }
@@ -41,18 +43,44 @@ public class DialogueManager : MonoBehaviour
 
     }
 
+    public void DeathDialogue()
+    {
+        contButton = GetComponentInChildren<Button>();
+        dialogueQueue.Clear();
+        foreach(string st in deathSentences)
+        {
+            dialogueQueue.Enqueue(st);
+        }
+
+        dialogueBox.SetActive(true);
+
+        GameObject.Find("Player").transform.GetChild(1).gameObject.SetActive(false);
+        dialogueBox.transform.GetChild(2).GetComponent<Image>().sprite = deathSprite;
+        dead = true;
+        DisplayNextSentence();
+        
+    }
+
     public void DisplayNextSentence()
     {
         contButton.enabled = false;
         if (dialogueQueue.Count == 0)
         {
             dialogueBox.SetActive(false);
-            dialogueEnd?.Invoke();
+            if (!dead)
+            {
+                dialogueEnd?.Invoke();
+            }
+            else
+            {
+                fightEnd?.Invoke();
+                GameObject.Find("Player").transform.GetChild(1).gameObject.SetActive(true);
+            }
         }
         else
         {
             string sentence = dialogueQueue.Dequeue();
-
+            Debug.Log(sentence);
             StartCoroutine(TypeSentence(sentence));
         }
 

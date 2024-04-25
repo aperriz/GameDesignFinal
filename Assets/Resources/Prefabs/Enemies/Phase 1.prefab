@@ -437,6 +437,7 @@ MonoBehaviour:
   healthBar: {fileID: 0}
   healthBarSlider: {fileID: 0}
   phaseSwitch: {fileID: 6106759640763493432}
+  deathSound: {fileID: 8300000, guid: 8469eb49381cd3544bea3d8baab8aba5, type: 3}
 --- !u!114 &6106759640763493432
 MonoBehaviour:
   m_ObjectHideFlags: 0

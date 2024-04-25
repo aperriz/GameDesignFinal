@@ -32,7 +32,7 @@ public class RangedPlayerDetector : MonoBehaviour
             RaycastHit2D losRay = Physics2D.Raycast(transform.position, player.transform.position - transform.position, detectionRange, LayerMask.GetMask("Player", "Walls"));
             RaycastHit2D rangedRay = Physics2D.Raycast(transform.position, player.transform.position - transform.position, 10, LayerMask.GetMask("Player", "Walls"));
             Debug.DrawRay(transform.position, player.transform.position - transform.position);
-            if (losRay.collider != null)
+            if (losRay.collider != null && player.GetComponent<PlayerMovement>().moved)
             {
                 //Debug.Log(ray.collider.name);
                 if (losRay.collider.CompareTag(player.tag))

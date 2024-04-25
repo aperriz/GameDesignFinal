@@ -420,6 +420,7 @@ GameObject:
   - component: {fileID: 4498815953331363855}
   - component: {fileID: 1977202657957923248}
   - component: {fileID: 3082477378953004340}
+  - component: {fileID: 7995522837037419946}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -535,6 +536,7 @@ MonoBehaviour:
   swordSound: {fileID: 8300000, guid: 8f6bbcf0d40c21f4aac14d620c320cad, type: 3}
   bowSound: {fileID: 8300000, guid: 9be9e97673db70b44822e6151dd5e444, type: 3}
   staffSound: {fileID: 8300000, guid: caea3f43adc6d234b8dd712d797246f0, type: 3}
+  moved: 0
   movement: {fileID: -5404367964164445875, guid: 9138d07d90b775e4a97e6882f66da286, type: 3}
   attack: {fileID: -1716124422797361547, guid: 9138d07d90b775e4a97e6882f66da286, type: 3}
   escape: {fileID: 6946298281952011003, guid: 9138d07d90b775e4a97e6882f66da286, type: 3}
@@ -790,6 +792,51 @@ MonoBehaviour:
   speedPotionCooldown: 0
   shieldScrollCooldown: 0
   immune: 0
+--- !u!61 &7995522837037419946
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2014316275248123421}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.1875, y: 0.21875}
+    newSize: {x: 0.1875, y: 0.21875}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.1547733, y: 0.19}
+  m_EdgeRadius: 0
 --- !u!1 &2328223902855995050
 GameObject:
   m_ObjectHideFlags: 0

@@ -671,13 +671,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueBox: {fileID: 8110121254805110901}
   dialogueText: {fileID: 8357469273715084955}
-  sentences:
+  startSentences:
   - Do you have an appointment?
-  - ....
-  - No? You just want to finally die?
-  - ....
-  - Well that's too bad, you will never make it to the phoenix!
-  - I will never loose to the likes of you!
+  - .....
+  - No? Well no walk-ins are allowed.
+  - .....
+  - You want to die?
+  - .....
+  - Well that's too bad. You will never reach the phoenix!
+  - I will neve lose to the likes of you!
+  deathSentences:
+  - Im... Impossible!
+  - I never lose!
+  - I'm sorry master...
+  - That you have to waste your time with this human!
+  - See you soon, little one!
   dialogueEnd:
     m_PersistentCalls:
       m_Calls:
@@ -693,3 +701,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  fightEnd:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Boss1RecieveDamage, Assembly-CSharp
+        m_MethodName: DeathSequence
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  deathSprite: {fileID: 0}

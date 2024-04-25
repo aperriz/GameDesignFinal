@@ -26,7 +26,7 @@ public class PlayerDetector : MonoBehaviour
             if (!(healthCheck.health <= 0))
             {
                 RaycastHit2D ray = Physics2D.Raycast(transform.position, player.transform.position - transform.position, detectionRange, LayerMask.GetMask("Player", "Walls"));
-                if (ray.collider != null)
+                if (ray.collider != null && player.GetComponent<PlayerMovement>().moved)
                 {
                     //Debug.Log(ray.collider.name);
                     if (ray.collider.CompareTag(player.tag))

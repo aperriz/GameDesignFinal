@@ -13,18 +13,25 @@ public class StartP1Script : MonoBehaviour
     string nameText;
     [SerializeField]
     UnityEvent onTriggerEnter;
+    PlayerMovement pInput;
 
     bool invokedDialog = false;
+    bool triggered = false;
 
     private void Start()
     {
-
+        pInput = GameObject.Find("Player").GetComponent<PlayerMovement>();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.name == "Player")
+        if (other.name == "Player" && !triggered)
         {
+            triggered = true;
+
+            pInput.enabled = false;
+
+            Destroy(GetComponent<BoxCollider2D>());
             GameObject.Find("Player").transform.GetChild(1).gameObject.SetActive(false);
             Debug.Log("Starting Fight");
             Time.timeScale = 0;
@@ -79,6 +86,7 @@ public class StartP1Script : MonoBehaviour
         boss.GetComponentInChildren<PolygonCollider2D>().enabled = true;
         //boss.GetComponent<Phase1>().enabled = true;
         Time.timeScale = 1.0f;
+        pInput.enabled = true;
         camera.orthographicSize = 13;
         camera.transform.localPosition = new Vector3(0, 0, -10);
         Destroy(gameObject);

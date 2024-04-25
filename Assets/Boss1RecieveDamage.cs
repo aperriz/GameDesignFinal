@@ -5,6 +5,9 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Boss1RecieveDamage : MonoBehaviour
@@ -21,6 +24,11 @@ public class Boss1RecieveDamage : MonoBehaviour
     [SerializeField]
     Phase1 phaseSwitch;
     bool halfHealth = false;
+    [SerializeField]
+    AudioClip deathSound;
+    [SerializeField]
+    UnityEvent onDeath;
+    PlayerMovement pInput;
 
     // Start is called before the first frame update
     void Start()
@@ -42,11 +50,12 @@ public class Boss1RecieveDamage : MonoBehaviour
 
         if (!animator.GetBool("Invincible") && !animator.GetBool("Hurt"))
         {
-            /*if(audioSource == null)
+            if (audioSource == null)
             {
                 audioSource = GetComponent<AudioSource>();
             }
-            audioSource.clip = audioClip;*/
+            audioSource.clip = audioClip;
+            audioSource.Play();
             healthBarSlider.enabled = true;
             healthBar.SetActive(true);
             //Debug.Log("Ow");
@@ -101,9 +110,19 @@ public class Boss1RecieveDamage : MonoBehaviour
 
         if (health <= 0)
         {
+            pInput = player.GetComponent<PlayerMovement>();
+            pInput.enabled = false;
+            Time.timeScale = 0;
             Debug.Log("Dead");
             animator.SetBool("Dead", true);
-            gameObject.GetComponent<BoxCollider2D>().enabled = false;
+            if (gameObject.GetComponent<BoxCollider2D>() != null)
+            {
+                gameObject.GetComponent<BoxCollider2D>().enabled = false;
+            }
+            audioSource.clip = deathSound;
+            audioSource.Play();
+            
+            onDeath?.Invoke();
 
         }
     }
@@ -124,5 +143,11 @@ public class Boss1RecieveDamage : MonoBehaviour
     {
         return (float)health / (float)maxHealth;
     }
-
+    
+    public void DeathSequence()
+    {
+        pInput.enabled = true;
+        Time.timeScale = 1;
+        SceneManager.LoadScene("Boss Phase 2", LoadSceneMode.Single);
+    }
 }

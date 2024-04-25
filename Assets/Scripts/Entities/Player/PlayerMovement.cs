@@ -17,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
     public int baseDamage = 5;
     [SerializeField]
     AudioClip swordSound, bowSound, staffSound;
+    public bool moved = false;
 
     Animator animator;
     SpriteRenderer renderer;
@@ -61,6 +62,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Move()
     {
+        moved = true;
         movementInput = movement.action.ReadValue<Vector2>();
         animator.SetFloat("xDir", movementInput.x);
         animator.SetFloat("yDir", movementInput.y);
@@ -79,6 +81,10 @@ public class PlayerMovement : MonoBehaviour
 
     public void OnAttack()
     {
+        if (!moved)
+        {
+            moved = true;
+        }
         GameObject weaponObject;
         switch (playerExtraStats.weaponType)
         {

@@ -9,6 +9,12 @@ EditorBuildSettings:
     path: Assets/Resources/Scenes/MainMenu.unity
     guid: 921420839594f8c4c9ba8a407600c963
   - enabled: 1
-    path: Assets/Resources/Scenes/Level 01.unity
-    guid: c217b18e8e4a0c441bb6d27a6b5f02e3
+    path: Assets/Resources/Scenes/Boss Phase 1.unity
+    guid: ad93349f2e0ac134681a47ca072ae621
+  - enabled: 1
+    path: Assets/Resources/Scenes/Boss Phase 2.unity
+    guid: 3c2b93178d4a173489bed7cbe01c2b54
+  - enabled: 1
+    path: Assets/Resources/Scenes/Level 1.unity
+    guid: b4bf5bce146e9624683219fc3ea4c336
   m_configObjects: {}

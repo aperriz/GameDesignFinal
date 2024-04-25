@@ -18,6 +18,7 @@ public class DialogueManager : MonoBehaviour
     [SerializeField]
     UnityEvent dialogueEnd;
     bool invoked = false;
+    Button contButton;
 
     private void Start()
     {
@@ -26,6 +27,7 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue()
     {
+        contButton = GetComponentInChildren<Button>();
         foreach (string st in sentences)
         {
             dialogueQueue.Enqueue(st);
@@ -41,7 +43,7 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayNextSentence()
     {
-
+        contButton.enabled = false;
         if (dialogueQueue.Count == 0)
         {
             dialogueBox.SetActive(false);
@@ -65,6 +67,11 @@ public class DialogueManager : MonoBehaviour
         foreach (char c in sentence)
         {
             dialogueText.text += c;
+
+            if(dialogueText.text == sentence)
+            {
+                contButton.enabled = true;
+            }
             yield return null;
         }
     }

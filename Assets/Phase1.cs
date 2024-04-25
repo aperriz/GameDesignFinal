@@ -18,7 +18,7 @@ public class Phase1 : MonoBehaviour
     GameObject batPrefab;
 
     [SerializeField]
-    public double atk1cd, atk2cd, initcd;
+    public float atk1cd, atk2cd, initcd;
 
     private void OnEnable()
     {

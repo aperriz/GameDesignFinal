@@ -94,8 +94,8 @@ public class Boss1RecieveDamage : MonoBehaviour
         {
             halfHealth = true;
             Phase1 p1 = GetComponent<Phase1>();
-            p1.atk1cd = Math.Ceiling(p1.atk1cd / 1.5);
-            p1.atk2cd = Math.Ceiling(p1.atk2cd / 1.5);
+            p1.atk1cd /= 1.5f;
+            p1.atk2cd /= 1.5f;
 
         }
 

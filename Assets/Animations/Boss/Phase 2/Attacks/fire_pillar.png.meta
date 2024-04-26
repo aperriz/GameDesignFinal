@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ce50df721eb7da84a9cba4ed76b238ee
+guid: d48f89dbc9193dc43af8dbda9744f71c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -81,33 +81,20 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Server
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
     buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -158,11 +145,24 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Minifantasy_MagicAndSorceryDivineTouchCasting_0
+      name: fire_pillar_0
       rect:
         serializedVersion: 2
         x: 0
@@ -170,20 +170,39 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 4, y: -1}
+        - {x: 2, y: -1}
+        - {x: 2, y: 0}
+        - {x: -3, y: 0}
+        - {x: -3, y: -1}
+        - {x: -5, y: -1}
+        - {x: -6, y: -2}
+        - {x: -6, y: -3}
+        - {x: -5, y: -3}
+        - {x: -5, y: -4}
+        - {x: -3, y: -4}
+        - {x: -3, y: -5}
+        - {x: 2, y: -5}
+        - {x: 2, y: -4}
+        - {x: 4, y: -4}
+        - {x: 4, y: -3}
+        - {x: 5, y: -3}
+        - {x: 5, y: -2}
+        - {x: 4, y: -2}
       tessellationDetail: 0
       bones: []
-      spriteID: baca5267e8da0a6428b597adac8f3205
-      internalID: -1180671447
+      spriteID: 3ee689a11f6d6e541a77ecea3f614752
+      internalID: 1298378016
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Minifantasy_MagicAndSorceryDivineTouchCasting_1
+      name: fire_pillar_1
       rect:
         serializedVersion: 2
         x: 32
@@ -191,20 +210,28 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 2, y: 2}
+        - {x: -6, y: 2}
+        - {x: -8, y: -2}
+        - {x: -8, y: -3}
+        - {x: -3, y: -7}
+        - {x: 2, y: -7}
+        - {x: 7, y: -3}
+        - {x: 7, y: 0}
       tessellationDetail: 0
       bones: []
-      spriteID: cae4a2afd6f01c944b5387a7b35d8338
-      internalID: -611138258
+      spriteID: 392f4846fa35da140b6cd336235c58b2
+      internalID: 1078852378
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Minifantasy_MagicAndSorceryDivineTouchCasting_2
+      name: fire_pillar_2
       rect:
         serializedVersion: 2
         x: 64
@@ -212,20 +239,28 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 2, y: 2}
+        - {x: -6, y: 2}
+        - {x: -8, y: -2}
+        - {x: -8, y: -3}
+        - {x: -3, y: -7}
+        - {x: 2, y: -7}
+        - {x: 7, y: -3}
+        - {x: 7, y: 0}
       tessellationDetail: 0
       bones: []
-      spriteID: 1905c81699e06574da03b0010b3eef9c
-      internalID: -1641308107
+      spriteID: db073c14f299d9646b25a4914fa0ff3a
+      internalID: 1748692892
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Minifantasy_MagicAndSorceryDivineTouchCasting_3
+      name: fire_pillar_3
       rect:
         serializedVersion: 2
         x: 96
@@ -233,20 +268,28 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 2, y: 2}
+        - {x: -6, y: 2}
+        - {x: -8, y: -2}
+        - {x: -8, y: -3}
+        - {x: -3, y: -7}
+        - {x: 2, y: -7}
+        - {x: 7, y: -3}
+        - {x: 7, y: 0}
       tessellationDetail: 0
       bones: []
-      spriteID: 0498055d64bbf4f45960a83ba9781692
-      internalID: 505574917
+      spriteID: 8ed51721058914d4e9f28fc6b5fa1085
+      internalID: -1914070603
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Minifantasy_MagicAndSorceryDivineTouchCasting_4
+      name: fire_pillar_4
       rect:
         serializedVersion: 2
         x: 128
@@ -254,14 +297,137 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 4, y: -2}
+        - {x: 4, y: -1}
+        - {x: 4, y: 16}
+        - {x: -3, y: 16}
+        - {x: -3, y: 12}
+        - {x: -4, y: 12}
+        - {x: -4, y: 0}
+        - {x: -4, y: -1}
+        - {x: -5, y: -1}
+        - {x: -5, y: -2}
+        - {x: -6, y: -2}
+        - {x: -6, y: -3}
+        - {x: -5, y: -3}
+        - {x: -5, y: -4}
+        - {x: -3, y: -4}
+        - {x: -3, y: -5}
+        - {x: 2, y: -5}
+        - {x: 2, y: -4}
+        - {x: 4, y: -4}
+        - {x: 4, y: -3}
+        - {x: 5, y: -3}
+        - {x: 5, y: -2}
       tessellationDetail: 0
       bones: []
-      spriteID: 6cee9be9bfa5d4c4a8fa0f388f46fb6e
-      internalID: 1521455943
+      spriteID: 0391a985c4a315843a792c28e35754f9
+      internalID: -2112183971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_pillar_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 4, y: -2}
+        - {x: 4, y: -1}
+        - {x: 4, y: 16}
+        - {x: -3, y: 16}
+        - {x: -3, y: 12}
+        - {x: -4, y: 12}
+        - {x: -4, y: 0}
+        - {x: -4, y: -1}
+        - {x: -5, y: -1}
+        - {x: -5, y: -2}
+        - {x: -6, y: -2}
+        - {x: -6, y: -3}
+        - {x: -5, y: -3}
+        - {x: -5, y: -4}
+        - {x: -3, y: -4}
+        - {x: -3, y: -5}
+        - {x: 2, y: -5}
+        - {x: 2, y: -4}
+        - {x: 4, y: -4}
+        - {x: 4, y: -3}
+        - {x: 5, y: -3}
+        - {x: 5, y: -2}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27d68d6ac172cc84c814850034c2eccc
+      internalID: 433742697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_pillar_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 2, y: 2}
+        - {x: -6, y: 2}
+        - {x: -8, y: -2}
+        - {x: -8, y: -3}
+        - {x: -3, y: -7}
+        - {x: 2, y: -7}
+        - {x: 7, y: -3}
+        - {x: 7, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8368c3e040e2c05418a2178356b396e2
+      internalID: -741384660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_pillar_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 2, y: 2}
+        - {x: -6, y: 2}
+        - {x: -8, y: -2}
+        - {x: -8, y: -3}
+        - {x: -3, y: -7}
+        - {x: 2, y: -7}
+        - {x: 7, y: -3}
+        - {x: 7, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e79ee8cd19e79b7449be5fcb4ed7dbb5
+      internalID: -705169033
       vertices: []
       indices: 
       edges: []
@@ -277,11 +443,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Minifantasy_MagicAndSorceryDivineTouchCasting_0: -1180671447
-      Minifantasy_MagicAndSorceryDivineTouchCasting_1: -611138258
-      Minifantasy_MagicAndSorceryDivineTouchCasting_2: -1641308107
-      Minifantasy_MagicAndSorceryDivineTouchCasting_3: 505574917
-      Minifantasy_MagicAndSorceryDivineTouchCasting_4: 1521455943
+      fire_pillar_0: 1298378016
+      fire_pillar_1: 1078852378
+      fire_pillar_2: 1748692892
+      fire_pillar_3: -1914070603
+      fire_pillar_4: -2112183971
+      fire_pillar_5: 433742697
+      fire_pillar_6: -741384660
+      fire_pillar_7: -705169033
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

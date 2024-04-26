@@ -6,7 +6,6 @@ using UnityEngine;
 
 public class BatScript : EnemyRecieveDamage
 {
-    GameObject player;
 
     private void Awake()
     {

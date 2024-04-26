@@ -2,6 +2,7 @@ using Pathfinding;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
@@ -10,7 +11,7 @@ using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class Boss1RecieveDamage : MonoBehaviour
+public class Boss2RecieveDamage : MonoBehaviour
 {
     public float health;
     public float maxHealth;
@@ -19,10 +20,10 @@ public class Boss1RecieveDamage : MonoBehaviour
     protected AudioSource audioSource;
     public AudioClip audioClip;
     GameObject player;
-    public GameObject healthBar;
-    public Slider healthBarSlider;
+    GameObject healthBar;
+    Slider healthBarSlider;
     [SerializeField]
-    Phase1 phaseSwitch;
+    Phase2 phaseSwitch;
     bool halfHealth = false;
     [SerializeField]
     AudioClip deathSound;
@@ -37,9 +38,9 @@ public class Boss1RecieveDamage : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         audioSource.clip = audioClip;
         player = GameObject.Find("Player");
-
         healthBar = player.transform.GetChild(1).GetChild(1).gameObject;
         healthBarSlider = healthBar.GetComponent<Slider>();
+        healthBar.GetComponentInChildren<TextMeshProUGUI>().text = "Soul of the Phoenix";
     }
 
     private void Awake()
@@ -53,21 +54,25 @@ public class Boss1RecieveDamage : MonoBehaviour
 
         if (!animator.GetBool("Invincible") && !animator.GetBool("Hurt"))
         {
-            if (audioSource == null)
+            /*if (audioSource == null)
             {
                 audioSource = GetComponent<AudioSource>();
             }
-            audioSource.clip = audioClip;
+            audioSource.clip = audioClip;*/
             audioSource.Play();
             healthBarSlider.enabled = true;
             healthBar.SetActive(true);
             //Debug.Log("Ow");
 
+            health -= damage;
+
+            animator.SetFloat("Health", CalculateHealthPercent());
+
             healthBarSlider.value = CalculateHealthPercent();
 
             //Debug.Log("Dealing damage");
             /*audioSource.Play();*/
-            health -= damage;
+            
             animator.SetBool("Hurt", true);
             animator.SetBool("Invincible", true);
             CheckDeath();
@@ -88,12 +93,12 @@ public class Boss1RecieveDamage : MonoBehaviour
             healthBarSlider.enabled = true;
             healthBar.SetActive(true);
             Debug.Log("Ow");
-            health -= damage;
+
             healthBarSlider.value = CalculateHealthPercent();
 
             Debug.Log("Dealing damage");
             /* audioSource.Play();*/
-            
+            health -= damage;
             animator.SetBool("Hurt", true);
 
         }
@@ -102,20 +107,13 @@ public class Boss1RecieveDamage : MonoBehaviour
     protected void CheckDeath()
     {
         healthBarSlider.value = CalculateHealthPercent();
-        if(CalculateHealthPercent() <= .5 && !halfHealth)
-        {
-            halfHealth = true;
-            Phase1 p1 = GetComponent<Phase1>();
-            p1.atk1cd /= 1.5f;
-            p1.atk2cd /= 1.5f;
-
-        }
+        
 
         if (health <= 0)
         {
             pInput = player.GetComponent<PlayerMovement>();
             pInput.enabled = false;
-            Time.timeScale = 0;
+            //Time.timeScale = 0;
             Debug.Log("Dead");
             animator.SetBool("Dead", true);
             if (gameObject.GetComponent<BoxCollider2D>() != null)
@@ -124,7 +122,7 @@ public class Boss1RecieveDamage : MonoBehaviour
             }
             audioSource.clip = deathSound;
             audioSource.Play();
-            
+
             onDeath?.Invoke();
 
         }
@@ -146,11 +144,21 @@ public class Boss1RecieveDamage : MonoBehaviour
     {
         return (float)health / (float)maxHealth;
     }
-    
+
     public void DeathSequence()
     {
         pInput.enabled = true;
         Time.timeScale = 1;
         SceneManager.LoadScene("Boss Phase 2", LoadSceneMode.Single);
+    }
+
+    public void StartTransition()
+    {
+        animator.SetBool("Invincible", true);
+    }
+
+    public void EndTransition()
+    {
+        animator.SetBool("Invincible", false);
     }
 }

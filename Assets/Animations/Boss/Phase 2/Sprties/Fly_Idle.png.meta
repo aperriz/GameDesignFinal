@@ -1,0 +1,1164 @@
+fileFormatVersion: 2
+guid: 66d882a3c8e9de648b5563c71edbf852
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 2
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Fly_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: -8}
+        - {x: 8, y: -9}
+        - {x: 10, y: -8}
+        - {x: 12, y: -9}
+        - {x: 17, y: -4}
+        - {x: 17, y: -3}
+        - {x: 19, y: -1}
+        - {x: 19, y: 1}
+        - {x: 18, y: 2}
+        - {x: 20, y: 4}
+        - {x: 20, y: 6}
+        - {x: 25, y: 12}
+        - {x: 25, y: 14}
+        - {x: 22, y: 17}
+        - {x: 20, y: 17}
+        - {x: 17, y: 14}
+        - {x: 16, y: 14}
+        - {x: 7, y: 5}
+        - {x: 3, y: 8}
+        - {x: 2, y: 8}
+        - {x: -1, y: 5}
+        - {x: -1, y: 4}
+        - {x: 0, y: 3}
+        - {x: -1, y: 2}
+        - {x: -3, y: 2}
+        - {x: -6, y: 4}
+        - {x: -8, y: 5}
+        - {x: -8, y: 6}
+        - {x: -16, y: 14}
+        - {x: -17, y: 14}
+        - {x: -20, y: 17}
+        - {x: -22, y: 17}
+        - {x: -25, y: 14}
+        - {x: -25, y: 12}
+        - {x: -20, y: 6}
+        - {x: -20, y: 4}
+        - {x: -18, y: 2}
+        - {x: -19, y: 1}
+        - {x: -19, y: -1}
+        - {x: -17, y: -3}
+        - {x: -17, y: -4}
+        - {x: -12, y: -9}
+        - {x: -10, y: -8}
+        - {x: -9, y: -9}
+        - {x: -9, y: -10}
+        - {x: -4, y: -15}
+        - {x: -2, y: -15}
+        - {x: -1, y: -16}
+        - {x: 6, y: -16}
+        - {x: 9, y: -13}
+        - {x: 9, y: -12}
+        - {x: 6, y: -9}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: 2dc8f6d20c775044b8e1380433559507
+      internalID: -2099068826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fly_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: -8}
+        - {x: 13, y: -7}
+        - {x: 15, y: -5}
+        - {x: 16, y: -5}
+        - {x: 21, y: 0}
+        - {x: 21, y: 1}
+        - {x: 24, y: 4}
+        - {x: 24, y: 5}
+        - {x: 23, y: 7}
+        - {x: 26, y: 10}
+        - {x: 27, y: 15}
+        - {x: 23, y: 20}
+        - {x: 22, y: 20}
+        - {x: 17, y: 16}
+        - {x: 16, y: 14}
+        - {x: 13, y: 11}
+        - {x: 13, y: 8}
+        - {x: 7, y: 5}
+        - {x: 4, y: 7}
+        - {x: 2, y: 7}
+        - {x: -1, y: 3}
+        - {x: -4, y: 3}
+        - {x: -11, y: 7}
+        - {x: -13, y: 8}
+        - {x: -13, y: 11}
+        - {x: -16, y: 14}
+        - {x: -17, y: 16}
+        - {x: -22, y: 20}
+        - {x: -23, y: 20}
+        - {x: -26, y: 17}
+        - {x: -27, y: 13}
+        - {x: -26, y: 12}
+        - {x: -26, y: 10}
+        - {x: -23, y: 7}
+        - {x: -24, y: 4}
+        - {x: -16, y: -5}
+        - {x: -15, y: -5}
+        - {x: -13, y: -7}
+        - {x: -10, y: -7}
+        - {x: -9, y: -11}
+        - {x: -5, y: -15}
+        - {x: -3, y: -15}
+        - {x: -2, y: -16}
+        - {x: 5, y: -16}
+        - {x: 8, y: -13}
+        - {x: 8, y: -12}
+        - {x: 6, y: -10}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: 76e27e3afc757254293743fec9481fbd
+      internalID: -1202964382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fly_Idle_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: -11}
+        - {x: 9, y: -11}
+        - {x: 11, y: -10}
+        - {x: 13, y: -12}
+        - {x: 15, y: -12}
+        - {x: 19, y: -9}
+        - {x: 23, y: -8}
+        - {x: 25, y: -6}
+        - {x: 26, y: -2}
+        - {x: 24, y: 0}
+        - {x: 25, y: 1}
+        - {x: 25, y: 3}
+        - {x: 22, y: 8}
+        - {x: 18, y: 9}
+        - {x: 14, y: 5}
+        - {x: 14, y: 3}
+        - {x: 15, y: 2}
+        - {x: 15, y: 1}
+        - {x: 11, y: 3}
+        - {x: 6, y: 7}
+        - {x: 2, y: 7}
+        - {x: -1, y: 5}
+        - {x: -7, y: 5}
+        - {x: -15, y: 1}
+        - {x: -14, y: 5}
+        - {x: -18, y: 9}
+        - {x: -19, y: 9}
+        - {x: -24, y: 6}
+        - {x: -25, y: 1}
+        - {x: -24, y: 0}
+        - {x: -26, y: -2}
+        - {x: -26, y: -3}
+        - {x: -23, y: -8}
+        - {x: -19, y: -9}
+        - {x: -15, y: -12}
+        - {x: -13, y: -12}
+        - {x: -11, y: -10}
+        - {x: -10, y: -10}
+        - {x: -11, y: -12}
+        - {x: -8, y: -15}
+        - {x: 2, y: -15}
+        - {x: 5, y: -12}
+        - {x: 4, y: -10}
+        - {x: 5, y: -9}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: 643b1ebba46b3be42998fa7b1cc67679
+      internalID: -1082777617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fly_Idle_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: -15}
+        - {x: -5, y: -13}
+        - {x: 0, y: -13}
+        - {x: 3, y: -10}
+        - {x: 3, y: -8}
+        - {x: 9, y: -13}
+        - {x: 11, y: -13}
+        - {x: 12, y: -14}
+        - {x: 16, y: -17}
+        - {x: 18, y: -17}
+        - {x: 21, y: -14}
+        - {x: 21, y: -12}
+        - {x: 23, y: -10}
+        - {x: 23, y: -7}
+        - {x: 22, y: -6}
+        - {x: 27, y: -1}
+        - {x: 27, y: 1}
+        - {x: 24, y: 4}
+        - {x: 21, y: 4}
+        - {x: 19, y: 5}
+        - {x: 16, y: 2}
+        - {x: 16, y: 0}
+        - {x: 17, y: -2}
+        - {x: 16, y: -3}
+        - {x: 12, y: 0}
+        - {x: 12, y: 3}
+        - {x: 6, y: 9}
+        - {x: 2, y: 9}
+        - {x: -2, y: 6}
+        - {x: -4, y: 6}
+        - {x: -7, y: 4}
+        - {x: -10, y: 3}
+        - {x: -13, y: -1}
+        - {x: -14, y: -1}
+        - {x: -16, y: -3}
+        - {x: -18, y: -1}
+        - {x: -17, y: 0}
+        - {x: -17, y: 2}
+        - {x: -20, y: 5}
+        - {x: -22, y: 4}
+        - {x: -25, y: 4}
+        - {x: -28, y: 1}
+        - {x: -28, y: -1}
+        - {x: -24, y: -5}
+        - {x: -23, y: -5}
+        - {x: -22, y: -6}
+        - {x: -23, y: -7}
+        - {x: -23, y: -10}
+        - {x: -21, y: -12}
+        - {x: -21, y: -14}
+        - {x: -18, y: -17}
+        - {x: -16, y: -17}
+        - {x: -12, y: -14}
+        - {x: -10, y: -13}
+        - {x: -8, y: -15}
+      - - {x: -20, y: 15}
+        - {x: -23, y: 12}
+        - {x: -23, y: 10}
+        - {x: -18, y: 5}
+        - {x: -16, y: 5}
+        - {x: -12, y: 9}
+        - {x: -12, y: 11}
+        - {x: -15, y: 14}
+      - - {x: 15, y: 14}
+        - {x: 12, y: 11}
+        - {x: 12, y: 9}
+        - {x: 16, y: 5}
+        - {x: 18, y: 5}
+        - {x: 23, y: 10}
+        - {x: 23, y: 12}
+        - {x: 20, y: 15}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: fdd96f70436879d42a1f740100a1870e
+      internalID: 200087109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fly_Idle_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: -10}
+        - {x: -8, y: -11}
+        - {x: 3, y: -11}
+        - {x: 6, y: -8}
+        - {x: 5, y: -6}
+        - {x: 6, y: -6}
+        - {x: 8, y: -8}
+        - {x: 8, y: -9}
+        - {x: 11, y: -12}
+        - {x: 12, y: -14}
+        - {x: 17, y: -16}
+        - {x: 18, y: -15}
+        - {x: 20, y: -16}
+        - {x: 23, y: -13}
+        - {x: 23, y: -12}
+        - {x: 17, y: -4}
+        - {x: 18, y: -3}
+        - {x: 17, y: 0}
+        - {x: 15, y: 0}
+        - {x: 12, y: 2}
+        - {x: 12, y: 5}
+        - {x: 6, y: 11}
+        - {x: 2, y: 12}
+        - {x: -2, y: 7}
+        - {x: -4, y: 7}
+        - {x: -6, y: 5}
+        - {x: -10, y: 4}
+        - {x: -12, y: 2}
+        - {x: -12, y: 1}
+        - {x: -14, y: -1}
+        - {x: -15, y: 0}
+        - {x: -18, y: -1}
+        - {x: -18, y: -3}
+        - {x: -21, y: -5}
+        - {x: -20, y: -8}
+        - {x: -23, y: -12}
+        - {x: -23, y: -13}
+        - {x: -20, y: -16}
+        - {x: -18, y: -15}
+        - {x: -16, y: -16}
+        - {x: -11, y: -12}
+        - {x: -11, y: -11}
+      - - {x: -26, y: 6}
+        - {x: -26, y: 2}
+        - {x: -23, y: -1}
+        - {x: -22, y: -1}
+        - {x: -19, y: 2}
+        - {x: -22, y: 9}
+        - {x: -25, y: 9}
+      - - {x: 22, y: 6}
+        - {x: 19, y: 3}
+        - {x: 19, y: 2}
+        - {x: 22, y: -1}
+        - {x: 25, y: -1}
+        - {x: 26, y: 2}
+        - {x: 26, y: 5}
+        - {x: 23, y: 6}
+      - - {x: 20, y: 6}
+        - {x: 23, y: 7}
+        - {x: 23, y: 10}
+        - {x: 20, y: 11}
+        - {x: 18, y: 9}
+      - - {x: -21, y: 18}
+        - {x: -23, y: 16}
+        - {x: -22, y: 13}
+        - {x: -19, y: 13}
+        - {x: -17, y: 11}
+        - {x: -16, y: 11}
+        - {x: -13, y: 14}
+        - {x: -13, y: 15}
+        - {x: -16, y: 18}
+      - - {x: 13, y: 15}
+        - {x: 13, y: 14}
+        - {x: 16, y: 11}
+        - {x: 23, y: 14}
+        - {x: 23, y: 17}
+        - {x: 20, y: 18}
+        - {x: 16, y: 18}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: ab57189b58b86eb48971370102e87270
+      internalID: -1988132905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fly_Idle_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: -4}
+        - {x: 10, y: -4}
+        - {x: 12, y: -6}
+        - {x: 13, y: -6}
+        - {x: 18, y: -2}
+        - {x: 21, y: -2}
+        - {x: 22, y: -1}
+        - {x: 24, y: -3}
+        - {x: 26, y: -3}
+        - {x: 27, y: 0}
+        - {x: 25, y: 2}
+        - {x: 29, y: 6}
+        - {x: 29, y: 7}
+        - {x: 27, y: 10}
+        - {x: 23, y: 11}
+        - {x: 20, y: 9}
+        - {x: 18, y: 9}
+        - {x: 13, y: 12}
+        - {x: 11, y: 12}
+        - {x: 8, y: 9}
+        - {x: 3, y: 12}
+        - {x: 2, y: 12}
+        - {x: -1, y: 9}
+        - {x: -1, y: 8}
+        - {x: 0, y: 7}
+        - {x: -1, y: 6}
+        - {x: -3, y: 6}
+        - {x: -6, y: 8}
+        - {x: -11, y: 12}
+        - {x: -13, y: 12}
+        - {x: -18, y: 9}
+        - {x: -20, y: 9}
+        - {x: -24, y: 11}
+        - {x: -29, y: 7}
+        - {x: -29, y: 6}
+        - {x: -25, y: 2}
+        - {x: -27, y: 0}
+        - {x: -27, y: -2}
+        - {x: -24, y: -3}
+        - {x: -22, y: -1}
+        - {x: -19, y: -5}
+        - {x: -13, y: -3}
+        - {x: -10, y: -6}
+        - {x: -9, y: -9}
+        - {x: -5, y: -12}
+        - {x: 6, y: -12}
+        - {x: 9, y: -9}
+        - {x: 9, y: -8}
+        - {x: 6, y: -5}
+      - - {x: -14, y: 15}
+        - {x: -11, y: 16}
+        - {x: -11, y: 19}
+        - {x: -14, y: 20}
+        - {x: -16, y: 18}
+      - - {x: 13, y: 15}
+        - {x: 16, y: 16}
+        - {x: 16, y: 19}
+        - {x: 13, y: 20}
+        - {x: 11, y: 18}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: 7366dd249dda71b478a89ef9f528ca19
+      internalID: 137296854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fly_Idle_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10, y: -8}
+        - {x: 12, y: -9}
+        - {x: 17, y: -4}
+        - {x: 17, y: -3}
+        - {x: 19, y: -1}
+        - {x: 19, y: 1}
+        - {x: 18, y: 2}
+        - {x: 20, y: 4}
+        - {x: 20, y: 6}
+        - {x: 25, y: 12}
+        - {x: 25, y: 14}
+        - {x: 22, y: 17}
+        - {x: 20, y: 17}
+        - {x: 17, y: 14}
+        - {x: 16, y: 14}
+        - {x: 8, y: 6}
+        - {x: 8, y: 5}
+        - {x: 6, y: 4}
+        - {x: 3, y: 2}
+        - {x: 1, y: 2}
+        - {x: 0, y: 3}
+        - {x: 1, y: 5}
+        - {x: -2, y: 8}
+        - {x: -8, y: 5}
+        - {x: -8, y: 7}
+        - {x: -16, y: 14}
+        - {x: -17, y: 14}
+        - {x: -20, y: 17}
+        - {x: -22, y: 17}
+        - {x: -25, y: 14}
+        - {x: -25, y: 12}
+        - {x: -20, y: 6}
+        - {x: -20, y: 4}
+        - {x: -18, y: 2}
+        - {x: -19, y: 1}
+        - {x: -19, y: -1}
+        - {x: -17, y: -3}
+        - {x: -17, y: -4}
+        - {x: -12, y: -9}
+        - {x: -10, y: -8}
+        - {x: -9, y: -9}
+        - {x: -7, y: -8}
+        - {x: -6, y: -9}
+        - {x: -9, y: -12}
+        - {x: -9, y: -13}
+        - {x: -6, y: -16}
+        - {x: 1, y: -16}
+        - {x: 2, y: -15}
+        - {x: 4, y: -15}
+        - {x: 9, y: -10}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: 2cb168ac52e196f419fc43c4b7745228
+      internalID: 1089720833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fly_Idle_7
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10, y: -7}
+        - {x: 13, y: -7}
+        - {x: 15, y: -5}
+        - {x: 16, y: -5}
+        - {x: 21, y: 0}
+        - {x: 21, y: 1}
+        - {x: 24, y: 4}
+        - {x: 24, y: 5}
+        - {x: 23, y: 7}
+        - {x: 26, y: 10}
+        - {x: 27, y: 15}
+        - {x: 23, y: 20}
+        - {x: 22, y: 20}
+        - {x: 17, y: 16}
+        - {x: 16, y: 14}
+        - {x: 13, y: 11}
+        - {x: 13, y: 8}
+        - {x: 11, y: 7}
+        - {x: 4, y: 3}
+        - {x: 1, y: 3}
+        - {x: -2, y: 7}
+        - {x: -4, y: 7}
+        - {x: -8, y: 5}
+        - {x: -11, y: 7}
+        - {x: -13, y: 8}
+        - {x: -13, y: 11}
+        - {x: -16, y: 14}
+        - {x: -17, y: 16}
+        - {x: -22, y: 20}
+        - {x: -23, y: 20}
+        - {x: -26, y: 17}
+        - {x: -27, y: 13}
+        - {x: -26, y: 12}
+        - {x: -26, y: 10}
+        - {x: -23, y: 7}
+        - {x: -24, y: 4}
+        - {x: -16, y: -5}
+        - {x: -15, y: -5}
+        - {x: -13, y: -7}
+        - {x: -10, y: -7}
+        - {x: -9, y: -8}
+        - {x: -6, y: -8}
+        - {x: -6, y: -10}
+        - {x: -8, y: -12}
+        - {x: -8, y: -13}
+        - {x: -5, y: -16}
+        - {x: 2, y: -16}
+        - {x: 3, y: -15}
+        - {x: 5, y: -15}
+        - {x: 9, y: -11}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: 7098368564d064440a5ce588399881c9
+      internalID: -1106779882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fly_Idle_8
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13, y: -12}
+        - {x: 15, y: -12}
+        - {x: 19, y: -9}
+        - {x: 23, y: -8}
+        - {x: 25, y: -6}
+        - {x: 26, y: -2}
+        - {x: 24, y: 0}
+        - {x: 25, y: 1}
+        - {x: 25, y: 3}
+        - {x: 22, y: 8}
+        - {x: 18, y: 9}
+        - {x: 14, y: 5}
+        - {x: 14, y: 3}
+        - {x: 15, y: 2}
+        - {x: 15, y: 1}
+        - {x: 7, y: 5}
+        - {x: 1, y: 5}
+        - {x: -2, y: 7}
+        - {x: -6, y: 7}
+        - {x: -11, y: 3}
+        - {x: -15, y: 1}
+        - {x: -14, y: 5}
+        - {x: -18, y: 9}
+        - {x: -19, y: 9}
+        - {x: -24, y: 6}
+        - {x: -25, y: 1}
+        - {x: -24, y: 0}
+        - {x: -26, y: -2}
+        - {x: -26, y: -3}
+        - {x: -23, y: -8}
+        - {x: -19, y: -9}
+        - {x: -15, y: -12}
+        - {x: -13, y: -12}
+        - {x: -11, y: -10}
+        - {x: -9, y: -11}
+        - {x: -7, y: -11}
+        - {x: -5, y: -9}
+        - {x: -4, y: -10}
+        - {x: -5, y: -12}
+        - {x: -2, y: -15}
+        - {x: 8, y: -15}
+        - {x: 11, y: -12}
+        - {x: 10, y: -10}
+        - {x: 11, y: -10}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: a0fc5a12a95417e4c9b97cfae49c7441
+      internalID: -323337190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fly_Idle_9
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: -10}
+        - {x: 0, y: -13}
+        - {x: 5, y: -13}
+        - {x: 7, y: -15}
+        - {x: 8, y: -15}
+        - {x: 10, y: -13}
+        - {x: 11, y: -13}
+        - {x: 12, y: -14}
+        - {x: 16, y: -17}
+        - {x: 18, y: -17}
+        - {x: 21, y: -14}
+        - {x: 21, y: -12}
+        - {x: 23, y: -10}
+        - {x: 23, y: -7}
+        - {x: 22, y: -6}
+        - {x: 28, y: -1}
+        - {x: 28, y: 1}
+        - {x: 25, y: 4}
+        - {x: 22, y: 4}
+        - {x: 20, y: 5}
+        - {x: 17, y: 2}
+        - {x: 17, y: 0}
+        - {x: 18, y: -1}
+        - {x: 16, y: -3}
+        - {x: 14, y: -1}
+        - {x: 13, y: -1}
+        - {x: 10, y: 3}
+        - {x: 7, y: 4}
+        - {x: 4, y: 6}
+        - {x: 2, y: 6}
+        - {x: -2, y: 9}
+        - {x: -6, y: 9}
+        - {x: -12, y: 3}
+        - {x: -12, y: 0}
+        - {x: -13, y: -1}
+        - {x: -14, y: -1}
+        - {x: -16, y: -3}
+        - {x: -17, y: -2}
+        - {x: -16, y: 0}
+        - {x: -16, y: 2}
+        - {x: -19, y: 5}
+        - {x: -21, y: 4}
+        - {x: -24, y: 4}
+        - {x: -27, y: 1}
+        - {x: -27, y: -1}
+        - {x: -22, y: -6}
+        - {x: -23, y: -7}
+        - {x: -23, y: -10}
+        - {x: -21, y: -12}
+        - {x: -21, y: -14}
+        - {x: -18, y: -17}
+        - {x: -16, y: -17}
+        - {x: -13, y: -14}
+        - {x: -9, y: -13}
+        - {x: -3, y: -8}
+      - - {x: -20, y: 15}
+        - {x: -23, y: 12}
+        - {x: -23, y: 10}
+        - {x: -18, y: 5}
+        - {x: -16, y: 5}
+        - {x: -12, y: 9}
+        - {x: -12, y: 11}
+        - {x: -15, y: 14}
+      - - {x: 15, y: 14}
+        - {x: 12, y: 11}
+        - {x: 12, y: 9}
+        - {x: 16, y: 5}
+        - {x: 18, y: 5}
+        - {x: 23, y: 10}
+        - {x: 23, y: 12}
+        - {x: 20, y: 15}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: 8ed394816dd3ba8408bb8abe48e6e80f
+      internalID: 1114782666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fly_Idle_10
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: -9}
+        - {x: -8, y: -8}
+        - {x: -6, y: -6}
+        - {x: -5, y: -6}
+        - {x: -6, y: -8}
+        - {x: -3, y: -11}
+        - {x: 4, y: -11}
+        - {x: 5, y: -10}
+        - {x: 6, y: -11}
+        - {x: 8, y: -11}
+        - {x: 9, y: -10}
+        - {x: 11, y: -12}
+        - {x: 12, y: -14}
+        - {x: 17, y: -16}
+        - {x: 18, y: -15}
+        - {x: 20, y: -16}
+        - {x: 23, y: -13}
+        - {x: 23, y: -12}
+        - {x: 21, y: -9}
+        - {x: 20, y: -7}
+        - {x: 21, y: -6}
+        - {x: 20, y: -3}
+        - {x: 18, y: -3}
+        - {x: 16, y: 0}
+        - {x: 14, y: -1}
+        - {x: 12, y: 2}
+        - {x: 11, y: 4}
+        - {x: 8, y: 4}
+        - {x: 4, y: 7}
+        - {x: 2, y: 7}
+        - {x: 1, y: 8}
+        - {x: 1, y: 9}
+        - {x: -2, y: 12}
+        - {x: -4, y: 12}
+        - {x: -7, y: 11}
+        - {x: -12, y: 5}
+        - {x: -12, y: 2}
+        - {x: -13, y: 2}
+        - {x: -18, y: -2}
+        - {x: -17, y: -4}
+        - {x: -21, y: -8}
+        - {x: -23, y: -13}
+        - {x: -20, y: -16}
+        - {x: -18, y: -15}
+        - {x: -16, y: -16}
+        - {x: -11, y: -12}
+        - {x: -11, y: -11}
+      - - {x: -22, y: 6}
+        - {x: -25, y: 6}
+        - {x: -26, y: 3}
+        - {x: -26, y: 2}
+        - {x: -23, y: -1}
+        - {x: -22, y: -1}
+        - {x: -19, y: 2}
+        - {x: -19, y: 5}
+      - - {x: 21, y: 8}
+        - {x: 21, y: 5}
+        - {x: 19, y: 3}
+        - {x: 19, y: 2}
+        - {x: 22, y: -1}
+        - {x: 23, y: -1}
+        - {x: 26, y: 2}
+        - {x: 26, y: 6}
+        - {x: 24, y: 9}
+      - - {x: -21, y: 6}
+        - {x: -18, y: 7}
+        - {x: -18, y: 10}
+        - {x: -21, y: 11}
+        - {x: -23, y: 9}
+      - - {x: -21, y: 18}
+        - {x: -23, y: 16}
+        - {x: -22, y: 13}
+        - {x: -19, y: 13}
+        - {x: -17, y: 11}
+        - {x: -16, y: 11}
+        - {x: -13, y: 14}
+        - {x: -13, y: 15}
+        - {x: -16, y: 18}
+      - - {x: 13, y: 15}
+        - {x: 13, y: 14}
+        - {x: 16, y: 11}
+        - {x: 23, y: 14}
+        - {x: 23, y: 17}
+        - {x: 20, y: 18}
+        - {x: 16, y: 18}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: bf471f86b2eebbb4fb6c0d2ffea0fd3b
+      internalID: -1772247280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fly_Idle_11
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14, y: -3}
+        - {x: 15, y: -4}
+        - {x: 19, y: -5}
+        - {x: 22, y: -1}
+        - {x: 24, y: -3}
+        - {x: 26, y: -3}
+        - {x: 27, y: 0}
+        - {x: 25, y: 2}
+        - {x: 29, y: 6}
+        - {x: 29, y: 7}
+        - {x: 27, y: 10}
+        - {x: 23, y: 11}
+        - {x: 20, y: 9}
+        - {x: 18, y: 9}
+        - {x: 13, y: 12}
+        - {x: 11, y: 12}
+        - {x: 6, y: 8}
+        - {x: 3, y: 6}
+        - {x: 0, y: 7}
+        - {x: 1, y: 9}
+        - {x: -2, y: 12}
+        - {x: -8, y: 9}
+        - {x: -11, y: 12}
+        - {x: -13, y: 12}
+        - {x: -18, y: 9}
+        - {x: -20, y: 9}
+        - {x: -24, y: 11}
+        - {x: -29, y: 7}
+        - {x: -29, y: 6}
+        - {x: -25, y: 2}
+        - {x: -27, y: 0}
+        - {x: -27, y: -2}
+        - {x: -24, y: -3}
+        - {x: -22, y: -1}
+        - {x: -21, y: -2}
+        - {x: -18, y: -2}
+        - {x: -17, y: -4}
+        - {x: -12, y: -6}
+        - {x: -10, y: -4}
+        - {x: -7, y: -4}
+        - {x: -6, y: -5}
+        - {x: -9, y: -8}
+        - {x: -9, y: -9}
+        - {x: -6, y: -12}
+        - {x: 5, y: -12}
+        - {x: 9, y: -9}
+        - {x: 10, y: -6}
+        - {x: 12, y: -4}
+      - - {x: -14, y: 15}
+        - {x: -11, y: 16}
+        - {x: -11, y: 19}
+        - {x: -14, y: 20}
+        - {x: -16, y: 18}
+      - - {x: 13, y: 15}
+        - {x: 16, y: 16}
+        - {x: 16, y: 19}
+        - {x: 13, y: 20}
+        - {x: 11, y: 18}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: 5f21c22d2d60d2c498396a93e7eea34f
+      internalID: 1256028936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Fly_Idle_0: -2099068826
+      Fly_Idle_1: -1202964382
+      Fly_Idle_10: -1772247280
+      Fly_Idle_11: 1256028936
+      Fly_Idle_12: -510031774
+      Fly_Idle_13: -941455670
+      Fly_Idle_14: -1017110741
+      Fly_Idle_15: 1208765117
+      Fly_Idle_16: 809897486
+      Fly_Idle_17: 425038701
+      Fly_Idle_18: -2103651691
+      Fly_Idle_19: 1996101089
+      Fly_Idle_2: -1082777617
+      Fly_Idle_20: 785749324
+      Fly_Idle_21: 1644500741
+      Fly_Idle_22: 652758468
+      Fly_Idle_23: 1428371590
+      Fly_Idle_3: 200087109
+      Fly_Idle_4: -1988132905
+      Fly_Idle_5: 137296854
+      Fly_Idle_6: 1089720833
+      Fly_Idle_7: -1106779882
+      Fly_Idle_8: -323337190
+      Fly_Idle_9: 1114782666
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

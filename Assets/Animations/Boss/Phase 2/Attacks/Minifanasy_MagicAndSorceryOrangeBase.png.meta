@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ce50df721eb7da84a9cba4ed76b238ee
+guid: 8cc7e62c59a3bd242b6def613ed1e741
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -160,112 +160,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Minifantasy_MagicAndSorceryDivineTouchCasting_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: baca5267e8da0a6428b597adac8f3205
-      internalID: -1180671447
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minifantasy_MagicAndSorceryDivineTouchCasting_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cae4a2afd6f01c944b5387a7b35d8338
-      internalID: -611138258
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minifantasy_MagicAndSorceryDivineTouchCasting_2
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1905c81699e06574da03b0010b3eef9c
-      internalID: -1641308107
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minifantasy_MagicAndSorceryDivineTouchCasting_3
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0498055d64bbf4f45960a83ba9781692
-      internalID: 505574917
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minifantasy_MagicAndSorceryDivineTouchCasting_4
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6cee9be9bfa5d4c4a8fa0f388f46fb6e
-      internalID: 1521455943
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -276,12 +171,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Minifantasy_MagicAndSorceryDivineTouchCasting_0: -1180671447
-      Minifantasy_MagicAndSorceryDivineTouchCasting_1: -611138258
-      Minifantasy_MagicAndSorceryDivineTouchCasting_2: -1641308107
-      Minifantasy_MagicAndSorceryDivineTouchCasting_3: 505574917
-      Minifantasy_MagicAndSorceryDivineTouchCasting_4: 1521455943
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

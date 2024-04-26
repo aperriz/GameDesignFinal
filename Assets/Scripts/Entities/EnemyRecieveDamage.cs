@@ -17,7 +17,7 @@ public class EnemyRecieveDamage : MonoBehaviour
     public AudioClip audioClip;
     public float speed;
     protected float tempSpeed;
-    GameObject player;
+    protected GameObject player;
     [SerializeField]
     public int weight = 1;
     [SerializeField]

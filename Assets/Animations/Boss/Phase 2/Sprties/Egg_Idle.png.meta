@@ -1,0 +1,839 @@
+fileFormatVersion: 2
+guid: ee0d555c37e4c5343870160f71aa592c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 2
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Egg_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 1, y: -10}
+        - {x: -1, y: -10}
+        - {x: -6, y: -15}
+        - {x: -6, y: -17}
+        - {x: -7, y: -18}
+        - {x: -7, y: -22}
+        - {x: -3, y: -26}
+        - {x: 3, y: -26}
+        - {x: 7, y: -22}
+        - {x: 7, y: -18}
+        - {x: 6, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 746cdb0db5418db4fbaaf3b8a552c2ce
+      internalID: -1602667223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Egg_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 1, y: -10}
+        - {x: -1, y: -10}
+        - {x: -6, y: -15}
+        - {x: -6, y: -17}
+        - {x: -7, y: -18}
+        - {x: -7, y: -22}
+        - {x: -3, y: -26}
+        - {x: 3, y: -26}
+        - {x: 7, y: -22}
+        - {x: 7, y: -18}
+        - {x: 6, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46248924a399646498b33a9afa81faaf
+      internalID: 1067641212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Egg_Idle_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 1, y: -10}
+        - {x: -1, y: -10}
+        - {x: -6, y: -15}
+        - {x: -6, y: -17}
+        - {x: -7, y: -18}
+        - {x: -7, y: -22}
+        - {x: -3, y: -26}
+        - {x: 3, y: -26}
+        - {x: 7, y: -22}
+        - {x: 7, y: -18}
+        - {x: 6, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: afad85057311d274ca4bee5c460b7a97
+      internalID: 79797741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Egg_Idle_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 1, y: -10}
+        - {x: -1, y: -10}
+        - {x: -6, y: -15}
+        - {x: -6, y: -17}
+        - {x: -7, y: -18}
+        - {x: -7, y: -22}
+        - {x: -3, y: -26}
+        - {x: 3, y: -26}
+        - {x: 7, y: -22}
+        - {x: 7, y: -18}
+        - {x: 6, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 779e6744aa6e68b4ba5c9f884f00e3d8
+      internalID: 761367098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Egg_Idle_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 1, y: -10}
+        - {x: -1, y: -10}
+        - {x: -6, y: -15}
+        - {x: -6, y: -17}
+        - {x: -7, y: -18}
+        - {x: -7, y: -22}
+        - {x: -3, y: -26}
+        - {x: 3, y: -26}
+        - {x: 7, y: -22}
+        - {x: 7, y: -18}
+        - {x: 6, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50f1059a50e13324ca7d5d1659224f2d
+      internalID: 307400429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Egg_Idle_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 1, y: -10}
+        - {x: -1, y: -10}
+        - {x: -6, y: -15}
+        - {x: -6, y: -17}
+        - {x: -7, y: -18}
+        - {x: -7, y: -22}
+        - {x: -3, y: -26}
+        - {x: 3, y: -26}
+        - {x: 7, y: -22}
+        - {x: 7, y: -18}
+        - {x: 6, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fb19bdac0ae5f848a23c02887222473
+      internalID: 697449519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Egg_Idle_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 1, y: -10}
+        - {x: -1, y: -10}
+        - {x: -6, y: -15}
+        - {x: -6, y: -17}
+        - {x: -7, y: -18}
+        - {x: -7, y: -22}
+        - {x: -3, y: -26}
+        - {x: 3, y: -26}
+        - {x: 7, y: -22}
+        - {x: 7, y: -18}
+        - {x: 6, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6effeb8d284adde4dbaf906dbb34c8fc
+      internalID: -1378912586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Egg_Idle_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 1, y: -10}
+        - {x: -1, y: -10}
+        - {x: -6, y: -15}
+        - {x: -6, y: -17}
+        - {x: -7, y: -18}
+        - {x: -7, y: -22}
+        - {x: -3, y: -26}
+        - {x: 3, y: -26}
+        - {x: 7, y: -22}
+        - {x: 7, y: -18}
+        - {x: 6, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: befb0f92911939b4a96b06ccc5692112
+      internalID: -1153942712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Egg_Idle_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 1, y: -10}
+        - {x: -1, y: -10}
+        - {x: -6, y: -15}
+        - {x: -6, y: -17}
+        - {x: -7, y: -18}
+        - {x: -7, y: -22}
+        - {x: -3, y: -26}
+        - {x: 3, y: -26}
+        - {x: 7, y: -22}
+        - {x: 7, y: -18}
+        - {x: 6, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2c6321759eb69d4db5ac6dade5bb9a5
+      internalID: 1111933971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Egg_Idle_9
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 1, y: -10}
+        - {x: -1, y: -10}
+        - {x: -6, y: -15}
+        - {x: -6, y: -17}
+        - {x: -7, y: -18}
+        - {x: -7, y: -22}
+        - {x: -3, y: -26}
+        - {x: 3, y: -26}
+        - {x: 7, y: -22}
+        - {x: 7, y: -18}
+        - {x: 6, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9425314fd6036f34384ef2030048bb9f
+      internalID: 1405859903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Egg_Idle_10
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 1, y: -10}
+        - {x: -1, y: -10}
+        - {x: -6, y: -15}
+        - {x: -6, y: -17}
+        - {x: -7, y: -18}
+        - {x: -7, y: -22}
+        - {x: -3, y: -26}
+        - {x: 3, y: -26}
+        - {x: 7, y: -22}
+        - {x: 7, y: -18}
+        - {x: 6, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c745d138c510dd34cb3a846465312006
+      internalID: 1636551210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Egg_Idle_11
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 1, y: -10}
+        - {x: -1, y: -10}
+        - {x: -6, y: -15}
+        - {x: -6, y: -17}
+        - {x: -7, y: -18}
+        - {x: -7, y: -22}
+        - {x: -3, y: -26}
+        - {x: 3, y: -26}
+        - {x: 7, y: -22}
+        - {x: 7, y: -18}
+        - {x: 6, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0996f63c18bb4e246a222dac94fb45e1
+      internalID: -27935306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Egg_Idle_12
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 1, y: -10}
+        - {x: -1, y: -10}
+        - {x: -6, y: -15}
+        - {x: -6, y: -17}
+        - {x: -7, y: -18}
+        - {x: -7, y: -22}
+        - {x: -3, y: -26}
+        - {x: 3, y: -26}
+        - {x: 7, y: -22}
+        - {x: 7, y: -18}
+        - {x: 6, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0b88f5b55f7c7945a72f73fdcfdb9fa
+      internalID: -1041748745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Egg_Idle_13
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 1, y: -10}
+        - {x: -1, y: -10}
+        - {x: -6, y: -15}
+        - {x: -6, y: -17}
+        - {x: -7, y: -18}
+        - {x: -7, y: -22}
+        - {x: -3, y: -26}
+        - {x: 3, y: -26}
+        - {x: 7, y: -22}
+        - {x: 7, y: -18}
+        - {x: 6, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef14e904516c8414e876e4eae4e0ec3d
+      internalID: 1561322315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Egg_Idle_14
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 1, y: -10}
+        - {x: -1, y: -10}
+        - {x: -6, y: -15}
+        - {x: -6, y: -17}
+        - {x: -7, y: -18}
+        - {x: -7, y: -22}
+        - {x: -3, y: -26}
+        - {x: 3, y: -26}
+        - {x: 7, y: -22}
+        - {x: 7, y: -18}
+        - {x: 6, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3d4c64b23e39854dbadc79e73c2af27
+      internalID: 1252287186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Egg_Idle_15
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 1, y: -10}
+        - {x: -1, y: -10}
+        - {x: -6, y: -15}
+        - {x: -6, y: -17}
+        - {x: -7, y: -18}
+        - {x: -7, y: -22}
+        - {x: -3, y: -26}
+        - {x: 3, y: -26}
+        - {x: 7, y: -22}
+        - {x: 7, y: -18}
+        - {x: 6, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa5b5597f89c3c1439bf996fe6776e84
+      internalID: -731871667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Egg_Idle_16
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 1, y: -10}
+        - {x: -1, y: -10}
+        - {x: -6, y: -15}
+        - {x: -6, y: -17}
+        - {x: -7, y: -18}
+        - {x: -7, y: -22}
+        - {x: -3, y: -26}
+        - {x: 3, y: -26}
+        - {x: 7, y: -22}
+        - {x: 7, y: -18}
+        - {x: 6, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52c3c042d37369a4396be954e473d45c
+      internalID: -125943555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Egg_Idle_17
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 1, y: -10}
+        - {x: -1, y: -10}
+        - {x: -6, y: -15}
+        - {x: -6, y: -17}
+        - {x: -7, y: -18}
+        - {x: -7, y: -22}
+        - {x: -3, y: -26}
+        - {x: 3, y: -26}
+        - {x: 7, y: -22}
+        - {x: 7, y: -18}
+        - {x: 6, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f34a7f267a28744aa80a536eec9ade9
+      internalID: 280399951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Egg_Idle_18
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 1, y: -10}
+        - {x: -1, y: -10}
+        - {x: -6, y: -15}
+        - {x: -6, y: -17}
+        - {x: -7, y: -18}
+        - {x: -7, y: -22}
+        - {x: -3, y: -26}
+        - {x: 3, y: -26}
+        - {x: 7, y: -22}
+        - {x: 7, y: -18}
+        - {x: 6, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b9a9e649cce6f544a6426bbe0e19178
+      internalID: 2083715214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Egg_Idle_19
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 1, y: -10}
+        - {x: -1, y: -10}
+        - {x: -6, y: -15}
+        - {x: -6, y: -17}
+        - {x: -7, y: -18}
+        - {x: -7, y: -22}
+        - {x: -3, y: -26}
+        - {x: 3, y: -26}
+        - {x: 7, y: -22}
+        - {x: 7, y: -18}
+        - {x: 6, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 213b91bc0a5ed464aa7fef6ec1b14fdf
+      internalID: 2131777620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Egg_Idle_0: -1602667223
+      Egg_Idle_1: 1067641212
+      Egg_Idle_10: 1636551210
+      Egg_Idle_11: -27935306
+      Egg_Idle_12: -1041748745
+      Egg_Idle_13: 1561322315
+      Egg_Idle_14: 1252287186
+      Egg_Idle_15: -731871667
+      Egg_Idle_16: -125943555
+      Egg_Idle_17: 280399951
+      Egg_Idle_18: 2083715214
+      Egg_Idle_19: 2131777620
+      Egg_Idle_2: 79797741
+      Egg_Idle_3: 761367098
+      Egg_Idle_4: 307400429
+      Egg_Idle_5: 697449519
+      Egg_Idle_6: -1378912586
+      Egg_Idle_7: -1153942712
+      Egg_Idle_8: 1111933971
+      Egg_Idle_9: 1405859903
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

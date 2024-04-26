@@ -100,7 +100,7 @@ public class DialogueManager : MonoBehaviour
             {
                 contButton.enabled = true;
             }
-            yield return null;
+            yield return new WaitForSeconds(0.05f);
         }
     }
 }

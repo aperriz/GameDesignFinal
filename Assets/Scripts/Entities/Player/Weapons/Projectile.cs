@@ -43,6 +43,11 @@ public class Projectile : MonoBehaviour
             {
                 collision.GetComponent<Boss1RecieveDamage>().DealDamage(damage);
             }
+            else if (collision.GetComponentInChildren<Boss2RecieveDamage>() != null)
+            {
+                //Debug.Log("Hit " + damage);
+                collision.GetComponentInChildren<Boss2RecieveDamage>().DealDamage(damage);
+            }
             Destroy(gameObject);
         }
         

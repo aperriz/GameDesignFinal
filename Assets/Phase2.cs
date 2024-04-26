@@ -198,9 +198,7 @@ public class Phase2 : MonoBehaviour
         }
         //get target location
         Vector2 newPos = angle * dist;
-        
         float xTranslate = (newPos.x - transform.position.x), yTranslate = (newPos.y - transform.position.y);
-        //get x and y using csc and sec
 
         Debug.DrawRay(new Vector3(transform.position.x, transform.position.y, -15), dist * angle, Color.red, 100f);
         Debug.Log(String.Format("X: " + xTranslate + ", Y: " + yTranslate));
@@ -210,8 +208,8 @@ public class Phase2 : MonoBehaviour
         {
             if (canMove)
             {
-                canMove = false;
-                StartCoroutine(movement(move));
+                //make take time
+                gameObject.transform.Translate(move * Time.deltaTime);
             }
         }
 
@@ -222,7 +220,6 @@ public class Phase2 : MonoBehaviour
     {
         
         yield return null;
-        gameObject.transform.Translate(move * Time.deltaTime);
         canMove = true;
     }
 }

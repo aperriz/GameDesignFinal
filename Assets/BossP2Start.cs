@@ -17,5 +17,13 @@ public class BossP2Start : MonoBehaviour
         bossHealthBar.SetActive(false);
         bossHealthBar.transform.GetChild(2).GetComponent<Image>().sprite = GameObject.Find("Boss").transform.GetComponentInChildren<SpriteRenderer>().sprite;
         bossHealthBar.GetComponent<Slider>().value = 1;
+        Time.timeScale = 0;
+    }
+
+    public void StartFight()
+    {
+        Time.timeScale = 1;
+        bossHealthBar.SetActive(true);
+
     }
 }

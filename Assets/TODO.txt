@@ -1,8 +1,9 @@
 TODO List:
-Boss
-	Dialog done
-	still need phoenix
+Boss:
+	Can revisit later, but "Done"
 Transfer between levels
+	button that gets activated after miniboss room is cleared OR
+	portals
 Pause Menu
 Death Screen
 Loading Screen

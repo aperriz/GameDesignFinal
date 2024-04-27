@@ -20,6 +20,8 @@ public class Phase2 : MonoBehaviour
     [SerializeField]
     TileMapVisualizer tileMapVisualizer;
     int attack2ct = 0;
+    [SerializeField]
+    int moveItterations = 300, wallPadding = 5;
 
     [SerializeField]
     public float atk1cd, atk2cd, atk3cd, atk4cd, initcd;
@@ -34,7 +36,7 @@ public class Phase2 : MonoBehaviour
     IEnumerator FirstAtkCD()
     {
         yield return new WaitForSeconds(initcd);
-        StartCoroutine(Attack4CD());
+        StartCoroutine(Attack1CD());
 
     }
 
@@ -162,13 +164,14 @@ public class Phase2 : MonoBehaviour
 
         HashSet<RaycastHit2D> validDirs = new HashSet<RaycastHit2D>();
         HashSet<Vector2> validAngles = new HashSet<Vector2>();
+        HashSet<float> angs = new HashSet<float>();
 
         for(int i = -18; i < 19; i++)
         {
             Vector2 rayDir = (Quaternion.Euler(0,0,i*10) * transform.up).normalized;
             //Debug.Log("Ray");
 
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, rayDir, 64, LayerMask.GetMask("Walls"));
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, rayDir, 64, LayerMask.GetMask("Walls", "MovementBlock"));
             
             if (hit.collider != null)
             {
@@ -177,6 +180,7 @@ public class Phase2 : MonoBehaviour
                 {
                     validDirs.Add(hit);
                     validAngles.Add(rayDir);
+                    angs.Add(i * 10);
                     Debug.Log("Valid hit on " + hit.collider.name);
                 }
             }
@@ -185,41 +189,58 @@ public class Phase2 : MonoBehaviour
         int roll = Random.Range(0, validDirs.Count);
         RaycastHit2D dir = validDirs.ElementAt(roll);
         Vector2 angle = validAngles.ElementAt(roll);
+        float travelAngle = angs.ElementAt(roll);
         //Gets distance of ray
         float dist = 0;
 
         if(dir.distance > 0)
         {
-            dist = dir.distance - 8;
+            dist = dir.distance - wallPadding;
         }
         else
         {
-            dist = dir.distance+5;
+            dist = dir.distance + wallPadding;
         }
+
+        //dist *= Time.deltaTime;
         //get target location
         Vector2 newPos = angle * dist;
-        float xTranslate = (newPos.x - transform.position.x), yTranslate = (newPos.y - transform.position.y);
+        float xTranslate = (newPos.x - transform.position.x), 
+            yTranslate = (newPos.y - transform.position.y);
 
-        Debug.DrawRay(new Vector3(transform.position.x, transform.position.y, -15), dist * angle, Color.red, 100f);
+        Debug.DrawRay(new Vector3(transform.position.x, transform.position.y, -15), newPos, Color.red, 100f);
         Debug.Log(String.Format("X: " + xTranslate + ", Y: " + yTranslate));
+        Debug.Log(dist);
+        Debug.Log(Math.Sqrt(Math.Pow(xTranslate, 2) + Math.Pow(yTranslate, 2)));
         Vector2 move = new Vector2(xTranslate, yTranslate);
+        Vector2 startPos = transform.position;
 
-        while (transform.position.x != newPos.x)
-        {
-            if (canMove)
-            {
-                //make take time
-                gameObject.transform.Translate(move * Time.deltaTime);
-            }
-        }
+        int movementLoops = 0;
+        StartCoroutine(movement(move, movementLoops, newPos, startPos, dist, travelAngle));
 
         //StartCoroutine(Attack1CD());
     }
 
-    IEnumerator movement(Vector2 move)
+    IEnumerator movement(Vector2 move, int loops, Vector2 endPos, Vector2 startPos, float dist, float angle)
     {
         
-        yield return null;
-        canMove = true;
+        gameObject.transform.parent.Translate(move / moveItterations);
+        if(loops < moveItterations && (startPos-(Vector2)transform.position).magnitude < dist) {
+        
+            loops++;
+            yield return new WaitForFixedUpdate();
+            StartCoroutine(movement(move, loops, endPos, startPos, dist, angle));
+            if(loops % 25 == 0)
+            {
+                //Instantiate(fireball, transform.position, Quaternion.Euler(0, 0, angle));
+                Instantiate(fireball, transform.position, Quaternion.Euler(0, 0, angle + 45));
+                Instantiate(fireball, transform.position, Quaternion.Euler(0, 0, angle + 135));
+                //Instantiate(fireball, transform.position, Quaternion.Euler(0, 0, angle - 135));
+            }
+        }
+        else
+        {
+            StartCoroutine(Attack1CD());
+        }
     }
 }

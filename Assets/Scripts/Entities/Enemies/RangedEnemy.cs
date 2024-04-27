@@ -34,7 +34,7 @@ public class RangedEnemy : MonoBehaviour
         Vector3 myPos = transform.position;
         Vector3 playerPos = player.transform.position;
 
-        if (Vector2.Distance(myPos, playerPos) <= range)
+        if (Vector2.Distance(myPos, playerPos) <= range && player.GetComponent<PlayerMovement>().moved)
         {
             Attack();
         }
@@ -72,18 +72,18 @@ public class RangedEnemy : MonoBehaviour
 
         float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
 
-        Debug.Log(angle);
+        //Debug.Log(angle);
 
         Instantiate(projectile, transform.position, Quaternion.Euler(0, 0, angle));
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    /*private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.TryGetComponent<PlayerRecieveDamage>(out PlayerRecieveDamage player) && canAttack)
         {
             Attack();
         }
-    }
+    }*/
 
     protected void AttackDone()
     {
@@ -96,14 +96,14 @@ public class RangedEnemy : MonoBehaviour
         canAttack = true;
         if (Vector2.Distance(transform.position, player.transform.position) <= range || range == 0)
         {
-            Debug.Log("I want to attack!");
+            //Debug.Log("I want to attack!");
             Attack();
         }
         else
         {
-            Debug.Log(range);
-            Debug.Log(Vector2.Distance(transform.position, player.transform.position));
-            Debug.Log("Out of range");
+            //Debug.Log(range);
+            //Debug.Log(Vector2.Distance(transform.position, player.transform.position));
+            //Debug.Log("Out of range");
             animator.SetBool("Attacking", false);
         }
     }

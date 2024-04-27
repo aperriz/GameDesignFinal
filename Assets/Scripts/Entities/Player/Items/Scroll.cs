@@ -71,13 +71,13 @@ public class Scroll : ScriptableObject
             if (GameObject.Find("TilemapVisualizer").GetComponent<TileMapVisualizer>().floorMap.HasTile(new Vector3Int((int)Mathf.Round(pos.x), (int)Mathf.Round(pos.y), 0)))
             {
 
-                Instantiate(Resources.Load("Prefabs/Fire Storm") as GameObject, (Vector3)pos, Quaternion.identity);
+                Instantiate(Resources.Load("Prefabs/Fire Storm") as GameObject, new Vector3(pos.x, pos.y, -10), Quaternion.identity);
                 loopsWithoutCasting = 0;
                 casted = true;
             }
             else if (loopsWithoutCasting >= 2)
             {
-                Instantiate(Resources.Load("Prefabs/Fire Storm") as GameObject, (Vector3)pos, Quaternion.identity);
+                Instantiate(Resources.Load("Prefabs/Fire Storm") as GameObject, new Vector3(pos.x, pos.y, -10), Quaternion.identity);
                 casted = true;
             }
             else
@@ -91,7 +91,7 @@ public class Scroll : ScriptableObject
 
     private void HolyRadiance(Vector2 mousePos)
     {   
-        Instantiate(Resources.Load("Prefabs/Holy Radiance") as GameObject, (Vector3)mousePos, Quaternion.identity);   
+        Instantiate(Resources.Load("Prefabs/Holy Radiance") as GameObject, new Vector3(mousePos.x, mousePos.y, -10), Quaternion.identity);   
     }
 
     private void Shield()

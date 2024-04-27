@@ -33,7 +33,7 @@ public class PlayerExtraStats : MonoBehaviour
     public bool speedPotionCooldown = false, shieldScrollCooldown = false;
     public bool immune = false;
 
-    GameObject shield;
+    GameObject shield,player;
 
     PlayerMovement playerMovement;
 
@@ -44,7 +44,8 @@ public class PlayerExtraStats : MonoBehaviour
         hasRightPotion = false;
         hasLeftScroll = false;
         hasRightScroll = false;
-        playerMovement = GameObject.Find("Player").GetComponent<PlayerMovement>();
+        player = GameObject.Find("Player");
+        playerMovement = player.GetComponent<PlayerMovement>();
         //Debug.Log(hasLeftPotion);
         //Debug.Log(hasRightPotion);
         //UpdatePotions();
@@ -110,7 +111,7 @@ public class PlayerExtraStats : MonoBehaviour
     {
         if(animator.GetBool("Invincible") == false)
         {
-            shield = Instantiate(Resources.Load("Prefabs/Shield Spell") as GameObject, GameObject.Find("Player").transform.position, Quaternion.identity, GameObject.Find("Player").transform);
+            shield = Instantiate(Resources.Load("Prefabs/Shield Spell") as GameObject, new Vector3(player.transform.position.x, player.transform.position.y, -10), Quaternion.identity, player.transform);
             animator.SetBool("Invincible", true);
             StartCoroutine(ShieldDuration());
         }

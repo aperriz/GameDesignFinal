@@ -51,6 +51,8 @@ public class EnemyRecieveDamage : MonoBehaviour
 
     public void DealDamage(int damage)
     {
+        CheckOverheal();
+
         if (player == null)
         {
             player = GameObject.Find("Player");
@@ -60,7 +62,7 @@ public class EnemyRecieveDamage : MonoBehaviour
         {
             miniboss = true;
             Destroy(healthBar);
-            Debug.Log(player.transform.GetChild(1));
+            //Debug.Log(player.transform.GetChild(1));
             healthBar = player.transform.GetChild(1).GetChild(1).gameObject;
             healthBarSlider = healthBar.GetComponent<Slider>();
             healthBar.transform.GetChild(2).gameObject.GetComponent<Image>().sprite = gameObject.GetComponent<SpriteRenderer>().sprite;
@@ -79,13 +81,13 @@ public class EnemyRecieveDamage : MonoBehaviour
         audioSource.clip = audioClip;
         healthBarSlider.enabled = true;
         healthBar.SetActive(true);
-        Debug.Log("Ow");
+        //Debug.Log("Ow");
 
         healthBarSlider.value = CalculateHealthPercent();
 
         if (!animator.GetBool("Invincible"))
         {
-            Debug.Log("Dealing damage");
+            //Debug.Log("Dealing damage");
             audioSource.Play();
             health -= damage;
             animator.SetBool("Hurt", true);
@@ -96,6 +98,8 @@ public class EnemyRecieveDamage : MonoBehaviour
 
     public void DealSpellDamage(int damage)
     {
+        CheckOverheal();
+
         if (ai != null)
         {
             if (ai.enabled == false)
@@ -108,13 +112,13 @@ public class EnemyRecieveDamage : MonoBehaviour
         audioSource.clip = audioClip;
         healthBarSlider.enabled = true;
         healthBar.SetActive(true);
-        Debug.Log("Ow");
+        //Debug.Log("Ow");
 
         healthBarSlider.value = CalculateHealthPercent();
 
         if (!animator.GetBool("Invincible"))
         {
-            Debug.Log("Dealing damage");
+            //Debug.Log("Dealing damage");
             audioSource.Play();
             health -= damage;
             animator.SetBool("Hurt", true);
@@ -136,12 +140,12 @@ public class EnemyRecieveDamage : MonoBehaviour
         healthBarSlider.value = CalculateHealthPercent();
         if (health <= 0)
         {
-            Debug.Log("Dead");
+            //Debug.Log("Dead");
             animator.SetBool("Dead", true);
             gameObject.GetComponent<BoxCollider2D>().enabled = false;
             Destroy(transform.parent.GetComponent<AIDestinationSetter>());
             Destroy(transform.parent.GetComponent<AIPath>());
-            
+
         }
     }
 
@@ -149,14 +153,14 @@ public class EnemyRecieveDamage : MonoBehaviour
     {
         GetComponent<BoxCollider2D>().enabled = false;
         //Destroy(gameObject);
-        foreach(var comp in GetComponents<Component>())
+        foreach (var comp in GetComponents<Component>())
         {
-            if(comp != animator && comp != GetComponent<Transform>() && comp != GetComponent<SpriteRenderer>())
+            if (comp != animator && comp != GetComponent<Transform>() && comp != GetComponent<SpriteRenderer>())
             {
                 Destroy(comp);
             }
         }
-        if(mode != "miniboss")
+        if (mode != "miniboss")
         {
             Destroy(healthBar);
         }

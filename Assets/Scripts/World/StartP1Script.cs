@@ -34,7 +34,7 @@ public class StartP1Script : MonoBehaviour
             Destroy(GetComponent<BoxCollider2D>());
             GameObject.Find("Player").transform.GetChild(1).gameObject.SetActive(false);
             Debug.Log("Starting Fight");
-            Time.timeScale = 0;
+            //Time.timeScale = 0;
             mainCamera = GameObject.Find("Main Camera");
             camera = mainCamera.GetComponent<Camera>();
 

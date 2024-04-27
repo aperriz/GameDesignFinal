@@ -74,11 +74,13 @@ public class ChestScript : MonoBehaviour
                 }
                 else
                 {
+                    Debug.Log(placed);
                     spawnPos = new Vector2(transform.position.x + Random.Range(-2, 2), transform.position.y);
                     loopsWithoutPlacing++;
                 }
                 if (loopsWithoutPlacing >= 8)
                 {
+                    Debug.Log("8 Loops");
                     break;
                 }
             }
@@ -110,7 +112,7 @@ public class ChestScript : MonoBehaviour
 
     private void SpawnScroll(Vector2 spawnPos)
     {
-        GameObject ScrollObject = Instantiate(Resources.Load("Prefabs/World/Scroll Prefab") as GameObject, spawnPos, Quaternion.Euler(0, 0, 0), transform);
+        GameObject ScrollObject = Instantiate(Resources.Load("Prefabs/World/Scroll Prefab") as GameObject, new Vector3(spawnPos.x, spawnPos.y, -10), Quaternion.Euler(0, 0, 0), transform);
 
         int scrollType = Random.Range(0, 101);
         if(scrollType <= 60)
@@ -128,7 +130,7 @@ public class ChestScript : MonoBehaviour
     }
     private void SpawnPotion(Vector2 spawnPos)
     {
-        GameObject PotionObject = Instantiate(Resources.Load("Prefabs/World/Potion Prefab") as GameObject, spawnPos, Quaternion.Euler(0, 0, 0), transform);
+        GameObject PotionObject = Instantiate(Resources.Load("Prefabs/World/Potion Prefab") as GameObject, new Vector3(spawnPos.x, spawnPos.y, -10), Quaternion.Euler(0, 0, 0), transform);
 
         int potionType = Random.Range(0, 101);
         if(potionType <= 70)
@@ -147,7 +149,7 @@ public class ChestScript : MonoBehaviour
 
     private void SpawnWeapon(Vector2 spawnPos)
     {
-        GameObject weaponObject = Instantiate(Resources.Load("Prefabs/World/WeaponItem Prefab") as GameObject, new Vector3(spawnPos.x, spawnPos.y, -1), Quaternion.Euler(0, 0, 0), transform);
+        GameObject weaponObject = Instantiate(Resources.Load("Prefabs/World/WeaponItem Prefab") as GameObject, new Vector3(spawnPos.x, spawnPos.y, -10), Quaternion.Euler(0, 0, 0), transform);
 
         int roll = Random.Range(1, 4);
         int minPlus = (int)Mathf.Floor(level / 2) - 1;

@@ -94,16 +94,18 @@ public class Phase2 : MonoBehaviour
                         pos = new Vector3Int(Random.Range(-8, 9), Random.Range(-8, 9), -6);
                     }
 
-                    if (tileMapVisualizer.floorMap.HasTile(pos) || loopsWithoutPlacing == 5)
+                    if (!tileMapVisualizer.floorMap.HasTile(pos) || loopsWithoutPlacing == 5)
                     {
                         placed = true;
                         Instantiate(attack1Prefab, pos, Quaternion.identity).GetComponent<FireBlast>().SpawnFireballs();
-                        StartCoroutine(Attack1CD());
+                        
                         break;
                     }
                     loopsWithoutPlacing++;
                 }
+                
             }
+            StartCoroutine(Attack1CD());
         }
         else
         {

@@ -4298,10 +4298,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 3793202735390699684, guid: 41a9bd9e2fd49ed40a5b2cda1229d9e1, type: 3}
-      propertyPath: m_Name
-      value: Weapon Image
-      objectReference: {fileID: 0}
     - target: {fileID: 6712855949840305776, guid: 41a9bd9e2fd49ed40a5b2cda1229d9e1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 23.499838
@@ -5562,6 +5558,10 @@ PrefabInstance:
       value: AgentPlacer
       objectReference: {fileID: 0}
     - target: {fileID: 6114753066399144197, guid: da039bcf1bc48c14a8422efd4e3f98b5, type: 3}
+      propertyPath: portalPrefab
+      value: 
+      objectReference: {fileID: 5629000383101315976, guid: 8e87f3da7b6a69f468352ead6a1878ba, type: 3}
+    - target: {fileID: 6114753066399144197, guid: da039bcf1bc48c14a8422efd4e3f98b5, type: 3}
       propertyPath: lowWeightEnemies.Array.data[2]
       value: 
       objectReference: {fileID: 0}
@@ -5646,7 +5646,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2595249412330197520, guid: d383c61828d15af46b5e13ec55cd9f6a, type: 3}
       propertyPath: level
-      value: 9
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2595249412330197520, guid: d383c61828d15af46b5e13ec55cd9f6a, type: 3}
       propertyPath: floorMap
@@ -5783,7 +5783,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3645110062099139212, guid: 8a3825c352c87b749ba59537e49468b6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1
+      value: -12
       objectReference: {fileID: 0}
     - target: {fileID: 3645110062099139212, guid: 8a3825c352c87b749ba59537e49468b6, type: 3}
       propertyPath: m_LocalRotation.w
@@ -68691,7 +68691,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7266287122319115589, guid: c0a98a3f10e989d44b6e81f5d3031d9a, type: 3}
       propertyPath: showNavGraphs
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7266287122319115589, guid: c0a98a3f10e989d44b6e81f5d3031d9a, type: 3}
       propertyPath: logPathResults
@@ -68768,7 +68768,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9066061736546255551, guid: 1eebc47cceb8096498c2586c61bdb4cf, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.45
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 9066061736546255551, guid: 1eebc47cceb8096498c2586c61bdb4cf, type: 3}
       propertyPath: m_LocalRotation.w
@@ -69054,7 +69054,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2274185113192680691, guid: 2bd9f62c8741a2f4c865383d18bd7e22, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.5
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 2274185113192680691, guid: 2bd9f62c8741a2f4c865383d18bd7e22, type: 3}
       propertyPath: m_LocalRotation.w

@@ -8,11 +8,13 @@ using static UnityEngine.EventSystems.EventTrigger;
 
 public class AgentPlacer : MonoBehaviour
 {
-    [SerializeField, Range(1, 10)]
     int level = 1;
 
     [SerializeField]
     private List<GameObject> lowWeightEnemies, highWeightEnemies;
+
+    [SerializeField]
+    GameObject portalPrefab;
 
     private float maxWeight, minWeight;
 
@@ -22,32 +24,52 @@ public class AgentPlacer : MonoBehaviour
 
     Transform enemyParent;
 
-    Room bossRoom = null;
-    bool generated = false;
+    public Room bossRoom = null;
+    bool generated = false, portal = false;
     [SerializeField]
     private bool showGizmo = false;
 
     [SerializeField]
     private GameObject[] minibosses;
-/*
-    [SerializeField]
-    private GameObject playerPrefab;*/
+    /*
+        [SerializeField]
+        private GameObject playerPrefab;*/
 
     private void Awake()
     {
         enemyParent = GameObject.Find("Enemies").transform;
         dungeonData = FindObjectOfType<DungeonData>();
+        level = GameObject.Find("RoomFirstDungeonGenerator").GetComponent<RoomFirstDungeonGenerator>().level;
     }
 
     private void FixedUpdate()
     {
-        if(bossRoom != null)
+        if (bossRoom != null)
         {
-            if(bossRoom.EnemiesInTheRoom.Count == 0 && generated)
-        {
+            //Debug.Log("Boss Room not Null");
+            //Debug.Log(bossRoom.EnemiesInTheRoom.Count());
+            //Debug.Log(generated);
+            if (bossRoom.EnemiesInTheRoom.Count == 0 && generated && !portal)
+            {
+                portal = true;
+                Instantiate(portalPrefab, new Vector3(bossRoom.RoomCenterPos.x, bossRoom.RoomCenterPos.y, -15), Quaternion.identity);
+                Debug.Log("Portal");
+            }
 
         }
+
+        if (generated && bossRoom.EnemiesInTheRoom.Count != 0)
+        {
+            for(int i = 0; i < bossRoom.EnemiesInTheRoom.Count; i++)
+            {
+                if(bossRoom.EnemiesInTheRoom.ElementAt(i) == null)
+                {
+                    bossRoom.EnemiesInTheRoom.RemoveAt(i); 
+                    break;
+                }
+            }
         }
+
     }
 
     public void PlaceAgents()
@@ -57,11 +79,11 @@ public class AgentPlacer : MonoBehaviour
         Room playerRoom = dungeonData.Rooms[0];
         float currentFarthest = Math.Abs(Vector3.Distance(farthestRoom.RoomCenterPos, playerRoom.RoomCenterPos));
 
-        foreach(Room room in dungeonData.Rooms)
+        foreach (Room room in dungeonData.Rooms)
         {
             float roomDist = Math.Abs(Vector3.Distance(room.RoomCenterPos, playerRoom.RoomCenterPos));
 
-            Debug.Log(roomDist);
+            //Debug.Log(roomDist);
             if (roomDist >= currentFarthest)
             {
                 Debug.Log("New Farthest: " + roomDist);
@@ -73,10 +95,10 @@ public class AgentPlacer : MonoBehaviour
         bossRoomIndex = dungeonData.Rooms.IndexOf(farthestRoom);
         bossRoom = farthestRoom;
 
-        maxWeight = 4 + (level * 2);
-        minWeight = 2 + (level * 2);
+        maxWeight = 3 + (level);
+        minWeight = 1 + (level);
 
-        Debug.Log("Placing agents");
+        //Debug.Log("Placing agents");
         if (dungeonData == null)
             return;
 
@@ -98,7 +120,7 @@ public class AgentPlacer : MonoBehaviour
 
             if (i == 0)
             {
-                Debug.Log("Moving Player");
+                //Debug.Log("Moving Player");
                 /*GameObject player = Instantiate(playerPrefab);*/
                 GameObject player = GameObject.Find("Player");
                 Vector3 playerPos = dungeonData.Rooms[i].RoomCenterPos + Vector2.one * 0.5f;
@@ -112,7 +134,7 @@ public class AgentPlacer : MonoBehaviour
                 PlaceEnemies(room, "boss");
                 i++;
                 continue;
-                
+
             }
             else
             {
@@ -129,7 +151,7 @@ public class AgentPlacer : MonoBehaviour
     /// <param name="enemysCount"></param>
     private void PlaceEnemies(Room room, string type)
     {
-        Debug.Log("Placing Enemies");
+        //Debug.Log("Placing Enemies");
         int roomMaxWeight = 0;
 
         int k = 0;
@@ -146,7 +168,7 @@ public class AgentPlacer : MonoBehaviour
             {
                 case 3:
                     {
-
+                        Debug.Log("Placing dog");
                         GameObject enemy = Instantiate(minibosses[0], enemyParent);
                         int enemyWeight = enemy.GetComponentInChildren<EnemyRecieveDamage>().weight;
                         enemy.transform.localPosition = (Vector2)room.PositionsAccessibleFromPath[k] + Vector2.one * 0.5f;
@@ -156,6 +178,7 @@ public class AgentPlacer : MonoBehaviour
                     }
                 case 6:
                     {
+                        Debug.Log("Placing Jeoph");
                         GameObject enemy = Instantiate(minibosses[1], enemyParent);
                         enemy.transform.localPosition = (Vector2)room.PositionsAccessibleFromPath[k] + Vector2.one * 0.5f;
                         room.EnemiesInTheRoom.Add(enemy);
@@ -164,6 +187,7 @@ public class AgentPlacer : MonoBehaviour
                     }
                 case 9:
                     {
+                        Debug.Log("Placing Balrog");
                         GameObject enemy = Instantiate(minibosses[2], enemyParent);
                         enemy.transform.localPosition = (Vector2)room.PositionsAccessibleFromPath[k] + Vector2.one * 0.5f;
                         room.EnemiesInTheRoom.Add(enemy);
@@ -172,6 +196,7 @@ public class AgentPlacer : MonoBehaviour
                     }
                 default:
                     {
+                        Debug.Log("Default miniboss");
                         roomMaxWeight = roomMaxWeight = (int)Math.Round(UnityEngine.Random.Range(minWeight * 1.5f, maxWeight * 1.5f));
                         break;
                     }
@@ -190,7 +215,7 @@ public class AgentPlacer : MonoBehaviour
 
             HashSet<GameObject> spawnableEnemies = new HashSet<GameObject>();
             HashSet<GameObject> highWeightSpawnables = new HashSet<GameObject>();
-            HashSet<GameObject> lowWeightSpawnables = new HashSet<GameObject> ();
+            HashSet<GameObject> lowWeightSpawnables = new HashSet<GameObject>();
             foreach (GameObject enemy in lowWeightEnemies)
             {
                 //Debug.Log("Looking through enemies");
@@ -199,7 +224,7 @@ public class AgentPlacer : MonoBehaviour
                 {
                     //Debug.Log("Found enemy");
                     spawnableEnemies.Add(enemy);
-                    if(enemyWeight >= 3)
+                    if (enemyWeight >= 3)
                     {
                         highWeightSpawnables.Add(enemy);
                     }
@@ -211,14 +236,14 @@ public class AgentPlacer : MonoBehaviour
             }
 
 
-            if (spawnableEnemies.Count > 0 && room.EnemiesInTheRoom.Count <= 6 + (level*2))
+            if (spawnableEnemies.Count > 0 && room.EnemiesInTheRoom.Count <= 6 + (level * 2))
             {
                 //Debug.Log("Spawning enemy");
                 GameObject enemy = null;
-                
-                if(highWeightEnemies.Count > 0)
+
+                if (highWeightEnemies.Count > 0)
                 {
-                    if (UnityEngine.Random.Range(0f, 10f) <= (float)(9 * (Math.Pow(Math.Pow(2 / 9, 1 / 8), level-1))))
+                    if (UnityEngine.Random.Range(0f, 10f) <= (float)(9 * (Math.Pow(Math.Pow(2 / 9, 1 / 8), level - 1))))
                     {
                         enemy = lowWeightEnemies.ElementAt(UnityEngine.Random.Range(0, lowWeightSpawnables.Count));
                     }
@@ -235,7 +260,8 @@ public class AgentPlacer : MonoBehaviour
                 int enemyWeight = enemy.GetComponentInChildren<EnemyRecieveDamage>().weight;
                 roomWeight = roomWeight + enemyWeight;
                 enemy.transform.localPosition = (Vector2)room.PositionsAccessibleFromPath[k] + Vector2.one * 0.5f;
-                enemy.GetComponent<EnemyRecieveDamage>().health *= (float)(1 + (Mathf.Floor(level / 3) * .1)); 
+                Instantiate(enemy, enemyParent);
+
                 room.EnemiesInTheRoom.Add(enemy);
                 k++;
 

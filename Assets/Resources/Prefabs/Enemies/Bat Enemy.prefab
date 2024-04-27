@@ -65,7 +65,7 @@ Transform:
   m_GameObject: {fileID: 6466264818767617061}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 49.5, y: 19.5, z: 0}
+  m_LocalPosition: {x: 48.5, y: 24.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -517,15 +517,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cc4273d7be98224fa6a460a36f6b105, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb2d: {fileID: 2675326400375057632}
-  strength: 16
-  delay: 0.15
-  OnBegin:
-    m_PersistentCalls:
-      m_Calls: []
-  OnDone:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &1175744126449818033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -550,6 +541,8 @@ MonoBehaviour:
   healthBarSlider: {fileID: 1518206894675585964}
   aggressionRange: 20
   ai: {fileID: 514473872855227238}
+  mode: none
+  nameText: 
 --- !u!1 &6768167362932608543
 GameObject:
   m_ObjectHideFlags: 0

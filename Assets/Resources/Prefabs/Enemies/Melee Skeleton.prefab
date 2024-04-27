@@ -382,15 +382,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cc4273d7be98224fa6a460a36f6b105, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb2d: {fileID: 7867233667985463894}
-  strength: 16
-  delay: 0.15
-  OnBegin:
-    m_PersistentCalls:
-      m_Calls: []
-  OnDone:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &7339151227720196095
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -403,8 +394,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b74122d01fb9b84cbf24092087010c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10
-  maxHealth: 10
+  health: 30
+  maxHealth: 30
   animator: {fileID: 1391657442773568215}
   audioClip: {fileID: 8300000, guid: 74f7361a520c94e41913ca2ccf0189da, type: 3}
   speed: 2
@@ -415,6 +406,8 @@ MonoBehaviour:
   healthBarSlider: {fileID: 6300149164254913146}
   aggressionRange: 20
   ai: {fileID: 1770384215118322766}
+  mode: none
+  nameText: 
 --- !u!1 &2363498067391667675
 GameObject:
   m_ObjectHideFlags: 0
@@ -710,7 +703,7 @@ Transform:
   m_GameObject: {fileID: 5413864225342381831}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.5, y: 29.5, z: 0}
+  m_LocalPosition: {x: 38.5, y: 14.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

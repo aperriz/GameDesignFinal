@@ -77,7 +77,8 @@ public class TileMapVisualizer : MonoBehaviour
             Vector2 centerOfTile = new Vector2(0.5f, 0.5f);
             foreach (var pos in trapPositions)
             {
-                Instantiate(trapTile, (Vector3)((Vector2)pos + centerOfTile), Quaternion.identity, GameObject.Find("Traps").transform);
+                var nPos = (Vector3)((Vector2)pos + centerOfTile);
+                Instantiate(trapTile, new Vector3(nPos.x, nPos.y, -10), Quaternion.identity, GameObject.Find("Traps").transform);
             }
         }
     }

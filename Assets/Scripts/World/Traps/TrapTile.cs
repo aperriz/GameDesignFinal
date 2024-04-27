@@ -11,7 +11,7 @@ public class TrapTile : Trap
 
     public void DestroySelf()
     {
-        if(Application.isPlaying)
+        if (Application.isPlaying)
         {
             Destroy(this);
         }
@@ -24,11 +24,14 @@ public class TrapTile : Trap
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //Debug.Log(collision);
-        if (!activated && collision.TryGetComponent<PlayerRecieveDamage>(out PlayerRecieveDamage player))
+        if (!activated && collision.name == "Player")
         {
-            activated = true;
-            animator.SetBool("Activated", true);
-            player.DealDamage(damage);
+            if (collision.TryGetComponent<PlayerRecieveDamage>(out PlayerRecieveDamage player) && collision.GetComponent<PlayerMovement>().moved)
+            {
+                activated = true;
+                animator.SetBool("Activated", true);
+                player.DealDamage(damage);
+            }
         }
         else if (!activated && collision.TryGetComponent<Enemy>(out Enemy enemy))
         {

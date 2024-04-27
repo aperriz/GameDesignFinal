@@ -1,10 +1,10 @@
 TODO List:
 Boss:
 	Can revisit later, but "Done"
-Transfer between levels
-	button that gets activated after miniboss room is cleared OR
-	portals
 Pause Menu
+Settings
 Death Screen
 Loading Screen
 Music
+Game End Screen
+Saves (?)

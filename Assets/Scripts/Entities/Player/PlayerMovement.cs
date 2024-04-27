@@ -1,3 +1,4 @@
+using System;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -17,13 +18,13 @@ public class PlayerMovement : MonoBehaviour
     public int baseDamage = 5;
     [SerializeField]
     AudioClip swordSound, bowSound, staffSound;
-    public bool moved = false;
+    public bool moved = false, paused = false;
 
     Animator animator;
     SpriteRenderer renderer;
-/*
+
     [SerializeField]
-    GameObject weaponObject;*/
+    GameObject pauseMenu, uiObject;
 
     [SerializeField]
     private InputActionReference movement, attack, escape;
@@ -39,30 +40,43 @@ public class PlayerMovement : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
+    private void OnLevelWasLoaded(int level)
+    {
+        moved = false;
+    }
+
+    private void Start()
+    {
+        moved = false;
+    }
+
     private void Update()
     {
-        if (attack.action.IsPressed())
+        if (!paused)
         {
-            OnAttack();
+            if (attack.action.IsPressed())
+            {
+                OnAttack();
+            }
+
+            Move();
         }
 
         if (escape.action.triggered)
         {
             OnEscape();
         }
-
-        Move();
     }
 
     private void OnEscape()
     {
-        Debug.Log("Exit");
-        Application.Quit();
+        TogglePauseMenu();
     }
+
 
     private void Move()
     {
-        moved = true;
+        
         movementInput = movement.action.ReadValue<Vector2>();
         animator.SetFloat("xDir", movementInput.x);
         animator.SetFloat("yDir", movementInput.y);
@@ -70,11 +84,13 @@ public class PlayerMovement : MonoBehaviour
         {
             renderer.flipX = false;
             animator.SetBool("Flipped", false);
+            moved = true;
         }
         else if (movementInput.x < 0)
         {
             renderer.flipX = true;
             animator.SetBool("Flipped", true);
+            moved = true;
         }
         agentMover.MovementInput = movementInput;
     }
@@ -164,4 +180,31 @@ public class PlayerMovement : MonoBehaviour
             audioSource.Play();
         }
     }
+
+
+    public void TogglePauseMenu()
+    {
+        if (!paused)
+        {
+            pauseMenu.SetActive(true);
+            Time.timeScale = 0;
+            uiObject.SetActive(false);
+            paused = true;
+            
+        }
+        else
+        {
+            pauseMenu.SetActive(false);
+            Time.timeScale = 1;
+            uiObject.SetActive(true);
+            paused = false;
+        }
+    }
+
+    public void MainMenu()
+    {
+        Debug.Log("Main menu");
+        Application.Quit();
+    }
 }
+    

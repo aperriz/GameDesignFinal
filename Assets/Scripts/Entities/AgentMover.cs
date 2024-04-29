@@ -14,27 +14,37 @@ public class AgentMover : MonoBehaviour
     private float currentSpeed = 0;
     private Vector2 oldMovementInput;
     public Vector2 MovementInput { get; set; }
+    PlayerMovement playerMovement;
 
     private void Awake()
     {
         rb2d = GetComponent<Rigidbody2D>();
+        playerMovement = GetComponent<PlayerMovement>();
     }
 
     private void FixedUpdate()
     {
-        if(MovementInput.magnitude > 0 && currentSpeed >= 0)
+        if (playerMovement.paused)
         {
-            oldMovementInput = MovementInput;
-            currentSpeed += acceleration * maxSpeed * Time.deltaTime;
+            rb2d.velocity = Vector2.zero;
         }
         else
         {
-            currentSpeed -= decelleration * maxSpeed * Time.deltaTime;
-        }
+            if (MovementInput.magnitude > 0 && currentSpeed >= 0)
+            {
+                oldMovementInput = MovementInput;
+                currentSpeed += acceleration * maxSpeed * Time.deltaTime;
+            }
+            else
+            {
+                currentSpeed -= decelleration * maxSpeed * Time.deltaTime;
+            }
 
-        currentSpeed = Mathf.Clamp(currentSpeed, 0, maxSpeed);
-        rb2d.velocity = oldMovementInput * currentSpeed;
+            currentSpeed = Mathf.Clamp(currentSpeed, 0, maxSpeed);
+            rb2d.velocity = oldMovementInput * currentSpeed;
+        }
     }
+
 
     public void SpeedPotionCoroutine()
     {

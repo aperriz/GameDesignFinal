@@ -45,7 +45,6 @@ public class Boss1RecieveDamage : MonoBehaviour
     private void Awake()
     {
         health = maxHealth;
-
     }
 
     public void DealDamage(int damage)
@@ -114,8 +113,8 @@ public class Boss1RecieveDamage : MonoBehaviour
         if (health <= 0)
         {
             pInput = player.GetComponent<PlayerMovement>();
-            pInput.enabled = false;
-            Time.timeScale = 0;
+            pInput.paused = true;
+            player.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
             Debug.Log("Dead");
             animator.SetBool("Dead", true);
             if (gameObject.GetComponent<BoxCollider2D>() != null)

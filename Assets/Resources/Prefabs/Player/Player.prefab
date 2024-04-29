@@ -727,7 +727,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerExtraStats: {fileID: 3082477378953004340}
-  extraDamage: 6
+  extraDamage: 0
   baseDamage: 5
   swordSound: {fileID: 8300000, guid: 8f6bbcf0d40c21f4aac14d620c320cad, type: 3}
   bowSound: {fileID: 8300000, guid: 9be9e97673db70b44822e6151dd5e444, type: 3}

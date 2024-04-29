@@ -112,7 +112,7 @@ public class Boss2RecieveDamage : MonoBehaviour
         if (health <= 0)
         {
             pInput = player.GetComponent<PlayerMovement>();
-            pInput.enabled = false;
+            pInput.paused = true;
             //Time.timeScale = 0;
             Debug.Log("Dead");
             animator.SetBool("Dead", true);

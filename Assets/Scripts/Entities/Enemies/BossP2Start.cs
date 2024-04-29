@@ -16,7 +16,7 @@ public class BossP2Start : MonoBehaviour
     void Start()
     {
         pInput = GameObject.Find("Player").GetComponent<PlayerMovement>();
-        pInput.enabled = false;
+        pInput.paused = true;
 
         player = GameObject.Find("Player");
         player.transform.position = new Vector3(8, -41, -10);
@@ -40,8 +40,8 @@ public class BossP2Start : MonoBehaviour
     {
         Time.timeScale = 1;
         bossHealthBar.SetActive(true);
-        dialogue.SetActive(false );
-        pInput.enabled=true;
+        dialogue.SetActive(false);
+        pInput.paused=false;
         boss.transform.GetChild(0).GetComponent<Phase2>().gameObject.SetActive(true);
         player.transform.GetChild(1).gameObject.SetActive(true);
     }

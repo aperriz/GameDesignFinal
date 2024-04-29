@@ -29,7 +29,7 @@ public class StartP1Script : MonoBehaviour
         {
             triggered = true;
 
-            pInput.enabled = false;
+            pInput.paused = true;
 
             Destroy(GetComponent<BoxCollider2D>());
             GameObject.Find("Player").transform.GetChild(1).gameObject.SetActive(false);
@@ -86,7 +86,7 @@ public class StartP1Script : MonoBehaviour
         boss.GetComponentInChildren<PolygonCollider2D>().enabled = true;
         //boss.GetComponent<Phase1>().enabled = true;
         Time.timeScale = 1.0f;
-        pInput.enabled = true;
+        pInput.paused = false;
         camera.orthographicSize = 13;
         camera.transform.localPosition = new Vector3(0, 0, -10);
         Destroy(gameObject);

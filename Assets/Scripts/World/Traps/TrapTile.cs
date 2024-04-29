@@ -24,7 +24,7 @@ public class TrapTile : Trap
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //Debug.Log(collision);
-        if (!activated && collision.name == "Player")
+        if (!activated && (collision.name == "Player" || collision.name == "Player(Clone)"))
         {
             if (collision.TryGetComponent<PlayerRecieveDamage>(out PlayerRecieveDamage player) && collision.GetComponent<PlayerMovement>().moved)
             {

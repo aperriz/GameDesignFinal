@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 public class PlayerRecieveDamage : MonoBehaviour
@@ -20,6 +22,8 @@ public class PlayerRecieveDamage : MonoBehaviour
     public Text healthText;
     [SerializeField]
     private PlayerExtraStats playerExtraStats;
+    [SerializeField]
+    private GameObject dScreen;
 
     // Start is called before the first frame update
     void Awake()
@@ -99,7 +103,15 @@ public class PlayerRecieveDamage : MonoBehaviour
             Debug.Log("Dead");
             animator.SetBool("Dead", true);
             gameObject.GetComponent<BoxCollider2D>().enabled = false;
+            playerExtraStats.SetPaused(true);
         }
+    }
+
+    public void ShowDeathScreen()
+    {
+        Debug.Log("ded");
+        dScreen.SetActive(true);
+        
     }
 
     private void HurtDone()

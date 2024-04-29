@@ -10,7 +10,6 @@ public class PlayerMovement : MonoBehaviour
 {
     AgentMover agentMover;
     private Vector2 movementInput;
-    private Button attackInput, escapeInput;
     [SerializeField]
     private PlayerExtraStats playerExtraStats;
 
@@ -78,6 +77,12 @@ public class PlayerMovement : MonoBehaviour
             }
 
             Move();
+        }
+        else
+        {
+            GetComponent<Rigidbody2D>().velocity = Vector3.zero;
+            animator.SetFloat("xDir", 0);
+            animator.SetFloat("yDir", 0);
         }
 
         if (escape.action.triggered)
@@ -228,12 +233,11 @@ public class PlayerMovement : MonoBehaviour
         Debug.Log("Main menu");
         Destroy(gameObject);
         SceneManager.LoadScene("MainMenu");
-        Application.Quit();
     }
 
     public void Settings()
     {
-        settingsMenu.SetActive(true);
+        settingsMenu.GetComponent<SettingsController>().ToggleSettings();
     }
 }
     

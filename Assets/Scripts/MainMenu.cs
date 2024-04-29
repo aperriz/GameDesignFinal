@@ -9,12 +9,20 @@ public class MainMenu : MonoBehaviour
     [SerializeField]
     public GameObject playerPrefab;
     private static GameObject player;
-    
+
+    private void Start()
+    {
+        player = GameObject.Find("Player");
+        if(player != null)
+        {
+            Destroy(player);
+        }   
+    }
+
     public void StartGame()
     {
         SceneManager.LoadScene("Level 1");
-        player = GameObject.Find("Player");
-
+        Time.timeScale = 1;
         if(player != null)
         {
             player.SetActive(true);

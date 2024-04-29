@@ -51,6 +51,11 @@ public class PlayerExtraStats : MonoBehaviour
         //UpdatePotions();
     }
 
+    public void SetPaused(bool paused)
+    {
+        playerMovement.paused = paused;
+    }
+
     private void FixedUpdate()
     {
         if(playerMovement == null)

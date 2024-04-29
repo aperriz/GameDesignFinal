@@ -17,44 +17,77 @@ public class SettingsController : MonoBehaviour
     GameObject pauseMenu;
     [SerializeField]
     Scrollbar masterSlider, sfxSlider, musicSlider, brightnessSlider;
-    float masterVal, sfxVal, musicVal, brightnessVal;
+    float brightnessVal;
+    AudioVars av;
 
     private void Start()
     {
+        av = GameObject.Find("AudioVars").GetComponent<AudioVars>();
+        DontDestroyOnLoad(av.gameObject);
+
+        if (av.instance.def)
+        {
+            av.instance.masterVol = 1;
+            av.instance.musicVol = 1;
+            av.instance.sfxVol = 1;
+            av.instance.def = false;
+        }
+
         brightnessFilter = GameObject.Find("Brightness").GetComponent<Image>();
         DontDestroyOnLoad(gameObject);
         DontDestroyOnLoad(brightnessFilter.gameObject);
-        mixer.GetFloat(master.name, out masterVal);
-        mixer.GetFloat (sfx.name, out sfxVal);
-        mixer.GetFloat(music.name, out musicVal);
 
-        brightnessVal = brightnessFilter.color.a;
-
-        masterSlider.value = masterVal;
-        sfxSlider.value = sfxVal;
-        musicSlider.value = musicVal;
+        brightnessVal = 1 - brightnessFilter.color.a;
+        masterSlider.value = av.instance.masterVol;
+        sfxSlider.value = av.instance.sfxVol;
+        musicSlider.value = av.instance.musicVol;
         brightnessSlider.value = brightnessVal;
     }
 
     public void AdjustMaster(float newVal)
     {
-        mixer.SetFloat(master.name, newVal);
+        if (!av.instance.def)
+        {
+            mixer.SetFloat(master.name, (1 - newVal) * -20);
+            av.instance.masterVol = newVal;
+        }
+
+        if (newVal == 0)
+        {
+            mixer.SetFloat(master.name, -80);
+        }
     }
 
     public void AdjustSFX(float newVal)
     {
-        mixer.SetFloat(sfx.name, newVal);
+        if (!av.instance.def)
+        {
+            mixer.SetFloat(sfx.name, (1 - newVal) * -20);
+            av.instance.sfxVol = newVal;
+        }
+        if (newVal == 0)
+        {
+            mixer.SetFloat(sfx.name, -80);
+        }
     }
 
     public void AdjustMusic(float newVal)
     {
-        mixer.SetFloat(music.name, newVal);
+        if (!av.instance.def)
+        {
+            mixer.SetFloat(music.name, (1 - newVal) * -20);
+            av.instance.musicVol = newVal;
+        }
+        if (newVal == 0)
+        {
+            mixer.SetFloat(music.name, -80);
+        }
     }
 
     public void AdjustBrightness(float newVal)
     {
         var tempColor = brightnessFilter.color;
-        tempColor.a = .8f - (newVal*.8f);
+        tempColor.a = .8f - (newVal * .8f);
         brightnessFilter.color = tempColor;
     }
 
@@ -62,7 +95,7 @@ public class SettingsController : MonoBehaviour
     {
         showing = !showing;
         gameObject.SetActive(showing);
-        if(pauseMenu != null ) pauseMenu.SetActive(!showing);
+        if (pauseMenu != null) pauseMenu.SetActive(!showing);
         Debug.Log("Settings " + showing);
     }
 }

@@ -1,14 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
     public static int level = 0;
+    [SerializeField]
+    public GameObject player;
 
-    [SerializeField] private int entityNum = 0;
-    [SerializeField] private List<Entity> entities = new List<Entity>();
+    private void Start()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
 
     private void Awake()
     {
@@ -16,16 +21,5 @@ public class GameManager : MonoBehaviour
             instance = this;
         else
             Destroy(gameObject);
-    }
-
-    public void AddEntity(Entity entity)
-    {
-        entities.Add(entity);
-    }
-
-
-    public void InsertEntity(Entity entity)
-    {
-        entities.Insert(entityNum, entity);
     }
 }

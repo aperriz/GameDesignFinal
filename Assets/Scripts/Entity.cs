@@ -9,12 +9,12 @@ public class Entity : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (GetComponent<PlayerMovement>())
+        /*if (GetComponent<PlayerMovement>())
         {
             GameManager.instance.InsertEntity(this);
         }
         else if(IsSentient)
-            GameManager.instance.AddEntity(this);
+            GameManager.instance.AddEntity(this);*/
     }
 
     public void Move(Vector2 direction)

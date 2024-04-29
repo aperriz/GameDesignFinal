@@ -5,11 +5,24 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    public GameObject settingsPannel;
+    public GameObject settingsObject;
+    [SerializeField]
+    public GameObject playerPrefab;
+    private static GameObject player;
     
     public void StartGame()
     {
-        SceneManager.LoadScene("Level 01");
+        SceneManager.LoadScene("Level 1");
+        player = GameObject.Find("Player");
+
+        if(player != null)
+        {
+            player.SetActive(true);
+        }
+        else
+        {
+            Instantiate(playerPrefab);
+        }
     }
 
     public void ExitGame()
@@ -18,14 +31,5 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
     }
 
-    public void OpenSettings()
-    {
-        settingsPannel.SetActive(true);
-    }
-
-    public void CloseSettings()
-    {
-        settingsPannel?.SetActive(false);
-    }
 
 }

@@ -4288,15 +4288,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 216735395555390398, guid: 41a9bd9e2fd49ed40a5b2cda1229d9e1, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 216735395555390398, guid: 41a9bd9e2fd49ed40a5b2cda1229d9e1, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2014316275248123421, guid: 41a9bd9e2fd49ed40a5b2cda1229d9e1, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 2014316275248123421, guid: 41a9bd9e2fd49ed40a5b2cda1229d9e1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6712855949840305776, guid: 41a9bd9e2fd49ed40a5b2cda1229d9e1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5642,7 +5646,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2474477125228132971, guid: d383c61828d15af46b5e13ec55cd9f6a, type: 3}
       propertyPath: generateOnStart
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2595249412330197520, guid: d383c61828d15af46b5e13ec55cd9f6a, type: 3}
       propertyPath: level

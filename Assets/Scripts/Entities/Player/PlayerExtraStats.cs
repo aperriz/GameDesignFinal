@@ -44,7 +44,7 @@ public class PlayerExtraStats : MonoBehaviour
         hasRightPotion = false;
         hasLeftScroll = false;
         hasRightScroll = false;
-        player = GameObject.Find("Player");
+        player = gameObject;
         playerMovement = player.GetComponent<PlayerMovement>();
         //Debug.Log(hasLeftPotion);
         //Debug.Log(hasRightPotion);
@@ -53,6 +53,10 @@ public class PlayerExtraStats : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if(playerMovement == null)
+        {
+            playerMovement = player.GetComponent<PlayerMovement>();
+        }
         //Debug.Log(hasLeftPotion);
         //Debug.Log(hasRightPotion);
     }

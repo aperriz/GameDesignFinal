@@ -2,6 +2,7 @@ using System;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 using UnityEngine.Tilemaps;
 using UnityEngine.UI;
 
@@ -24,7 +25,7 @@ public class PlayerMovement : MonoBehaviour
     SpriteRenderer renderer;
 
     [SerializeField]
-    GameObject pauseMenu, uiObject;
+    GameObject pauseMenu, uiObject, settingsMenu;
 
     [SerializeField]
     private InputActionReference movement, attack, escape;
@@ -40,9 +41,26 @@ public class PlayerMovement : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    private void OnLevelWasLoaded(int level)
+    /*private void OnLevelWasLoaded(int level)
     {
         moved = false;
+    }*/
+
+    void OnEnable()
+    {
+        //Debug.Log("OnEnable called");
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    // called second
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        //Debug.Log("Moved false");
+        moved = false;
+    }
+    void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
     private void Start()
@@ -198,13 +216,24 @@ public class PlayerMovement : MonoBehaviour
             Time.timeScale = 1;
             uiObject.SetActive(true);
             paused = false;
+            if (settingsMenu.activeSelf)
+            {
+                settingsMenu.GetComponent<SettingsController>().ToggleSettings();
+            }
         }
     }
 
     public void MainMenu()
     {
         Debug.Log("Main menu");
+        Destroy(gameObject);
+        SceneManager.LoadScene("MainMenu");
         Application.Quit();
+    }
+
+    public void Settings()
+    {
+        settingsMenu.SetActive(true);
     }
 }
     

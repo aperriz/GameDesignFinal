@@ -8,7 +8,7 @@ using UnityEngine.UI;
 
 public class PlayerExtraStats : MonoBehaviour
 {
-    int gold = 0;
+    public int gold = 0;
     public int defense = 0;
 
     [SerializeField]

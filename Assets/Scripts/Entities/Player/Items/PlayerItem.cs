@@ -45,7 +45,7 @@ public class PlayerItem : MonoBehaviour
             {
                 Destroy(popup);
             }
-            popup = Instantiate(popupPrefab, new Vector3(transform.position.x, transform.position.y + 2.5f, -10), Quaternion.identity);
+            popup = Instantiate(popupPrefab, new Vector3(transform.position.x, transform.position.y + 2.5f, -13), Quaternion.identity);
             popup.SetActive(true);
         }
     }

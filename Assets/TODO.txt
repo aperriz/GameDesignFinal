@@ -1,6 +1,6 @@
 TODO List:
 Boss:
 	Can revisit later, but "Done"
-Game End Screen
-Skip level button
 Saves (?)
+controls
+final score

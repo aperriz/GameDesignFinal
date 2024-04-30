@@ -67915,6 +67915,26 @@ PrefabInstance:
       value: Boss
       objectReference: {fileID: 0}
     - target: {fileID: 8535124738642366122, guid: 8f7b44ea464728f4296340dd3de72c3f, type: 3}
+      propertyPath: atk1cd
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8535124738642366122, guid: 8f7b44ea464728f4296340dd3de72c3f, type: 3}
+      propertyPath: atk2cd
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8535124738642366122, guid: 8f7b44ea464728f4296340dd3de72c3f, type: 3}
+      propertyPath: atk3cd
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8535124738642366122, guid: 8f7b44ea464728f4296340dd3de72c3f, type: 3}
+      propertyPath: atk4cd
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8535124738642366122, guid: 8f7b44ea464728f4296340dd3de72c3f, type: 3}
+      propertyPath: initcd
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8535124738642366122, guid: 8f7b44ea464728f4296340dd3de72c3f, type: 3}
       propertyPath: tileMapVisualizer
       value: 
       objectReference: {fileID: 1619995853828543841}

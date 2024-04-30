@@ -34,7 +34,7 @@ public class MusicManager : MonoBehaviour
         {
             ChangeSong(trackNum);
             trackNum++;
-            if(trackNum == songs.Length)
+            if(trackNum == songs.Length - 1)
             {
                 trackNum = 0;
             }

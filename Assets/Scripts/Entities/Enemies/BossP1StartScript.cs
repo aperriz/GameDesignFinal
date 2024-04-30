@@ -18,6 +18,11 @@ public class BossP1StartScript : MonoBehaviour
         GameObject boss = GameObject.Find("Phase 1").transform.GetChild(1).gameObject;
         boss.GetComponentInChildren<Phase1>().enabled = false;
         boss.GetComponentInChildren<PolygonCollider2D>().enabled = false;
+        GameObject loadingScreen = GameObject.Find("Loading Screen");
+        for (int i = 0; i < loadingScreen.transform.childCount; i++)
+        {
+            loadingScreen.transform.GetChild(i).gameObject.SetActive(false);
+        }
     }
 
 }

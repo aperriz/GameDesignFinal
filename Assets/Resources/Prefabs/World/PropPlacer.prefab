@@ -44,10 +44,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d399f329a7a9abd4aa438cd2cfa13b57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  chestPrefab: {fileID: 0}
   propsToPlace:
   - {fileID: 11400000, guid: 51afc441084d93e459cee0915b2c8216, type: 2}
   - {fileID: 11400000, guid: 276660f3c68213c4780dcc42e24ea86c, type: 2}
-  - {fileID: 11400000, guid: fec360a4a454ef349a6c568354bea464, type: 2}
   - {fileID: 11400000, guid: c01f5c738a4708c4e80db5e4c6be00df, type: 2}
   - {fileID: 11400000, guid: 41b8069e6982815419274c1f6fea34ac, type: 2}
   - {fileID: 11400000, guid: 95f50cd3fd280274abca03bba75b9f17, type: 2}
@@ -56,6 +56,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 3ea7de6807faece41a947e5883a2b8e1, type: 2}
   - {fileID: 11400000, guid: 199d7687aa2481b49aa6e5aff7a49274, type: 2}
   - {fileID: 11400000, guid: cd9a311bd3994b444bf086b8765c687f, type: 2}
+  chest: {fileID: 0}
   cornerPropPlacementChance: 0.7
   propPrefab: {fileID: 8851719620976442143, guid: 4a88a9a33b01a694fab20cc2eff69e8d, type: 3}
   OnFinished:
@@ -73,3 +74,5 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
+  playerRoomIndex: 0
+  merchantIndex: 0

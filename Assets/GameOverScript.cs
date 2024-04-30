@@ -2,17 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameOverScript : MonoBehaviour
 {
     MusicManager musicManager;
+    [SerializeField]
+    GameObject scoreObject;
 
     private void Start()
     {
+
+        GameObject player = GameObject.Find("Player");
+        scoreObject.GetComponent<Text>().text = "Score: " + player.GetComponent<PlayerExtraStats>().gold.ToString(); ;
+
         musicManager = GameObject.Find("Music").GetComponent<MusicManager>();
-        if (GameObject.Find("Player") != null)
+        if (player != null)
         {
-            Destroy(GameObject.Find("Player"));
+            player.SetActive(false);
         }
 
         if(musicManager != null)

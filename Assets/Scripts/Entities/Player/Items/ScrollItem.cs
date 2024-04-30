@@ -42,7 +42,7 @@ public class ScrollItem : PlayerItem
             {
                 Destroy(popup);
             }
-            popup = Instantiate(popupPrefab, new Vector3(transform.position.x, transform.position.y + 2.5f, -2), Quaternion.identity);
+            popup = Instantiate(popupPrefab, new Vector3(transform.position.x, transform.position.y + 2.5f, -12), Quaternion.identity);
             popup.SetActive(true);
             TextMeshProUGUI nameText = popup.transform.GetChild(0).GetChild(0).GetComponent<TextMeshProUGUI>();
             TextMeshProUGUI descText = popup.transform.GetChild(0).GetChild(1).GetComponent<TextMeshProUGUI>();

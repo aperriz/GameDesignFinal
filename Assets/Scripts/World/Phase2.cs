@@ -57,7 +57,7 @@ public class Phase2 : MonoBehaviour
         else if (loops % 3 != 0)
         {
             //Debug.Log("Fireball");
-            for (int i = 0; i < Random.Range(1, 4); i++)
+            for (int i = 0; i < Random.Range(2, 9); i++)
             {
                 bool placed = false;
                 int loopsWithoutPlacing = 0;
@@ -188,7 +188,7 @@ public class Phase2 : MonoBehaviour
             }
         }
 
-        int roll = Random.Range(0, validDirs.Count);
+        int roll = Random.Range(0, validDirs.Count-1);
         RaycastHit2D dir = validDirs.ElementAt(roll);
         Vector2 angle = validAngles.ElementAt(roll);
         float travelAngle = angs.ElementAt(roll);

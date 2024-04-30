@@ -17,6 +17,7 @@ public class BossP2Start : MonoBehaviour
     {
         pInput = GameObject.Find("Player").GetComponent<PlayerMovement>();
         pInput.paused = true;
+        boss = GameObject.Find("Boss");
 
         player = GameObject.Find("Player");
         player.transform.position = new Vector3(8, -41, -10);

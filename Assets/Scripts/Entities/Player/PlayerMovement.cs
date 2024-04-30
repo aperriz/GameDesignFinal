@@ -19,6 +19,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     AudioClip swordSound, bowSound, staffSound;
     public bool moved = false, paused = false;
+    [SerializeField]
+    GameObject portal;
 
     Animator animator;
     SpriteRenderer renderer;
@@ -238,6 +240,12 @@ public class PlayerMovement : MonoBehaviour
     public void Settings()
     {
         settingsMenu.GetComponent<SettingsController>().ToggleSettings();
+    }
+
+    public void Nextlevel()
+    {
+        Instantiate(portal, gameObject.transform.position, Quaternion.identity);
+        TogglePauseMenu();
     }
 }
     

@@ -1,0 +1,948 @@
+fileFormatVersion: 2
+guid: 65a3ea6e96b8a604ea26d6dfe15415b8
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Ice_Lance_E_Frame_0
+    originalName: 
+    pivot: {x: 6.2000003, y: -2}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 150
+      y: 148
+      width: 5
+      height: 4
+    spriteID: e58d7a2c06e459140a49f1fd4afec14a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 150, y: 148}
+  - name: Ice_Lance_E_Frame_1
+    originalName: 
+    pivot: {x: 2.2857144, y: -1.3333334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 159
+      y: 163
+      width: 14
+      height: 6
+    spriteID: 72af9d32df0031a418a2227b0d5762dc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 159, y: 163}
+  - name: Ice_Lance_E_Frame_2
+    originalName: 
+    pivot: {x: 1.3913044, y: -1.1428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 119
+      y: 148
+      width: 23
+      height: 7
+    spriteID: 1f7701d50443097448c0bec93b6be03d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 119, y: 148}
+  - name: Ice_Lance_E_Frame_3
+    originalName: 
+    pivot: {x: 1.0333334, y: -1.1428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 214
+      y: 148
+      width: 30
+      height: 7
+    spriteID: 7a7e2956775c946449dac4689d4c96d3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 214, y: 148}
+  - name: Ice_Lance_E_Frame_5
+    originalName: 
+    pivot: {x: 0.82051283, y: -1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 167
+      y: 132
+      width: 39
+      height: 8
+    spriteID: 31b767c6269989d40a4be96c916d7770
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 167, y: 132}
+  - name: Ice_Lance_E_Frame_6
+    originalName: 
+    pivot: {x: 0.82051283, y: -1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 72
+      y: 163
+      width: 39
+      height: 8
+    spriteID: 1fb749f7936036948b901f6dbb15698c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 72, y: 163}
+  - name: Ice_Lance_E_Frame_7
+    originalName: 
+    pivot: {x: 0.84210527, y: -1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 214
+      y: 132
+      width: 38
+      height: 8
+    spriteID: fce00320c7fd8f2438a2fe2af3174da5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 214, y: 132}
+  - name: Ice_Lance_E_Frame_8
+    originalName: 
+    pivot: {x: 1, y: -1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 119
+      y: 163
+      width: 32
+      height: 8
+    spriteID: 0a926357e3098d348b188f4a7aea9b28
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 119, y: 163}
+  - name: Ice_Lance_E_Frame_9
+    originalName: 
+    pivot: {x: 0.8, y: -1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 119
+      y: 132
+      width: 40
+      height: 8
+    spriteID: 0a50445d31447a74898279828226889e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 119, y: 132}
+  - name: Ice_Lance_E_Frame_10
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 64
+      height: 24
+    spriteID: 1d4895769bd38494381f6f7e7a69a030
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Ice_Lance_E_Frame_11
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 76
+      y: 4
+      width: 64
+      height: 24
+    spriteID: e3afb3e5cd423d842af6be5998d31f09
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 76, y: 4}
+  - name: Ice_Lance_E_Frame_12
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 148
+      y: 4
+      width: 64
+      height: 24
+    spriteID: 5bd17a1ab2308cc47ae86efcf274d2b2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 148, y: 4}
+  - name: Ice_Lance_E_Frame_13
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 36
+      width: 64
+      height: 24
+    spriteID: 0f9ec956121da5f4fadc029a5f309e03
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 36}
+  - name: Ice_Lance_E_Frame_14
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 76
+      y: 36
+      width: 64
+      height: 24
+    spriteID: 04762ce6a18f35f4fa9602d67ae3bedc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 76, y: 36}
+  - name: Ice_Lance_E_Frame_15
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 148
+      y: 36
+      width: 64
+      height: 24
+    spriteID: 31b590a1b69c1a943a43bd78ec27c852
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 148, y: 36}
+  - name: Ice_Lance_E_Frame_16
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 68
+      width: 64
+      height: 24
+    spriteID: d76a989a2fc72f145b85255feb1bdda8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 68}
+  - name: Ice_Lance_E_Frame_17
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 76
+      y: 68
+      width: 64
+      height: 24
+    spriteID: d072bdec5e0a0814585f3ed5f16be78a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 76, y: 68}
+  - name: Ice_Lance_E_Frame_18
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 148
+      y: 68
+      width: 64
+      height: 24
+    spriteID: 6ebab99f3643cd248a4c4daab3e4ce00
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 148, y: 68}
+  - name: Ice_Lance_E_Frame_19
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 100
+      width: 64
+      height: 24
+    spriteID: 35e2222008429e6409d1c347053c80a1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 100}
+  - name: Ice_Lance_E_Frame_20
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 76
+      y: 100
+      width: 64
+      height: 24
+    spriteID: b69a7eac43376b14eac73602841c25eb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 76, y: 100}
+  - name: Ice_Lance_E_Frame_21
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 148
+      y: 100
+      width: 64
+      height: 24
+    spriteID: 8afb872fc4fed8347bd3bfac93429c37
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 148, y: 100}
+  - name: Ice_Lance_E_Frame_22
+    originalName: 
+    pivot: {x: 0.49206352, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 132
+      width: 63
+      height: 23
+    spriteID: f54b45782033b8e4fa721739d101ceb9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 132}
+  - name: Ice_Lance_E_Frame_23
+    originalName: 
+    pivot: {x: 0.4666667, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 163
+      width: 60
+      height: 24
+    spriteID: 76456bf2b972c094aa4e05816bc0256f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 163}
+  - name: Ice_Lance_E_Frame_4
+    originalName: 
+    pivot: {x: 0.79310346, y: -1.1428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 167
+      y: 148
+      width: 29
+      height: 7
+    spriteID: 5f04c45a5ed183d428e9589ea1e7fc7a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 167, y: 148}
+  - name: Ice_Lance_E_Frame_24
+    originalName: 
+    pivot: {x: 0.1388889, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 75
+      y: 132
+      width: 36
+      height: 23
+    spriteID: ead208a4e2aa89848aa372f375d66c18
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 75, y: 132}
+  - name: Ice_Lance_E_Frame_25
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 220
+      y: 4
+      width: 31
+      height: 22
+    spriteID: a51e69724a84225458cee068790dbdc0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 220, y: 4}
+  - name: Ice_Lance_E_Frame_26
+    originalName: 
+    pivot: {x: -0.03448276, y: -0.050000004}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 220
+      y: 36
+      width: 29
+      height: 20
+    spriteID: eb57b1e4b652d754da9876d5d9d61fa0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 220, y: 36}
+  - name: Ice_Lance_E_Frame_27
+    originalName: 
+    pivot: {x: -0.15384616, y: -0.05263158}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 220
+      y: 68
+      width: 26
+      height: 19
+    spriteID: 130e4ec59322b0a48a636b7aafc95fa1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 220, y: 68}
+  - name: Ice_Lance_E_Frame_28
+    originalName: 
+    pivot: {x: -0.7058824, y: -0.058823533}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 220
+      y: 100
+      width: 17
+      height: 17
+    spriteID: b151fc699272f964da830aae1cd0b366
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 220, y: 100}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 1329701171
+    name: Ice_Lance_E
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Ice_Lance_E_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 1
+        y: 8
+        width: 5
+        height: 4
+      spriteId: e58d7a2c06e459140a49f1fd4afec14a
+    - name: Ice_Lance_E_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 0
+        y: 8
+        width: 14
+        height: 6
+      spriteId: 72af9d32df0031a418a2227b0d5762dc
+    - name: Ice_Lance_E_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 0
+        y: 8
+        width: 23
+        height: 7
+      spriteId: 1f7701d50443097448c0bec93b6be03d
+    - name: Ice_Lance_E_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 1
+        y: 8
+        width: 30
+        height: 7
+      spriteId: 7a7e2956775c946449dac4689d4c96d3
+    - name: Ice_Lance_E_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 0
+        y: 8
+        width: 39
+        height: 8
+      spriteId: 31b767c6269989d40a4be96c916d7770
+    - name: Ice_Lance_E_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 0
+        y: 8
+        width: 39
+        height: 8
+      spriteId: 1fb749f7936036948b901f6dbb15698c
+    - name: Ice_Lance_E_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 0
+        y: 8
+        width: 38
+        height: 8
+      spriteId: fce00320c7fd8f2438a2fe2af3174da5
+    - name: Ice_Lance_E_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 0
+        y: 8
+        width: 32
+        height: 8
+      spriteId: 0a926357e3098d348b188f4a7aea9b28
+    - name: Ice_Lance_E_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 0
+        y: 8
+        width: 40
+        height: 8
+      spriteId: 0a50445d31447a74898279828226889e
+    - name: Ice_Lance_E_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 24
+      spriteId: 1d4895769bd38494381f6f7e7a69a030
+    - name: Ice_Lance_E_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 24
+      spriteId: e3afb3e5cd423d842af6be5998d31f09
+    - name: Ice_Lance_E_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 24
+      spriteId: 5bd17a1ab2308cc47ae86efcf274d2b2
+    - name: Ice_Lance_E_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 24
+      spriteId: 0f9ec956121da5f4fadc029a5f309e03
+    - name: Ice_Lance_E_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 24
+      spriteId: 04762ce6a18f35f4fa9602d67ae3bedc
+    - name: Ice_Lance_E_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 24
+      spriteId: 31b590a1b69c1a943a43bd78ec27c852
+    - name: Ice_Lance_E_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 24
+      spriteId: d76a989a2fc72f145b85255feb1bdda8
+    - name: Ice_Lance_E_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 24
+      spriteId: d072bdec5e0a0814585f3ed5f16be78a
+    - name: Ice_Lance_E_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 24
+      spriteId: 6ebab99f3643cd248a4c4daab3e4ce00
+    - name: Ice_Lance_E_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 24
+      spriteId: 35e2222008429e6409d1c347053c80a1
+    - name: Ice_Lance_E_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 24
+      spriteId: b69a7eac43376b14eac73602841c25eb
+    - name: Ice_Lance_E_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 24
+      spriteId: 8afb872fc4fed8347bd3bfac93429c37
+    - name: Ice_Lance_E_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 1
+        y: 0
+        width: 63
+        height: 23
+      spriteId: f54b45782033b8e4fa721739d101ceb9
+    - name: Ice_Lance_E_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 4
+        y: 0
+        width: 60
+        height: 24
+      spriteId: 76456bf2b972c094aa4e05816bc0256f
+    - name: Ice_Lance_E_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 9
+        y: 8
+        width: 29
+        height: 7
+      spriteId: 5f04c45a5ed183d428e9589ea1e7fc7a
+    - name: Ice_Lance_E_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 27
+        y: 0
+        width: 36
+        height: 23
+      spriteId: ead208a4e2aa89848aa372f375d66c18
+    - name: Ice_Lance_E_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 32
+        y: 0
+        width: 31
+        height: 22
+      spriteId: a51e69724a84225458cee068790dbdc0
+    - name: Ice_Lance_E_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 33
+        y: 1
+        width: 29
+        height: 20
+      spriteId: eb57b1e4b652d754da9876d5d9d61fa0
+    - name: Ice_Lance_E_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 36
+        y: 1
+        width: 26
+        height: 19
+      spriteId: 130e4ec59322b0a48a636b7aafc95fa1
+    - name: Ice_Lance_E_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 44
+        y: 1
+        width: 17
+        height: 17
+      spriteId: b151fc699272f964da830aae1cd0b366
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 64, y: 24}

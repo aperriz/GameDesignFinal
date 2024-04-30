@@ -1,0 +1,1480 @@
+fileFormatVersion: 2
+guid: 6b51e4438024eec47aac293c2b096a7e
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Poison_Growing_Cloud_Frame_0
+    originalName: 
+    pivot: {x: 0, y: -14.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 232
+      y: 76
+      width: 2
+      height: 2
+    spriteID: 10ed2d3edaead2246b0ef6b24a4149fb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 232, y: 76}
+  - name: Poison_Growing_Cloud_Frame_1
+    originalName: 
+    pivot: {x: 0, y: -9}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 247
+      y: 120
+      width: 2
+      height: 3
+    spriteID: 9fbb2e5e7c5507a4bb9a05c3ee366801
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 247, y: 120}
+  - name: Poison_Growing_Cloud_Frame_2
+    originalName: 
+    pivot: {x: 0.66666687, y: -13.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 247
+      y: 204
+      width: 3
+      height: 2
+    spriteID: d13a57afb8d31ff45a1355c6a2441ebd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 247, y: 204}
+  - name: Poison_Growing_Cloud_Frame_3
+    originalName: 
+    pivot: {x: 1.5000001, y: -9.333333}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 232
+      y: 247
+      width: 2
+      height: 3
+    spriteID: 0d10bb1cf9588ad428e08f97c57072da
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 232, y: 247}
+  - name: Poison_Growing_Cloud_Frame_4
+    originalName: 
+    pivot: {x: 0.66666687, y: -14.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 242
+      y: 247
+      width: 3
+      height: 2
+    spriteID: 34c9eeead95b20d488bf18675b43c982
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 242, y: 247}
+  - name: Poison_Growing_Cloud_Frame_5
+    originalName: 
+    pivot: {x: 0, y: -9}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 242
+      y: 76
+      width: 1
+      height: 3
+    spriteID: b0a87225aecb7e147b6a9d6dd546d0a3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 242, y: 76}
+  - name: Poison_Growing_Cloud_Frame_6
+    originalName: 
+    pivot: {x: 0.5, y: -8}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 233
+      y: 204
+      width: 6
+      height: 3
+    spriteID: ac6adddb264595346ad546770d0bc94e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 233, y: 204}
+  - name: Poison_Growing_Cloud_Frame_7
+    originalName: 
+    pivot: {x: 0.5, y: -4}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 233
+      y: 120
+      width: 6
+      height: 6
+    spriteID: f54cef9d036dd7a4892db77082c28dde
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 233, y: 120}
+  - name: Poison_Growing_Cloud_Frame_8
+    originalName: 
+    pivot: {x: 0.44444442, y: -1.1666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 232
+      y: 135
+      width: 18
+      height: 18
+    spriteID: 55326ac5b59716c49ba359ff0f00043c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 232, y: 135}
+  - name: Poison_Growing_Cloud_Frame_9
+    originalName: 
+    pivot: {x: 0.44444442, y: -0.99999994}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 233
+      y: 93
+      width: 18
+      height: 19
+    spriteID: 2f15e11b83539d740bd741de15e79743
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 233, y: 93}
+  - name: Poison_Growing_Cloud_Frame_10
+    originalName: 
+    pivot: {x: 0.5263158, y: -1.0555556}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 233
+      y: 178
+      width: 19
+      height: 18
+    spriteID: 74cd587ffeeba2d4b8017b19f099ba68
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 233, y: 178}
+  - name: Poison_Growing_Cloud_Frame_11
+    originalName: 
+    pivot: {x: 0.6111111, y: -1.0526316}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 232
+      y: 220
+      width: 18
+      height: 19
+    spriteID: 1d8b2fd7b8996a84e8774f048177ef98
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 232, y: 220}
+  - name: Poison_Growing_Cloud_Frame_12
+    originalName: 
+    pivot: {x: 0.5263158, y: -1.1666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 232
+      y: 50
+      width: 19
+      height: 18
+    spriteID: 8f654e965cb725f46af72d2d410adab4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 232, y: 50}
+  - name: Poison_Growing_Cloud_Frame_13
+    originalName: 
+    pivot: {x: 0.4705882, y: -0.99999994}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 231
+      y: 262
+      width: 17
+      height: 19
+    spriteID: 2aaaf3a1b37d00141a44d2297a2428bd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 231, y: 262}
+  - name: Poison_Growing_Cloud_Frame_14
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.84210527}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 190
+      y: 335
+      width: 22
+      height: 19
+    spriteID: cea49df4d8309fd4283cfc313f079697
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 190, y: 335}
+  - name: Poison_Growing_Cloud_Frame_15
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.72727275}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 190
+      y: 305
+      width: 22
+      height: 22
+    spriteID: 84373dab8cf962e4cbc0ea45a695492e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 190, y: 305}
+  - name: Poison_Growing_Cloud_Frame_16
+    originalName: 
+    pivot: {x: 0.4705882, y: -0.38235295}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 190
+      y: 220
+      width: 34
+      height: 34
+    spriteID: 5e0bd5b6d130e6646abb0cc810e698ad
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 190, y: 220}
+  - name: Poison_Growing_Cloud_Frame_17
+    originalName: 
+    pivot: {x: 0.4705882, y: -0.31428573}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 190
+      y: 50
+      width: 34
+      height: 35
+    spriteID: a29b81e5773cade40b268286bd001bfc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 190, y: 50}
+  - name: Poison_Growing_Cloud_Frame_18
+    originalName: 
+    pivot: {x: 0.51428574, y: -0.32352942}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 190
+      y: 93
+      width: 35
+      height: 34
+    spriteID: 95b1b04d2f7696a4ab2300f6c8aab34d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 190, y: 93}
+  - name: Poison_Growing_Cloud_Frame_19
+    originalName: 
+    pivot: {x: 0.5588236, y: -0.34285715}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 190
+      y: 135
+      width: 34
+      height: 35
+    spriteID: 653a2f5711b705a44a8e44ced1024d1c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 190, y: 135}
+  - name: Poison_Growing_Cloud_Frame_20
+    originalName: 
+    pivot: {x: 0.51428574, y: -0.38235295}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 190
+      y: 178
+      width: 35
+      height: 34
+    spriteID: 22702ce153918904f946cd6fd8ed05b8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 190, y: 178}
+  - name: Poison_Growing_Cloud_Frame_21
+    originalName: 
+    pivot: {x: 0.48484847, y: -0.31428573}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 190
+      y: 262
+      width: 33
+      height: 35
+    spriteID: 10d6fe996e660784b96496ba20eceb78
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 190, y: 262}
+  - name: Poison_Growing_Cloud_Frame_22
+    originalName: 
+    pivot: {x: 0.5, y: -0.22857144}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 131
+      y: 473
+      width: 38
+      height: 35
+    spriteID: d6c64b686b916a74dbf83a4b96d093f2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 131, y: 473}
+  - name: Poison_Growing_Cloud_Frame_23
+    originalName: 
+    pivot: {x: 0.5, y: -0.21052632}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 190
+      y: 4
+      width: 38
+      height: 38
+    spriteID: 045a2d9155110114da80ffe3ee9fc66d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 190, y: 4}
+  - name: Poison_Growing_Cloud_Frame_24
+    originalName: 
+    pivot: {x: 0.48000002, y: -0.1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 131
+      y: 356
+      width: 50
+      height: 50
+    spriteID: 1bd419990a204dd4e90cdb91a84bc5e2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 131, y: 356}
+  - name: Poison_Growing_Cloud_Frame_25
+    originalName: 
+    pivot: {x: 0.48000002, y: -0.058823533}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 131
+      y: 63
+      width: 50
+      height: 51
+    spriteID: 1cad69a6b3cfb88408e98f78dde749f3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 131, y: 63}
+  - name: Poison_Growing_Cloud_Frame_26
+    originalName: 
+    pivot: {x: 0.50980395, y: -0.060000002}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 131
+      y: 122
+      width: 51
+      height: 50
+    spriteID: 6cca99df1c668934e9e8f1e40a1291e0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 131, y: 122}
+  - name: Poison_Growing_Cloud_Frame_27
+    originalName: 
+    pivot: {x: 0.54, y: -0.07843138}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 131
+      y: 180
+      width: 50
+      height: 51
+    spriteID: cd40406397b60b34f9ea6efab5faffe9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 131, y: 180}
+  - name: Poison_Growing_Cloud_Frame_28
+    originalName: 
+    pivot: {x: 0.50980395, y: -0.1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 131
+      y: 239
+      width: 51
+      height: 50
+    spriteID: 3f1ac52b74c7cfb4ea6350435b3819ae
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 131, y: 239}
+  - name: Poison_Growing_Cloud_Frame_29
+    originalName: 
+    pivot: {x: 0.48979595, y: -0.058823533}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 131
+      y: 414
+      width: 49
+      height: 51
+    spriteID: 6287805736339b3408d35a625fd3fbc7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 131, y: 414}
+  - name: Poison_Growing_Cloud_Frame_30
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 67
+      y: 312
+      width: 54
+      height: 51
+    spriteID: fa30b48e233086e45bf0f69bd841c6c4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 67, y: 312}
+  - name: Poison_Growing_Cloud_Frame_31
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 323
+      width: 54
+      height: 54
+    spriteID: f71c620042bb3e245af5f5dfa7d24030
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 323}
+  - name: Poison_Growing_Cloud_Frame_32
+    originalName: 
+    pivot: {x: 0.5090909, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 55
+      height: 56
+    spriteID: 10d603ddac1bf7c4a95b3f48c3966344
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Poison_Growing_Cloud_Frame_33
+    originalName: 
+    pivot: {x: 0.5283019, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 195
+      width: 53
+      height: 56
+    spriteID: c833a0122c9020e42be240b6adfbb096
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 195}
+  - name: Poison_Growing_Cloud_Frame_34
+    originalName: 
+    pivot: {x: 0.50980395, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 131
+      y: 4
+      width: 51
+      height: 51
+    spriteID: 95faf953219645341919e6d66ac86ad2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 131, y: 4}
+  - name: Poison_Growing_Cloud_Frame_35
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 67
+      y: 371
+      width: 52
+      height: 52
+    spriteID: b50150faacca0b94f8869b8f358686ca
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 67, y: 371}
+  - name: Poison_Growing_Cloud_Frame_36
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 385
+      width: 54
+      height: 54
+    spriteID: 8d4da3071d3e4ea4ba481230c26c753b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 385}
+  - name: Poison_Growing_Cloud_Frame_37
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 132
+      width: 54
+      height: 55
+    spriteID: 7c4db9f4e48ae8d45a9faf1cae1a212a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 132}
+  - name: Poison_Growing_Cloud_Frame_38
+    originalName: 
+    pivot: {x: 0.5, y: -0.018518519}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 67
+      y: 67
+      width: 56
+      height: 54
+    spriteID: 82d142118ed9671498f2402f493b4a4a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 67, y: 67}
+  - name: Poison_Growing_Cloud_Frame_39
+    originalName: 
+    pivot: {x: 0.5, y: -0.01818182}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 67
+      y: 4
+      width: 56
+      height: 55
+    spriteID: d8aeab1fa9d8af34c9b7bcb4a2f32ac6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 67, y: 4}
+  - name: Poison_Growing_Cloud_Frame_40
+    originalName: 
+    pivot: {x: 0.5090909, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 68
+      width: 55
+      height: 56
+    spriteID: 171573c0ae916c042afc0e43b0f1975d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 68}
+  - name: Poison_Growing_Cloud_Frame_41
+    originalName: 
+    pivot: {x: 0.5283019, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 259
+      width: 53
+      height: 56
+    spriteID: e821595666d8ce7449067bd3ca788bf7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 259}
+  - name: Poison_Growing_Cloud_Frame_42
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 131
+      y: 297
+      width: 50
+      height: 51
+    spriteID: 5165fbfe02224634bad40b86aa2d21e5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 131, y: 297}
+  - name: Poison_Growing_Cloud_Frame_43
+    originalName: 
+    pivot: {x: 0.4901961, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 67
+      y: 431
+      width: 51
+      height: 52
+    spriteID: 6ea174bb18f14ed47867fea970f1d037
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 67, y: 431}
+  - name: Poison_Growing_Cloud_Frame_44
+    originalName: 
+    pivot: {x: 0.49056605, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 67
+      y: 190
+      width: 53
+      height: 53
+    spriteID: 3e363efa6e360c845b9f4302c9cf0861
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 67, y: 190}
+  - name: Poison_Growing_Cloud_Frame_45
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 447
+      width: 54
+      height: 54
+    spriteID: 5f23235c32a93fe4693242101290e4d4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 447}
+  - name: Poison_Growing_Cloud_Frame_46
+    originalName: 
+    pivot: {x: 0.5, y: -0.018867925}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 67
+      y: 129
+      width: 56
+      height: 53
+    spriteID: 117db80fa47d1814892c3c6fec76de90
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 67, y: 129}
+  - name: Poison_Growing_Cloud_Frame_47
+    originalName: 
+    pivot: {x: 0.4716981, y: -0.018867925}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 67
+      y: 251
+      width: 53
+      height: 53
+    spriteID: 40e864b14e8d15a418802953806ed877
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 67, y: 251}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 1478702022
+    name: Poison_Growing_Cloud
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Poison_Growing_Cloud_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 28
+        y: 29
+        width: 2
+        height: 2
+      spriteId: 10ed2d3edaead2246b0ef6b24a4149fb
+    - name: Poison_Growing_Cloud_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 28
+        y: 27
+        width: 2
+        height: 3
+      spriteId: 9fbb2e5e7c5507a4bb9a05c3ee366801
+    - name: Poison_Growing_Cloud_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 26
+        y: 27
+        width: 3
+        height: 2
+      spriteId: d13a57afb8d31ff45a1355c6a2441ebd
+    - name: Poison_Growing_Cloud_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 25
+        y: 28
+        width: 2
+        height: 3
+      spriteId: 0d10bb1cf9588ad428e08f97c57072da
+    - name: Poison_Growing_Cloud_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 26
+        y: 29
+        width: 3
+        height: 2
+      spriteId: 34c9eeead95b20d488bf18675b43c982
+    - name: Poison_Growing_Cloud_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 28
+        y: 27
+        width: 1
+        height: 3
+      spriteId: b0a87225aecb7e147b6a9d6dd546d0a3
+    - name: Poison_Growing_Cloud_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 25
+        y: 24
+        width: 6
+        height: 3
+      spriteId: ac6adddb264595346ad546770d0bc94e
+    - name: Poison_Growing_Cloud_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 25
+        y: 24
+        width: 6
+        height: 6
+      spriteId: f54cef9d036dd7a4892db77082c28dde
+    - name: Poison_Growing_Cloud_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 20
+        y: 21
+        width: 18
+        height: 18
+      spriteId: 55326ac5b59716c49ba359ff0f00043c
+    - name: Poison_Growing_Cloud_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 20
+        y: 19
+        width: 18
+        height: 19
+      spriteId: 2f15e11b83539d740bd741de15e79743
+    - name: Poison_Growing_Cloud_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 18
+        y: 19
+        width: 19
+        height: 18
+      spriteId: 74cd587ffeeba2d4b8017b19f099ba68
+    - name: Poison_Growing_Cloud_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 17
+        y: 20
+        width: 18
+        height: 19
+      spriteId: 1d8b2fd7b8996a84e8774f048177ef98
+    - name: Poison_Growing_Cloud_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 18
+        y: 21
+        width: 19
+        height: 18
+      spriteId: 8f654e965cb725f46af72d2d410adab4
+    - name: Poison_Growing_Cloud_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 20
+        y: 19
+        width: 17
+        height: 19
+      spriteId: 2aaaf3a1b37d00141a44d2297a2428bd
+    - name: Poison_Growing_Cloud_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 17
+        y: 16
+        width: 22
+        height: 19
+      spriteId: cea49df4d8309fd4283cfc313f079697
+    - name: Poison_Growing_Cloud_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 17
+        y: 16
+        width: 22
+        height: 22
+      spriteId: 84373dab8cf962e4cbc0ea45a695492e
+    - name: Poison_Growing_Cloud_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 12
+        y: 13
+        width: 34
+        height: 34
+      spriteId: 5e0bd5b6d130e6646abb0cc810e698ad
+    - name: Poison_Growing_Cloud_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 12
+        y: 11
+        width: 34
+        height: 35
+      spriteId: a29b81e5773cade40b268286bd001bfc
+    - name: Poison_Growing_Cloud_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 10
+        y: 11
+        width: 35
+        height: 34
+      spriteId: 95b1b04d2f7696a4ab2300f6c8aab34d
+    - name: Poison_Growing_Cloud_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 9
+        y: 12
+        width: 34
+        height: 35
+      spriteId: 653a2f5711b705a44a8e44ced1024d1c
+    - name: Poison_Growing_Cloud_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 10
+        y: 13
+        width: 35
+        height: 34
+      spriteId: 22702ce153918904f946cd6fd8ed05b8
+    - name: Poison_Growing_Cloud_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 12
+        y: 11
+        width: 33
+        height: 35
+      spriteId: 10d6fe996e660784b96496ba20eceb78
+    - name: Poison_Growing_Cloud_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 9
+        y: 8
+        width: 38
+        height: 35
+      spriteId: d6c64b686b916a74dbf83a4b96d093f2
+    - name: Poison_Growing_Cloud_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 9
+        y: 8
+        width: 38
+        height: 38
+      spriteId: 045a2d9155110114da80ffe3ee9fc66d
+    - name: Poison_Growing_Cloud_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 4
+        y: 5
+        width: 50
+        height: 50
+      spriteId: 1bd419990a204dd4e90cdb91a84bc5e2
+    - name: Poison_Growing_Cloud_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 4
+        y: 3
+        width: 50
+        height: 51
+      spriteId: 1cad69a6b3cfb88408e98f78dde749f3
+    - name: Poison_Growing_Cloud_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 2
+        y: 3
+        width: 51
+        height: 50
+      spriteId: 6cca99df1c668934e9e8f1e40a1291e0
+    - name: Poison_Growing_Cloud_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 1
+        y: 4
+        width: 50
+        height: 51
+      spriteId: cd40406397b60b34f9ea6efab5faffe9
+    - name: Poison_Growing_Cloud_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 2
+        y: 5
+        width: 51
+        height: 50
+      spriteId: 3f1ac52b74c7cfb4ea6350435b3819ae
+    - name: Poison_Growing_Cloud_Frame_29
+      frameIndex: 29
+      cellRect:
+        x: 4
+        y: 3
+        width: 49
+        height: 51
+      spriteId: 6287805736339b3408d35a625fd3fbc7
+    - name: Poison_Growing_Cloud_Frame_30
+      frameIndex: 30
+      cellRect:
+        x: 1
+        y: 0
+        width: 54
+        height: 51
+      spriteId: fa30b48e233086e45bf0f69bd841c6c4
+    - name: Poison_Growing_Cloud_Frame_31
+      frameIndex: 31
+      cellRect:
+        x: 1
+        y: 0
+        width: 54
+        height: 54
+      spriteId: f71c620042bb3e245af5f5dfa7d24030
+    - name: Poison_Growing_Cloud_Frame_32
+      frameIndex: 32
+      cellRect:
+        x: 0
+        y: 0
+        width: 55
+        height: 56
+      spriteId: 10d603ddac1bf7c4a95b3f48c3966344
+    - name: Poison_Growing_Cloud_Frame_33
+      frameIndex: 33
+      cellRect:
+        x: 0
+        y: 0
+        width: 53
+        height: 56
+      spriteId: c833a0122c9020e42be240b6adfbb096
+    - name: Poison_Growing_Cloud_Frame_34
+      frameIndex: 34
+      cellRect:
+        x: 2
+        y: 0
+        width: 51
+        height: 51
+      spriteId: 95faf953219645341919e6d66ac86ad2
+    - name: Poison_Growing_Cloud_Frame_35
+      frameIndex: 35
+      cellRect:
+        x: 2
+        y: 0
+        width: 52
+        height: 52
+      spriteId: b50150faacca0b94f8869b8f358686ca
+    - name: Poison_Growing_Cloud_Frame_36
+      frameIndex: 36
+      cellRect:
+        x: 1
+        y: 0
+        width: 54
+        height: 54
+      spriteId: 8d4da3071d3e4ea4ba481230c26c753b
+    - name: Poison_Growing_Cloud_Frame_37
+      frameIndex: 37
+      cellRect:
+        x: 1
+        y: 0
+        width: 54
+        height: 55
+      spriteId: 7c4db9f4e48ae8d45a9faf1cae1a212a
+    - name: Poison_Growing_Cloud_Frame_38
+      frameIndex: 38
+      cellRect:
+        x: 0
+        y: 1
+        width: 56
+        height: 54
+      spriteId: 82d142118ed9671498f2402f493b4a4a
+    - name: Poison_Growing_Cloud_Frame_39
+      frameIndex: 39
+      cellRect:
+        x: 0
+        y: 1
+        width: 56
+        height: 55
+      spriteId: d8aeab1fa9d8af34c9b7bcb4a2f32ac6
+    - name: Poison_Growing_Cloud_Frame_40
+      frameIndex: 40
+      cellRect:
+        x: 0
+        y: 0
+        width: 55
+        height: 56
+      spriteId: 171573c0ae916c042afc0e43b0f1975d
+    - name: Poison_Growing_Cloud_Frame_41
+      frameIndex: 41
+      cellRect:
+        x: 0
+        y: 0
+        width: 53
+        height: 56
+      spriteId: e821595666d8ce7449067bd3ca788bf7
+    - name: Poison_Growing_Cloud_Frame_42
+      frameIndex: 42
+      cellRect:
+        x: 3
+        y: 0
+        width: 50
+        height: 51
+      spriteId: 5165fbfe02224634bad40b86aa2d21e5
+    - name: Poison_Growing_Cloud_Frame_43
+      frameIndex: 43
+      cellRect:
+        x: 3
+        y: 0
+        width: 51
+        height: 52
+      spriteId: 6ea174bb18f14ed47867fea970f1d037
+    - name: Poison_Growing_Cloud_Frame_44
+      frameIndex: 44
+      cellRect:
+        x: 2
+        y: 0
+        width: 53
+        height: 53
+      spriteId: 3e363efa6e360c845b9f4302c9cf0861
+    - name: Poison_Growing_Cloud_Frame_45
+      frameIndex: 45
+      cellRect:
+        x: 1
+        y: 0
+        width: 54
+        height: 54
+      spriteId: 5f23235c32a93fe4693242101290e4d4
+    - name: Poison_Growing_Cloud_Frame_46
+      frameIndex: 46
+      cellRect:
+        x: 0
+        y: 1
+        width: 56
+        height: 53
+      spriteId: 117db80fa47d1814892c3c6fec76de90
+    - name: Poison_Growing_Cloud_Frame_47
+      frameIndex: 47
+      cellRect:
+        x: 3
+        y: 1
+        width: 53
+        height: 53
+      spriteId: 40e864b14e8d15a418802953806ed877
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 56, y: 56}

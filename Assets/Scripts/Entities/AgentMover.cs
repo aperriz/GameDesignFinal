@@ -54,6 +54,7 @@ public class AgentMover : MonoBehaviour
     private IEnumerator SpeedPotion()
     {
         yield return new WaitForSeconds(30);
-        maxSpeed /= 2;
+        maxSpeed /= 1.5f;
+        GetComponent<PlayerExtraStats>().speedPotionCooldown = false;
     }
 }

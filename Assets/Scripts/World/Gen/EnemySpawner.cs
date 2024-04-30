@@ -44,31 +44,38 @@ public class AgentPlacer : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (bossRoom != null)
+        if (bossRoom != null && generated)
         {
             //Debug.Log("Boss Room not Null");
-            //Debug.Log(bossRoom.EnemiesInTheRoom.Count());
+            
             //Debug.Log(generated);
-            if (bossRoom.EnemiesInTheRoom.Count == 0 && generated && !portal)
+            if (bossRoom.EnemiesInTheRoom.Count == 0 && !portal)
             {
                 portal = true;
                 Instantiate(portalPrefab, new Vector3(bossRoom.RoomCenterPos.x, bossRoom.RoomCenterPos.y, -15), Quaternion.identity);
                 Debug.Log("Portal");
             }
 
-        }
-
-        if (generated && bossRoom.EnemiesInTheRoom.Count != 0)
-        {
-            for(int i = 0; i < bossRoom.EnemiesInTheRoom.Count; i++)
+            if (bossRoom.EnemiesInTheRoom.Count != 0)
             {
-                if(bossRoom.EnemiesInTheRoom.ElementAt(i) == null)
+                Debug.Log(bossRoom.EnemiesInTheRoom.Count());
+                for (int i = 0; i < bossRoom.EnemiesInTheRoom.Count; i++)
                 {
-                    bossRoom.EnemiesInTheRoom.RemoveAt(i); 
-                    break;
+                    if (bossRoom.EnemiesInTheRoom.ElementAt(i).gameObject == null)
+                    {
+                        bossRoom.EnemiesInTheRoom.RemoveAt(i);
+                        break;
+                    }
+                    else
+                    {
+                        Debug.Log(bossRoom.EnemiesInTheRoom.ElementAt(i).gameObject);
+                    }
                 }
             }
+
         }
+
+        
 
     }
 
@@ -141,6 +148,9 @@ public class AgentPlacer : MonoBehaviour
                 PlaceEnemies(room, "");
             }
         }
+        Debug.Log("Done Gen");
+        GameObject.Find("Loading Screen").SetActive(false);
+        Time.timeScale = 1.0f;
         generated = true;
     }
 
@@ -239,30 +249,31 @@ public class AgentPlacer : MonoBehaviour
             if (spawnableEnemies.Count > 0 && room.EnemiesInTheRoom.Count <= 6 + (level * 2))
             {
                 //Debug.Log("Spawning enemy");
-                GameObject enemy = null;
+                GameObject enemyPrefab = null;
 
                 if (highWeightEnemies.Count > 0)
                 {
                     if (UnityEngine.Random.Range(0f, 10f) <= (float)(9 * (Math.Pow(Math.Pow(2 / 9, 1 / 8), level - 1))))
                     {
-                        enemy = lowWeightEnemies.ElementAt(UnityEngine.Random.Range(0, lowWeightSpawnables.Count));
+                        enemyPrefab = lowWeightEnemies.ElementAt(UnityEngine.Random.Range(0, lowWeightSpawnables.Count));
                     }
                     else
                     {
-                        enemy = highWeightEnemies.ElementAt(UnityEngine.Random.Range(0, highWeightEnemies.Count));
+                        enemyPrefab = highWeightEnemies.ElementAt(UnityEngine.Random.Range(0, highWeightEnemies.Count));
                     }
                 }
                 else
                 {
-                    enemy = lowWeightEnemies.ElementAt(UnityEngine.Random.Range(0, lowWeightSpawnables.Count));
+                    enemyPrefab = lowWeightEnemies.ElementAt(UnityEngine.Random.Range(0, lowWeightSpawnables.Count));
                 }
 
+                GameObject enemy = Instantiate(enemyPrefab, enemyParent);
                 int enemyWeight = enemy.GetComponentInChildren<EnemyRecieveDamage>().weight;
                 roomWeight = roomWeight + enemyWeight;
                 enemy.transform.localPosition = (Vector2)room.PositionsAccessibleFromPath[k] + Vector2.one * 0.5f;
-                Instantiate(enemy, enemyParent);
-
                 room.EnemiesInTheRoom.Add(enemy);
+
+
                 k++;
 
             }

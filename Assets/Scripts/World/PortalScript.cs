@@ -15,7 +15,8 @@ public class PortalScript : MonoBehaviour
     {
         if (collision.name == "Player")
         {
-            RoomFirstDungeonGenerator dungeonGenerator = new RoomFirstDungeonGenerator();
+
+            RoomFirstDungeonGenerator dungeonGenerator = GameObject.Find("RoomFirstDungeonGenerator").GetComponent<RoomFirstDungeonGenerator>();
             if(dungeonGenerator.level <= 8)
             {
                 SceneManager.LoadScene("Level " + (dungeonGenerator.level + 1));
@@ -24,6 +25,7 @@ public class PortalScript : MonoBehaviour
             {
                 SceneManager.LoadScene("Boss Phase 1");
             }
+            GameObject.Find("Loading Screen").SetActive(true);
         }
     }
 

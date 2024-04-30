@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class DeathScreen : MonoBehaviour
 {
-    private void ReturnToMainMenu()
+    public void ReturnToMainMenu()
     {
         gameObject.SetActive(false);
         Destroy(gameObject);

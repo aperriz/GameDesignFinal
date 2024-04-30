@@ -1,0 +1,864 @@
+fileFormatVersion: 2
+guid: e74f5a40a0f9c0545a4df574acda5657
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Electric_Expansive_Shock_Frame_0
+    originalName: 
+    pivot: {x: 0.49999976, y: -15}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 208
+      y: 156
+      width: 2
+      height: 2
+    spriteID: da6226b42e6368a408d0859907cfdfa8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 208, y: 156}
+  - name: Electric_Expansive_Shock_Frame_1
+    originalName: 
+    pivot: {x: 0.24999988, y: -4.333333}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 82
+      y: 243
+      width: 4
+      height: 6
+    spriteID: f323e4babb8d3874f8f69020cbddf0d7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 82, y: 243}
+  - name: Electric_Expansive_Shock_Frame_2
+    originalName: 
+    pivot: {x: 0.6666666, y: -4.333333}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 162
+      y: 246
+      width: 6
+      height: 6
+    spriteID: 7ba73be988b4bb34cb838fa113de275b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 162, y: 246}
+  - name: Electric_Expansive_Shock_Frame_3
+    originalName: 
+    pivot: {x: 0.33333343, y: -4.333333}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 243
+      width: 6
+      height: 6
+    spriteID: e6986ab048a568442b2b95626666cd35
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 243}
+  - name: Electric_Expansive_Shock_Frame_4
+    originalName: 
+    pivot: {x: 0.5, y: -3.5714285}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 208
+      y: 141
+      width: 6
+      height: 7
+    spriteID: 47f8ebc2b20df73418410d3f2ac116e2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 208, y: 141}
+  - name: Electric_Expansive_Shock_Frame_5
+    originalName: 
+    pivot: {x: 0.49999997, y: -5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 162
+      y: 233
+      width: 8
+      height: 5
+    spriteID: 871cdd5c9f715fe409636aa39631d70d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 162, y: 233}
+  - name: Electric_Expansive_Shock_Frame_6
+    originalName: 
+    pivot: {x: 0.47368425, y: -1.0555556}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 180
+      y: 168
+      width: 19
+      height: 18
+    spriteID: 6f089e1f2c7eac4448134468abb4307d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 180, y: 168}
+  - name: Electric_Expansive_Shock_Frame_7
+    originalName: 
+    pivot: {x: 0.5, y: -0.99999994}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 180
+      y: 141
+      width: 20
+      height: 19
+    spriteID: 490841b47d49f464882b63c3c350d5bd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 180, y: 141}
+  - name: Electric_Expansive_Shock_Frame_8
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.99999994}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 132
+      y: 233
+      width: 22
+      height: 19
+    spriteID: 546d05fbafd90484992820b38edbe11a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 132, y: 233}
+  - name: Electric_Expansive_Shock_Frame_9
+    originalName: 
+    pivot: {x: 0.49999994, y: -0.73913044}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 180
+      y: 110
+      width: 24
+      height: 23
+    spriteID: 639994111483e3c4aab441d3aef0e78b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 180, y: 110}
+  - name: Electric_Expansive_Shock_Frame_10
+    originalName: 
+    pivot: {x: 0.49999994, y: -0.6666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 180
+      y: 46
+      width: 24
+      height: 24
+    spriteID: 9c1c96f7e35e1994c8bbadbbffb6fa89
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 180, y: 46}
+  - name: Electric_Expansive_Shock_Frame_11
+    originalName: 
+    pivot: {x: 0.49999994, y: -0.6666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 180
+      y: 78
+      width: 24
+      height: 24
+    spriteID: 82877950bbdabfb4d8e6d460d127bf79
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 180, y: 78}
+  - name: Electric_Expansive_Shock_Frame_12
+    originalName: 
+    pivot: {x: 0.4857143, y: -0.32352942}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 180
+      y: 4
+      width: 35
+      height: 34
+    spriteID: a1e26e97283bc164a9cf64a863dbdf78
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 180, y: 4}
+  - name: Electric_Expansive_Shock_Frame_13
+    originalName: 
+    pivot: {x: 0.5, y: -0.31428573}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 132
+      y: 190
+      width: 36
+      height: 35
+    spriteID: 8fbf2245569888e4e9cde9bd8811f0e1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 132, y: 190}
+  - name: Electric_Expansive_Shock_Frame_14
+    originalName: 
+    pivot: {x: 0.5, y: -0.31428573}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 132
+      y: 147
+      width: 38
+      height: 35
+    spriteID: fad57f2e7b312314bac423b81720c83f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 132, y: 147}
+  - name: Electric_Expansive_Shock_Frame_15
+    originalName: 
+    pivot: {x: 0.5, y: -0.23076923}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 132
+      y: 100
+      width: 40
+      height: 39
+    spriteID: 1def3eab3389a7844ac166c8df8721d0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 132, y: 100}
+  - name: Electric_Expansive_Shock_Frame_16
+    originalName: 
+    pivot: {x: 0.5, y: -0.2}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 132
+      y: 4
+      width: 40
+      height: 40
+    spriteID: b63c54fcc9049ae4f94aa22eb6bac591
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 132, y: 4}
+  - name: Electric_Expansive_Shock_Frame_17
+    originalName: 
+    pivot: {x: 0.5, y: -0.2}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 132
+      y: 52
+      width: 40
+      height: 40
+    spriteID: 31a222a4ac7a60642a81eedf12a27b16
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 132, y: 52}
+  - name: Electric_Expansive_Shock_Frame_18
+    originalName: 
+    pivot: {x: 0.4901961, y: -0.060000002}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 185
+      width: 51
+      height: 50
+    spriteID: 6c1783929161c0a4ab1173f6b2d1e553
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 185}
+  - name: Electric_Expansive_Shock_Frame_19
+    originalName: 
+    pivot: {x: 0.5, y: -0.058823533}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 126
+      width: 52
+      height: 51
+    spriteID: 248ca323e25cacf4ba9bc0136e6e19d7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 126}
+  - name: Electric_Expansive_Shock_Frame_20
+    originalName: 
+    pivot: {x: 0.5, y: -0.058823533}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 67
+      width: 54
+      height: 51
+    spriteID: f3a05c6a7c6514342bcd2048f2fe0621
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 67}
+  - name: Electric_Expansive_Shock_Frame_21
+    originalName: 
+    pivot: {x: 0.5, y: -0.01818182}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 4
+      width: 56
+      height: 55
+    spriteID: 734859269594170459f79cc7162a93c1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 4}
+  - name: Electric_Expansive_Shock_Frame_22
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 56
+      height: 56
+    spriteID: f1ebefc2db5136241bb9c82e0468777b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Electric_Expansive_Shock_Frame_23
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 68
+      width: 56
+      height: 56
+    spriteID: 3c5f6b738fc6fe846957b996d77a9e88
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 68}
+  - name: Electric_Expansive_Shock_Frame_24
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 132
+      width: 56
+      height: 56
+    spriteID: 10a5c40c8df09f5458c96ead1024b9ff
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 132}
+  - name: Electric_Expansive_Shock_Frame_25
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 196
+      width: 56
+      height: 56
+    spriteID: aa1b35cd34ea4ac43a2fcb241f08ad49
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 196}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 1168546590
+    name: Electric_Expansive_Shock
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Electric_Expansive_Shock_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 27
+        y: 30
+        width: 2
+        height: 2
+      spriteId: da6226b42e6368a408d0859907cfdfa8
+    - name: Electric_Expansive_Shock_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 27
+        y: 26
+        width: 4
+        height: 6
+      spriteId: f323e4babb8d3874f8f69020cbddf0d7
+    - name: Electric_Expansive_Shock_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 24
+        y: 26
+        width: 6
+        height: 6
+      spriteId: 7ba73be988b4bb34cb838fa113de275b
+    - name: Electric_Expansive_Shock_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 26
+        y: 26
+        width: 6
+        height: 6
+      spriteId: e6986ab048a568442b2b95626666cd35
+    - name: Electric_Expansive_Shock_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 25
+        y: 25
+        width: 6
+        height: 7
+      spriteId: 47f8ebc2b20df73418410d3f2ac116e2
+    - name: Electric_Expansive_Shock_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 24
+        y: 25
+        width: 8
+        height: 5
+      spriteId: 871cdd5c9f715fe409636aa39631d70d
+    - name: Electric_Expansive_Shock_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 19
+        y: 19
+        width: 19
+        height: 18
+      spriteId: 6f089e1f2c7eac4448134468abb4307d
+    - name: Electric_Expansive_Shock_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 18
+        y: 19
+        width: 20
+        height: 19
+      spriteId: 490841b47d49f464882b63c3c350d5bd
+    - name: Electric_Expansive_Shock_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 17
+        y: 19
+        width: 22
+        height: 19
+      spriteId: 546d05fbafd90484992820b38edbe11a
+    - name: Electric_Expansive_Shock_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 16
+        y: 17
+        width: 24
+        height: 23
+      spriteId: 639994111483e3c4aab441d3aef0e78b
+    - name: Electric_Expansive_Shock_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 16
+        y: 16
+        width: 24
+        height: 24
+      spriteId: 9c1c96f7e35e1994c8bbadbbffb6fa89
+    - name: Electric_Expansive_Shock_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 16
+        y: 16
+        width: 24
+        height: 24
+      spriteId: 82877950bbdabfb4d8e6d460d127bf79
+    - name: Electric_Expansive_Shock_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 11
+        y: 11
+        width: 35
+        height: 34
+      spriteId: a1e26e97283bc164a9cf64a863dbdf78
+    - name: Electric_Expansive_Shock_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 10
+        y: 11
+        width: 36
+        height: 35
+      spriteId: 8fbf2245569888e4e9cde9bd8811f0e1
+    - name: Electric_Expansive_Shock_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 9
+        y: 11
+        width: 38
+        height: 35
+      spriteId: fad57f2e7b312314bac423b81720c83f
+    - name: Electric_Expansive_Shock_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 8
+        y: 9
+        width: 40
+        height: 39
+      spriteId: 1def3eab3389a7844ac166c8df8721d0
+    - name: Electric_Expansive_Shock_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 8
+        y: 8
+        width: 40
+        height: 40
+      spriteId: b63c54fcc9049ae4f94aa22eb6bac591
+    - name: Electric_Expansive_Shock_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 8
+        y: 8
+        width: 40
+        height: 40
+      spriteId: 31a222a4ac7a60642a81eedf12a27b16
+    - name: Electric_Expansive_Shock_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 3
+        y: 3
+        width: 51
+        height: 50
+      spriteId: 6c1783929161c0a4ab1173f6b2d1e553
+    - name: Electric_Expansive_Shock_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 2
+        y: 3
+        width: 52
+        height: 51
+      spriteId: 248ca323e25cacf4ba9bc0136e6e19d7
+    - name: Electric_Expansive_Shock_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 1
+        y: 3
+        width: 54
+        height: 51
+      spriteId: f3a05c6a7c6514342bcd2048f2fe0621
+    - name: Electric_Expansive_Shock_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 0
+        y: 1
+        width: 56
+        height: 55
+      spriteId: 734859269594170459f79cc7162a93c1
+    - name: Electric_Expansive_Shock_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 0
+        y: 0
+        width: 56
+        height: 56
+      spriteId: f1ebefc2db5136241bb9c82e0468777b
+    - name: Electric_Expansive_Shock_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 0
+        y: 0
+        width: 56
+        height: 56
+      spriteId: 3c5f6b738fc6fe846957b996d77a9e88
+    - name: Electric_Expansive_Shock_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 0
+        y: 0
+        width: 56
+        height: 56
+      spriteId: 10a5c40c8df09f5458c96ead1024b9ff
+    - name: Electric_Expansive_Shock_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 0
+        y: 0
+        width: 56
+        height: 56
+      spriteId: aa1b35cd34ea4ac43a2fcb241f08ad49
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 56, y: 56}

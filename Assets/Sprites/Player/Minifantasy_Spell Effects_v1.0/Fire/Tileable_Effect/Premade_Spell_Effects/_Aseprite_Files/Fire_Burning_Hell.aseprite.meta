@@ -1,0 +1,584 @@
+fileFormatVersion: 2
+guid: b1a824df251d5ab4380d80974cd5be74
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Fire_Burning_Hell_Frame_0
+    originalName: 
+    pivot: {x: 0.5, y: -0.88888884}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 208
+      y: 212
+      width: 72
+      height: 72
+    spriteID: d1c7537833cdade4ba082de9056e243d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 208, y: 212}
+  - name: Fire_Burning_Hell_Frame_1
+    originalName: 
+    pivot: {x: 0.5, y: -0.88888884}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 208
+      y: 292
+      width: 72
+      height: 72
+    spriteID: b86cf2108cb13a542b6ea78c8ccbd8a6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 208, y: 292}
+  - name: Fire_Burning_Hell_Frame_2
+    originalName: 
+    pivot: {x: 0.5, y: -0.88888884}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 208
+      y: 372
+      width: 72
+      height: 72
+    spriteID: 63c11ea7d4fef1040a212f87fe940afd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 208, y: 372}
+  - name: Fire_Burning_Hell_Frame_3
+    originalName: 
+    pivot: {x: 0.5, y: -0.88888884}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 208
+      y: 452
+      width: 72
+      height: 72
+    spriteID: 2eb8fafdc27b3b949bc7a4006b8919f4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 208, y: 452}
+  - name: Fire_Burning_Hell_Frame_4
+    originalName: 
+    pivot: {x: 0.5, y: -0.90140843}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 208
+      y: 612
+      width: 72
+      height: 71
+    spriteID: bb51efa3463e64b438960b3fb07bcdde
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 208, y: 612}
+  - name: Fire_Burning_Hell_Frame_5
+    originalName: 
+    pivot: {x: 0.50000006, y: -0.9285714}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 208
+      y: 691
+      width: 70
+      height: 70
+    spriteID: 305b64893516d2641a203ec53da6e08e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 208, y: 691}
+  - name: Fire_Burning_Hell_Frame_6
+    originalName: 
+    pivot: {x: 0.50000006, y: -0.9285714}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 208
+      y: 769
+      width: 70
+      height: 70
+    spriteID: 1bb978afb4f1ff748bd9867c9382d1bd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 208, y: 769}
+  - name: Fire_Burning_Hell_Frame_7
+    originalName: 
+    pivot: {x: 0.5, y: -0.88888884}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 208
+      y: 532
+      width: 72
+      height: 72
+    spriteID: a13a2e4695ee7c14cbf40d353f851571
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 208, y: 532}
+  - name: Fire_Burning_Hell_Frame_8
+    originalName: 
+    pivot: {x: 0.5, y: -0.6363636}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 208
+      y: 116
+      width: 88
+      height: 88
+    spriteID: 00ac7eccb3b259c4a86f8745fdc23dca
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 208, y: 116}
+  - name: Fire_Burning_Hell_Frame_9
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.46153843}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 208
+      y: 4
+      width: 104
+      height: 104
+    spriteID: 8bef00401ac09424da0d054a5316054b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 208, y: 4}
+  - name: Fire_Burning_Hell_Frame_10
+    originalName: 
+    pivot: {x: 0.5, y: -0.33333334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 874
+      width: 120
+      height: 120
+    spriteID: a518401627c749f4bb03b4bd5c2f54cf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 874}
+  - name: Fire_Burning_Hell_Frame_11
+    originalName: 
+    pivot: {x: 0.5, y: -0.2352941}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 730
+      width: 136
+      height: 136
+    spriteID: e88d5a7998b891148a5789838b7239c4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 730}
+  - name: Fire_Burning_Hell_Frame_12
+    originalName: 
+    pivot: {x: 0.5, y: -0.15789473}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 570
+      width: 152
+      height: 152
+    spriteID: 3c86da493bf5aea4e8eae68b04546957
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 570}
+  - name: Fire_Burning_Hell_Frame_13
+    originalName: 
+    pivot: {x: 0.5, y: -0.108433746}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 396
+      width: 168
+      height: 166
+    spriteID: bc032bb41a36ec54f825b4e56530a472
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 396}
+  - name: Fire_Burning_Hell_Frame_14
+    originalName: 
+    pivot: {x: 0.5, y: -0.06077348}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 207
+      width: 182
+      height: 181
+    spriteID: 875daf16c5363bf4d9bb63c504d44dfe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 207}
+  - name: Fire_Burning_Hell_Frame_15
+    originalName: 
+    pivot: {x: 0.5, y: -0.025641028}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 196
+      height: 195
+    spriteID: 461d7688bb0d97a4d9ad2e21b5f331b9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 832759228
+    name: Fire_Burning_Hell
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Fire_Burning_Hell_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 64
+        y: 64
+        width: 72
+        height: 72
+      spriteId: d1c7537833cdade4ba082de9056e243d
+    - name: Fire_Burning_Hell_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 64
+        y: 64
+        width: 72
+        height: 72
+      spriteId: b86cf2108cb13a542b6ea78c8ccbd8a6
+    - name: Fire_Burning_Hell_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 64
+        y: 64
+        width: 72
+        height: 72
+      spriteId: 63c11ea7d4fef1040a212f87fe940afd
+    - name: Fire_Burning_Hell_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 64
+        y: 64
+        width: 72
+        height: 72
+      spriteId: 2eb8fafdc27b3b949bc7a4006b8919f4
+    - name: Fire_Burning_Hell_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 64
+        y: 64
+        width: 72
+        height: 71
+      spriteId: bb51efa3463e64b438960b3fb07bcdde
+    - name: Fire_Burning_Hell_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 65
+        y: 65
+        width: 70
+        height: 70
+      spriteId: 305b64893516d2641a203ec53da6e08e
+    - name: Fire_Burning_Hell_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 65
+        y: 65
+        width: 70
+        height: 70
+      spriteId: 1bb978afb4f1ff748bd9867c9382d1bd
+    - name: Fire_Burning_Hell_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 64
+        y: 64
+        width: 72
+        height: 72
+      spriteId: a13a2e4695ee7c14cbf40d353f851571
+    - name: Fire_Burning_Hell_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 56
+        y: 56
+        width: 88
+        height: 88
+      spriteId: 00ac7eccb3b259c4a86f8745fdc23dca
+    - name: Fire_Burning_Hell_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 48
+        y: 48
+        width: 104
+        height: 104
+      spriteId: 8bef00401ac09424da0d054a5316054b
+    - name: Fire_Burning_Hell_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 40
+        y: 40
+        width: 120
+        height: 120
+      spriteId: a518401627c749f4bb03b4bd5c2f54cf
+    - name: Fire_Burning_Hell_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 32
+        y: 32
+        width: 136
+        height: 136
+      spriteId: e88d5a7998b891148a5789838b7239c4
+    - name: Fire_Burning_Hell_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 24
+        y: 24
+        width: 152
+        height: 152
+      spriteId: 3c86da493bf5aea4e8eae68b04546957
+    - name: Fire_Burning_Hell_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 16
+        y: 18
+        width: 168
+        height: 166
+      spriteId: bc032bb41a36ec54f825b4e56530a472
+    - name: Fire_Burning_Hell_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 9
+        y: 11
+        width: 182
+        height: 181
+      spriteId: 875daf16c5363bf4d9bb63c504d44dfe
+    - name: Fire_Burning_Hell_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 2
+        y: 5
+        width: 196
+        height: 195
+      spriteId: 461d7688bb0d97a4d9ad2e21b5f331b9
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 200, y: 200}

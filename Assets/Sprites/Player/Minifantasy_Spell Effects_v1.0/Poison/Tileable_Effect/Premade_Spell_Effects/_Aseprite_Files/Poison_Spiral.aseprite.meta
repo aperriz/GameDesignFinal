@@ -1,0 +1,2544 @@
+fileFormatVersion: 2
+guid: 35d41427b27f5fc4ea0ccafa89024739
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Poison_Spiral_Frame_0
+    originalName: 
+    pivot: {x: 10, y: -58.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 490
+      y: 616
+      width: 2
+      height: 2
+    spriteID: 5a4fe569ea2c18044857a9d3323a3271
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 490, y: 616}
+  - name: Poison_Spiral_Frame_1
+    originalName: 
+    pivot: {x: 2, y: -28.75}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 594
+      y: 638
+      width: 10
+      height: 4
+    spriteID: 0a4bcb9a5a1bbef47bb1fd9915cedd07
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 594, y: 638}
+  - name: Poison_Spiral_Frame_2
+    originalName: 
+    pivot: {x: 1.0999999, y: -28.75}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 269
+      y: 634
+      width: 20
+      height: 4
+    spriteID: 04eccced154f0a146a5803c36e1294eb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 269, y: 634}
+  - name: Poison_Spiral_Frame_3
+    originalName: 
+    pivot: {x: 0.7931034, y: -28.75}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 557
+      y: 638
+      width: 29
+      height: 4
+    spriteID: 62f395947c08b184daad3611f68e60a6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 557, y: 638}
+  - name: Poison_Spiral_Frame_4
+    originalName: 
+    pivot: {x: 0.6111111, y: -10.900001}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 446
+      y: 616
+      width: 36
+      height: 10
+    spriteID: aba688da12223cd41b2a1bfc97377c01
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 446, y: 616}
+  - name: Poison_Spiral_Frame_5
+    originalName: 
+    pivot: {x: 0.4761905, y: -8.916666}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 502
+      y: 617
+      width: 42
+      height: 12
+    spriteID: 5eb01dcf76e659a498653fef9dafdbe1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 502, y: 617}
+  - name: Poison_Spiral_Frame_6
+    originalName: 
+    pivot: {x: 0.43396226, y: -5.6111107}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 304
+      y: 616
+      width: 53
+      height: 18
+    spriteID: d21a2ca949478034aaf0300cac7d74e9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 304, y: 616}
+  - name: Poison_Spiral_Frame_7
+    originalName: 
+    pivot: {x: 0.37704915, y: -3.576923}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 89
+      y: 617
+      width: 61
+      height: 26
+    spriteID: 26146aa5b93d5f744a84a94d803ec342
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 89, y: 617}
+  - name: Poison_Spiral_Frame_8
+    originalName: 
+    pivot: {x: 0.34285712, y: -2.4285715}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 368
+      y: 604
+      width: 70
+      height: 35
+    spriteID: da8b12ad3af029440815e345ccca181b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 368, y: 604}
+  - name: Poison_Spiral_Frame_9
+    originalName: 
+    pivot: {x: 0.34285712, y: -1.7906976}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 368
+      y: 553
+      width: 70
+      height: 43
+    spriteID: 5fb398b8fe9baed40845b7b9474b2f1c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 368, y: 553}
+  - name: Poison_Spiral_Frame_10
+    originalName: 
+    pivot: {x: 0.28947368, y: -1.3529412}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 784
+      y: 458
+      width: 76
+      height: 51
+    spriteID: 6727c26df65d2f54abd168d9c828067c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 784, y: 458}
+  - name: Poison_Spiral_Frame_11
+    originalName: 
+    pivot: {x: 0.28947368, y: -1.0338984}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 345
+      y: 458
+      width: 76
+      height: 59
+    spriteID: 164182f4bf7ad874680c1577c96cfd5e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 345, y: 458}
+  - name: Poison_Spiral_Frame_12
+    originalName: 
+    pivot: {x: 0.2987013, y: -0.7910448}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 183
+      y: 458
+      width: 77
+      height: 67
+    spriteID: 746428acef31856499e72ca25d531179
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 183, y: 458}
+  - name: Poison_Spiral_Frame_13
+    originalName: 
+    pivot: {x: 0.2987013, y: -0.6081081}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 784
+      y: 248
+      width: 77
+      height: 74
+    spriteID: 4a6d645dad9236d4aa76d4a188285547
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 784, y: 248}
+  - name: Poison_Spiral_Frame_14
+    originalName: 
+    pivot: {x: 0.3076923, y: -0.45121953}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 97
+      y: 458
+      width: 78
+      height: 82
+    spriteID: 88d4946e2bf81b84182d103ad14a43dc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 97, y: 458}
+  - name: Poison_Spiral_Frame_15
+    originalName: 
+    pivot: {x: 0.3116883, y: -0.31868133}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 553
+      width: 77
+      height: 91
+    spriteID: 9f06f4e6fb206f545954d044fac372ac
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 553}
+  - name: Poison_Spiral_Frame_16
+    originalName: 
+    pivot: {x: 0.30379745, y: -0.21212122}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 824
+      y: 335
+      width: 79
+      height: 99
+    spriteID: bba0a8cedf8309c419668cfc328b16ef
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 824, y: 335}
+  - name: Poison_Spiral_Frame_17
+    originalName: 
+    pivot: {x: 0.30379745, y: -0.12149533}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 88
+      y: 335
+      width: 79
+      height: 107
+    spriteID: 712db7e39f708ac4eb3f7690dd2f4f32
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 88, y: 335}
+  - name: Poison_Spiral_Frame_18
+    originalName: 
+    pivot: {x: 0.27631578, y: -0.100917436}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 271
+      y: 335
+      width: 76
+      height: 109
+    spriteID: dd0adfee41610c24b86df3123a355b79
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 271, y: 335}
+  - name: Poison_Spiral_Frame_19
+    originalName: 
+    pivot: {x: 0.27631578, y: -0.04347826}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 918
+      y: 122
+      width: 76
+      height: 115
+    spriteID: a4b24be119220aa4bad62e62cac1cd7d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 918, y: 122}
+  - name: Poison_Spiral_Frame_20
+    originalName: 
+    pivot: {x: 0.2857143, y: -0.025641028}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 747
+      y: 122
+      width: 77
+      height: 117
+    spriteID: 4fffc1da821862645b7cc1ce3e8866fd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 747, y: 122}
+  - name: Poison_Spiral_Frame_21
+    originalName: 
+    pivot: {x: 0.29487178, y: -0.026086956}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 832
+      y: 122
+      width: 78
+      height: 115
+    spriteID: ae9038a58c4ab7342897705832f8ae9d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 832, y: 122}
+  - name: Poison_Spiral_Frame_22
+    originalName: 
+    pivot: {x: 0.30379745, y: -0.026086956}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 660
+      y: 122
+      width: 79
+      height: 115
+    spriteID: 0e2cf124475cd1b4e97c2c9a53840c6d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 660, y: 122}
+  - name: Poison_Spiral_Frame_23
+    originalName: 
+    pivot: {x: 0.27631578, y: -0.026086956}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 335
+      width: 76
+      height: 115
+    spriteID: b2f0ef343077f0c45acc5b905ded04cb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 335}
+  - name: Poison_Spiral_Frame_24
+    originalName: 
+    pivot: {x: 0.33333334, y: -0.026086956}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 212
+      y: 122
+      width: 84
+      height: 115
+    spriteID: 18b45aba47bd34845bf36dd278cee124
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 212, y: 122}
+  - name: Poison_Spiral_Frame_25
+    originalName: 
+    pivot: {x: 0.3913043, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 112
+      y: 122
+      width: 92
+      height: 118
+    spriteID: e2b4d6573be53f94aa6dedf8af52f2c3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 112, y: 122}
+  - name: Poison_Spiral_Frame_26
+    originalName: 
+    pivot: {x: 0.44, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 122
+      width: 100
+      height: 118
+    spriteID: 6681756ac19525f4faf80fb27a7f5aac
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 122}
+  - name: Poison_Spiral_Frame_27
+    originalName: 
+    pivot: {x: 0.44, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 120
+      y: 4
+      width: 100
+      height: 110
+    spriteID: e74e20fbb6d5b7e48ad45f5404cb9bb1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 120, y: 4}
+  - name: Poison_Spiral_Frame_28
+    originalName: 
+    pivot: {x: 0.48148146, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 108
+      height: 110
+    spriteID: a4060512462722c458749cf702dbb02b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Poison_Spiral_Frame_29
+    originalName: 
+    pivot: {x: 0.4859813, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 228
+      y: 4
+      width: 107
+      height: 102
+    spriteID: b1b333d425dd98648952727135233c48
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 228, y: 4}
+  - name: Poison_Spiral_Frame_30
+    originalName: 
+    pivot: {x: 0.49541286, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 582
+      y: 4
+      width: 109
+      height: 94
+    spriteID: eac5f7e3de9dcf04aad09a5d0c2db8c4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 582, y: 4}
+  - name: Poison_Spiral_Frame_31
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 542
+      y: 122
+      width: 110
+      height: 86
+    spriteID: 4eadee39dffa30749891b854c95a9b23
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 542, y: 122}
+  - name: Poison_Spiral_Frame_32
+    originalName: 
+    pivot: {x: 0.4954955, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 248
+      width: 111
+      height: 79
+    spriteID: f34a4752b8db1644499866a099bfc8ac
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 248}
+  - name: Poison_Spiral_Frame_33
+    originalName: 
+    pivot: {x: 0.4954955, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 304
+      y: 122
+      width: 111
+      height: 87
+    spriteID: ce41cf457f14faa488407b1717cf59e2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 304, y: 122}
+  - name: Poison_Spiral_Frame_34
+    originalName: 
+    pivot: {x: 0.4954955, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 423
+      y: 122
+      width: 111
+      height: 87
+    spriteID: c0a14e1ef07927a409df6127ab8cc781
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 423, y: 122}
+  - name: Poison_Spiral_Frame_35
+    originalName: 
+    pivot: {x: 0.4954955, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 463
+      y: 4
+      width: 111
+      height: 95
+    spriteID: dc474d9aeb309354a85ab354c18ab258
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 463, y: 4}
+  - name: Poison_Spiral_Frame_36
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 343
+      y: 4
+      width: 112
+      height: 95
+    spriteID: d2584ad5869ed484f9c719759d72605b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 343, y: 4}
+  - name: Poison_Spiral_Frame_37
+    originalName: 
+    pivot: {x: 0.53846157, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 699
+      y: 4
+      width: 104
+      height: 95
+    spriteID: 5926bb163faa0e04c8a1a4f77b29de1f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 699, y: 4}
+  - name: Poison_Spiral_Frame_38
+    originalName: 
+    pivot: {x: 0.53846157, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 811
+      y: 4
+      width: 104
+      height: 95
+    spriteID: 9d759d8253de5c745833145cc3c077ec
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 811, y: 4}
+  - name: Poison_Spiral_Frame_39
+    originalName: 
+    pivot: {x: 0.5833333, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 923
+      y: 4
+      width: 96
+      height: 95
+    spriteID: 91a5716fb0b68404cab4ea9e78de5932
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 923, y: 4}
+  - name: Poison_Spiral_Frame_40
+    originalName: 
+    pivot: {x: 0.6363636, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 175
+      y: 335
+      width: 88
+      height: 95
+    spriteID: 7ac858b65388b9745bf5eb987bf94f27
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 175, y: 335}
+  - name: Poison_Spiral_Frame_41
+    originalName: 
+    pivot: {x: 0.64705884, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 731
+      y: 335
+      width: 85
+      height: 95
+    spriteID: 4315a43fbaeee43478e9566aaad85354
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 731, y: 335}
+  - name: Poison_Spiral_Frame_42
+    originalName: 
+    pivot: {x: 0.6511628, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 449
+      y: 335
+      width: 86
+      height: 95
+    spriteID: 861b40bb526b5174e9c282f069b490fc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 449, y: 335}
+  - name: Poison_Spiral_Frame_43
+    originalName: 
+    pivot: {x: 0.6511628, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 355
+      y: 335
+      width: 86
+      height: 96
+    spriteID: 00e722a7cfd33214580e0ff660f5ac6b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 355, y: 335}
+  - name: Poison_Spiral_Frame_44
+    originalName: 
+    pivot: {x: 0.6511628, y: -0.010526316}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 543
+      y: 335
+      width: 86
+      height: 95
+    spriteID: 497e5319a54d20947b1fe671b48a6556
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 543, y: 335}
+  - name: Poison_Spiral_Frame_45
+    originalName: 
+    pivot: {x: 0.6511628, y: -0.010526316}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 637
+      y: 335
+      width: 86
+      height: 95
+    spriteID: 265d528c6d8cbe8459d0c052a8330eaa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 637, y: 335}
+  - name: Poison_Spiral_Frame_46
+    originalName: 
+    pivot: {x: 0.65882355, y: -0.10344828}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 458
+      width: 85
+      height: 87
+    spriteID: 3b9a59031cd46d2479967bd42c54656c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 458}
+  - name: Poison_Spiral_Frame_47
+    originalName: 
+    pivot: {x: 0.6436782, y: -0.10344828}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 911
+      y: 335
+      width: 87
+      height: 87
+    spriteID: 1f87e8a820ac6704987bd23f5bc79e99
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 911, y: 335}
+  - name: Poison_Spiral_Frame_48
+    originalName: 
+    pivot: {x: 0.6436782, y: -0.21794872}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 123
+      y: 248
+      width: 87
+      height: 78
+    spriteID: 4949f7bd47bd337429aef086034335f3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 123, y: 248}
+  - name: Poison_Spiral_Frame_49
+    originalName: 
+    pivot: {x: 0.6395349, y: -0.35714287}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 500
+      y: 248
+      width: 86
+      height: 70
+    spriteID: cc855d5a8a68f2040b3edcd6b07209e0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 500, y: 248}
+  - name: Poison_Spiral_Frame_50
+    originalName: 
+    pivot: {x: 0.6436782, y: -0.3913043}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 594
+      y: 248
+      width: 87
+      height: 69
+    spriteID: 1bd63552d102ae442961e20d7cd9aa29
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 594, y: 248}
+  - name: Poison_Spiral_Frame_51
+    originalName: 
+    pivot: {x: 0.6436782, y: -0.3913043}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 689
+      y: 248
+      width: 87
+      height: 69
+    spriteID: 333c5f67f28a04744a51e71df9897089
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 689, y: 248}
+  - name: Poison_Spiral_Frame_52
+    originalName: 
+    pivot: {x: 0.6436782, y: -0.33333334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 218
+      y: 248
+      width: 87
+      height: 72
+    spriteID: fa03f37ee595d6c4dbb5736cedcd314b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 218, y: 248}
+  - name: Poison_Spiral_Frame_53
+    originalName: 
+    pivot: {x: 0.6436782, y: -0.33333334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 313
+      y: 248
+      width: 87
+      height: 72
+    spriteID: 37db7f842ee2ad241b0e30e470ab6aaf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 313, y: 248}
+  - name: Poison_Spiral_Frame_54
+    originalName: 
+    pivot: {x: 0.6309524, y: -0.33333334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 408
+      y: 248
+      width: 84
+      height: 72
+    spriteID: 2a442c293c3c7ac47a0b297fc4901866
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 408, y: 248}
+  - name: Poison_Spiral_Frame_55
+    originalName: 
+    pivot: {x: 0.5844156, y: -0.33333334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 869
+      y: 248
+      width: 77
+      height: 72
+    spriteID: 3215081d4ee4f8b409bfb7b81c845e79
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 869, y: 248}
+  - name: Poison_Spiral_Frame_56
+    originalName: 
+    pivot: {x: 0.5362319, y: -0.34285715}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 268
+      y: 458
+      width: 69
+      height: 70
+    spriteID: a288406ae2e88ed4baf5cee73af6e00a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 268, y: 458}
+  - name: Poison_Spiral_Frame_57
+    originalName: 
+    pivot: {x: 0.49206352, y: -0.34285715}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 429
+      y: 458
+      width: 63
+      height: 70
+    spriteID: eb5e96b445c0ad749b1d0fbcb8de0819
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 429, y: 458}
+  - name: Poison_Spiral_Frame_58
+    originalName: 
+    pivot: {x: 0.49206352, y: -0.34285715}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 500
+      y: 458
+      width: 63
+      height: 70
+    spriteID: 2e6f6f2d9b788644ea46196cc467fe47
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 500, y: 458}
+  - name: Poison_Spiral_Frame_59
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.34285715}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 954
+      y: 248
+      width: 64
+      height: 70
+    spriteID: a3294068371e8bd46a256b994a38d6ab
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 954, y: 248}
+  - name: Poison_Spiral_Frame_60
+    originalName: 
+    pivot: {x: 0.5079365, y: -0.34285715}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 571
+      y: 458
+      width: 63
+      height: 70
+    spriteID: dde093d099d74604eadff259ccf2cf25
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 571, y: 458}
+  - name: Poison_Spiral_Frame_61
+    originalName: 
+    pivot: {x: 0.5079365, y: -0.34285715}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 642
+      y: 458
+      width: 63
+      height: 70
+    spriteID: 33f2b1928b811a24c803d2a9f4f2b932
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 642, y: 458}
+  - name: Poison_Spiral_Frame_62
+    originalName: 
+    pivot: {x: 0.5079365, y: -0.38709676}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 713
+      y: 458
+      width: 63
+      height: 62
+    spriteID: 980325f11c687574d8e609294209a622
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 713, y: 458}
+  - name: Poison_Spiral_Frame_63
+    originalName: 
+    pivot: {x: 0.49206352, y: -0.42857143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 940
+      y: 458
+      width: 63
+      height: 56
+    spriteID: 8a29b52d0ccbf154e889773ce4ddfc48
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 940, y: 458}
+  - name: Poison_Spiral_Frame_64
+    originalName: 
+    pivot: {x: 0.49206352, y: -0.42857143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 89
+      y: 553
+      width: 63
+      height: 56
+    spriteID: a628c4d0cafdc694492982f41b9deea2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 89, y: 553}
+  - name: Poison_Spiral_Frame_65
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.42857143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 868
+      y: 458
+      width: 64
+      height: 56
+    spriteID: bfa6fa16aa297db42b77efdcfe5e72b8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 868, y: 458}
+  - name: Poison_Spiral_Frame_66
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.46153846}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 232
+      y: 553
+      width: 64
+      height: 52
+    spriteID: 4acfe2310254ffc418bd7fe86845880b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 232, y: 553}
+  - name: Poison_Spiral_Frame_67
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.44444448}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 553
+      width: 64
+      height: 54
+    spriteID: cc588d36babc4f849b5ebb862f369ee5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 160, y: 553}
+  - name: Poison_Spiral_Frame_68
+    originalName: 
+    pivot: {x: 0.57142854, y: -0.43636367}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 304
+      y: 553
+      width: 56
+      height: 55
+    spriteID: 0110c373127f08d4a95e67891de54293
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 304, y: 553}
+  - name: Poison_Spiral_Frame_69
+    originalName: 
+    pivot: {x: 0.6666666, y: -0.43636367}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 446
+      y: 553
+      width: 48
+      height: 55
+    spriteID: 6c95ad370e35101419ae0309bc35f8e1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 446, y: 553}
+  - name: Poison_Spiral_Frame_70
+    originalName: 
+    pivot: {x: 0.680851, y: -0.42857143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 502
+      y: 553
+      width: 47
+      height: 56
+    spriteID: 59744107e886f4e44bab6e4899af12e5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 502, y: 553}
+  - name: Poison_Spiral_Frame_71
+    originalName: 
+    pivot: {x: 0.6666667, y: -0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 612
+      y: 553
+      width: 45
+      height: 55
+    spriteID: 163e928fbf9a8f741bc64822479c3e51
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 612, y: 553}
+  - name: Poison_Spiral_Frame_72
+    originalName: 
+    pivot: {x: 0.6595745, y: -0.45454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 557
+      y: 553
+      width: 47
+      height: 55
+    spriteID: 3412b18b9efee8e4c807e86032c25e2e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 557, y: 553}
+  - name: Poison_Spiral_Frame_73
+    originalName: 
+    pivot: {x: 0.6666666, y: -0.70212764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 665
+      y: 553
+      width: 48
+      height: 47
+    spriteID: 27f6fca1f2302034f8629a5de4101aca
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 665, y: 553}
+  - name: Poison_Spiral_Frame_74
+    originalName: 
+    pivot: {x: 0.6666666, y: -1.1111112}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 721
+      y: 553
+      width: 48
+      height: 36
+    spriteID: d186b8c9ca698b346b721b61cc7eeabf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 721, y: 553}
+  - name: Poison_Spiral_Frame_75
+    originalName: 
+    pivot: {x: 0.680851, y: -1.1388888}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 777
+      y: 553
+      width: 47
+      height: 36
+    spriteID: e439d72a1616d644ab63f00dd791e482
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 777, y: 553}
+  - name: Poison_Spiral_Frame_76
+    originalName: 
+    pivot: {x: 0.6904762, y: -1.0526316}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 832
+      y: 553
+      width: 42
+      height: 38
+    spriteID: cfd98b61a5ec79742a9fc54338537e0f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 832, y: 553}
+  - name: Poison_Spiral_Frame_77
+    originalName: 
+    pivot: {x: 0.6, y: -1.0526316}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 882
+      y: 553
+      width: 35
+      height: 38
+    spriteID: 07b87b0a2ad749141a5909eee051533e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 882, y: 553}
+  - name: Poison_Spiral_Frame_78
+    originalName: 
+    pivot: {x: 0.51612896, y: -1.0526316}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 925
+      y: 553
+      width: 31
+      height: 38
+    spriteID: c4f897a14f0ebf24dab33af29e4e78f4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 925, y: 553}
+  - name: Poison_Spiral_Frame_79
+    originalName: 
+    pivot: {x: 0.51612896, y: -1.0526316}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 964
+      y: 553
+      width: 31
+      height: 38
+    spriteID: 9cb0657f6beb43144befb64311ccb822
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 964, y: 553}
+  - name: Poison_Spiral_Frame_80
+    originalName: 
+    pivot: {x: 0.44827586, y: -1.3333334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 232
+      y: 613
+      width: 29
+      height: 30
+    spriteID: c86d2fb6adfda5649be1b0f87dc1e0dc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 232, y: 613}
+  - name: Poison_Spiral_Frame_81
+    originalName: 
+    pivot: {x: 0.44827586, y: -1.8181819}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 612
+      y: 616
+      width: 29
+      height: 22
+    spriteID: 705f3fa832281d146b4622327c48f1a2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 612, y: 616}
+  - name: Poison_Spiral_Frame_82
+    originalName: 
+    pivot: {x: 0.46666667, y: -2.857143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 557
+      y: 616
+      width: 30
+      height: 14
+    spriteID: 88c495815a2ba5a4f8546ee9b6d06ba1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 557, y: 616}
+  - name: Poison_Spiral_Frame_83
+    originalName: 
+    pivot: {x: 0.6521739, y: -3.1538463}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 269
+      y: 613
+      width: 23
+      height: 13
+    spriteID: f4329d58f4ee8724cb28e904c725542c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 269, y: 613}
+  - name: Poison_Spiral_Frame_84
+    originalName: 
+    pivot: {x: 0.99999994, y: -3.1538463}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1003
+      y: 553
+      width: 16
+      height: 13
+    spriteID: f91c210d3f541f34e9110af84e53a789
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1003, y: 553}
+  - name: Poison_Spiral_Frame_85
+    originalName: 
+    pivot: {x: 2.6000001, y: -9.8}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 595
+      y: 616
+      width: 5
+      height: 5
+    spriteID: afc371eb2adc90343bc7196374999fe8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 595, y: 616}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 989854086
+    name: Poison_Spiral
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Poison_Spiral_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 36
+        y: 117
+        width: 2
+        height: 2
+      spriteId: 5a4fe569ea2c18044857a9d3323a3271
+    - name: Poison_Spiral_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 36
+        y: 115
+        width: 10
+        height: 4
+      spriteId: 0a4bcb9a5a1bbef47bb1fd9915cedd07
+    - name: Poison_Spiral_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 34
+        y: 115
+        width: 20
+        height: 4
+      spriteId: 04eccced154f0a146a5803c36e1294eb
+    - name: Poison_Spiral_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 33
+        y: 115
+        width: 29
+        height: 4
+      spriteId: 62f395947c08b184daad3611f68e60a6
+    - name: Poison_Spiral_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 34
+        y: 109
+        width: 36
+        height: 10
+      spriteId: aba688da12223cd41b2a1bfc97377c01
+    - name: Poison_Spiral_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 36
+        y: 107
+        width: 42
+        height: 12
+      spriteId: 5eb01dcf76e659a498653fef9dafdbe1
+    - name: Poison_Spiral_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 33
+        y: 101
+        width: 53
+        height: 18
+      spriteId: d21a2ca949478034aaf0300cac7d74e9
+    - name: Poison_Spiral_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 33
+        y: 93
+        width: 61
+        height: 26
+      spriteId: 26146aa5b93d5f744a84a94d803ec342
+    - name: Poison_Spiral_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 32
+        y: 85
+        width: 70
+        height: 35
+      spriteId: da8b12ad3af029440815e345ccca181b
+    - name: Poison_Spiral_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 32
+        y: 77
+        width: 70
+        height: 43
+      spriteId: 5fb398b8fe9baed40845b7b9474b2f1c
+    - name: Poison_Spiral_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 34
+        y: 69
+        width: 76
+        height: 51
+      spriteId: 6727c26df65d2f54abd168d9c828067c
+    - name: Poison_Spiral_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 34
+        y: 61
+        width: 76
+        height: 59
+      spriteId: 164182f4bf7ad874680c1577c96cfd5e
+    - name: Poison_Spiral_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 33
+        y: 53
+        width: 77
+        height: 67
+      spriteId: 746428acef31856499e72ca25d531179
+    - name: Poison_Spiral_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 33
+        y: 45
+        width: 77
+        height: 74
+      spriteId: 4a6d645dad9236d4aa76d4a188285547
+    - name: Poison_Spiral_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 32
+        y: 37
+        width: 78
+        height: 82
+      spriteId: 88d4946e2bf81b84182d103ad14a43dc
+    - name: Poison_Spiral_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 32
+        y: 29
+        width: 77
+        height: 91
+      spriteId: 9f06f4e6fb206f545954d044fac372ac
+    - name: Poison_Spiral_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 32
+        y: 21
+        width: 79
+        height: 99
+      spriteId: bba0a8cedf8309c419668cfc328b16ef
+    - name: Poison_Spiral_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 32
+        y: 13
+        width: 79
+        height: 107
+      spriteId: 712db7e39f708ac4eb3f7690dd2f4f32
+    - name: Poison_Spiral_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 35
+        y: 11
+        width: 76
+        height: 109
+      spriteId: dd0adfee41610c24b86df3123a355b79
+    - name: Poison_Spiral_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 35
+        y: 5
+        width: 76
+        height: 115
+      spriteId: a4b24be119220aa4bad62e62cac1cd7d
+    - name: Poison_Spiral_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 34
+        y: 3
+        width: 77
+        height: 117
+      spriteId: 4fffc1da821862645b7cc1ce3e8866fd
+    - name: Poison_Spiral_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 33
+        y: 3
+        width: 78
+        height: 115
+      spriteId: ae9038a58c4ab7342897705832f8ae9d
+    - name: Poison_Spiral_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 32
+        y: 3
+        width: 79
+        height: 115
+      spriteId: 0e2cf124475cd1b4e97c2c9a53840c6d
+    - name: Poison_Spiral_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 35
+        y: 3
+        width: 76
+        height: 115
+      spriteId: b2f0ef343077f0c45acc5b905ded04cb
+    - name: Poison_Spiral_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 28
+        y: 3
+        width: 84
+        height: 115
+      spriteId: 18b45aba47bd34845bf36dd278cee124
+    - name: Poison_Spiral_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 20
+        y: 0
+        width: 92
+        height: 118
+      spriteId: e2b4d6573be53f94aa6dedf8af52f2c3
+    - name: Poison_Spiral_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 12
+        y: 0
+        width: 100
+        height: 118
+      spriteId: 6681756ac19525f4faf80fb27a7f5aac
+    - name: Poison_Spiral_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 12
+        y: 0
+        width: 100
+        height: 110
+      spriteId: e74e20fbb6d5b7e48ad45f5404cb9bb1
+    - name: Poison_Spiral_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 4
+        y: 0
+        width: 108
+        height: 110
+      spriteId: a4060512462722c458749cf702dbb02b
+    - name: Poison_Spiral_Frame_29
+      frameIndex: 29
+      cellRect:
+        x: 4
+        y: 0
+        width: 107
+        height: 102
+      spriteId: b1b333d425dd98648952727135233c48
+    - name: Poison_Spiral_Frame_30
+      frameIndex: 30
+      cellRect:
+        x: 2
+        y: 0
+        width: 109
+        height: 94
+      spriteId: eac5f7e3de9dcf04aad09a5d0c2db8c4
+    - name: Poison_Spiral_Frame_31
+      frameIndex: 31
+      cellRect:
+        x: 1
+        y: 0
+        width: 110
+        height: 86
+      spriteId: 4eadee39dffa30749891b854c95a9b23
+    - name: Poison_Spiral_Frame_32
+      frameIndex: 32
+      cellRect:
+        x: 1
+        y: 0
+        width: 111
+        height: 79
+      spriteId: f34a4752b8db1644499866a099bfc8ac
+    - name: Poison_Spiral_Frame_33
+      frameIndex: 33
+      cellRect:
+        x: 1
+        y: 0
+        width: 111
+        height: 87
+      spriteId: ce41cf457f14faa488407b1717cf59e2
+    - name: Poison_Spiral_Frame_34
+      frameIndex: 34
+      cellRect:
+        x: 1
+        y: 0
+        width: 111
+        height: 87
+      spriteId: c0a14e1ef07927a409df6127ab8cc781
+    - name: Poison_Spiral_Frame_35
+      frameIndex: 35
+      cellRect:
+        x: 1
+        y: 0
+        width: 111
+        height: 95
+      spriteId: dc474d9aeb309354a85ab354c18ab258
+    - name: Poison_Spiral_Frame_36
+      frameIndex: 36
+      cellRect:
+        x: 0
+        y: 0
+        width: 112
+        height: 95
+      spriteId: d2584ad5869ed484f9c719759d72605b
+    - name: Poison_Spiral_Frame_37
+      frameIndex: 37
+      cellRect:
+        x: 0
+        y: 0
+        width: 104
+        height: 95
+      spriteId: 5926bb163faa0e04c8a1a4f77b29de1f
+    - name: Poison_Spiral_Frame_38
+      frameIndex: 38
+      cellRect:
+        x: 0
+        y: 0
+        width: 104
+        height: 95
+      spriteId: 9d759d8253de5c745833145cc3c077ec
+    - name: Poison_Spiral_Frame_39
+      frameIndex: 39
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 95
+      spriteId: 91a5716fb0b68404cab4ea9e78de5932
+    - name: Poison_Spiral_Frame_40
+      frameIndex: 40
+      cellRect:
+        x: 0
+        y: 0
+        width: 88
+        height: 95
+      spriteId: 7ac858b65388b9745bf5eb987bf94f27
+    - name: Poison_Spiral_Frame_41
+      frameIndex: 41
+      cellRect:
+        x: 1
+        y: 0
+        width: 85
+        height: 95
+      spriteId: 4315a43fbaeee43478e9566aaad85354
+    - name: Poison_Spiral_Frame_42
+      frameIndex: 42
+      cellRect:
+        x: 0
+        y: 0
+        width: 86
+        height: 95
+      spriteId: 861b40bb526b5174e9c282f069b490fc
+    - name: Poison_Spiral_Frame_43
+      frameIndex: 43
+      cellRect:
+        x: 0
+        y: 0
+        width: 86
+        height: 96
+      spriteId: 00e722a7cfd33214580e0ff660f5ac6b
+    - name: Poison_Spiral_Frame_44
+      frameIndex: 44
+      cellRect:
+        x: 0
+        y: 1
+        width: 86
+        height: 95
+      spriteId: 497e5319a54d20947b1fe671b48a6556
+    - name: Poison_Spiral_Frame_45
+      frameIndex: 45
+      cellRect:
+        x: 0
+        y: 1
+        width: 86
+        height: 95
+      spriteId: 265d528c6d8cbe8459d0c052a8330eaa
+    - name: Poison_Spiral_Frame_46
+      frameIndex: 46
+      cellRect:
+        x: 0
+        y: 9
+        width: 85
+        height: 87
+      spriteId: 3b9a59031cd46d2479967bd42c54656c
+    - name: Poison_Spiral_Frame_47
+      frameIndex: 47
+      cellRect:
+        x: 0
+        y: 9
+        width: 87
+        height: 87
+      spriteId: 1f87e8a820ac6704987bd23f5bc79e99
+    - name: Poison_Spiral_Frame_48
+      frameIndex: 48
+      cellRect:
+        x: 0
+        y: 17
+        width: 87
+        height: 78
+      spriteId: 4949f7bd47bd337429aef086034335f3
+    - name: Poison_Spiral_Frame_49
+      frameIndex: 49
+      cellRect:
+        x: 1
+        y: 25
+        width: 86
+        height: 70
+      spriteId: cc855d5a8a68f2040b3edcd6b07209e0
+    - name: Poison_Spiral_Frame_50
+      frameIndex: 50
+      cellRect:
+        x: 0
+        y: 27
+        width: 87
+        height: 69
+      spriteId: 1bd63552d102ae442961e20d7cd9aa29
+    - name: Poison_Spiral_Frame_51
+      frameIndex: 51
+      cellRect:
+        x: 0
+        y: 27
+        width: 87
+        height: 69
+      spriteId: 333c5f67f28a04744a51e71df9897089
+    - name: Poison_Spiral_Frame_52
+      frameIndex: 52
+      cellRect:
+        x: 0
+        y: 24
+        width: 87
+        height: 72
+      spriteId: fa03f37ee595d6c4dbb5736cedcd314b
+    - name: Poison_Spiral_Frame_53
+      frameIndex: 53
+      cellRect:
+        x: 0
+        y: 24
+        width: 87
+        height: 72
+      spriteId: 37db7f842ee2ad241b0e30e470ab6aaf
+    - name: Poison_Spiral_Frame_54
+      frameIndex: 54
+      cellRect:
+        x: 3
+        y: 24
+        width: 84
+        height: 72
+      spriteId: 2a442c293c3c7ac47a0b297fc4901866
+    - name: Poison_Spiral_Frame_55
+      frameIndex: 55
+      cellRect:
+        x: 11
+        y: 24
+        width: 77
+        height: 72
+      spriteId: 3215081d4ee4f8b409bfb7b81c845e79
+    - name: Poison_Spiral_Frame_56
+      frameIndex: 56
+      cellRect:
+        x: 19
+        y: 24
+        width: 69
+        height: 70
+      spriteId: a288406ae2e88ed4baf5cee73af6e00a
+    - name: Poison_Spiral_Frame_57
+      frameIndex: 57
+      cellRect:
+        x: 25
+        y: 24
+        width: 63
+        height: 70
+      spriteId: eb5e96b445c0ad749b1d0fbcb8de0819
+    - name: Poison_Spiral_Frame_58
+      frameIndex: 58
+      cellRect:
+        x: 25
+        y: 24
+        width: 63
+        height: 70
+      spriteId: 2e6f6f2d9b788644ea46196cc467fe47
+    - name: Poison_Spiral_Frame_59
+      frameIndex: 59
+      cellRect:
+        x: 24
+        y: 24
+        width: 64
+        height: 70
+      spriteId: a3294068371e8bd46a256b994a38d6ab
+    - name: Poison_Spiral_Frame_60
+      frameIndex: 60
+      cellRect:
+        x: 24
+        y: 24
+        width: 63
+        height: 70
+      spriteId: dde093d099d74604eadff259ccf2cf25
+    - name: Poison_Spiral_Frame_61
+      frameIndex: 61
+      cellRect:
+        x: 24
+        y: 24
+        width: 63
+        height: 70
+      spriteId: 33f2b1928b811a24c803d2a9f4f2b932
+    - name: Poison_Spiral_Frame_62
+      frameIndex: 62
+      cellRect:
+        x: 24
+        y: 24
+        width: 63
+        height: 62
+      spriteId: 980325f11c687574d8e609294209a622
+    - name: Poison_Spiral_Frame_63
+      frameIndex: 63
+      cellRect:
+        x: 25
+        y: 24
+        width: 63
+        height: 56
+      spriteId: 8a29b52d0ccbf154e889773ce4ddfc48
+    - name: Poison_Spiral_Frame_64
+      frameIndex: 64
+      cellRect:
+        x: 25
+        y: 24
+        width: 63
+        height: 56
+      spriteId: a628c4d0cafdc694492982f41b9deea2
+    - name: Poison_Spiral_Frame_65
+      frameIndex: 65
+      cellRect:
+        x: 24
+        y: 24
+        width: 64
+        height: 56
+      spriteId: bfa6fa16aa297db42b77efdcfe5e72b8
+    - name: Poison_Spiral_Frame_66
+      frameIndex: 66
+      cellRect:
+        x: 24
+        y: 24
+        width: 64
+        height: 52
+      spriteId: 4acfe2310254ffc418bd7fe86845880b
+    - name: Poison_Spiral_Frame_67
+      frameIndex: 67
+      cellRect:
+        x: 24
+        y: 24
+        width: 64
+        height: 54
+      spriteId: cc588d36babc4f849b5ebb862f369ee5
+    - name: Poison_Spiral_Frame_68
+      frameIndex: 68
+      cellRect:
+        x: 24
+        y: 24
+        width: 56
+        height: 55
+      spriteId: 0110c373127f08d4a95e67891de54293
+    - name: Poison_Spiral_Frame_69
+      frameIndex: 69
+      cellRect:
+        x: 24
+        y: 24
+        width: 48
+        height: 55
+      spriteId: 6c95ad370e35101419ae0309bc35f8e1
+    - name: Poison_Spiral_Frame_70
+      frameIndex: 70
+      cellRect:
+        x: 24
+        y: 24
+        width: 47
+        height: 56
+      spriteId: 59744107e886f4e44bab6e4899af12e5
+    - name: Poison_Spiral_Frame_71
+      frameIndex: 71
+      cellRect:
+        x: 26
+        y: 25
+        width: 45
+        height: 55
+      spriteId: 163e928fbf9a8f741bc64822479c3e51
+    - name: Poison_Spiral_Frame_72
+      frameIndex: 72
+      cellRect:
+        x: 25
+        y: 25
+        width: 47
+        height: 55
+      spriteId: 3412b18b9efee8e4c807e86032c25e2e
+    - name: Poison_Spiral_Frame_73
+      frameIndex: 73
+      cellRect:
+        x: 24
+        y: 33
+        width: 48
+        height: 47
+      spriteId: 27f6fca1f2302034f8629a5de4101aca
+    - name: Poison_Spiral_Frame_74
+      frameIndex: 74
+      cellRect:
+        x: 24
+        y: 40
+        width: 48
+        height: 36
+      spriteId: d186b8c9ca698b346b721b61cc7eeabf
+    - name: Poison_Spiral_Frame_75
+      frameIndex: 75
+      cellRect:
+        x: 24
+        y: 41
+        width: 47
+        height: 36
+      spriteId: e439d72a1616d644ab63f00dd791e482
+    - name: Poison_Spiral_Frame_76
+      frameIndex: 76
+      cellRect:
+        x: 27
+        y: 40
+        width: 42
+        height: 38
+      spriteId: cfd98b61a5ec79742a9fc54338537e0f
+    - name: Poison_Spiral_Frame_77
+      frameIndex: 77
+      cellRect:
+        x: 35
+        y: 40
+        width: 35
+        height: 38
+      spriteId: 07b87b0a2ad749141a5909eee051533e
+    - name: Poison_Spiral_Frame_78
+      frameIndex: 78
+      cellRect:
+        x: 40
+        y: 40
+        width: 31
+        height: 38
+      spriteId: c4f897a14f0ebf24dab33af29e4e78f4
+    - name: Poison_Spiral_Frame_79
+      frameIndex: 79
+      cellRect:
+        x: 40
+        y: 40
+        width: 31
+        height: 38
+      spriteId: 9cb0657f6beb43144befb64311ccb822
+    - name: Poison_Spiral_Frame_80
+      frameIndex: 80
+      cellRect:
+        x: 43
+        y: 40
+        width: 29
+        height: 30
+      spriteId: c86d2fb6adfda5649be1b0f87dc1e0dc
+    - name: Poison_Spiral_Frame_81
+      frameIndex: 81
+      cellRect:
+        x: 43
+        y: 40
+        width: 29
+        height: 22
+      spriteId: 705f3fa832281d146b4622327c48f1a2
+    - name: Poison_Spiral_Frame_82
+      frameIndex: 82
+      cellRect:
+        x: 42
+        y: 40
+        width: 30
+        height: 14
+      spriteId: 88c495815a2ba5a4f8546ee9b6d06ba1
+    - name: Poison_Spiral_Frame_83
+      frameIndex: 83
+      cellRect:
+        x: 41
+        y: 41
+        width: 23
+        height: 13
+      spriteId: f4329d58f4ee8724cb28e904c725542c
+    - name: Poison_Spiral_Frame_84
+      frameIndex: 84
+      cellRect:
+        x: 40
+        y: 41
+        width: 16
+        height: 13
+      spriteId: f91c210d3f541f34e9110af84e53a789
+    - name: Poison_Spiral_Frame_85
+      frameIndex: 85
+      cellRect:
+        x: 43
+        y: 49
+        width: 5
+        height: 5
+      spriteId: afc371eb2adc90343bc7196374999fe8
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 112, y: 120}

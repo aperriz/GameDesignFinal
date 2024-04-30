@@ -1,0 +1,1480 @@
+fileFormatVersion: 2
+guid: 36c20f49a068b2948a6627782fff03e2
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Poison_Concentric_Sink_Frame_0
+    originalName: 
+    pivot: {x: 0.4912281, y: -0.043859653}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 259
+      y: 740
+      width: 114
+      height: 114
+    spriteID: 2c7280a939b071e448bb938b7e853ca2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 259, y: 740}
+  - name: Poison_Concentric_Sink_Frame_1
+    originalName: 
+    pivot: {x: 0.4912281, y: -0.026086956}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 259
+      y: 127
+      width: 114
+      height: 115
+    spriteID: 8879c12058fb7a44cb500d585859a879
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 259, y: 127}
+  - name: Poison_Concentric_Sink_Frame_2
+    originalName: 
+    pivot: {x: 0.5043478, y: -0.026315792}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 259
+      y: 250
+      width: 115
+      height: 114
+    spriteID: 626378d54bf3e144085fa1a5774cdfac
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 259, y: 250}
+  - name: Poison_Concentric_Sink_Frame_3
+    originalName: 
+    pivot: {x: 0.5175439, y: -0.03478261}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 259
+      y: 372
+      width: 114
+      height: 115
+    spriteID: 4e3425b03c353e94bb5b4cef5afbdf0a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 259, y: 372}
+  - name: Poison_Concentric_Sink_Frame_4
+    originalName: 
+    pivot: {x: 0.5043478, y: -0.043859653}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 259
+      y: 495
+      width: 115
+      height: 114
+    spriteID: 047d30d0094582440b94db3156742878
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 259, y: 495}
+  - name: Poison_Concentric_Sink_Frame_5
+    originalName: 
+    pivot: {x: 0.49557522, y: -0.026086956}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 259
+      y: 862
+      width: 113
+      height: 115
+    spriteID: fe2417219761577478bb78a01a6d661d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 259, y: 862}
+  - name: Poison_Concentric_Sink_Frame_6
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 131
+      y: 632
+      width: 118
+      height: 115
+    spriteID: b7bde84ae697acf47af0a47b647cce89
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 131, y: 632}
+  - name: Poison_Concentric_Sink_Frame_7
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 643
+      width: 118
+      height: 118
+    spriteID: a2e3f351f6e59a74caa41b8cfffc5f15
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 643}
+  - name: Poison_Concentric_Sink_Frame_8
+    originalName: 
+    pivot: {x: 0.5042017, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 119
+      height: 120
+    spriteID: 4872a87a261b18348aab9f1410897ca2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Poison_Concentric_Sink_Frame_9
+    originalName: 
+    pivot: {x: 0.51282054, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 387
+      width: 117
+      height: 120
+    spriteID: e5afdff87885c4949bd9092f7118da63
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 387}
+  - name: Poison_Concentric_Sink_Frame_10
+    originalName: 
+    pivot: {x: 0.5043478, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 259
+      y: 4
+      width: 115
+      height: 115
+    spriteID: 5d2b6c55e6fb80b4a85aebb798db503b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 259, y: 4}
+  - name: Poison_Concentric_Sink_Frame_11
+    originalName: 
+    pivot: {x: 0.49999997, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 131
+      y: 755
+      width: 116
+      height: 116
+    spriteID: a341947b9382b6845a4e7338c6d5bc2e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 131, y: 755}
+  - name: Poison_Concentric_Sink_Frame_12
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 769
+      width: 118
+      height: 118
+    spriteID: 13718948a1ea78541b2cde1f391333f4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 769}
+  - name: Poison_Concentric_Sink_Frame_13
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 260
+      width: 118
+      height: 119
+    spriteID: 59b4dda325e30ca47a5a057ef06115f3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 260}
+  - name: Poison_Concentric_Sink_Frame_14
+    originalName: 
+    pivot: {x: 0.5, y: -0.008474577}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 131
+      y: 131
+      width: 120
+      height: 118
+    spriteID: 66167b2c41b7d894cae78839bdb34a46
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 131, y: 131}
+  - name: Poison_Concentric_Sink_Frame_15
+    originalName: 
+    pivot: {x: 0.5, y: -0.008403363}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 131
+      y: 4
+      width: 120
+      height: 119
+    spriteID: cded2d2c720b13a45a50191790e99d3f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 131, y: 4}
+  - name: Poison_Concentric_Sink_Frame_16
+    originalName: 
+    pivot: {x: 0.5042017, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 132
+      width: 119
+      height: 120
+    spriteID: 78d00143eedf2964098041780ee2c10f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 132}
+  - name: Poison_Concentric_Sink_Frame_17
+    originalName: 
+    pivot: {x: 0.51282054, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 515
+      width: 117
+      height: 120
+    spriteID: 81065e400be58f94698cd8aabe60d77b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 515}
+  - name: Poison_Concentric_Sink_Frame_18
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 259
+      y: 617
+      width: 114
+      height: 115
+    spriteID: b3d2453d96155ed4a843201d5789365e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 259, y: 617}
+  - name: Poison_Concentric_Sink_Frame_19
+    originalName: 
+    pivot: {x: 0.49565217, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 131
+      y: 879
+      width: 115
+      height: 116
+    spriteID: 0f3b5d5cf76f0d84fa41973cad1cfb11
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 131, y: 879}
+  - name: Poison_Concentric_Sink_Frame_20
+    originalName: 
+    pivot: {x: 0.4957265, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 131
+      y: 382
+      width: 117
+      height: 117
+    spriteID: 1c3bc9aaf677da34680e68f14136fe00
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 131, y: 382}
+  - name: Poison_Concentric_Sink_Frame_21
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 895
+      width: 118
+      height: 118
+    spriteID: 76b4c74101ace1b4594314c64d6ffefd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 895}
+  - name: Poison_Concentric_Sink_Frame_22
+    originalName: 
+    pivot: {x: 0.5, y: -0.00854701}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 131
+      y: 257
+      width: 120
+      height: 117
+    spriteID: ff20d096e1385914db2a98136281c427
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 131, y: 257}
+  - name: Poison_Concentric_Sink_Frame_23
+    originalName: 
+    pivot: {x: 0.48717952, y: -0.00854701}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 131
+      y: 507
+      width: 117
+      height: 117
+    spriteID: d88c6e1e7bcfd644eb8547b8a40f7441
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 131, y: 507}
+  - name: Poison_Concentric_Sink_Frame_24
+    originalName: 
+    pivot: {x: 0.5070423, y: -0.33333334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 382
+      y: 4
+      width: 71
+      height: 72
+    spriteID: 32dfe441e1e824d4194892f6c7e827ac
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 382, y: 4}
+  - name: Poison_Concentric_Sink_Frame_25
+    originalName: 
+    pivot: {x: 0.5217391, y: -0.33333334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 382
+      y: 84
+      width: 69
+      height: 72
+    spriteID: 4abf888922baa5e448739a58f9213f0c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 382, y: 84}
+  - name: Poison_Concentric_Sink_Frame_26
+    originalName: 
+    pivot: {x: 0.5, y: -0.35820898}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 382
+      y: 549
+      width: 66
+      height: 67
+    spriteID: df196b5813dbe5642af4bffd8a2b8bad
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 382, y: 549}
+  - name: Poison_Concentric_Sink_Frame_27
+    originalName: 
+    pivot: {x: 0.49253735, y: -0.3529412}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 382
+      y: 473
+      width: 67
+      height: 68
+    spriteID: 4f141d6ebde5e5745ad545fa60933def
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 382, y: 473}
+  - name: Poison_Concentric_Sink_Frame_28
+    originalName: 
+    pivot: {x: 0.4927536, y: -0.3478261}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 382
+      y: 319
+      width: 69
+      height: 69
+    spriteID: 0fd6a2cd7e1b113498688df793b87ce1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 382, y: 319}
+  - name: Poison_Concentric_Sink_Frame_29
+    originalName: 
+    pivot: {x: 0.50000006, y: -0.34285715}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 382
+      y: 241
+      width: 70
+      height: 70
+    spriteID: 68cfe3db1e84ceb47826afe13ca741bc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 382, y: 241}
+  - name: Poison_Concentric_Sink_Frame_30
+    originalName: 
+    pivot: {x: 0.5, y: -0.3623188}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 382
+      y: 164
+      width: 72
+      height: 69
+    spriteID: 0b23a366433275d4b9fa563d1e1c85ec
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 382, y: 164}
+  - name: Poison_Concentric_Sink_Frame_31
+    originalName: 
+    pivot: {x: 0.47826087, y: -0.3623188}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 382
+      y: 396
+      width: 69
+      height: 69
+    spriteID: 49f8c48ed1944ae4b9f61a461f5961a5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 382, y: 396}
+  - name: Poison_Concentric_Sink_Frame_32
+    originalName: 
+    pivot: {x: 0.5128205, y: -1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 462
+      y: 164
+      width: 39
+      height: 40
+    spriteID: 8c8c5328a4eea844fb80db4c1beadaa0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 462, y: 164}
+  - name: Poison_Concentric_Sink_Frame_33
+    originalName: 
+    pivot: {x: 0.5405405, y: -1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 457
+      y: 473
+      width: 37
+      height: 40
+    spriteID: 49edd2be2ff2fea4b82f52b46987af33
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 457, y: 473}
+  - name: Poison_Concentric_Sink_Frame_34
+    originalName: 
+    pivot: {x: 0.50000006, y: -1.1428572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 459
+      y: 84
+      width: 34
+      height: 35
+    spriteID: dfcd36f178dddc64881e85dce5410b3b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 459, y: 84}
+  - name: Poison_Concentric_Sink_Frame_35
+    originalName: 
+    pivot: {x: 0.48571435, y: -1.1111112}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 461
+      y: 4
+      width: 35
+      height: 36
+    spriteID: a953de17daf40364f85eae72813b7e76
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 461, y: 4}
+  - name: Poison_Concentric_Sink_Frame_36
+    originalName: 
+    pivot: {x: 0.4864865, y: -1.0810812}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 460
+      y: 241
+      width: 37
+      height: 37
+    spriteID: 1aa5ae2021436e64e87c16fcf6073649
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 460, y: 241}
+  - name: Poison_Concentric_Sink_Frame_37
+    originalName: 
+    pivot: {x: 0.5, y: -1.0526316}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 459
+      y: 396
+      width: 38
+      height: 38
+    spriteID: dbed5294384e664419a0663fabcad9fb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 459, y: 396}
+  - name: Poison_Concentric_Sink_Frame_38
+    originalName: 
+    pivot: {x: 0.49999997, y: -1.1081082}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 459
+      y: 319
+      width: 40
+      height: 37
+    spriteID: fbff0e585fd1f5f438a21b0c5d72e259
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 459, y: 319}
+  - name: Poison_Concentric_Sink_Frame_39
+    originalName: 
+    pivot: {x: 0.49999997, y: -8.142857}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 462
+      y: 212
+      width: 8
+      height: 7
+    spriteID: 2a26212caa9d5d240a0f210210db87c8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 462, y: 212}
+  - name: Poison_Concentric_Sink_Frame_40
+    originalName: 
+    pivot: {x: 0.57142854, y: -7}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 478
+      y: 212
+      width: 7
+      height: 8
+    spriteID: 4c6f9235a9f240d46b01f1adeab6d46f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 478, y: 212}
+  - name: Poison_Concentric_Sink_Frame_41
+    originalName: 
+    pivot: {x: 0.79999995, y: -7}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 493
+      y: 212
+      width: 5
+      height: 8
+    spriteID: 9dfbf6d54a4fe014a9ee0a9a82e87767
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 493, y: 212}
+  - name: Poison_Concentric_Sink_Frame_42
+    originalName: 
+    pivot: {x: 0.49999952, y: -18.666666}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 506
+      y: 228
+      width: 2
+      height: 3
+    spriteID: 10c5723e2fd130542910efa480dc49bd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 506, y: 228}
+  - name: Poison_Concentric_Sink_Frame_43
+    originalName: 
+    pivot: {x: 0.33333302, y: -14}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 471
+      y: 521
+      width: 3
+      height: 4
+    spriteID: f84f139ca81e3534e840a5f83160e540
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 471, y: 521}
+  - name: Poison_Concentric_Sink_Frame_44
+    originalName: 
+    pivot: {x: 0.40000033, y: -11.2}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 478
+      y: 228
+      width: 5
+      height: 5
+    spriteID: 8018106f536db5a48bffd49d2455f405
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 478, y: 228}
+  - name: Poison_Concentric_Sink_Frame_45
+    originalName: 
+    pivot: {x: 0.5000001, y: -9.333333}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 457
+      y: 521
+      width: 6
+      height: 6
+    spriteID: 682a1ebae0a0c1f4cb999515d7db39ec
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 457, y: 521}
+  - name: Poison_Concentric_Sink_Frame_46
+    originalName: 
+    pivot: {x: 0.49999997, y: -11.4}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 462
+      y: 227
+      width: 8
+      height: 5
+    spriteID: 49ae4284c69bfc54fbfcb4ba80b634d3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 462, y: 227}
+  - name: Poison_Concentric_Sink_Frame_47
+    originalName: 
+    pivot: {x: 0.19999981, y: -11.4}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 493
+      y: 228
+      width: 5
+      height: 5
+    spriteID: a995daee88f175b4dac7375b4592017d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 493, y: 228}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 41213145
+    name: Poison_Concentric_Sink
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Poison_Concentric_Sink_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 4
+        y: 5
+        width: 114
+        height: 114
+      spriteId: 2c7280a939b071e448bb938b7e853ca2
+    - name: Poison_Concentric_Sink_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 4
+        y: 3
+        width: 114
+        height: 115
+      spriteId: 8879c12058fb7a44cb500d585859a879
+    - name: Poison_Concentric_Sink_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 2
+        y: 3
+        width: 115
+        height: 114
+      spriteId: 626378d54bf3e144085fa1a5774cdfac
+    - name: Poison_Concentric_Sink_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 1
+        y: 4
+        width: 114
+        height: 115
+      spriteId: 4e3425b03c353e94bb5b4cef5afbdf0a
+    - name: Poison_Concentric_Sink_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 2
+        y: 5
+        width: 115
+        height: 114
+      spriteId: 047d30d0094582440b94db3156742878
+    - name: Poison_Concentric_Sink_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 4
+        y: 3
+        width: 113
+        height: 115
+      spriteId: fe2417219761577478bb78a01a6d661d
+    - name: Poison_Concentric_Sink_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 1
+        y: 0
+        width: 118
+        height: 115
+      spriteId: b7bde84ae697acf47af0a47b647cce89
+    - name: Poison_Concentric_Sink_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 1
+        y: 0
+        width: 118
+        height: 118
+      spriteId: a2e3f351f6e59a74caa41b8cfffc5f15
+    - name: Poison_Concentric_Sink_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 0
+        y: 0
+        width: 119
+        height: 120
+      spriteId: 4872a87a261b18348aab9f1410897ca2
+    - name: Poison_Concentric_Sink_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 0
+        y: 0
+        width: 117
+        height: 120
+      spriteId: e5afdff87885c4949bd9092f7118da63
+    - name: Poison_Concentric_Sink_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 2
+        y: 0
+        width: 115
+        height: 115
+      spriteId: 5d2b6c55e6fb80b4a85aebb798db503b
+    - name: Poison_Concentric_Sink_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 2
+        y: 0
+        width: 116
+        height: 116
+      spriteId: a341947b9382b6845a4e7338c6d5bc2e
+    - name: Poison_Concentric_Sink_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 1
+        y: 0
+        width: 118
+        height: 118
+      spriteId: 13718948a1ea78541b2cde1f391333f4
+    - name: Poison_Concentric_Sink_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 1
+        y: 0
+        width: 118
+        height: 119
+      spriteId: 59b4dda325e30ca47a5a057ef06115f3
+    - name: Poison_Concentric_Sink_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 0
+        y: 1
+        width: 120
+        height: 118
+      spriteId: 66167b2c41b7d894cae78839bdb34a46
+    - name: Poison_Concentric_Sink_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 0
+        y: 1
+        width: 120
+        height: 119
+      spriteId: cded2d2c720b13a45a50191790e99d3f
+    - name: Poison_Concentric_Sink_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 0
+        y: 0
+        width: 119
+        height: 120
+      spriteId: 78d00143eedf2964098041780ee2c10f
+    - name: Poison_Concentric_Sink_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 0
+        y: 0
+        width: 117
+        height: 120
+      spriteId: 81065e400be58f94698cd8aabe60d77b
+    - name: Poison_Concentric_Sink_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 3
+        y: 0
+        width: 114
+        height: 115
+      spriteId: b3d2453d96155ed4a843201d5789365e
+    - name: Poison_Concentric_Sink_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 3
+        y: 0
+        width: 115
+        height: 116
+      spriteId: 0f3b5d5cf76f0d84fa41973cad1cfb11
+    - name: Poison_Concentric_Sink_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 2
+        y: 0
+        width: 117
+        height: 117
+      spriteId: 1c3bc9aaf677da34680e68f14136fe00
+    - name: Poison_Concentric_Sink_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 1
+        y: 0
+        width: 118
+        height: 118
+      spriteId: 76b4c74101ace1b4594314c64d6ffefd
+    - name: Poison_Concentric_Sink_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 0
+        y: 1
+        width: 120
+        height: 117
+      spriteId: ff20d096e1385914db2a98136281c427
+    - name: Poison_Concentric_Sink_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 3
+        y: 1
+        width: 117
+        height: 117
+      spriteId: d88c6e1e7bcfd644eb8547b8a40f7441
+    - name: Poison_Concentric_Sink_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 24
+        y: 24
+        width: 71
+        height: 72
+      spriteId: 32dfe441e1e824d4194892f6c7e827ac
+    - name: Poison_Concentric_Sink_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 24
+        y: 24
+        width: 69
+        height: 72
+      spriteId: 4abf888922baa5e448739a58f9213f0c
+    - name: Poison_Concentric_Sink_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 27
+        y: 24
+        width: 66
+        height: 67
+      spriteId: df196b5813dbe5642af4bffd8a2b8bad
+    - name: Poison_Concentric_Sink_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 27
+        y: 24
+        width: 67
+        height: 68
+      spriteId: 4f141d6ebde5e5745ad545fa60933def
+    - name: Poison_Concentric_Sink_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 26
+        y: 24
+        width: 69
+        height: 69
+      spriteId: 0fd6a2cd7e1b113498688df793b87ce1
+    - name: Poison_Concentric_Sink_Frame_29
+      frameIndex: 29
+      cellRect:
+        x: 25
+        y: 24
+        width: 70
+        height: 70
+      spriteId: 68cfe3db1e84ceb47826afe13ca741bc
+    - name: Poison_Concentric_Sink_Frame_30
+      frameIndex: 30
+      cellRect:
+        x: 24
+        y: 25
+        width: 72
+        height: 69
+      spriteId: 0b23a366433275d4b9fa563d1e1c85ec
+    - name: Poison_Concentric_Sink_Frame_31
+      frameIndex: 31
+      cellRect:
+        x: 27
+        y: 25
+        width: 69
+        height: 69
+      spriteId: 49f8c48ed1944ae4b9f61a461f5961a5
+    - name: Poison_Concentric_Sink_Frame_32
+      frameIndex: 32
+      cellRect:
+        x: 40
+        y: 40
+        width: 39
+        height: 40
+      spriteId: 8c8c5328a4eea844fb80db4c1beadaa0
+    - name: Poison_Concentric_Sink_Frame_33
+      frameIndex: 33
+      cellRect:
+        x: 40
+        y: 40
+        width: 37
+        height: 40
+      spriteId: 49edd2be2ff2fea4b82f52b46987af33
+    - name: Poison_Concentric_Sink_Frame_34
+      frameIndex: 34
+      cellRect:
+        x: 43
+        y: 40
+        width: 34
+        height: 35
+      spriteId: dfcd36f178dddc64881e85dce5410b3b
+    - name: Poison_Concentric_Sink_Frame_35
+      frameIndex: 35
+      cellRect:
+        x: 43
+        y: 40
+        width: 35
+        height: 36
+      spriteId: a953de17daf40364f85eae72813b7e76
+    - name: Poison_Concentric_Sink_Frame_36
+      frameIndex: 36
+      cellRect:
+        x: 42
+        y: 40
+        width: 37
+        height: 37
+      spriteId: 1aa5ae2021436e64e87c16fcf6073649
+    - name: Poison_Concentric_Sink_Frame_37
+      frameIndex: 37
+      cellRect:
+        x: 41
+        y: 40
+        width: 38
+        height: 38
+      spriteId: dbed5294384e664419a0663fabcad9fb
+    - name: Poison_Concentric_Sink_Frame_38
+      frameIndex: 38
+      cellRect:
+        x: 40
+        y: 41
+        width: 40
+        height: 37
+      spriteId: fbff0e585fd1f5f438a21b0c5d72e259
+    - name: Poison_Concentric_Sink_Frame_39
+      frameIndex: 39
+      cellRect:
+        x: 56
+        y: 57
+        width: 8
+        height: 7
+      spriteId: 2a26212caa9d5d240a0f210210db87c8
+    - name: Poison_Concentric_Sink_Frame_40
+      frameIndex: 40
+      cellRect:
+        x: 56
+        y: 56
+        width: 7
+        height: 8
+      spriteId: 4c6f9235a9f240d46b01f1adeab6d46f
+    - name: Poison_Concentric_Sink_Frame_41
+      frameIndex: 41
+      cellRect:
+        x: 56
+        y: 56
+        width: 5
+        height: 8
+      spriteId: 9dfbf6d54a4fe014a9ee0a9a82e87767
+    - name: Poison_Concentric_Sink_Frame_42
+      frameIndex: 42
+      cellRect:
+        x: 59
+        y: 56
+        width: 2
+        height: 3
+      spriteId: 10c5723e2fd130542910efa480dc49bd
+    - name: Poison_Concentric_Sink_Frame_43
+      frameIndex: 43
+      cellRect:
+        x: 59
+        y: 56
+        width: 3
+        height: 4
+      spriteId: f84f139ca81e3534e840a5f83160e540
+    - name: Poison_Concentric_Sink_Frame_44
+      frameIndex: 44
+      cellRect:
+        x: 58
+        y: 56
+        width: 5
+        height: 5
+      spriteId: 8018106f536db5a48bffd49d2455f405
+    - name: Poison_Concentric_Sink_Frame_45
+      frameIndex: 45
+      cellRect:
+        x: 57
+        y: 56
+        width: 6
+        height: 6
+      spriteId: 682a1ebae0a0c1f4cb999515d7db39ec
+    - name: Poison_Concentric_Sink_Frame_46
+      frameIndex: 46
+      cellRect:
+        x: 56
+        y: 57
+        width: 8
+        height: 5
+      spriteId: 49ae4284c69bfc54fbfcb4ba80b634d3
+    - name: Poison_Concentric_Sink_Frame_47
+      frameIndex: 47
+      cellRect:
+        x: 59
+        y: 57
+        width: 5
+        height: 5
+      spriteId: a995daee88f175b4dac7375b4592017d
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 120, y: 120}

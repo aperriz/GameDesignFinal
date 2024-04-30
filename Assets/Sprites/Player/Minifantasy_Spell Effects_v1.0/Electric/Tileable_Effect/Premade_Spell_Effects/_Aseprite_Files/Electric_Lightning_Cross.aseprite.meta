@@ -1,0 +1,864 @@
+fileFormatVersion: 2
+guid: beb33e1c99a3ba3429beff4764d75569
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Electric_Lightning_Cross_Frame_0
+    originalName: 
+    pivot: {x: 0.50000036, y: -39}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 91
+      y: 1015
+      width: 2
+      height: 2
+    spriteID: 3275518cd48c4ec469fd1c471baab51d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 91, y: 1015}
+  - name: Electric_Lightning_Cross_Frame_1
+    originalName: 
+    pivot: {x: 0.25000018, y: -12.333333}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 91
+      y: 1001
+      width: 4
+      height: 6
+    spriteID: e7e7e07bee24ddc469d64bd64ae923b6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 91, y: 1001}
+  - name: Electric_Lightning_Cross_Frame_2
+    originalName: 
+    pivot: {x: 0.4736843, y: -3.7222223}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 107
+      y: 1000
+      width: 19
+      height: 18
+    spriteID: a753972dbf04e0e44b82d91f81ff19ba
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 107, y: 1000}
+  - name: Electric_Lightning_Cross_Frame_3
+    originalName: 
+    pivot: {x: 0.4999999, y: -3.5263157}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 63
+      y: 1001
+      width: 20
+      height: 19
+    spriteID: e54de1fefcfc4244a8a8794b40970723
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 63, y: 1001}
+  - name: Electric_Lightning_Cross_Frame_4
+    originalName: 
+    pivot: {x: 0.48571426, y: -1.7352941}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 107
+      y: 958
+      width: 35
+      height: 34
+    spriteID: 09284083597e8c34db28ea88b76451e0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 107, y: 958}
+  - name: Electric_Lightning_Cross_Frame_5
+    originalName: 
+    pivot: {x: 0.5, y: -1.6857144}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 63
+      y: 958
+      width: 36
+      height: 35
+    spriteID: 0256d3cd70eca0a4d9dcdb0b5e6e698f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 63, y: 958}
+  - name: Electric_Lightning_Cross_Frame_6
+    originalName: 
+    pivot: {x: 0.49019608, y: -1.02}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 958
+      width: 51
+      height: 50
+    spriteID: e77c260ceeca8c044a5d5d4dbb3ff9f0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 958}
+  - name: Electric_Lightning_Cross_Frame_7
+    originalName: 
+    pivot: {x: 0.5, y: -1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 239
+      y: 942
+      width: 52
+      height: 51
+    spriteID: 1769277c80abaea4390f6a0b6e3d3dbd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 239, y: 942}
+  - name: Electric_Lightning_Cross_Frame_8
+    originalName: 
+    pivot: {x: 0.49253732, y: -0.6515151}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 164
+      y: 942
+      width: 67
+      height: 66
+    spriteID: 3c26d731061c2f74ebc8c04b88813bd4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 164, y: 942}
+  - name: Electric_Lightning_Cross_Frame_9
+    originalName: 
+    pivot: {x: 0.5, y: -0.64179105}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 427
+      y: 4
+      width: 68
+      height: 67
+    spriteID: f0edabf84206ec74ba41c1f196049d34
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 427, y: 4}
+  - name: Electric_Lightning_Cross_Frame_10
+    originalName: 
+    pivot: {x: 0.49397588, y: -0.42682928}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 320
+      y: 201
+      width: 83
+      height: 82
+    spriteID: d66d82ebb89f898419213ca4f9d2b747
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 320, y: 201}
+  - name: Electric_Lightning_Cross_Frame_11
+    originalName: 
+    pivot: {x: 0.50000006, y: -0.42168674}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 320
+      y: 110
+      width: 84
+      height: 83
+    spriteID: b14ee2515b1e63043a7c6a8954a6486e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 320, y: 110}
+  - name: Electric_Lightning_Cross_Frame_12
+    originalName: 
+    pivot: {x: 0.49494952, y: -0.2755102}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 320
+      y: 4
+      width: 99
+      height: 98
+    spriteID: f64789aed3f1076418fb3e7fa7daf549
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 320, y: 4}
+  - name: Electric_Lightning_Cross_Frame_13
+    originalName: 
+    pivot: {x: 0.5, y: -0.27272725}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 164
+      y: 835
+      width: 100
+      height: 99
+    spriteID: c2a391dbdbfc3aa48b03857963ad0ec1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 164, y: 835}
+  - name: Electric_Lightning_Cross_Frame_14
+    originalName: 
+    pivot: {x: 0.49565214, y: -0.16666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 164
+      y: 713
+      width: 115
+      height: 114
+    spriteID: 85cb33cb07bd5534a98c020c820cbf7e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 164, y: 713}
+  - name: Electric_Lightning_Cross_Frame_15
+    originalName: 
+    pivot: {x: 0.5, y: -0.16521738}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 164
+      y: 590
+      width: 116
+      height: 115
+    spriteID: 171120f7cfff12c41958715b02e0e29f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 164, y: 590}
+  - name: Electric_Lightning_Cross_Frame_16
+    originalName: 
+    pivot: {x: 0.49618322, y: -0.08461539}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 164
+      y: 452
+      width: 131
+      height: 130
+    spriteID: 9fba32e8f4e67554d8110418f5bd1eb7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 164, y: 452}
+  - name: Electric_Lightning_Cross_Frame_17
+    originalName: 
+    pivot: {x: 0.5, y: -0.08396947}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 164
+      y: 313
+      width: 132
+      height: 131
+    spriteID: ac85bc5595833934281358015d622354
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 164, y: 313}
+  - name: Electric_Lightning_Cross_Frame_18
+    originalName: 
+    pivot: {x: 0.49659866, y: -0.020547943}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 164
+      y: 159
+      width: 147
+      height: 146
+    spriteID: cbf4dbbca1823d54c8383db9d529d639
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 164, y: 159}
+  - name: Electric_Lightning_Cross_Frame_19
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.020408163}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 164
+      y: 4
+      width: 148
+      height: 147
+    spriteID: 7969792e2240c264694e5a3b9d3825e4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 164, y: 4}
+  - name: Electric_Lightning_Cross_Frame_20
+    originalName: 
+    pivot: {x: 0.5, y: -0.020408163}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 803
+      width: 150
+      height: 147
+    spriteID: 868da3dcc11a7584a941f48ea9616197
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 803}
+  - name: Electric_Lightning_Cross_Frame_21
+    originalName: 
+    pivot: {x: 0.5, y: -0.006622517}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 644
+      width: 152
+      height: 151
+    spriteID: aac0683b452e6b2478eef4dc8283cfa0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 644}
+  - name: Electric_Lightning_Cross_Frame_22
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 152
+      height: 152
+    spriteID: 3e098b97341ab3f49b94eff0000ebaf3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Electric_Lightning_Cross_Frame_23
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 164
+      width: 152
+      height: 152
+    spriteID: 93bf9534fe01710458f157f943bbab6c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 164}
+  - name: Electric_Lightning_Cross_Frame_24
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 324
+      width: 152
+      height: 152
+    spriteID: bf809a8f478c6aa41b79fff6728a1651
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 324}
+  - name: Electric_Lightning_Cross_Frame_25
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 484
+      width: 152
+      height: 152
+    spriteID: 74957902cc43c114eb9aa784799ba989
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 484}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -261536051
+    name: Electric_Lightning_Cross
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Electric_Lightning_Cross_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 75
+        y: 78
+        width: 2
+        height: 2
+      spriteId: 3275518cd48c4ec469fd1c471baab51d
+    - name: Electric_Lightning_Cross_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 75
+        y: 74
+        width: 4
+        height: 6
+      spriteId: e7e7e07bee24ddc469d64bd64ae923b6
+    - name: Electric_Lightning_Cross_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 67
+        y: 67
+        width: 19
+        height: 18
+      spriteId: a753972dbf04e0e44b82d91f81ff19ba
+    - name: Electric_Lightning_Cross_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 66
+        y: 67
+        width: 20
+        height: 19
+      spriteId: e54de1fefcfc4244a8a8794b40970723
+    - name: Electric_Lightning_Cross_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 59
+        y: 59
+        width: 35
+        height: 34
+      spriteId: 09284083597e8c34db28ea88b76451e0
+    - name: Electric_Lightning_Cross_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 58
+        y: 59
+        width: 36
+        height: 35
+      spriteId: 0256d3cd70eca0a4d9dcdb0b5e6e698f
+    - name: Electric_Lightning_Cross_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 51
+        y: 51
+        width: 51
+        height: 50
+      spriteId: e77c260ceeca8c044a5d5d4dbb3ff9f0
+    - name: Electric_Lightning_Cross_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 50
+        y: 51
+        width: 52
+        height: 51
+      spriteId: 1769277c80abaea4390f6a0b6e3d3dbd
+    - name: Electric_Lightning_Cross_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 43
+        y: 43
+        width: 67
+        height: 66
+      spriteId: 3c26d731061c2f74ebc8c04b88813bd4
+    - name: Electric_Lightning_Cross_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 42
+        y: 43
+        width: 68
+        height: 67
+      spriteId: f0edabf84206ec74ba41c1f196049d34
+    - name: Electric_Lightning_Cross_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 35
+        y: 35
+        width: 83
+        height: 82
+      spriteId: d66d82ebb89f898419213ca4f9d2b747
+    - name: Electric_Lightning_Cross_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 34
+        y: 35
+        width: 84
+        height: 83
+      spriteId: b14ee2515b1e63043a7c6a8954a6486e
+    - name: Electric_Lightning_Cross_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 27
+        y: 27
+        width: 99
+        height: 98
+      spriteId: f64789aed3f1076418fb3e7fa7daf549
+    - name: Electric_Lightning_Cross_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 26
+        y: 27
+        width: 100
+        height: 99
+      spriteId: c2a391dbdbfc3aa48b03857963ad0ec1
+    - name: Electric_Lightning_Cross_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 19
+        y: 19
+        width: 115
+        height: 114
+      spriteId: 85cb33cb07bd5534a98c020c820cbf7e
+    - name: Electric_Lightning_Cross_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 18
+        y: 19
+        width: 116
+        height: 115
+      spriteId: 171120f7cfff12c41958715b02e0e29f
+    - name: Electric_Lightning_Cross_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 11
+        y: 11
+        width: 131
+        height: 130
+      spriteId: 9fba32e8f4e67554d8110418f5bd1eb7
+    - name: Electric_Lightning_Cross_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 10
+        y: 11
+        width: 132
+        height: 131
+      spriteId: ac85bc5595833934281358015d622354
+    - name: Electric_Lightning_Cross_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 3
+        y: 3
+        width: 147
+        height: 146
+      spriteId: cbf4dbbca1823d54c8383db9d529d639
+    - name: Electric_Lightning_Cross_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 2
+        y: 3
+        width: 148
+        height: 147
+      spriteId: 7969792e2240c264694e5a3b9d3825e4
+    - name: Electric_Lightning_Cross_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 1
+        y: 3
+        width: 150
+        height: 147
+      spriteId: 868da3dcc11a7584a941f48ea9616197
+    - name: Electric_Lightning_Cross_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 0
+        y: 1
+        width: 152
+        height: 151
+      spriteId: aac0683b452e6b2478eef4dc8283cfa0
+    - name: Electric_Lightning_Cross_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 0
+        y: 0
+        width: 152
+        height: 152
+      spriteId: 3e098b97341ab3f49b94eff0000ebaf3
+    - name: Electric_Lightning_Cross_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 0
+        y: 0
+        width: 152
+        height: 152
+      spriteId: 93bf9534fe01710458f157f943bbab6c
+    - name: Electric_Lightning_Cross_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 0
+        y: 0
+        width: 152
+        height: 152
+      spriteId: bf809a8f478c6aa41b79fff6728a1651
+    - name: Electric_Lightning_Cross_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 0
+        y: 0
+        width: 152
+        height: 152
+      spriteId: 74957902cc43c114eb9aa784799ba989
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 152, y: 152}

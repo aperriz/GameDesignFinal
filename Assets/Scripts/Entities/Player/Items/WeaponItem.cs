@@ -50,7 +50,7 @@ public class WeaponItem : PlayerItem
                     descText.text = (3 + bonusDamage).ToString() + " Damage\nFast Attack Speed";
                     break;
                 case "Staff":
-                    descText.text = (12 + bonusDamage).ToString() + " Damage\nSlow Attack Speed";
+                    descText.text = (8 + bonusDamage).ToString() + " Damage\nSlow Attack Speed";
                     break;
             }
 

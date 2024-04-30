@@ -36,6 +36,7 @@ public class SettingsController : MonoBehaviour
         brightnessFilter = GameObject.Find("Brightness").GetComponent<Image>();
         DontDestroyOnLoad(gameObject);
         DontDestroyOnLoad(brightnessFilter.gameObject);
+        DontDestroyOnLoad(GameObject.Find("Loading Screen"));
 
         brightnessVal = 1 - brightnessFilter.color.a;
         masterSlider.value = av.instance.masterVol;

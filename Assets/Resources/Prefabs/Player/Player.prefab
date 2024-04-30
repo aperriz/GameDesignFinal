@@ -2108,9 +2108,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7857984247028236146}
-        m_TargetAssemblyTypeName: SettingsController, Assembly-CSharp
-        m_MethodName: ToggleSettings
+      - m_Target: {fileID: 1871168297470931036}
+        m_TargetAssemblyTypeName: DeathScreen, Assembly-CSharp
+        m_MethodName: ReturnToMainMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3741,17 +3741,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2a4db7a114972834c8e4117be1d82ba3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &7857984247028236146 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 771101411450914327, guid: ae28ab9427a6edc46997164cff2f981f, type: 3}
-  m_PrefabInstance: {fileID: 7475601203849476453}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5164454508209282059}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7dd6cf0ec28b594c8a3a910407fd813, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &7871585850677719048 stripped

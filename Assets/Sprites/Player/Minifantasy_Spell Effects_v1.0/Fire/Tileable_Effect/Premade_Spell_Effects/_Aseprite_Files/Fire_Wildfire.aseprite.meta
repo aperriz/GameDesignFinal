@@ -1,0 +1,1480 @@
+fileFormatVersion: 2
+guid: d84c7b5404f5f064c9db3c3881bffdf1
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Fire_Wildfire_Frame_0
+    originalName: 
+    pivot: {x: 0.49999997, y: -1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 484
+      width: 24
+      height: 24
+    spriteID: 0d33e91892ecf504f9632301fbd3b420
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 484}
+  - name: Fire_Wildfire_Frame_1
+    originalName: 
+    pivot: {x: 0.49999997, y: -1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 36
+      y: 484
+      width: 24
+      height: 24
+    spriteID: 1afd51c9b5d19fe499e4c15bf976357d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 36, y: 484}
+  - name: Fire_Wildfire_Frame_2
+    originalName: 
+    pivot: {x: 0.49999997, y: -1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 84
+      y: 483
+      width: 24
+      height: 24
+    spriteID: df01b397b5c3c8146971491d38eeca17
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 84, y: 483}
+  - name: Fire_Wildfire_Frame_3
+    originalName: 
+    pivot: {x: 0.49999997, y: -1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 116
+      y: 483
+      width: 24
+      height: 24
+    spriteID: 87aceea4fd07dcb448c54058458b9097
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 116, y: 483}
+  - name: Fire_Wildfire_Frame_4
+    originalName: 
+    pivot: {x: 0.49999997, y: -1.0434783}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 308
+      y: 418
+      width: 24
+      height: 23
+    spriteID: 38e86cc6d8ba1b2408f2cbedbebba5e9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 308, y: 418}
+  - name: Fire_Wildfire_Frame_5
+    originalName: 
+    pivot: {x: 0.50000006, y: -1.1363636}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 356
+      y: 4
+      width: 22
+      height: 22
+    spriteID: 08db0c3a0d7ac624884881b5804617f8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 356, y: 4}
+  - name: Fire_Wildfire_Frame_6
+    originalName: 
+    pivot: {x: 0.50000006, y: -1.1363636}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 356
+      y: 34
+      width: 22
+      height: 22
+    spriteID: df6546e1fbf79c34bb675cf5ff293a85
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 356, y: 34}
+  - name: Fire_Wildfire_Frame_7
+    originalName: 
+    pivot: {x: 0.49999997, y: -1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 308
+      y: 194
+      width: 24
+      height: 24
+    spriteID: b85cd33c6f3e3e34a9f37909e7903d3e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 308, y: 194}
+  - name: Fire_Wildfire_Frame_8
+    originalName: 
+    pivot: {x: 0.49999997, y: -1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 308
+      y: 226
+      width: 24
+      height: 24
+    spriteID: 9bb78c6d7f4ed46488737d0cac7754e1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 308, y: 226}
+  - name: Fire_Wildfire_Frame_9
+    originalName: 
+    pivot: {x: 0.49999997, y: -1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 308
+      y: 258
+      width: 24
+      height: 24
+    spriteID: d9cdbd9d0bd76be42a656c34ecbc5f96
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 308, y: 258}
+  - name: Fire_Wildfire_Frame_10
+    originalName: 
+    pivot: {x: 0.49999997, y: -1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 308
+      y: 290
+      width: 24
+      height: 24
+    spriteID: 42218851592bcaf4387733bee4274a5b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 308, y: 290}
+  - name: Fire_Wildfire_Frame_11
+    originalName: 
+    pivot: {x: 0.49999997, y: -1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 308
+      y: 322
+      width: 24
+      height: 24
+    spriteID: 7fca491b66094f24f9ed1c633c68413d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 308, y: 322}
+  - name: Fire_Wildfire_Frame_12
+    originalName: 
+    pivot: {x: 0.49999997, y: -1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 308
+      y: 354
+      width: 24
+      height: 24
+    spriteID: 44ef69d8969928240801f42470e50b28
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 308, y: 354}
+  - name: Fire_Wildfire_Frame_13
+    originalName: 
+    pivot: {x: 0.49999997, y: -1.0434783}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 308
+      y: 449
+      width: 24
+      height: 23
+    spriteID: c7e2dec954528d341ada1a48ce4e3092
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 308, y: 449}
+  - name: Fire_Wildfire_Frame_14
+    originalName: 
+    pivot: {x: 0.49999997, y: -1.0434783}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 308
+      y: 480
+      width: 24
+      height: 23
+    spriteID: 322512f2a5382f4499e3084fef4addc8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 308, y: 480}
+  - name: Fire_Wildfire_Frame_15
+    originalName: 
+    pivot: {x: 0.49999997, y: -1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 308
+      y: 386
+      width: 24
+      height: 24
+    spriteID: af068b72b5f1170498e5b19a686bef7b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 308, y: 386}
+  - name: Fire_Wildfire_Frame_16
+    originalName: 
+    pivot: {x: 0.5, y: -0.4}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 244
+      y: 322
+      width: 40
+      height: 40
+    spriteID: 66a47a8da93654246809b780c3c39312
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 244, y: 322}
+  - name: Fire_Wildfire_Frame_17
+    originalName: 
+    pivot: {x: 0.5, y: -0.4}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 244
+      y: 370
+      width: 40
+      height: 40
+    spriteID: c9cec04f0a1d3014fbbd050a2d9bd9b5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 244, y: 370}
+  - name: Fire_Wildfire_Frame_18
+    originalName: 
+    pivot: {x: 0.5, y: -0.4}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 244
+      y: 418
+      width: 40
+      height: 40
+    spriteID: 295220a47ea71794e8f187e3f20bcefd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 244, y: 418}
+  - name: Fire_Wildfire_Frame_19
+    originalName: 
+    pivot: {x: 0.5, y: -0.4}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 244
+      y: 466
+      width: 40
+      height: 40
+    spriteID: 68913886d8e3f624ca77963f674afebe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 244, y: 466}
+  - name: Fire_Wildfire_Frame_20
+    originalName: 
+    pivot: {x: 0.5, y: -0.4}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 308
+      y: 4
+      width: 40
+      height: 40
+    spriteID: bc486b905570a5f41af0c2ec7e2167f8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 308, y: 4}
+  - name: Fire_Wildfire_Frame_21
+    originalName: 
+    pivot: {x: 0.5, y: -0.41025642}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 308
+      y: 100
+      width: 40
+      height: 39
+    spriteID: 7e7643dcb2f1f9d469afe35db3462bc9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 308, y: 100}
+  - name: Fire_Wildfire_Frame_22
+    originalName: 
+    pivot: {x: 0.5, y: -0.41025642}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 308
+      y: 147
+      width: 40
+      height: 39
+    spriteID: 064a2212250897a48957480b90383181
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 308, y: 147}
+  - name: Fire_Wildfire_Frame_23
+    originalName: 
+    pivot: {x: 0.5, y: -0.4}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 308
+      y: 52
+      width: 40
+      height: 40
+    spriteID: 9b2df2294b52b804fa658d6697b0ada3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 308, y: 52}
+  - name: Fire_Wildfire_Frame_24
+    originalName: 
+    pivot: {x: 0.5, y: -0.14285715}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 164
+      y: 313
+      width: 56
+      height: 56
+    spriteID: 1e4ddf270c86ce14caa612b59f120c5a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 164, y: 313}
+  - name: Fire_Wildfire_Frame_25
+    originalName: 
+    pivot: {x: 0.5, y: -0.14285715}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 164
+      y: 377
+      width: 56
+      height: 56
+    spriteID: f895ecc39dbf8ad46ab6ad43ccd138ec
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 164, y: 377}
+  - name: Fire_Wildfire_Frame_26
+    originalName: 
+    pivot: {x: 0.5, y: -0.14285715}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 164
+      y: 441
+      width: 56
+      height: 56
+    spriteID: bcb43ae0711a90b4db927d312853072a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 164, y: 441}
+  - name: Fire_Wildfire_Frame_27
+    originalName: 
+    pivot: {x: 0.5, y: -0.14285715}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 244
+      y: 4
+      width: 56
+      height: 56
+    spriteID: d184efacef69e5147a3868291c25c9db
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 244, y: 4}
+  - name: Fire_Wildfire_Frame_28
+    originalName: 
+    pivot: {x: 0.5, y: -0.14285715}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 244
+      y: 68
+      width: 56
+      height: 56
+    spriteID: 5492fe742795094469f53f7dfa40e145
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 244, y: 68}
+  - name: Fire_Wildfire_Frame_29
+    originalName: 
+    pivot: {x: 0.5, y: -0.14545454}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 244
+      y: 196
+      width: 56
+      height: 55
+    spriteID: cf8f8d0975b40f447bcd3637a8d5fb02
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 244, y: 196}
+  - name: Fire_Wildfire_Frame_30
+    originalName: 
+    pivot: {x: 0.5, y: -0.14545454}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 244
+      y: 259
+      width: 56
+      height: 55
+    spriteID: 71467eba42fb26d40a371cddf686fe4d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 244, y: 259}
+  - name: Fire_Wildfire_Frame_31
+    originalName: 
+    pivot: {x: 0.5, y: -0.14285715}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 244
+      y: 132
+      width: 56
+      height: 56
+    spriteID: 6312e065d0e4fd042bca67073a91ba7a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 244, y: 132}
+  - name: Fire_Wildfire_Frame_32
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 72
+      height: 72
+    spriteID: 1aaa0cee5f47d9840bb48a5909a12a22
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Fire_Wildfire_Frame_33
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 84
+      width: 72
+      height: 72
+    spriteID: 8da913da1a5f30b43a72ac32d8b6572b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 84}
+  - name: Fire_Wildfire_Frame_34
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 164
+      width: 72
+      height: 72
+    spriteID: 74f6921832dfc4d4c8afa6c44fed6499
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 164}
+  - name: Fire_Wildfire_Frame_35
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 244
+      width: 72
+      height: 72
+    spriteID: 63ab14cf74bf71148b70ddbb2c6a30eb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 244}
+  - name: Fire_Wildfire_Frame_36
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 324
+      width: 72
+      height: 72
+    spriteID: a6f8b661053170a46850e478a328d22d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 324}
+  - name: Fire_Wildfire_Frame_37
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 84
+      y: 404
+      width: 72
+      height: 71
+    spriteID: 348daaf1fe0bf0543ba27a3d1a512379
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 84, y: 404}
+  - name: Fire_Wildfire_Frame_38
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 164
+      y: 4
+      width: 72
+      height: 71
+    spriteID: 7701c4c58817b4e4482bce1e43c559b2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 164, y: 4}
+  - name: Fire_Wildfire_Frame_39
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 404
+      width: 72
+      height: 72
+    spriteID: 71223e1bc302c3445bcb9af1921a0a99
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 404}
+  - name: Fire_Wildfire_Frame_40
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 84
+      y: 4
+      width: 72
+      height: 72
+    spriteID: a91d495efdc58f946a5e5c02b3f42b5b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 84, y: 4}
+  - name: Fire_Wildfire_Frame_41
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 84
+      y: 84
+      width: 72
+      height: 72
+    spriteID: afaec36fe3dc51948ae5ed8b87d84fe3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 84, y: 84}
+  - name: Fire_Wildfire_Frame_42
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 84
+      y: 164
+      width: 72
+      height: 72
+    spriteID: 0d44c816a1be9654b83c58d722813619
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 84, y: 164}
+  - name: Fire_Wildfire_Frame_43
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 84
+      y: 244
+      width: 72
+      height: 72
+    spriteID: 5bc923faf1ec584498d255455bddf797
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 84, y: 244}
+  - name: Fire_Wildfire_Frame_44
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 84
+      y: 324
+      width: 72
+      height: 72
+    spriteID: 8fc023e1b1bf4ff42a850aca3f1655ea
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 84, y: 324}
+  - name: Fire_Wildfire_Frame_45
+    originalName: 
+    pivot: {x: 0.5, y: -0.02857143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 164
+      y: 83
+      width: 72
+      height: 70
+    spriteID: a390c2ba2e831ff41b00f7f004d25c2f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 164, y: 83}
+  - name: Fire_Wildfire_Frame_46
+    originalName: 
+    pivot: {x: 0.5070422, y: -0.04347826}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 164
+      y: 161
+      width: 71
+      height: 69
+    spriteID: dfb4cee51087b4d44bd986fb224463d4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 164, y: 161}
+  - name: Fire_Wildfire_Frame_47
+    originalName: 
+    pivot: {x: 0.5072464, y: -0.07462687}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 164
+      y: 238
+      width: 69
+      height: 67
+    spriteID: 3808c76ac1e1e2e44a6974be6abce5d3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 164, y: 238}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 1337682281
+    name: Fire_Wildfire
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Fire_Wildfire_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 24
+        y: 24
+        width: 24
+        height: 24
+      spriteId: 0d33e91892ecf504f9632301fbd3b420
+    - name: Fire_Wildfire_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 24
+        y: 24
+        width: 24
+        height: 24
+      spriteId: 1afd51c9b5d19fe499e4c15bf976357d
+    - name: Fire_Wildfire_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 24
+        y: 24
+        width: 24
+        height: 24
+      spriteId: df01b397b5c3c8146971491d38eeca17
+    - name: Fire_Wildfire_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 24
+        y: 24
+        width: 24
+        height: 24
+      spriteId: 87aceea4fd07dcb448c54058458b9097
+    - name: Fire_Wildfire_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 24
+        y: 24
+        width: 24
+        height: 23
+      spriteId: 38e86cc6d8ba1b2408f2cbedbebba5e9
+    - name: Fire_Wildfire_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 25
+        y: 25
+        width: 22
+        height: 22
+      spriteId: 08db0c3a0d7ac624884881b5804617f8
+    - name: Fire_Wildfire_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 25
+        y: 25
+        width: 22
+        height: 22
+      spriteId: df6546e1fbf79c34bb675cf5ff293a85
+    - name: Fire_Wildfire_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 24
+        y: 24
+        width: 24
+        height: 24
+      spriteId: b85cd33c6f3e3e34a9f37909e7903d3e
+    - name: Fire_Wildfire_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 24
+        y: 24
+        width: 24
+        height: 24
+      spriteId: 9bb78c6d7f4ed46488737d0cac7754e1
+    - name: Fire_Wildfire_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 24
+        y: 24
+        width: 24
+        height: 24
+      spriteId: d9cdbd9d0bd76be42a656c34ecbc5f96
+    - name: Fire_Wildfire_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 24
+        y: 24
+        width: 24
+        height: 24
+      spriteId: 42218851592bcaf4387733bee4274a5b
+    - name: Fire_Wildfire_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 24
+        y: 24
+        width: 24
+        height: 24
+      spriteId: 7fca491b66094f24f9ed1c633c68413d
+    - name: Fire_Wildfire_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 24
+        y: 24
+        width: 24
+        height: 24
+      spriteId: 44ef69d8969928240801f42470e50b28
+    - name: Fire_Wildfire_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 24
+        y: 24
+        width: 24
+        height: 23
+      spriteId: c7e2dec954528d341ada1a48ce4e3092
+    - name: Fire_Wildfire_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 24
+        y: 24
+        width: 24
+        height: 23
+      spriteId: 322512f2a5382f4499e3084fef4addc8
+    - name: Fire_Wildfire_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 24
+        y: 24
+        width: 24
+        height: 24
+      spriteId: af068b72b5f1170498e5b19a686bef7b
+    - name: Fire_Wildfire_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 16
+        y: 16
+        width: 40
+        height: 40
+      spriteId: 66a47a8da93654246809b780c3c39312
+    - name: Fire_Wildfire_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 16
+        y: 16
+        width: 40
+        height: 40
+      spriteId: c9cec04f0a1d3014fbbd050a2d9bd9b5
+    - name: Fire_Wildfire_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 16
+        y: 16
+        width: 40
+        height: 40
+      spriteId: 295220a47ea71794e8f187e3f20bcefd
+    - name: Fire_Wildfire_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 16
+        y: 16
+        width: 40
+        height: 40
+      spriteId: 68913886d8e3f624ca77963f674afebe
+    - name: Fire_Wildfire_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 16
+        y: 16
+        width: 40
+        height: 40
+      spriteId: bc486b905570a5f41af0c2ec7e2167f8
+    - name: Fire_Wildfire_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 16
+        y: 16
+        width: 40
+        height: 39
+      spriteId: 7e7643dcb2f1f9d469afe35db3462bc9
+    - name: Fire_Wildfire_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 16
+        y: 16
+        width: 40
+        height: 39
+      spriteId: 064a2212250897a48957480b90383181
+    - name: Fire_Wildfire_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 16
+        y: 16
+        width: 40
+        height: 40
+      spriteId: 9b2df2294b52b804fa658d6697b0ada3
+    - name: Fire_Wildfire_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 8
+        y: 8
+        width: 56
+        height: 56
+      spriteId: 1e4ddf270c86ce14caa612b59f120c5a
+    - name: Fire_Wildfire_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 8
+        y: 8
+        width: 56
+        height: 56
+      spriteId: f895ecc39dbf8ad46ab6ad43ccd138ec
+    - name: Fire_Wildfire_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 8
+        y: 8
+        width: 56
+        height: 56
+      spriteId: bcb43ae0711a90b4db927d312853072a
+    - name: Fire_Wildfire_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 8
+        y: 8
+        width: 56
+        height: 56
+      spriteId: d184efacef69e5147a3868291c25c9db
+    - name: Fire_Wildfire_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 8
+        y: 8
+        width: 56
+        height: 56
+      spriteId: 5492fe742795094469f53f7dfa40e145
+    - name: Fire_Wildfire_Frame_29
+      frameIndex: 29
+      cellRect:
+        x: 8
+        y: 8
+        width: 56
+        height: 55
+      spriteId: cf8f8d0975b40f447bcd3637a8d5fb02
+    - name: Fire_Wildfire_Frame_30
+      frameIndex: 30
+      cellRect:
+        x: 8
+        y: 8
+        width: 56
+        height: 55
+      spriteId: 71467eba42fb26d40a371cddf686fe4d
+    - name: Fire_Wildfire_Frame_31
+      frameIndex: 31
+      cellRect:
+        x: 8
+        y: 8
+        width: 56
+        height: 56
+      spriteId: 6312e065d0e4fd042bca67073a91ba7a
+    - name: Fire_Wildfire_Frame_32
+      frameIndex: 32
+      cellRect:
+        x: 0
+        y: 0
+        width: 72
+        height: 72
+      spriteId: 1aaa0cee5f47d9840bb48a5909a12a22
+    - name: Fire_Wildfire_Frame_33
+      frameIndex: 33
+      cellRect:
+        x: 0
+        y: 0
+        width: 72
+        height: 72
+      spriteId: 8da913da1a5f30b43a72ac32d8b6572b
+    - name: Fire_Wildfire_Frame_34
+      frameIndex: 34
+      cellRect:
+        x: 0
+        y: 0
+        width: 72
+        height: 72
+      spriteId: 74f6921832dfc4d4c8afa6c44fed6499
+    - name: Fire_Wildfire_Frame_35
+      frameIndex: 35
+      cellRect:
+        x: 0
+        y: 0
+        width: 72
+        height: 72
+      spriteId: 63ab14cf74bf71148b70ddbb2c6a30eb
+    - name: Fire_Wildfire_Frame_36
+      frameIndex: 36
+      cellRect:
+        x: 0
+        y: 0
+        width: 72
+        height: 72
+      spriteId: a6f8b661053170a46850e478a328d22d
+    - name: Fire_Wildfire_Frame_37
+      frameIndex: 37
+      cellRect:
+        x: 0
+        y: 0
+        width: 72
+        height: 71
+      spriteId: 348daaf1fe0bf0543ba27a3d1a512379
+    - name: Fire_Wildfire_Frame_38
+      frameIndex: 38
+      cellRect:
+        x: 0
+        y: 0
+        width: 72
+        height: 71
+      spriteId: 7701c4c58817b4e4482bce1e43c559b2
+    - name: Fire_Wildfire_Frame_39
+      frameIndex: 39
+      cellRect:
+        x: 0
+        y: 0
+        width: 72
+        height: 72
+      spriteId: 71223e1bc302c3445bcb9af1921a0a99
+    - name: Fire_Wildfire_Frame_40
+      frameIndex: 40
+      cellRect:
+        x: 0
+        y: 0
+        width: 72
+        height: 72
+      spriteId: a91d495efdc58f946a5e5c02b3f42b5b
+    - name: Fire_Wildfire_Frame_41
+      frameIndex: 41
+      cellRect:
+        x: 0
+        y: 0
+        width: 72
+        height: 72
+      spriteId: afaec36fe3dc51948ae5ed8b87d84fe3
+    - name: Fire_Wildfire_Frame_42
+      frameIndex: 42
+      cellRect:
+        x: 0
+        y: 0
+        width: 72
+        height: 72
+      spriteId: 0d44c816a1be9654b83c58d722813619
+    - name: Fire_Wildfire_Frame_43
+      frameIndex: 43
+      cellRect:
+        x: 0
+        y: 0
+        width: 72
+        height: 72
+      spriteId: 5bc923faf1ec584498d255455bddf797
+    - name: Fire_Wildfire_Frame_44
+      frameIndex: 44
+      cellRect:
+        x: 0
+        y: 0
+        width: 72
+        height: 72
+      spriteId: 8fc023e1b1bf4ff42a850aca3f1655ea
+    - name: Fire_Wildfire_Frame_45
+      frameIndex: 45
+      cellRect:
+        x: 0
+        y: 2
+        width: 72
+        height: 70
+      spriteId: a390c2ba2e831ff41b00f7f004d25c2f
+    - name: Fire_Wildfire_Frame_46
+      frameIndex: 46
+      cellRect:
+        x: 0
+        y: 3
+        width: 71
+        height: 69
+      spriteId: dfb4cee51087b4d44bd986fb224463d4
+    - name: Fire_Wildfire_Frame_47
+      frameIndex: 47
+      cellRect:
+        x: 1
+        y: 5
+        width: 69
+        height: 67
+      spriteId: 3808c76ac1e1e2e44a6974be6abce5d3
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 72, y: 72}

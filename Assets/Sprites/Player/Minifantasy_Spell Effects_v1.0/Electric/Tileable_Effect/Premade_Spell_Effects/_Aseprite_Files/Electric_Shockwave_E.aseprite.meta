@@ -1,0 +1,864 @@
+fileFormatVersion: 2
+guid: 80892d7ded429ee4d944b581875570bc
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Electric_Shockwave_E_Frame_0
+    originalName: 
+    pivot: {x: 18.5, y: -3}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 118
+      y: 20
+      width: 2
+      height: 2
+    spriteID: 78878d13332e4214fb3ce9aca3a6fc1a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 118, y: 20}
+  - name: Electric_Shockwave_E_Frame_1
+    originalName: 
+    pivot: {x: 9.25, y: -0.33333334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 118
+      y: 4
+      width: 4
+      height: 6
+    spriteID: 8212048b965c1e649b1aec89c01670ca
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 118, y: 4}
+  - name: Electric_Shockwave_E_Frame_2
+    originalName: 
+    pivot: {x: 2.857143, y: -0.33333334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 28
+      y: 100
+      width: 14
+      height: 6
+    spriteID: 6fc5218b0edae034e8291a4dc526b410
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 28, y: 100}
+  - name: Electric_Shockwave_E_Frame_3
+    originalName: 
+    pivot: {x: 3.1666665, y: -0.33333334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 112
+      y: 68
+      width: 12
+      height: 6
+    spriteID: 8d7d256fc3802584789444adfbe511cb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 112, y: 68}
+  - name: Electric_Shockwave_E_Frame_4
+    originalName: 
+    pivot: {x: 1.8571429, y: -0.14285715}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 65
+      y: 84
+      width: 21
+      height: 7
+    spriteID: fe29b0b7afc245b40ae683e38a4e8a9f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 65, y: 84}
+  - name: Electric_Shockwave_E_Frame_5
+    originalName: 
+    pivot: {x: 1.8181819, y: -0.14285715}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 35
+      y: 84
+      width: 22
+      height: 7
+    spriteID: 3c8720223a1d61445b6737eb4ebdcea3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 35, y: 84}
+  - name: Electric_Shockwave_E_Frame_6
+    originalName: 
+    pivot: {x: 1.3333334, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 30
+      height: 8
+    spriteID: 9f1e2dd3fbc6d8f4598606e49e2bd228
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Electric_Shockwave_E_Frame_7
+    originalName: 
+    pivot: {x: 1.3333334, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 42
+      y: 4
+      width: 30
+      height: 8
+    spriteID: 65808a670a0242e4cbcb46cf04a7f8cf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 42, y: 4}
+  - name: Electric_Shockwave_E_Frame_8
+    originalName: 
+    pivot: {x: 1.0666667, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 80
+      y: 4
+      width: 30
+      height: 8
+    spriteID: f12f2f51bcd40d74fbcff7b0ac3caef6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 80, y: 4}
+  - name: Electric_Shockwave_E_Frame_9
+    originalName: 
+    pivot: {x: 1.0666667, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 20
+      width: 30
+      height: 8
+    spriteID: 6dc4e34e7deb87c4dbb28a9ba4fe77ab
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 20}
+  - name: Electric_Shockwave_E_Frame_10
+    originalName: 
+    pivot: {x: 0.8000001, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 42
+      y: 20
+      width: 30
+      height: 8
+    spriteID: c96685113ff1ad84b8be136816e1f53c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 42, y: 20}
+  - name: Electric_Shockwave_E_Frame_11
+    originalName: 
+    pivot: {x: 0.8000001, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 80
+      y: 20
+      width: 30
+      height: 8
+    spriteID: 194c57add4618c64ea3a5c40f652c210
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 80, y: 20}
+  - name: Electric_Shockwave_E_Frame_12
+    originalName: 
+    pivot: {x: 0.5333333, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 36
+      width: 30
+      height: 8
+    spriteID: 13e7d38f615f3da48a8ef5b5d4698951
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 36}
+  - name: Electric_Shockwave_E_Frame_13
+    originalName: 
+    pivot: {x: 0.5333333, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 42
+      y: 36
+      width: 30
+      height: 8
+    spriteID: 42879b8a56a3b2a4190ed0825dc98b31
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 42, y: 36}
+  - name: Electric_Shockwave_E_Frame_14
+    originalName: 
+    pivot: {x: 0.26666665, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 80
+      y: 36
+      width: 30
+      height: 8
+    spriteID: f883efa38f453ad428873cd8b3f978f8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 80, y: 36}
+  - name: Electric_Shockwave_E_Frame_15
+    originalName: 
+    pivot: {x: 0.26666665, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 52
+      width: 30
+      height: 8
+    spriteID: d152c933c2a46694baf7d3ee66610c4a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 52}
+  - name: Electric_Shockwave_E_Frame_16
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 42
+      y: 52
+      width: 30
+      height: 8
+    spriteID: 4d05db124d7f5ae4d8dac3ac51bdf147
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 42, y: 52}
+  - name: Electric_Shockwave_E_Frame_17
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 80
+      y: 52
+      width: 30
+      height: 8
+    spriteID: 94669fa8d2d76d44294cf42abc37da85
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 80, y: 52}
+  - name: Electric_Shockwave_E_Frame_18
+    originalName: 
+    pivot: {x: -0.26666674, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 68
+      width: 30
+      height: 8
+    spriteID: b742e1a3f4c1b4b41b3101ba8103bc48
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 68}
+  - name: Electric_Shockwave_E_Frame_19
+    originalName: 
+    pivot: {x: -0.26666674, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 42
+      y: 68
+      width: 30
+      height: 8
+    spriteID: 1f4ca289bd7241847a2e638413c846aa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 42, y: 68}
+  - name: Electric_Shockwave_E_Frame_20
+    originalName: 
+    pivot: {x: -0.6956521, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 84
+      width: 23
+      height: 8
+    spriteID: 8f208ad727926ec4a9b1771f8c34cbb9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 84}
+  - name: Electric_Shockwave_E_Frame_21
+    originalName: 
+    pivot: {x: -0.6666666, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 80
+      y: 68
+      width: 24
+      height: 8
+    spriteID: f3a4e66a707224d4cb60b279fcae6def
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 80, y: 68}
+  - name: Electric_Shockwave_E_Frame_22
+    originalName: 
+    pivot: {x: -1.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 94
+      y: 84
+      width: 16
+      height: 8
+    spriteID: b1b37d55cae29b84b9b2ff08e751c0e8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 94, y: 84}
+  - name: Electric_Shockwave_E_Frame_23
+    originalName: 
+    pivot: {x: -1.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 100
+      width: 16
+      height: 8
+    spriteID: d139cc76081be2e4880f70e8b006e20e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 100}
+  - name: Electric_Shockwave_E_Frame_24
+    originalName: 
+    pivot: {x: -3.9999998, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 50
+      y: 100
+      width: 8
+      height: 8
+    spriteID: 053d2e37bf6ac164980f3bc99e685a74
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 50, y: 100}
+  - name: Electric_Shockwave_E_Frame_25
+    originalName: 
+    pivot: {x: -3.9999998, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 66
+      y: 100
+      width: 8
+      height: 8
+    spriteID: 84b3750f0a4af834e8189b1d9c413a13
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 66, y: 100}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -1736256649
+    name: Electric_Shockwave_E
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Electric_Shockwave_E_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 3
+        y: 6
+        width: 2
+        height: 2
+      spriteId: 78878d13332e4214fb3ce9aca3a6fc1a
+    - name: Electric_Shockwave_E_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 3
+        y: 2
+        width: 4
+        height: 6
+      spriteId: 8212048b965c1e649b1aec89c01670ca
+    - name: Electric_Shockwave_E_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 0
+        y: 2
+        width: 14
+        height: 6
+      spriteId: 6fc5218b0edae034e8291a4dc526b410
+    - name: Electric_Shockwave_E_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 2
+        y: 2
+        width: 12
+        height: 6
+      spriteId: 8d7d256fc3802584789444adfbe511cb
+    - name: Electric_Shockwave_E_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 1
+        y: 1
+        width: 21
+        height: 7
+      spriteId: fe29b0b7afc245b40ae683e38a4e8a9f
+    - name: Electric_Shockwave_E_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 0
+        y: 1
+        width: 22
+        height: 7
+      spriteId: 3c8720223a1d61445b6737eb4ebdcea3
+    - name: Electric_Shockwave_E_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 0
+        y: 0
+        width: 30
+        height: 8
+      spriteId: 9f1e2dd3fbc6d8f4598606e49e2bd228
+    - name: Electric_Shockwave_E_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 0
+        y: 0
+        width: 30
+        height: 8
+      spriteId: 65808a670a0242e4cbcb46cf04a7f8cf
+    - name: Electric_Shockwave_E_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 8
+        y: 0
+        width: 30
+        height: 8
+      spriteId: f12f2f51bcd40d74fbcff7b0ac3caef6
+    - name: Electric_Shockwave_E_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 8
+        y: 0
+        width: 30
+        height: 8
+      spriteId: 6dc4e34e7deb87c4dbb28a9ba4fe77ab
+    - name: Electric_Shockwave_E_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 16
+        y: 0
+        width: 30
+        height: 8
+      spriteId: c96685113ff1ad84b8be136816e1f53c
+    - name: Electric_Shockwave_E_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 16
+        y: 0
+        width: 30
+        height: 8
+      spriteId: 194c57add4618c64ea3a5c40f652c210
+    - name: Electric_Shockwave_E_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 24
+        y: 0
+        width: 30
+        height: 8
+      spriteId: 13e7d38f615f3da48a8ef5b5d4698951
+    - name: Electric_Shockwave_E_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 24
+        y: 0
+        width: 30
+        height: 8
+      spriteId: 42879b8a56a3b2a4190ed0825dc98b31
+    - name: Electric_Shockwave_E_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 32
+        y: 0
+        width: 30
+        height: 8
+      spriteId: f883efa38f453ad428873cd8b3f978f8
+    - name: Electric_Shockwave_E_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 32
+        y: 0
+        width: 30
+        height: 8
+      spriteId: d152c933c2a46694baf7d3ee66610c4a
+    - name: Electric_Shockwave_E_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 40
+        y: 0
+        width: 30
+        height: 8
+      spriteId: 4d05db124d7f5ae4d8dac3ac51bdf147
+    - name: Electric_Shockwave_E_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 40
+        y: 0
+        width: 30
+        height: 8
+      spriteId: 94669fa8d2d76d44294cf42abc37da85
+    - name: Electric_Shockwave_E_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 48
+        y: 0
+        width: 30
+        height: 8
+      spriteId: b742e1a3f4c1b4b41b3101ba8103bc48
+    - name: Electric_Shockwave_E_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 48
+        y: 0
+        width: 30
+        height: 8
+      spriteId: 1f4ca289bd7241847a2e638413c846aa
+    - name: Electric_Shockwave_E_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 56
+        y: 0
+        width: 23
+        height: 8
+      spriteId: 8f208ad727926ec4a9b1771f8c34cbb9
+    - name: Electric_Shockwave_E_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 56
+        y: 0
+        width: 24
+        height: 8
+      spriteId: f3a4e66a707224d4cb60b279fcae6def
+    - name: Electric_Shockwave_E_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 64
+        y: 0
+        width: 16
+        height: 8
+      spriteId: b1b37d55cae29b84b9b2ff08e751c0e8
+    - name: Electric_Shockwave_E_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 64
+        y: 0
+        width: 16
+        height: 8
+      spriteId: d139cc76081be2e4880f70e8b006e20e
+    - name: Electric_Shockwave_E_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 72
+        y: 0
+        width: 8
+        height: 8
+      spriteId: 053d2e37bf6ac164980f3bc99e685a74
+    - name: Electric_Shockwave_E_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 72
+        y: 0
+        width: 8
+        height: 8
+      spriteId: 84b3750f0a4af834e8189b1d9c413a13
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 80, y: 8}

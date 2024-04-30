@@ -30,6 +30,8 @@ public class Boss2RecieveDamage : MonoBehaviour
     [SerializeField]
     UnityEvent onDeath;
     PlayerMovement pInput;
+    [SerializeField]
+    GameObject endScreen;
 
     // Start is called before the first frame update
     void Start()
@@ -160,5 +162,14 @@ public class Boss2RecieveDamage : MonoBehaviour
     public void EndTransition()
     {
         animator.SetBool("Invincible", false);
+    }
+
+    public void GameOver()
+    {
+        SceneManager.LoadScene("End Screen");
+    }
+
+    public void MainMenu()
+    {
     }
 }

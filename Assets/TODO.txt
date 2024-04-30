@@ -1,9 +1,6 @@
 TODO List:
 Boss:
 	Can revisit later, but "Done"
-Death Screen
-Loading Screen
-	use unity event after generation
-Music
 Game End Screen
+Skip level button
 Saves (?)

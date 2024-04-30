@@ -154,13 +154,17 @@ public class PotionItem : PlayerItem
         }
     }
 
-    private IEnumerator SpeedPotionDuration()
+    private void SpeedPotionDuration()
+    {
+        StartCoroutine(SpeedPot());
+    }
+
+    public IEnumerator SpeedPot()
     {
         yield return new WaitForSeconds(15);
         playerMovement.maxSpeed /= 1.5f;
         extraStats.speedPotionCooldown = false;
 
-        Destroy(gameObject);
     }
 
 }

@@ -9,6 +9,7 @@ public class Projectile : MonoBehaviour
     [SerializeField]
     public int speed = 10;
     Collider2D col;
+    bool hit = false;
 
 
     void Start()
@@ -32,8 +33,10 @@ public class Projectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision != null && collision.name != "Player" && collision.GetType() != typeof(CircleCollider2D) && collision.GetComponent<PlayerItem>() == null)
+        if (collision != null && collision.name != "Player" && collision.GetType() != typeof(CircleCollider2D) && 
+            collision.GetComponent<PlayerItem>() == null && collision.GetComponent<EnemyProjectile>() == null && !hit)
         {
+            hit = true;
             EnemyRecieveDamage enemy = collision.GetComponent<EnemyRecieveDamage>();
             if (enemy != null)
             {

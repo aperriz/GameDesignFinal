@@ -149,7 +149,11 @@ public class AgentPlacer : MonoBehaviour
             }
         }
         Debug.Log("Done Gen");
-        GameObject.Find("Loading Screen").SetActive(false);
+        GameObject loadingScreen = GameObject.Find("Loading Screen");
+        for (int i = 0; i < loadingScreen.transform.childCount; i++)
+        {
+            loadingScreen.transform.GetChild(i).gameObject.SetActive(false);
+        }
         Time.timeScale = 1.0f;
         generated = true;
     }

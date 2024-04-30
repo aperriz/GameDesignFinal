@@ -23,8 +23,13 @@ public class MainMenu : MonoBehaviour
     public void StartGame()
     {
         SceneManager.LoadScene("Level 1");
-        loadingScreen.SetActive(true);
-        if(player != null)
+
+        for (int i = 0; i < loadingScreen.transform.childCount; i++)
+        {
+            loadingScreen.transform.GetChild(i).gameObject.SetActive(true);
+        }
+
+        if (player != null)
         {
             player.SetActive(true);
         }

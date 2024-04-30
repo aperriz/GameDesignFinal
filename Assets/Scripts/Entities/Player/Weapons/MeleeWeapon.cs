@@ -32,4 +32,10 @@ public class MeleeWeapon : Weapon
             }
         }
     }
+
+    public new void ResetAttack()
+    {
+        GetComponent<BoxCollider2D>().enabled = false;
+        StartCoroutine(AttackCooldown());
+    }
 }

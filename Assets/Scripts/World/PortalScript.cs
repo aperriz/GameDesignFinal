@@ -16,9 +16,12 @@ public class PortalScript : MonoBehaviour
         if (collision.name == "Player")
         {
             GameObject loadingScreen = GameObject.Find("Loading Screen");
-            for (int i = 0; i < loadingScreen.transform.childCount; i++)
+            if(loadingScreen != null)
             {
-                loadingScreen.transform.GetChild(i).gameObject.SetActive(true);
+                for (int i = 0; i < loadingScreen.transform.childCount; i++)
+                {
+                    loadingScreen.transform.GetChild(i).gameObject.SetActive(true);
+                }
             }
             if (GameObject.Find("RoomFirstDungeonGenerator") != null)
             {

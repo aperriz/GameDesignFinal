@@ -21,13 +21,17 @@ public class PortalScript : MonoBehaviour
                 loadingScreen.transform.GetChild(i).gameObject.SetActive(true);
             }
 
-            if(RoomFirstDungeonGenerator.level <= 8)
+            if(GameObject.Find("RoomFirstDungeonGenerator").GetComponent<RoomFirstDungeonGenerator>().level <= 8)
             {
-                SceneManager.LoadScene("Level " + (RoomFirstDungeonGenerator.level + 1));
+                SceneManager.LoadScene("Level " + (GameObject.Find("RoomFirstDungeonGenerator").GetComponent<RoomFirstDungeonGenerator>().level + 1));
+            }
+            else if (GameObject.Find("RoomFirstDungeonGenerator").GetComponent<RoomFirstDungeonGenerator>().level == 9)
+            {
+                SceneManager.LoadScene("Boss Phase 1");
             }
             else
             {
-                SceneManager.LoadScene("Boss Phase 1");
+                SceneManager.LoadScene("Boss Phase 2");
             }
             
         }

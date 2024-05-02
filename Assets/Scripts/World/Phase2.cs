@@ -118,7 +118,7 @@ public class Phase2 : MonoBehaviour
         //Pillars
         yield return new WaitForSeconds(atk2cd);
 
-        for (int i = 0; i < Random.Range(1, 11); i++)
+        for (int i = 0; i < Random.Range(10, 21); i++)
         {
             bool placed = false;
             int loopsWithoutPlacing = 0;
@@ -151,10 +151,16 @@ public class Phase2 : MonoBehaviour
     {
         //Ring
         yield return new WaitForSeconds(atk3cd);
-        for (int i = 0; i < 36; i++)
+        for (int i = 0; i < 72; i++)
         {
-            Instantiate(fireball, transform.position, Quaternion.Euler(0, 0, 10f * i));
-            yield return new WaitForSeconds(0.05f);
+            Instantiate(fireball, transform.position, Quaternion.Euler(0, 0, 5f * i));
+            yield return new WaitForSeconds(0.025f);
+        }
+
+        for (int i = 0; i < 72; i++)
+        {
+            Instantiate(fireball, transform.position, Quaternion.Euler(0, 0, (5f * i) + 2.5f));
+            yield return new WaitForSeconds(0.025f);
         }
         StartCoroutine(Attack1CD());
     }
@@ -232,7 +238,7 @@ public class Phase2 : MonoBehaviour
             loops++;
             yield return new WaitForFixedUpdate();
             StartCoroutine(movement(move, loops, endPos, startPos, dist, angle));
-            if(loops % 25 == 0)
+            if(loops % 10 == 0)
             {
                 //Instantiate(fireball, transform.position, Quaternion.Euler(0, 0, angle));
                 Instantiate(fireball, transform.position, Quaternion.Euler(0, 0, angle + 45));

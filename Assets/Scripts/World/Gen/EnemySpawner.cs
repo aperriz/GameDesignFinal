@@ -42,7 +42,7 @@ public class AgentPlacer : MonoBehaviour
     {
         enemyParent = GameObject.Find("Enemies").transform;
         dungeonData = FindObjectOfType<DungeonData>();
-        level = RoomFirstDungeonGenerator.level;
+        level = GameObject.Find("RoomFirstDungeonGenerator").GetComponent<RoomFirstDungeonGenerator>().level;
     }
 
     private void FixedUpdate()
@@ -61,7 +61,7 @@ public class AgentPlacer : MonoBehaviour
 
             if (bossRoom.EnemiesInTheRoom.Count != 0)
             {
-                Debug.Log(bossRoom.EnemiesInTheRoom.Count());
+                //Debug.Log(bossRoom.EnemiesInTheRoom.Count());
                 for (int i = 0; i < bossRoom.EnemiesInTheRoom.Count; i++)
                 {
                     if (bossRoom.EnemiesInTheRoom.ElementAt(i).gameObject == null)
@@ -156,9 +156,11 @@ public class AgentPlacer : MonoBehaviour
         }
         Time.timeScale = 1.0f;
         generated = true;
-        if(RoomFirstDungeonGenerator.level == 1)
+        if(GameObject.Find("RoomFirstDungeonGenerator").GetComponent<RoomFirstDungeonGenerator>().level == 1)
         {
             dungeonData.PlayerReference.GetComponent<PlayerMovement>().paused = true;
+            Debug.Log(level);
+            Debug.Log(GameObject.Find("RoomFirstDungeonGenerator").GetComponent<RoomFirstDungeonGenerator>().level);
             level1Dialogue?.Invoke();
         }
     }

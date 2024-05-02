@@ -38,6 +38,7 @@ public class DialogueManager : MonoBehaviour
         invoked = true;
         dialogueBox.SetActive(true);
         GameObject.Find("Player").transform.GetChild(1).gameObject.SetActive(false);
+        GameObject.Find("Player").GetComponent<PlayerMovement>().enabled = false;
 
         DisplayNextSentence();
 
@@ -70,6 +71,7 @@ public class DialogueManager : MonoBehaviour
         contButton.enabled = false;
         if (dialogueQueue.Count == 0)
         {
+            GameObject.Find("Player").GetComponent<PlayerMovement>().enabled = true;
             dialogueBox.SetActive(false);
             if (!dead)
             {

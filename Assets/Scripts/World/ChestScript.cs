@@ -26,7 +26,7 @@ public class ChestScript : MonoBehaviour
     {
         tileMapVisualizer = GameObject.Find("TilemapVisualizer").GetComponent<TileMapVisualizer>();
 
-        level = RoomFirstDungeonGenerator.level;
+        level = GameObject.Find("RoomFirstDungeonGenerator").GetComponent<RoomFirstDungeonGenerator>().level;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

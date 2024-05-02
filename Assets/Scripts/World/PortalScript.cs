@@ -21,10 +21,9 @@ public class PortalScript : MonoBehaviour
                 loadingScreen.transform.GetChild(i).gameObject.SetActive(true);
             }
 
-            RoomFirstDungeonGenerator dungeonGenerator = GameObject.Find("RoomFirstDungeonGenerator").GetComponent<RoomFirstDungeonGenerator>();
-            if(dungeonGenerator.level <= 8)
+            if(RoomFirstDungeonGenerator.level <= 8)
             {
-                SceneManager.LoadScene("Level " + (dungeonGenerator.level + 1));
+                SceneManager.LoadScene("Level " + (RoomFirstDungeonGenerator.level + 1));
             }
             else
             {

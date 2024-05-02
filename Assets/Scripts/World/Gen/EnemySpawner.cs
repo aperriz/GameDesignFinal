@@ -5,6 +5,7 @@ using System.Linq;
 using UnityEngine;
 using Cinemachine;
 using static UnityEngine.EventSystems.EventTrigger;
+using UnityEngine.Events;
 
 public class AgentPlacer : MonoBehaviour
 {
@@ -14,13 +15,15 @@ public class AgentPlacer : MonoBehaviour
     private List<GameObject> lowWeightEnemies, highWeightEnemies;
 
     [SerializeField]
-    GameObject portalPrefab;
+    GameObject portalPrefab, dialogue;
 
     private float maxWeight, minWeight;
 
-    private int playerRoomIndex = 0, bossRoomIndex;
+    private int bossRoomIndex;
 
     DungeonData dungeonData;
+    [SerializeField]
+    UnityEvent level1Dialogue;
 
     Transform enemyParent;
 
@@ -39,7 +42,7 @@ public class AgentPlacer : MonoBehaviour
     {
         enemyParent = GameObject.Find("Enemies").transform;
         dungeonData = FindObjectOfType<DungeonData>();
-        level = GameObject.Find("RoomFirstDungeonGenerator").GetComponent<RoomFirstDungeonGenerator>().level;
+        level = RoomFirstDungeonGenerator.level;
     }
 
     private void FixedUpdate()
@@ -68,14 +71,12 @@ public class AgentPlacer : MonoBehaviour
                     }
                     else
                     {
-                        Debug.Log(bossRoom.EnemiesInTheRoom.ElementAt(i).gameObject);
+                        //Debug.Log(bossRoom.EnemiesInTheRoom.ElementAt(i).gameObject);
                     }
                 }
             }
 
         }
-
-        
 
     }
 
@@ -116,7 +117,6 @@ public class AgentPlacer : MonoBehaviour
             Room room = dungeonData.Rooms[i];
             RoomGraph roomGraph = new RoomGraph(room.FloorTiles);
 
-
             HashSet<Vector2Int> roomFloor = new HashSet<Vector2Int>(room.FloorTiles);
 
             roomFloor.IntersectWith(dungeonData.Path);
@@ -156,6 +156,11 @@ public class AgentPlacer : MonoBehaviour
         }
         Time.timeScale = 1.0f;
         generated = true;
+        if(RoomFirstDungeonGenerator.level == 1)
+        {
+            dungeonData.PlayerReference.GetComponent<PlayerMovement>().paused = true;
+            level1Dialogue?.Invoke();
+        }
     }
 
     /// <summary>

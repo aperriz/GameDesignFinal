@@ -7,11 +7,18 @@ public class MainMenu : MonoBehaviour
 {
     public GameObject settingsObject;
     [SerializeField]
-    public GameObject playerPrefab, loadingScreen;
+    public GameObject playerPrefab, loadingScreen, musicPrefab;
     private static GameObject player;
 
     private void Start()
     {
+        GameObject music = GameObject.Find("Music");
+
+        if (music == null)
+        {
+            Instantiate(musicPrefab).name = "Music";
+        }
+
         DontDestroyOnLoad(loadingScreen);
         player = GameObject.Find("Player");
         if(player != null)

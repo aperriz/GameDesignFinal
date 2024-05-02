@@ -1,30 +1,34 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameOverScript : MonoBehaviour
 {
-    MusicManager musicManager;
+    GameObject musicManager;
     [SerializeField]
-    GameObject scoreObject;
+    TextMeshProUGUI scoreObject;
 
     private void Start()
     {
-
+        
         GameObject player = GameObject.Find("Player");
-        scoreObject.GetComponent<Text>().text = "Score: " + player.GetComponent<PlayerExtraStats>().gold.ToString(); ;
+        Debug.Log(player);
 
-        musicManager = GameObject.Find("Music").GetComponent<MusicManager>();
+        Destroy(player);
+
+        musicManager = GameObject.Find("Music");
         if (player != null)
         {
-            player.SetActive(false);
+            scoreObject.text = "Score: " + player.GetComponent<PlayerExtraStats>().gold.ToString();
+            Destroy(player);
         }
 
         if(musicManager != null)
         {
-            musicManager.GetComponent<AudioSource>().clip = musicManager.endGame;
+            musicManager.GetComponent<AudioSource>().clip = musicManager.GetComponent<MusicManager>().endGame;
             musicManager.GetComponent<AudioSource>().loop = true;
         }
     }

@@ -8,6 +8,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.Processors;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -96,6 +97,8 @@ public class Boss2RecieveDamage : MonoBehaviour
             healthBar.SetActive(true);
             Debug.Log("Ow");
 
+            animator.SetFloat("Health", CalculateHealthPercent());
+
             healthBarSlider.value = CalculateHealthPercent();
 
             Debug.Log("Dealing damage");
@@ -110,6 +113,16 @@ public class Boss2RecieveDamage : MonoBehaviour
     {
         healthBarSlider.value = CalculateHealthPercent();
         
+        if(health <= maxHealth * .5f && !halfHealth)
+        {
+            Phase2 p2 = GetComponent<Phase2>();
+            p2.atk1cd /= 1.25f;
+            p2.atk2cd /= 1.25f;
+            p2.atk3cd /= 1.25f;
+            p2.atk4cd /= 1.25f;
+            p2.moveItterations = (int)Math.Round(p2.moveItterations / 1.5f);
+            halfHealth = true;
+        }
 
         if (health <= 0)
         {
@@ -125,6 +138,12 @@ public class Boss2RecieveDamage : MonoBehaviour
             audioSource.clip = deathSound;
             audioSource.Play();
 
+            float sfxTimer = 0;
+
+            while(sfxTimer < audioSource.clip.length)
+            {
+                sfxTimer += Time.deltaTime;
+            }
             onDeath?.Invoke();
 
         }
@@ -147,13 +166,6 @@ public class Boss2RecieveDamage : MonoBehaviour
         return (float)health / (float)maxHealth;
     }
 
-    public void DeathSequence()
-    {
-        pInput.enabled = true;
-        Time.timeScale = 1;
-        SceneManager.LoadScene("Boss Phase 2", LoadSceneMode.Single);
-    }
-
     public void StartTransition()
     {
         animator.SetBool("Invincible", true);
@@ -171,5 +183,16 @@ public class Boss2RecieveDamage : MonoBehaviour
 
     public void MainMenu()
     {
+    }
+
+    public void Dead()
+    {
+        GetComponent<Phase2>().enabled = false; ;
+        transform.position = Vector2.zero;
+
+    }
+    private void FixedUpdate()
+    {
+        GetComponent<PolygonCollider2D>().pathCount = GetComponent<SpriteRenderer>().sprite.GetPhysicsShapeCount();
     }
 }

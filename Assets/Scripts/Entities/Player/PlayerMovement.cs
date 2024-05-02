@@ -135,11 +135,11 @@ public class PlayerMovement : MonoBehaviour
                 break;
             case "Bow":
                 weaponObject = possibleWeapons[1];
-                baseDamage = 3;
+                baseDamage = 2;
                 break;
             case "Staff":
                 weaponObject = possibleWeapons[2];
-                baseDamage = 8;
+                baseDamage = 7;
                 break;
             default:
                 Debug.LogWarning("Invalid weapon type");

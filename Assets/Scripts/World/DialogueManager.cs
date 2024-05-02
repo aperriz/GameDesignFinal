@@ -59,6 +59,10 @@ public class DialogueManager : MonoBehaviour
         dead = true;
         DisplayNextSentence();
         
+        foreach(var enemy in FindObjectsOfType<BatScript>())
+        {
+            enemy.DealDamage(1000);
+        }
     }
 
     public void DisplayNextSentence()

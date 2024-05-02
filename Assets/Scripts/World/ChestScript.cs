@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class ChestScript : MonoBehaviour
 {
@@ -45,7 +47,7 @@ public class ChestScript : MonoBehaviour
 
     private void SpawnItems()
     {
-        Vector2 spawnPos = new Vector2(transform.position.x + Random.Range(-2, 3), transform.position.y + Random.Range(-2, 3));
+        Vector2Int spawnPos = new Vector2Int((int)Mathf.Round(transform.position.x) + Random.Range(-2, 3), (int)Mathf.Round(transform.position.y) + Random.Range(-2, 3));
         int loopsWithoutPlacing = 0;
         
         Debug.Log("Max spawns: " + (spawnQuantity + (int)Mathf.Floor(level / 3)));
@@ -59,8 +61,9 @@ public class ChestScript : MonoBehaviour
             for (int i = 0; i < chestSpawns; i++)
             {
                 placed = false;
-                if (!spawnedItemPositions.Contains(spawnPos) && (Vector3)spawnPos != transform.position && 
-                    tileMapVisualizer.floorMap.HasTile(new Vector3Int((int)spawnPos.x, (int)spawnPos.y, 0)) && !placed )
+                if (!spawnedItemPositions.Contains(spawnPos) && new Vector3(spawnPos.x, spawnPos.y, transform.position.z) != transform.position && 
+                    tileMapVisualizer.floorMap.HasTile(new Vector3Int((int)Mathf.Round(spawnPos.x), (int)Mathf.Round(spawnPos.y), 0)) && !placed
+                    && !PropPlacementManager.propLocations.Contains(spawnPos))
                 {
                     placed = true;
                     Debug.Log("Spawning item");
@@ -73,7 +76,7 @@ public class ChestScript : MonoBehaviour
                 else
                 {
                     Debug.Log(placed);
-                    spawnPos = new Vector2(transform.position.x + Random.Range(-2, 2), transform.position.y);
+                    spawnPos = new Vector2Int((int)Mathf.Round(transform.position.x) + Random.Range(-2, 2), (int)Mathf.Round(transform.position.y));
                     loopsWithoutPlacing++;
                 }
                 if (loopsWithoutPlacing >= 8)

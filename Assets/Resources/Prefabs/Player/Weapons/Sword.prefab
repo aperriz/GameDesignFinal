@@ -124,7 +124,7 @@ MonoBehaviour:
   animator: {fileID: 2096438371821019307}
   renderer: {fileID: 1827531008114091982}
   attackCooldown: 0.5
-  damage: 5
+  damage: 7
 --- !u!61 &1422147352452933407
 BoxCollider2D:
   m_ObjectHideFlags: 0

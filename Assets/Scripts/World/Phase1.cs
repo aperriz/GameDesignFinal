@@ -70,7 +70,7 @@ public class Phase1 : MonoBehaviour
         for(int i = 0; i < roll*2+1; i++)
         {
             //Debug.Log("paper");
-            Instantiate(paperProjectile, new Vector3(transform.position.x, transform.position.y , -9), Quaternion.Euler(0, 0, angle - 90 + (angleChange * i)), transform);
+            Instantiate(paperProjectile, new Vector3(transform.position.x, transform.position.y , -9), Quaternion.Euler(0, 0, angle - 45 + (angleChange * i)), transform);
         }
     }
 
@@ -78,10 +78,10 @@ public class Phase1 : MonoBehaviour
     {
         //12, 7
         Debug.Log("Attack 2");
-        Instantiate(batPrefab, new Vector3(12, 7, -6), Quaternion.identity, transform);
-        Instantiate(batPrefab, new Vector3(-12, 7, -6), Quaternion.identity, transform);
-        Instantiate(batPrefab, new Vector3(12, -7, -6), Quaternion.identity, transform);
-        Instantiate(batPrefab, new Vector3(-12, -7, -6), Quaternion.identity, transform);
+        Instantiate(batPrefab, new Vector3(12, 7, -6), Quaternion.identity);
+        Instantiate(batPrefab, new Vector3(-12, 7, -6), Quaternion.identity);
+        Instantiate(batPrefab, new Vector3(12, -7, -6), Quaternion.identity);
+        Instantiate(batPrefab, new Vector3(-12, -7, -6), Quaternion.identity);
     }
 
     private void ResetAttack()

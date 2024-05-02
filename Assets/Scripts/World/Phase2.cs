@@ -21,7 +21,7 @@ public class Phase2 : MonoBehaviour
     TileMapVisualizer tileMapVisualizer;
     int attack2ct = 0;
     [SerializeField]
-    int moveItterations = 300, wallPadding = 5;
+    public int moveItterations = 300, wallPadding = 5;
 
     [SerializeField]
     public float atk1cd, atk2cd, atk3cd, atk4cd, initcd;

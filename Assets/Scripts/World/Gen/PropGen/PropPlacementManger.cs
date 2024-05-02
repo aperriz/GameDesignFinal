@@ -356,7 +356,7 @@ public class PropPlacementManager : MonoBehaviour
     /// <returns></returns>
     private GameObject PlacePropGameObjectAt(Room room, Vector2Int placementPostion, Prop propToPlace)
     {
-        GameObject prop;
+        GameObject prop = null;
         if (propToPlace != chest)
         {
             //Instantiat the prop at this positon
@@ -387,14 +387,24 @@ public class PropPlacementManager : MonoBehaviour
         }
         else
         {
-            prop = Instantiate(chestPrefab, propParent.transform);
-            prop.transform.localPosition = new Vector3(placementPostion.x + .5f, placementPostion.y + .5f, -1);
+            if(UnityEngine.Random.Range(0,11) <= 5)
+            {
+                prop = Instantiate(chestPrefab, propParent.transform);
+                prop.transform.localPosition = new Vector3(placementPostion.x + .5f, placementPostion.y + .5f, -1);
+            }
+            else
+            {
+                PlacePropGameObjectAt(room, placementPostion, propsToPlace[UnityEngine.Random.Range(0, propsToPlace.Count)]);
+            }
 
         }
 
         //Save the prop in the room data (so in the dunbgeon data)
-        room.PropPositions.Add(placementPostion);
-        room.PropObjectReferences.Add(prop);
+        if(prop != null)
+        {
+            room.PropPositions.Add(placementPostion);
+            room.PropObjectReferences.Add(prop);
+        }
         return prop;
     }
 }

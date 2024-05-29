@@ -41,7 +41,7 @@ public class PropPlacementManager : MonoBehaviour
 
     public void ProcessRooms()
     {
-        //Debug.Log("Placing Props");
+        Debug.Log("Placing Props");
 
         if (dungeonData == null)
             return;
@@ -111,10 +111,8 @@ public class PropPlacementManager : MonoBehaviour
 
     }
 
-    private IEnumerator TutorialCoroutine(Action code)
+    private void OnDisable()
     {
-        yield return new WaitForSeconds(3);
-        code();
     }
 
     /// <summary>

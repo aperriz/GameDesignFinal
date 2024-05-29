@@ -232,6 +232,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void MainMenu()
     {
+        Time.timeScale = 1.0f;
         Debug.Log("Main menu");
         Destroy(gameObject);
         SceneManager.LoadScene("MainMenu");

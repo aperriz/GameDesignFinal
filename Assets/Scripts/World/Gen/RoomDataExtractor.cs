@@ -6,6 +6,7 @@ using UnityEngine.Events;
 
 public class RoomDataExtractor : MonoBehaviour
 {
+    [SerializeField]
     private DungeonData dungeonData;
 
     [SerializeField]
@@ -19,9 +20,12 @@ public class RoomDataExtractor : MonoBehaviour
     }
     public void ProcessRooms()
     {
+        Debug.Log("Processing Rooms data");
         if (dungeonData == null)
+        {
+            Debug.Log("Dungeon Data null");
             return;
-
+        }
         foreach (Room room in dungeonData.Rooms)
         {
             //find corener, near wall and inner tiles

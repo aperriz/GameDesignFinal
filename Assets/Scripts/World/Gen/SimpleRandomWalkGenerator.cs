@@ -10,6 +10,7 @@ public class SimpleRandomWalkGenerator : AbstractDungeonGenerator
     [SerializeField]
     protected SimpleRandomWalkSO randomWalkParameters;
 
+
     protected override void RunProceduralGeneration()
     {
         tileMapVisualizer.Clear();

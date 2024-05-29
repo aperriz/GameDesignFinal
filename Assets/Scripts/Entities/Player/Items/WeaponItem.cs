@@ -118,10 +118,10 @@ public class WeaponItem : PlayerItem
                     extraStats.setDamage(5);
                     break;
                 case "Bow":
-                    extraStats.setDamage(3);
+                    extraStats.setDamage(2);
                     break;
                 case "Staff":
-                    extraStats.setDamage(8);
+                    extraStats.setDamage(7);
                     break;
                 default:
                     Debug.LogError("Invalid Weapon Type");

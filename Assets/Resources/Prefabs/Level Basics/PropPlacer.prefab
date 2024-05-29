@@ -48,7 +48,6 @@ MonoBehaviour:
   propsToPlace:
   - {fileID: 11400000, guid: 51afc441084d93e459cee0915b2c8216, type: 2}
   - {fileID: 11400000, guid: 276660f3c68213c4780dcc42e24ea86c, type: 2}
-  - {fileID: 11400000, guid: fec360a4a454ef349a6c568354bea464, type: 2}
   - {fileID: 11400000, guid: c01f5c738a4708c4e80db5e4c6be00df, type: 2}
   - {fileID: 11400000, guid: 41b8069e6982815419274c1f6fea34ac, type: 2}
   - {fileID: 11400000, guid: 95f50cd3fd280274abca03bba75b9f17, type: 2}

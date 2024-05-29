@@ -1,10 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.SceneTemplate;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class PortalScript : MonoBehaviour
 {
+    bool triggered = false;
+    [SerializeField]
+    SceneTemplateAsset levelTemplate = null;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,31 +17,28 @@ public class PortalScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.name == "Player")
+        if (collision.name == "Player" && !triggered)
         {
-            GameObject loadingScreen = GameObject.Find("Loading Screen");
-            if(loadingScreen != null)
-            {
-                for (int i = 0; i < loadingScreen.transform.childCount; i++)
-                {
-                    loadingScreen.transform.GetChild(i).gameObject.SetActive(true);
-                }
-            }
+            triggered = true;
+            Destroy(GetComponent<Collider2D>());
+            MainMenu.loadingScreen.GetComponent<Canvas>().enabled = true;
+
             if (GameObject.Find("RoomFirstDungeonGenerator") != null)
             {
-                if (GameObject.Find("RoomFirstDungeonGenerator").GetComponent<RoomFirstDungeonGenerator>().level <= 8)
+                if (GameManager.level < GameManager.maxLevel)
                 {
-                    SceneManager.LoadScene("Level " + (GameObject.Find("RoomFirstDungeonGenerator").GetComponent<RoomFirstDungeonGenerator>().level + 1));
+                    GameManager.level++;
+                    SceneManager.LoadScene("Level 1");
                 }
-                else if (GameObject.Find("RoomFirstDungeonGenerator").GetComponent<RoomFirstDungeonGenerator>().level == 9)
+                else if (GameManager.level == GameManager.maxLevel)
                 {
                     SceneManager.LoadScene("Boss Phase 1");
                 }
             }
             else
             {
+                MainMenu.loadingScreen.GetComponent<Canvas>().enabled=false;
                 SceneManager.LoadScene("Boss Phase 2");
-                loadingScreen.SetActive(false);
             }
 
         }

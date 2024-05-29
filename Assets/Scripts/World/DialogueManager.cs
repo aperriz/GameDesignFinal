@@ -93,6 +93,11 @@ public class DialogueManager : MonoBehaviour
 
     }
 
+    public void Skip()
+    {
+        while (dialogueQueue.Count > 0) { dialogueQueue.Dequeue(); }
+        DisplayNextSentence();
+    }
 
     private IEnumerator TypeSentence(string sentence)
     {

@@ -6,9 +6,10 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
-    public static int level = 0;
+    public static int level = 1, maxLevel = 9;
     [SerializeField]
     public GameObject player;
+    internal static float enemyHealthMultiplier = 1f;
 
     private void Start()
     {

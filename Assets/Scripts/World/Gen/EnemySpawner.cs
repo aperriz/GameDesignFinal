@@ -42,7 +42,7 @@ public class AgentPlacer : MonoBehaviour
     {
         enemyParent = GameObject.Find("Enemies").transform;
         dungeonData = FindObjectOfType<DungeonData>();
-        level = GameObject.Find("RoomFirstDungeonGenerator").GetComponent<RoomFirstDungeonGenerator>().level;
+        level = GameManager.level;
     }
 
     private void FixedUpdate()
@@ -149,18 +149,14 @@ public class AgentPlacer : MonoBehaviour
             }
         }
         Debug.Log("Done Gen");
-        GameObject loadingScreen = GameObject.Find("Loading Screen");
-        for (int i = 0; i < loadingScreen.transform.childCount; i++)
-        {
-            loadingScreen.transform.GetChild(i).gameObject.SetActive(false);
-        }
+        MainMenu.loadingScreen.GetComponent<Canvas>().enabled = false;
         Time.timeScale = 1.0f;
         generated = true;
-        if(GameObject.Find("RoomFirstDungeonGenerator").GetComponent<RoomFirstDungeonGenerator>().level == 1)
+        if(GameManager.level == 1)
         {
             dungeonData.PlayerReference.GetComponent<PlayerMovement>().paused = true;
             Debug.Log(level);
-            Debug.Log(GameObject.Find("RoomFirstDungeonGenerator").GetComponent<RoomFirstDungeonGenerator>().level);
+            Debug.Log(GameManager.level);
             level1Dialogue?.Invoke();
         }
     }
@@ -185,7 +181,7 @@ public class AgentPlacer : MonoBehaviour
         else if (type == "boss")
         {
             roomMaxWeight = 0;
-            switch (level)
+            switch (level % 9)
             {
                 case 3:
                     {
@@ -206,13 +202,14 @@ public class AgentPlacer : MonoBehaviour
                         k++;
                         return;
                     }
-                case 9:
+                case 0:
                     {
                         Debug.Log("Placing Balrog");
                         GameObject enemy = Instantiate(minibosses[2], enemyParent);
                         enemy.transform.localPosition = (Vector2)room.PositionsAccessibleFromPath[k] + Vector2.one * 0.5f;
                         room.EnemiesInTheRoom.Add(enemy);
                         k++;
+                        GameManager.enemyHealthMultiplier += 0.5f;
                         return;
                     }
                 default:
@@ -293,6 +290,11 @@ public class AgentPlacer : MonoBehaviour
                 break;
             }
 
+        }
+
+        foreach(var enemy in room.EnemiesInTheRoom)
+        {
+            enemy.GetComponentInChildren<EnemyRecieveDamage>().health *= GameManager.enemyHealthMultiplier;
         }
     }
 

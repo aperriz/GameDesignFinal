@@ -16,7 +16,6 @@ public class ChestScript : MonoBehaviour
     AudioClip audioClip;
     TileMapVisualizer tileMapVisualizer;
     bool open = false;
-    int level = 1;
 
     int spawnQuantity = 2;
 
@@ -25,8 +24,6 @@ public class ChestScript : MonoBehaviour
     private void Awake()
     {
         tileMapVisualizer = GameObject.Find("TilemapVisualizer").GetComponent<TileMapVisualizer>();
-
-        level = GameObject.Find("RoomFirstDungeonGenerator").GetComponent<RoomFirstDungeonGenerator>().level;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -39,7 +36,7 @@ public class ChestScript : MonoBehaviour
             audio.Play();
             Destroy(collider);
             SpawnItems();
-            GameObject.Find("Player").GetComponent<PlayerExtraStats>().UpdateGold(Random.Range(1*level, (10*level) + 1));
+            GameObject.Find("Player").GetComponent<PlayerExtraStats>().UpdateGold(Random.Range(1*GameManager.level, (10*GameManager.level) + 1));
             //Debug.Log("Opened Chest");
         }
     }
@@ -50,8 +47,8 @@ public class ChestScript : MonoBehaviour
         Vector2Int spawnPos = new Vector2Int((int)Mathf.Round(transform.position.x) + Random.Range(-2, 3), (int)Mathf.Round(transform.position.y) + Random.Range(-2, 3));
         int loopsWithoutPlacing = 0;
         
-        Debug.Log("Max spawns: " + (spawnQuantity + (int)Mathf.Floor(level / 3)));
-        int chestSpawns = Random.Range(1, spawnQuantity + (int)Mathf.Floor(level / 3));
+        Debug.Log("Max spawns: " + (spawnQuantity + (int)Mathf.Floor(GameManager.level / 3)));
+        int chestSpawns = Random.Range(1, spawnQuantity + (int)Mathf.Floor(GameManager.level / 3));
         Debug.Log("Chest spawns " + chestSpawns);
         int spawns = 0;
 
@@ -153,8 +150,8 @@ public class ChestScript : MonoBehaviour
         GameObject weaponObject = Instantiate(Resources.Load("Prefabs/World/WeaponItem Prefab") as GameObject, new Vector3(spawnPos.x, spawnPos.y, -10), Quaternion.Euler(0, 0, 0), transform);
 
         int roll = Random.Range(1, 4);
-        int minPlus = (int)Mathf.Floor(level / 2) - 1;
-        int maxPlus = (int)Mathf.Ceil(level / 2) + 1;
+        int minPlus = (int)Mathf.Floor(GameManager.level / 2) - 1;
+        int maxPlus = (int)Mathf.Ceil(GameManager.level / 2) + 1;
         if (minPlus < 0)
         {
             minPlus = 0;

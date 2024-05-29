@@ -4,20 +4,12 @@ using UnityEngine;
 
 public class AudioVars:MonoBehaviour
 {
-    public AudioVars instance;
-    public float masterVol = -1, musicVol = -1, sfxVol = -1;
-    public bool def = true;
+    
+    public static float masterVol = -1, musicVol = -1, sfxVol = -1;
+    public static bool def = true;
+
     private void Start()
     {
-        DontDestroyOnLoad(this);
-        DontDestroyOnLoad(GameObject.Find("Brightness"));
-        if(instance == null)
-        {
-            instance = this;
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+        DontDestroyOnLoad(gameObject);
     }
 }

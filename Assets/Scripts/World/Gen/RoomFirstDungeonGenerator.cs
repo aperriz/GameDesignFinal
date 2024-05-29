@@ -22,8 +22,8 @@ public class RoomFirstDungeonGenerator : SimpleRandomWalkGenerator
     private int offset = 1;
     [SerializeField]
     private bool randomWalkRooms = false;
-    [SerializeField]
-    public int level = 1;
+
+    /*public int level = 0;*/
     
     private AstarPath astar;
 
@@ -32,16 +32,24 @@ public class RoomFirstDungeonGenerator : SimpleRandomWalkGenerator
     [SerializeField]
     UnityEvent OnDoneGenerating;
 
+    private void Awake()
+    {
+        Debug.Log(GameManager.level);
+    }
+
     public void RescanRooms()
     {
+        
         StartCoroutine(RescanRoomTimer());
     }
 
     IEnumerator RescanRoomTimer()
     {
-        yield return new WaitForSeconds(1);
+        Debug.Log("Rescanning Rooms");
+        yield return new WaitForSecondsRealtime(1);
         if (AstarPath.active.graphs.Length == 0)
         {
+            Debug.Log("Graph");
             GridGraph gg = AstarPath.active.data.AddGraph(typeof(GridGraph)) as GridGraph;
 
             gg.is2D = true;
@@ -50,7 +58,9 @@ public class RoomFirstDungeonGenerator : SimpleRandomWalkGenerator
             gg.collision.mask = LayerMask.GetMask("Walls", "Props");
             gg.collision.use2D = true;
             gg.Scan();
+            
         }
+        Debug.Log("Done Rescanning");
     }
 
     protected override void RunProceduralGeneration()
@@ -91,8 +101,10 @@ public class RoomFirstDungeonGenerator : SimpleRandomWalkGenerator
         WallGenerator.CreateWalls(floor, tileMapVisualizer);
 
         RescanRooms();
+        Debug.Log("Create Rooms");
 
         OnDoneGenerating?.Invoke();
+        Debug.Log("Placing Props Invoke");
     }
 
     private HashSet<Vector2Int> CreateRoomsRandomly(List<BoundsInt> roomsList)

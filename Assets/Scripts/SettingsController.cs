@@ -25,12 +25,12 @@ public class SettingsController : MonoBehaviour
         av = GameObject.Find("AudioVars").GetComponent<AudioVars>();
         DontDestroyOnLoad(av.gameObject);
 
-        if (av.instance.def)
+        if (AudioVars.def)
         {
-            av.instance.masterVol = 1;
-            av.instance.musicVol = 1;
-            av.instance.sfxVol = 1;
-            av.instance.def = false;
+           AudioVars.masterVol = 1;
+           AudioVars.musicVol = 1;
+           AudioVars.sfxVol = 1;
+           AudioVars.def = false;
         }
 
         brightnessFilter = GameObject.Find("Brightness").GetComponent<Image>();
@@ -39,18 +39,18 @@ public class SettingsController : MonoBehaviour
         DontDestroyOnLoad(GameObject.Find("Loading Screen"));
 
         brightnessVal = 1 - brightnessFilter.color.a;
-        masterSlider.value = av.instance.masterVol;
-        sfxSlider.value = av.instance.sfxVol;
-        musicSlider.value = av.instance.musicVol;
+        masterSlider.value =AudioVars.masterVol;
+        sfxSlider.value =AudioVars.sfxVol;
+        musicSlider.value =AudioVars.musicVol;
         brightnessSlider.value = brightnessVal;
     }
 
     public void AdjustMaster(float newVal)
     {
-        if (!av.instance.def)
+        if (!AudioVars.def)
         {
             mixer.SetFloat(master.name, (1 - newVal) * -20);
-            av.instance.masterVol = newVal;
+           AudioVars.masterVol = newVal;
         }
 
         if (newVal == 0)
@@ -61,10 +61,10 @@ public class SettingsController : MonoBehaviour
 
     public void AdjustSFX(float newVal)
     {
-        if (!av.instance.def)
+        if (!AudioVars.def)
         {
             mixer.SetFloat(sfx.name, (1 - newVal) * -20);
-            av.instance.sfxVol = newVal;
+           AudioVars.sfxVol = newVal;
         }
         if (newVal == 0)
         {
@@ -74,10 +74,10 @@ public class SettingsController : MonoBehaviour
 
     public void AdjustMusic(float newVal)
     {
-        if (!av.instance.def)
+        if (!AudioVars.def)
         {
             mixer.SetFloat(music.name, (1 - newVal) * -20);
-            av.instance.musicVol = newVal;
+           AudioVars.musicVol = newVal;
         }
         if (newVal == 0)
         {
